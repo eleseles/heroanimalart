@@ -16,10 +16,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!product) return { title: 'Product Not Found' };
 
   return {
-    title: \`\${product.name} | Bizilla Studio\`,
+    title: `${product.name} | Bizilla Studio`,
     description: product.description,
     alternates: {
-      canonical: \`/products/\${id}\`,
+      canonical: `/products/${id}`,
     },
     openGraph: {
       title: product.name,
@@ -69,13 +69,13 @@ export default async function ProductPage({ params }: Props) {
 
       <div className="product-detail-grid">
         <div className="product-detail-image">
-          <img src={product.image} alt={\`\${product.name} - \${product.category} by Bizilla\`} />
+          <img src={product.image} alt={`${product.name} - ${product.category} by Bizilla`} />
         </div>
 
         <div className="product-detail-info">
           <div className="product-detail-category">{product.category}</div>
           <h1 className="product-detail-title">{product.name}</h1>
-          <div className="product-detail-price">\$\${product.price.toFixed(2)}</div>
+          <div className="product-detail-price">${product.price.toFixed(2)}</div>
           
           <div className="product-detail-section">
             <h2 className="section-small-title"><Info size={14} /> DESCRIPTION</h2>
