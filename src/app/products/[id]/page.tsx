@@ -6,12 +6,12 @@ import { ShieldCheck, Truck, RefreshCw, Info, FileText } from 'lucide-react';
 import { Metadata } from 'next';
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ id: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const product = products.find((p: Product) => p.slug === slug);
+  const { id } = await params;
+  const product = products.find((p: Product) => p.id === id);
 
   if (!product) return { title: 'Product Not Found' };
 
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: \`\${product.name} | Bizilla Studio\`,
     description: product.description,
     alternates: {
-      canonical: \`/products/\${slug}\`,
+      canonical: \`/products/\${id}\`,
     },
     openGraph: {
       title: product.name,
@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ProductPage({ params }: Props) {
-  const { slug } = await params;
-  const product = products.find((p: Product) => p.slug === slug);
+  const { id } = await params;
+  const product = products.find((p: Product) => p.id === id);
 
   if (!product) {
     notFound();
@@ -134,6 +134,6 @@ export default async function ProductPage({ params }: Props) {
 
 export async function generateStaticParams() {
   return products.map((product: Product) => ({
-    slug: product.slug,
+    id: product.id,
   }));
 }
