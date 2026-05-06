@@ -4,7 +4,10 @@ export interface Product {
   name: string;
   category: string;
   price: number;
+  currency: string;
   image: string;
+  images: string[];
+  tags: string[];
   description: string;
 }
 
@@ -15,8 +18,34 @@ export const products: Product[] = [
     "name": "DIY Santa Sleigh & Reindeer Plans | Life-Size Outdoor Christmas Yard Display | Wooden Holiday Decor Blueprint | Digital PDF Pattern",
     "category": "Santa Sleigh Plan",
     "price": 7.5,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/d0922e/7486979356/il_fullxfull.7486979356_8vpy.jpg",
-    "description": "\ud83c\udf85 Bring the Magic of the North Pole to Your Front Yard!  Create a show-stopping holiday display this year with these comprehensive Santa Sleigh Diy Plans. This isn't just a decoration; it\u2019s a life-siz..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/d0922e/7486979356/il_fullxfull.7486979356_8vpy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4de273/7534911311/il_fullxfull.7534911311_tgdm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e12556/7486979364/il_fullxfull.7486979364_fwwr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2b64e6/7486979338/il_fullxfull.7486979338_o739.jpg",
+      "https://i.etsystatic.com/37058139/r/il/57b9d4/7486979376/il_fullxfull.7486979376_cq6j.jpg",
+      "https://i.etsystatic.com/37058139/r/il/75fc7c/7534911289/il_fullxfull.7534911289_dxkt.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a54039/7486979348/il_fullxfull.7486979348_s7i9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c87e8c/7486979322/il_fullxfull.7486979322_m5pf.jpg"
+    ],
+    "tags": [
+      "Santa_Sleigh_Plan",
+      "Reindeer_Template",
+      "Christmas_Yard_Art",
+      "Outdoor_Decor_DIY",
+      "Woodworking_Plan",
+      "Holiday_Photo_Prop",
+      "Life_Size_Sleigh",
+      "Winter_Wonderland",
+      "Lawn_Ornament",
+      "Plywood_Project",
+      "Xmas_Garden_Decor",
+      "Santas_Sleigh",
+      "Digital_Pattern"
+    ],
+    "description": "\ud83c\udf85 Bring the Magic of the North Pole to Your Front Yard!  Create a show-stopping holiday display this year with these comprehensive Santa Sleigh Diy Plans. This isn't just a decoration; it\u2019s a life-size experience. Designed to be sturdy and majestic, this set includes blueprints for both the classic wooden sleigh and the matching reindeer. Whether you are a woodworker looking for a festive project or a family wanting to create the ultimate Outdoor Christmas Diy photo booth for the neighborhood, t..."
   },
   {
     "id": "2",
@@ -24,8 +53,35 @@ export const products: Product[] = [
     "name": "DIY Welcome Sign Planter Box Plans PDF | Front Porch Wooden Plant Stand | Hanging Basket Woodworking Blueprint | Garden Decor Project",
     "category": "welcome planter diy",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/8279a7/7903172592/il_fullxfull.7903172592_8b6w.jpg",
-    "description": "Enhance Your Home's Curb Appeal with a Weekend Woodworking Project  Create a warm, inviting entrance to your home with a beautiful custom woodworking piece you can build yourself. This digital bluepri..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/8279a7/7903172592/il_fullxfull.7903172592_8b6w.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cbb7e6/7951124701/il_fullxfull.7951124701_t0ha.jpg",
+      "https://i.etsystatic.com/37058139/r/il/114ff4/7903172590/il_fullxfull.7903172590_p7b7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4653fc/7951124705/il_fullxfull.7951124705_b0rw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/535265/7903172594/il_fullxfull.7903172594_ac48.jpg",
+      "https://i.etsystatic.com/37058139/r/il/35d061/7903172586/il_fullxfull.7903172586_nxca.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3a5591/7814458547/il_fullxfull.7814458547_9zxa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a559b4/7766513710/il_fullxfull.7766513710_2kau.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7ebb45/7814458557/il_fullxfull.7814458557_lrj5.jpg"
+    ],
+    "tags": [
+      "welcome_planter_diy",
+      "porch_planter_box",
+      "wood_welcome_sign",
+      "garden_planter_plan",
+      "hanging_basket_stand",
+      "wood_project_diy",
+      "front_porch_decor",
+      "cedar_planter_plans",
+      "diy_plant_stand",
+      "woodworking_plans",
+      "welcome_sign_stand",
+      "outdoor_garden_craft",
+      "fall_wood_decor"
+    ],
+    "description": "Enhance Your Home's Curb Appeal with a Weekend Woodworking Project  Create a warm, inviting entrance to your home with a beautiful custom woodworking piece you can build yourself. This digital blueprint provides the exact, step-by-step instructions to craft a charming Welcome Sign Planter Box. Combining a spacious plant bed with a tall display post, it is the perfect statement piece to greet your guests at the front door, porch, or garden entrance.  Skip the overpriced, mass-produced garden cent..."
   },
   {
     "id": "3",
@@ -33,8 +89,36 @@ export const products: Product[] = [
     "name": "DIY Mud Kitchen Plans PDF | Outdoor Play Kitchen Blueprint | Large Montessori Pretend Play Station | Toddler Wooden Kitchen Build Guide",
     "category": "mud kitchen plans",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/8bc1c3/7951117755/il_fullxfull.7951117755_tkpq.jpg",
-    "description": "Build the Ultimate Outdoor Play Space: The Jumbo 8-Foot Mud Kitchen  Get your kids off the screens and into nature! This comprehensive digital woodworking blueprint provides the exact plans to build a..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/8bc1c3/7951117755/il_fullxfull.7951117755_tkpq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5a3b9d/7903165588/il_fullxfull.7903165588_kbt6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c8d899/7951117759/il_fullxfull.7951117759_k7ia.jpg",
+      "https://i.etsystatic.com/37058139/r/il/aea7d9/7903165594/il_fullxfull.7903165594_9qsd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/de4aee/7951117761/il_fullxfull.7951117761_btsv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e3f7b7/7903165596/il_fullxfull.7903165596_spsc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/270eca/7951117791/il_fullxfull.7951117791_cf6w.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3a5591/7814458547/il_fullxfull.7814458547_9zxa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7ebb45/7814458557/il_fullxfull.7814458557_lrj5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a559b4/7766513710/il_fullxfull.7766513710_2kau.jpg"
+    ],
+    "tags": [
+      "mud_kitchen_plans",
+      "outdoor_play_kitchen",
+      "toddler_mud_kitchen",
+      "montessori_build_pdf",
+      "pretend_kitchen_diy",
+      "wooden_play_kitchen",
+      "mud_kitchen_sink",
+      "sensory_play_station",
+      "backyard_playset_diy",
+      "kids_wood_project",
+      "pallet_mud_kitchen",
+      "diy_kids_furniture",
+      "woodworking_plans"
+    ],
+    "description": "Build the Ultimate Outdoor Play Space: The Jumbo 8-Foot Mud Kitchen  Get your kids off the screens and into nature! This comprehensive digital woodworking blueprint provides the exact plans to build a massive, multi-station outdoor mud kitchen. Perfect for siblings, playdates, and Montessori-style sensory play, this durable wooden kitchen will provide years of imaginative, messy fun right in your backyard.  Why buy a flimsy plastic playset when you can build a heavy-duty, beautiful wooden play k..."
   },
   {
     "id": "4",
@@ -42,8 +126,34 @@ export const products: Product[] = [
     "name": "DIY Humidor Cabinet Plan | Large Cigar Display Case PDF | Woodworking Blueprint",
     "category": "Humidor Cabinet Plan",
     "price": 4.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/f7caec/7805098954/il_fullxfull.7805098954_7u27.jpg",
-    "description": "Build the Ultimate Large-Capacity Cigar Humidor Cabinet!  Looking for a premium woodworking project that stands out? This comprehensive DIY Humidor Cabinet Plan provides everything you need to build a..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/f7caec/7805098954/il_fullxfull.7805098954_7u27.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7c6c62/7853041651/il_fullxfull.7853041651_noc7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/df8f49/7805098938/il_fullxfull.7805098938_hjbz.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c3493c/7805098956/il_fullxfull.7805098956_rv20.jpg",
+      "https://i.etsystatic.com/37058139/r/il/17d886/7805098952/il_fullxfull.7805098952_rn18.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ffedc4/7853041667/il_fullxfull.7853041667_gjiu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/093e58/7853041677/il_fullxfull.7853041677_cvu7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e90434/7805098966/il_fullxfull.7805098966_99gh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cfa361/7853041689/il_fullxfull.7853041689_nd2p.jpg"
+    ],
+    "tags": [
+      "Humidor_Cabinet_Plan",
+      "DIY_Cigar_Humidor",
+      "Cigar_Display_Case",
+      "Large_Humidor_Build",
+      "Cigar_Cabinet_Plan",
+      "Wood_Humidor_DIY",
+      "Display_Cabinet_Plan",
+      "Furniture_Plans_PDF",
+      "Cigar_Lover_Gift",
+      "Glass_Door_Cabinet",
+      "Cigar_Storage_Plan",
+      "DIY_Humidor_Project"
+    ],
+    "description": "Build the Ultimate Large-Capacity Cigar Humidor Cabinet!  Looking for a premium woodworking project that stands out? This comprehensive DIY Humidor Cabinet Plan provides everything you need to build a stunning, professional-grade cigar display case. Perfect for serious cigar aficionados, lounge owners, or any woodworker looking to craft a high-end cigar humidor without paying premium retail prices.  This detailed woodworking blueprint features elegant glass doors, lower storage compartments, and..."
   },
   {
     "id": "5",
@@ -51,8 +161,35 @@ export const products: Product[] = [
     "name": "DIY Floor Rocking Chair Plans | Arc Rocking Lounger Blueprint | Oval Rocker Chair PDF",
     "category": "floor rocking chair",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/f4fd04/7852756241/il_fullxfull.7852756241_5x7g.jpg",
-    "description": "Experience Ultimate Relaxation with DIY Arc Floor Rocking Chair Plans!  Looking for the perfect ergonomic seat for reading, gaming, or lounging on the porch? Build your own stunning floor rocking chai..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/f4fd04/7852756241/il_fullxfull.7852756241_5x7g.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2605ce/7852756229/il_fullxfull.7852756229_eqa8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c77574/7852756237/il_fullxfull.7852756237_4vao.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f0258b/7804814944/il_fullxfull.7804814944_58hd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/874460/7804814938/il_fullxfull.7804814938_fw4u.jpg",
+      "https://i.etsystatic.com/37058139/r/il/802235/7804814942/il_fullxfull.7804814942_73pl.jpg",
+      "https://i.etsystatic.com/37058139/r/il/41dbe4/7852756299/il_fullxfull.7852756299_eh49.jpg",
+      "https://i.etsystatic.com/37058139/r/il/69367f/7804814950/il_fullxfull.7804814950_24lw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/36fd74/7804814952/il_fullxfull.7804814952_hkru.jpg"
+    ],
+    "tags": [
+      "floor_rocking_chair",
+      "rocking_lounger",
+      "rocking_chair_plans",
+      "arc_chair_pattern",
+      "oval_rocker_chair",
+      "diy_recliner_plan",
+      "reading_nook_chair",
+      "gaming_rocker_diy",
+      "indoor_seat_file",
+      "wood_porch_rocker",
+      "curved_chair_plans",
+      "furniture_blueprint",
+      "woodworking_plans"
+    ],
+    "description": "Experience Ultimate Relaxation with DIY Arc Floor Rocking Chair Plans!  Looking for the perfect ergonomic seat for reading, gaming, or lounging on the porch? Build your own stunning floor rocking chair with our comprehensive woodworking plans. This beautiful arc chair rocker features a unique slatted, curved design that conforms to your body, providing a comfortable, zero-gravity feel. It is the ultimate rocking lounger project to upgrade your living room, reading nook, or backyard deck!  Whethe..."
   },
   {
     "id": "6",
@@ -60,8 +197,32 @@ export const products: Product[] = [
     "name": "Jewelry Tree Stand DIY Plan | Laser Cut Earring Organizer (Digital Download)",
     "category": "Laser Cut Files",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/a8632b/7215575837/il_fullxfull.7215575837_alax.jpg",
-    "description": "Rescue your jewelry from tangled drawers and display it like a work of art! With this elegant Jewelry Tree Stand DIY plan, you can create a solution that is both highly functional and beautifully deco..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/a8632b/7215575837/il_fullxfull.7215575837_alax.jpg",
+      "https://i.etsystatic.com/37058139/r/il/091abc/7167589302/il_fullxfull.7167589302_5j2u.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e19bbe/7215575835/il_fullxfull.7215575835_t9tx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2e7411/7215575841/il_fullxfull.7215575841_n3fj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6aad18/7112557918/il_fullxfull.7112557918_l9jq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/55af1d/7160528159/il_fullxfull.7160528159_lbo4.jpg"
+    ],
+    "tags": [
+      "Laser_Cut_Files",
+      "Jewelry_Display",
+      "Jewelry_Organizer",
+      "Necklace_Holder",
+      "Earring_Holder",
+      "Earring_Display",
+      "Earring_Organizer",
+      "Necklace_Display",
+      "DIY_Organizer",
+      "Earring_Stand",
+      "Wood_Jewelry_Rack",
+      "DIY_Jewelry_Stand",
+      "DIY_Earring_Stand"
+    ],
+    "description": "Rescue your jewelry from tangled drawers and display it like a work of art! With this elegant Jewelry Tree Stand DIY plan, you can create a solution that is both highly functional and beautifully decorative for organizing your necklaces, earrings, and bracelets.  Inspired by nature, this tree design offers numerous branches, providing a massive storage capacity for all your favorite accessories, from long necklaces to hoop earrings. Create this stunning organizer with your own laser cutter or CN..."
   },
   {
     "id": "7",
@@ -69,8 +230,35 @@ export const products: Product[] = [
     "name": "DIY Lego Table Plans | Kids Activity Table Blueprint PDF | Playroom Toy Storage Organizer |Train Table Build",
     "category": "Lego Table Plans",
     "price": 4.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/bbc821/7853063071/il_fullxfull.7853063071_ta0z.jpg",
-    "description": "Build the Ultimate Kids Play & Storage Table!  Tired of stepping on toy bricks? Transform your child's playroom with this comprehensive DIY Lego Table Plan! Designed with both fun and organization in ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/bbc821/7853063071/il_fullxfull.7853063071_ta0z.jpg",
+      "https://i.etsystatic.com/37058139/r/il/243161/7805120094/il_fullxfull.7805120094_ra3l.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8673a9/7853063089/il_fullxfull.7853063089_8xy6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b43e14/7853063081/il_fullxfull.7853063081_hpjn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d64261/7805120104/il_fullxfull.7805120104_t0qu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c1e4a2/7853063061/il_fullxfull.7853063061_batm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/64499d/7853063101/il_fullxfull.7853063101_7ko7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/96fecf/7853063097/il_fullxfull.7853063097_2xmy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/74877d/7805120122/il_fullxfull.7805120122_4bdt.jpg"
+    ],
+    "tags": [
+      "Lego_Table_Plans",
+      "Kids_Activity_Table",
+      "Play_Table_DIY",
+      "Toy_Storage_Plan",
+      "Train_Table_Build",
+      "Woodworking_PDF",
+      "Playroom_Organizer",
+      "Toddler_Play_Table",
+      "Craft_Table_Plan",
+      "Kids_Furniture_DIY",
+      "Sensory_Table_Plan",
+      "Playroom_Furniture",
+      "Toy_Organizer_Wood"
+    ],
+    "description": "Build the Ultimate Kids Play & Storage Table!  Tired of stepping on toy bricks? Transform your child's playroom with this comprehensive DIY Lego Table Plan! Designed with both fun and organization in mind, this kids activity table features a recessed top to keep building blocks and train tracks contained, plus built-in lower shelving perfectly sized for standard plastic storage bins.  Whether you want to build a dedicated train table, a craft station, or a playroom toy storage organizer, this de..."
   },
   {
     "id": "8",
@@ -78,8 +266,36 @@ export const products: Product[] = [
     "name": "DIY Chapel Wedding Arch Plans PDF | Wooden Church Arbor Blueprint | Rustic Outdoor Canopy Build Guide | Large Pavilion Trellis Woodworking",
     "category": "chapel wedding arch",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/7c6223/7913201330/il_fullxfull.7913201330_1b0z.jpg",
-    "description": "Bring the Chapel Outdoors: Build a Majestic 3D Church Wedding Arbor  Capture the traditional elegance and architectural grandeur of a church wedding in any outdoor setting. This digital woodworking bl..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/7c6223/7913201330/il_fullxfull.7913201330_1b0z.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b57c55/7961157133/il_fullxfull.7961157133_psov.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cc37e7/7961157859/il_fullxfull.7961157859_ka0q.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e38c6e/7913201340/il_fullxfull.7913201340_9546.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4426d1/7961157787/il_fullxfull.7961157787_6m06.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a1e1ea/7913201350/il_fullxfull.7913201350_dvcg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7398c0/7913201554/il_fullxfull.7913201554_svmv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/dee806/7913201356/il_fullxfull.7913201356_e2tq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/288795/7961157867/il_fullxfull.7961157867_f6xh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0b5f20/7961158055/il_fullxfull.7961158055_cjrl.jpg"
+    ],
+    "tags": [
+      "chapel_wedding_arch",
+      "3d_wooden_arbor",
+      "church_arch_plans",
+      "pavilion_canopy_diy",
+      "rustic_wedding_altar",
+      "cross_wedding_arch",
+      "heavy_duty_backdrop",
+      "outdoor_chapel_build",
+      "event_rental_plans",
+      "woodworking_pdf",
+      "wooden_church_prop",
+      "ceremony_canopy_plan",
+      "wedding_trellis"
+    ],
+    "description": "Bring the Chapel Outdoors: Build a Majestic 3D Church Wedding Arbor  Capture the traditional elegance and architectural grandeur of a church wedding in any outdoor setting. This digital woodworking blueprint provides the exact, step-by-step instructions to build a monumental, 3D Chapel-Style Wedding Arch. Towering at nearly 13 feet tall and spanning 10 feet wide, this pavilion-style structure creates an awe-inspiring, immersive altar that perfectly frames the couple.  Whether you are a wedding v..."
   },
   {
     "id": "9",
@@ -87,17 +303,52 @@ export const products: Product[] = [
     "name": "DIY Modern Wood & Metal Garden Fence Plan (PDF Download)",
     "category": "DIY Fence Plan",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/f74947/7286662289/il_fullxfull.7286662289_1rvr.jpg",
-    "description": "\ud83c\udf1f DIY Modern Fence Panel Plan - Wood & Metal Railing (PDF Download) \ud83c\udf1f  Sturdy Wood Frame / Vertical Post Supported / Beginner-Friendly  The easiest way to bring a luxurious, modern look to your yard i..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/f74947/7286662289/il_fullxfull.7286662289_1rvr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c6919c/7238698864/il_fullxfull.7238698864_9bfa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/413d48/7286662283/il_fullxfull.7286662283_a14v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5b669f/7286662293/il_fullxfull.7286662293_et60.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2007c3/7286662273/il_fullxfull.7286662273_6rvk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b6228b/7286662287/il_fullxfull.7286662287_8il7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4e5aa8/7238698872/il_fullxfull.7238698872_lsao.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f9ac22/7286099401/il_fullxfull.7286099401_ooi8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/273b44/7144919048/il_fullxfull.7144919048_amqt.jpg"
+    ],
+    "tags": [
+      "DIY_Fence_Plan",
+      "Wood_Metal_Fence",
+      "Hog_Wire_Fence",
+      "Tall_Garden_Fence",
+      "Vegetable_Garden",
+      "Black_Fence_Panel",
+      "Yard_Fencing",
+      "Fence_Ideas",
+      "Garden_Fence_Kit",
+      "Fence_Blueprint",
+      "Outdoor_Decor",
+      "Modern_Wood_Fence"
+    ],
+    "description": "\ud83c\udf1f DIY Modern Fence Panel Plan - Wood & Metal Railing (PDF Download) \ud83c\udf1f  Sturdy Wood Frame / Vertical Post Supported / Beginner-Friendly  The easiest way to bring a luxurious, modern look to your yard is here! Skip the expensive custom orders. This beginner-friendly PDF plan shows you step-by-step how to build a stunning fence panel that combines natural wood with sleek metal infill railing.  Our design is tailored for standard dimensional lumber\u2014the thick wood materials and commonly used \"Wild Ho..."
   },
   {
     "id": "10",
     "slug": "costco-birthday-party-signs-customizable-price-si",
     "name": "Costco Birthday Party Signs: Customizable Price Sign Canva Template",
-    "category": "",
+    "category": "DIY Plans",
     "price": 3.5,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/1bace0/6805533862/il_fullxfull.6805533862_h9zp.jpg",
-    "description": "If you\u2019re planning the ultimate Costco party, look no further! Our Costco birthday party invitation and decoration set is designed to bring all the iconic vibes of your favorite warehouse. Perfect for..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/1bace0/6805533862/il_fullxfull.6805533862_h9zp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0b7092/6805548154/il_fullxfull.6805548154_bbal.jpg",
+      "https://i.etsystatic.com/37058139/r/il/928a3f/6853554347/il_fullxfull.6853554347_r4kj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3c913a/6805548152/il_fullxfull.6805548152_j3i2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b24b97/6805548156/il_fullxfull.6805548156_ci83.jpg"
+    ],
+    "tags": [],
+    "description": "If you\u2019re planning the ultimate Costco party, look no further! Our Costco birthday party invitation and decoration set is designed to bring all the iconic vibes of your favorite warehouse. Perfect for Costco lovers, this customizable Costco sign and menu template on Canva lets you easily create a fully personalized Costco birthday experience.  Whether it's a classic Costco hot dog bar or a nod to the famous Costco Kirkland brand, our Costco party decor will impress guests of all ages. These uniq..."
   },
   {
     "id": "11",
@@ -105,8 +356,34 @@ export const products: Product[] = [
     "name": "Charcuterie Cart Plan | Dessert Cart | Food Cart | Mobile Bar with Wheels, Umbrella | DIY Collapsible Charcuterie Cart Plans PDF",
     "category": "Custom food cart",
     "price": 16.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/192c56/7183502159/il_fullxfull.7183502159_nzfb.jpg",
-    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/192c56/7183502159/il_fullxfull.7183502159_nzfb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cbfb01/7183502169/il_fullxfull.7183502169_9mdw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6eb216/7183503713/il_fullxfull.7183503713_ipyh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d66801/7315990917/il_fullxfull.7315990917_v7o4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9f62be/7160528109/il_fullxfull.7160528109_p7xq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0f685d/7112557912/il_fullxfull.7112557912_oto2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/55af1d/7160528159/il_fullxfull.7160528159_lbo4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6aad18/7112557918/il_fullxfull.7112557918_l9jq.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "Food_cart",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart"
+    ],
+    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests from a stunning, custom-built cart that perfectly complements your unique style. This isn't just a project; it's your ticket to creating the ultimate custom food cart or a show-stopping mobile bar. Our meticulously designed PDF guide gives you all the tools and knowledge to bring this elegant, mode..."
   },
   {
     "id": "12",
@@ -114,8 +391,36 @@ export const products: Product[] = [
     "name": "Wooden Rocking Horse Plans | DIY Toddler Toy Blueprint (Digital PDF)",
     "category": "Wooden Rocking Horse",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/7e520b/7631043680/il_fullxfull.7631043680_7jf4.jpg",
-    "description": "Build a Timeless Heirloom with Your Own Hands \ud83d\udc34\u2728  Are you looking for a meaningful DIY project that will be cherished for years? This Wooden Rocking Horse Plan is designed to help you create a beautif..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/7e520b/7631043680/il_fullxfull.7631043680_7jf4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3ae104/7678994809/il_fullxfull.7678994809_b5vy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/02e4be/7678994807/il_fullxfull.7678994807_1prr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f79287/7678994817/il_fullxfull.7678994817_lbny.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8f0bd3/7678994791/il_fullxfull.7678994791_ha4r.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9efdb1/7678994781/il_fullxfull.7678994781_1n15.jpg",
+      "https://i.etsystatic.com/37058139/r/il/11e7a2/7631043686/il_fullxfull.7631043686_kim4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1fbb2b/7678994815/il_fullxfull.7678994815_37br.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f17da6/7678994795/il_fullxfull.7678994795_64n0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/17b614/7678994803/il_fullxfull.7678994803_jc7a.jpg"
+    ],
+    "tags": [
+      "Wooden_Rocking_Horse",
+      "Rocking_Horse_Plan",
+      "DIY_Horse_Pattern",
+      "Woodworking_Plans",
+      "Toddler_Ride_On",
+      "Kids_Toy_Blueprint",
+      "Wooden_Animal_Toy",
+      "Montessori_Toy_DIY",
+      "Beginner_Project",
+      "Nursery_Decor_DIY",
+      "Baby_Shower_Gift",
+      "Digital_Download",
+      "Woodcraft_Template"
+    ],
+    "description": "Build a Timeless Heirloom with Your Own Hands \ud83d\udc34\u2728  Are you looking for a meaningful DIY project that will be cherished for years? This Wooden Rocking Horse Plan is designed to help you create a beautiful, modern, and sturdy ride-on toy that fits perfectly in any nursery or playroom.  Unlike complicated traditional designs, this simple rocking horse DIY project features clean lines and a minimalist aesthetic. It\u2019s not just a toy; it\u2019s a piece of furniture that celebrates the warmth of wood. Whethe..."
   },
   {
     "id": "13",
@@ -123,8 +428,36 @@ export const products: Product[] = [
     "name": "DIY Triple Wheelie Bin Storage Plans PDF | Wooden Trash Can Enclosure Blueprint | 3-Bay Garbage Shed | Outdoor Bin Hideaway Woodworking",
     "category": "Wheelie Bin Storage",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/e67530/7941859226/il_fullxfull.7941859226_d7yk.jpg",
-    "description": "Hide Those Ugly Trash Cans with This Premium Wooden Enclosure!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/e67530/7941859226/il_fullxfull.7941859226_d7yk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2af37a/7989816733/il_fullxfull.7989816733_c1my.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2e18b7/7989816753/il_fullxfull.7989816753_5gva.jpg",
+      "https://i.etsystatic.com/37058139/r/il/eb860a/7941859258/il_fullxfull.7941859258_smtq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/650cd7/7941859240/il_fullxfull.7941859240_op3g.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e42e1f/7989816761/il_fullxfull.7989816761_ak6k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0e77d5/7941859278/il_fullxfull.7941859278_5gfx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/031d28/7941859276/il_fullxfull.7941859276_2kig.jpg",
+      "https://i.etsystatic.com/37058139/r/il/74aa76/7941859326/il_fullxfull.7941859326_jj6g.jpg",
+      "https://i.etsystatic.com/37058139/r/il/30896d/7941859350/il_fullxfull.7941859350_ntqj.jpg"
+    ],
+    "tags": [
+      "Wheelie_Bin_Storage",
+      "Trash_Can_Enclosure",
+      "Triple_Bin_Shed",
+      "Garbage_Bin_Cover",
+      "Hideaway_Trash_Can",
+      "Wheelie_Bin_Screen",
+      "Woodworking_Plans",
+      "Outdoor_Storage_DIY",
+      "Trash_Enclosure_Plan",
+      "Recycle_Bin_Storage",
+      "Slatted_Bin_Store",
+      "Garden_Wood_Plan",
+      "DIY_Wood_Project"
+    ],
+    "description": "Hide Those Ugly Trash Cans with This Premium Wooden Enclosure!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Instantly upgr..."
   },
   {
     "id": "14",
@@ -132,8 +465,36 @@ export const products: Product[] = [
     "name": "Mobile Food Cart Plans | Charcuterie Mobile Bar and Coffee Cart Bar Blueprint | Snack Cart, Pastry Cart, Ice Cream Cart, Cookie Cart Plans",
     "category": "Custom food cart",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/f73c32/7179259464/il_fullxfull.7179259464_kxip.jpg",
-    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/f73c32/7179259464/il_fullxfull.7179259464_kxip.jpg",
+      "https://i.etsystatic.com/37058139/r/il/50ab67/7894610784/il_fullxfull.7894610784_rb4t.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0f685d/7112557912/il_fullxfull.7112557912_oto2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8e0cd2/7227241161/il_fullxfull.7227241161_njap.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7011cc/7227241153/il_fullxfull.7227241153_86ga.jpg",
+      "https://i.etsystatic.com/37058139/r/il/988533/7942568063/il_fullxfull.7942568063_dbwx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/744675/7942568067/il_fullxfull.7942568067_7ame.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7df439/7894610802/il_fullxfull.7894610802_a1uf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/32a546/7942568069/il_fullxfull.7942568069_sxgf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bbc210/7942568071/il_fullxfull.7942568071_mzc8.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "Food_cart",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart"
+    ],
+    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests from a stunning, custom-built cart that perfectly complements your unique style. This isn't just a project; it's your ticket to creating the ultimate custom food cart or a show-stopping mobile bar. Our meticulously designed PDF guide gives you all the tools and knowledge to bring this elegant, mode..."
   },
   {
     "id": "15",
@@ -141,8 +502,29 @@ export const products: Product[] = [
     "name": "Bed Frame Queen with Headboard | Bed Frame Plans | DIY Wooden Bed Frame | Floating King Size Bed Frame | Rustic, Solid Wood Bed Design",
     "category": "woodworking plans",
     "price": 20.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/c3fd12/7162017910/il_fullxfull.7162017910_69ip.jpg",
-    "description": "Create a Unique and Stylish Sanctuary with Our DIY Bed Frame Plans  Transform your bedroom into a comfortable and stylish retreat with our easy-to-follow woodworking plans. This DIY bed frame project ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/c3fd12/7162017910/il_fullxfull.7162017910_69ip.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f28211/7162017904/il_fullxfull.7162017904_jc4b.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5ff5de/7210007119/il_fullxfull.7210007119_8zwn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/44c051/7210007121/il_fullxfull.7210007121_p3rq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/18e0cd/7210007125/il_fullxfull.7210007125_eyo9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/65428b/7210007115/il_fullxfull.7210007115_f4kg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a0fe74/7210007127/il_fullxfull.7210007127_m7um.jpg"
+    ],
+    "tags": [
+      "woodworking_plans",
+      "Custom_Bed",
+      "Handmade_Wooden_Bed",
+      "PDF_Furniture",
+      "Bedroom_Furniture",
+      "DIY_Woodworking",
+      "Wooden_Bed_Frame",
+      "Solid_Wood_Bed",
+      "Rustic_Bed"
+    ],
+    "description": "Create a Unique and Stylish Sanctuary with Our DIY Bed Frame Plans  Transform your bedroom into a comfortable and stylish retreat with our easy-to-follow woodworking plans. This DIY bed frame project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of bedroom furniture that will last for years.  Why Build Your Own Bed Frame? Building your own bed frame isn't just a creative endeavor\u2014it\u2019s a way to get the exact style and size you want. Whether you..."
   },
   {
     "id": "16",
@@ -150,8 +532,35 @@ export const products: Product[] = [
     "name": "Outdoor Wood Plant Stand DIY Plan | 4-Tier Stepped Planter Woodworking Blueprint (Digital Download)",
     "category": "welcome planter",
     "price": 4.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/2f4c0a/7825038799/il_fullxfull.7825038799_dln3.jpg",
-    "description": "Greet Your Guests in Style with a DIY Tall Welcome Planter Stand!  Looking for the perfect front porch decor to showcase your beautiful spring flowers? Build your own stunning wood welcome stand with ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/2f4c0a/7825038799/il_fullxfull.7825038799_dln3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1c93c2/7825038803/il_fullxfull.7825038803_kxev.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b5db00/7777110242/il_fullxfull.7777110242_he78.jpg",
+      "https://i.etsystatic.com/37058139/r/il/217855/7825038817/il_fullxfull.7825038817_szqc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3fe762/7777110236/il_fullxfull.7777110236_gq30.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2754d1/7777110250/il_fullxfull.7777110250_kgpc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bcec00/7777110254/il_fullxfull.7777110254_ss3s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bf2787/7777110260/il_fullxfull.7777110260_cshp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/931877/7825038835/il_fullxfull.7825038835_2aqf.jpg"
+    ],
+    "tags": [
+      "welcome_planter",
+      "planter_stand_plans",
+      "wood_plant_stand",
+      "tall_planter_diy",
+      "welcome_sign_planter",
+      "farmhouse_planter",
+      "vertical_planter_diy",
+      "porch_planter_stand",
+      "wood_plant_box",
+      "outdoor_wood_decor",
+      "stepped_planter",
+      "diy_planter_box",
+      "woodworking_plans"
+    ],
+    "description": "Greet Your Guests in Style with a DIY Tall Welcome Planter Stand!  Looking for the perfect front porch decor to showcase your beautiful spring flowers? Build your own stunning wood welcome stand with planter using our comprehensive woodworking plans. This tall, 4-tier vertical design is perfect for holding multiple pots, lanterns, or an elegant \"Welcome\" sign at the top. It is the ultimate farmhouse style planter project to boost your home's curb appeal!  Whether you need a sturdy planter stand ..."
   },
   {
     "id": "17",
@@ -159,8 +568,36 @@ export const products: Product[] = [
     "name": "Wooden Market Cart DIY Plans | Collapsible Vendor Stall Blueprint (PDF Download)",
     "category": "Lemonade Stand DIY",
     "price": 8.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/95fc90/7679022825/il_fullxfull.7679022825_d440.jpg",
-    "description": "Build the Ultimate Display for Your Business or Event \ud83c\udf4b\ud83c\udf6c\ud83c\udf38  Are you ready to turn your passion into a business? Whether you are planning a rustic wedding, opening a lemonade stand with your kids, or se..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/95fc90/7679022825/il_fullxfull.7679022825_d440.jpg",
+      "https://i.etsystatic.com/37058139/r/il/db74d8/7631071782/il_fullxfull.7631071782_h0r4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e46c1c/7631071776/il_fullxfull.7631071776_ji1o.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a308dd/7679022833/il_fullxfull.7679022833_qimr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/45fb99/7631071780/il_fullxfull.7631071780_gegb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/822738/7679022823/il_fullxfull.7679022823_n21b.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8772c3/7631071762/il_fullxfull.7631071762_caq5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/17b614/7678994803/il_fullxfull.7678994803_jc7a.jpg",
+      "https://i.etsystatic.com/37058139/r/il/af41dd/7631043684/il_fullxfull.7631043684_hhpe.jpg",
+      "https://i.etsystatic.com/37058139/r/il/03eb73/7678994823/il_fullxfull.7678994823_j5zf.jpg"
+    ],
+    "tags": [
+      "Lemonade_Stand_DIY",
+      "Candy_Cart_Plans",
+      "Collapsible_Cart",
+      "Market_Stall_Plan",
+      "Flower_Cart_Wood",
+      "Vendor_Display",
+      "Portable_Bar_Cart",
+      "Wedding_Prop_DIY",
+      "Sweet_Cart_Pattern",
+      "Folding_Stand_PDF",
+      "Event_Kiosk_Build",
+      "Woodworking_Plans",
+      "Digital_Blueprint"
+    ],
+    "description": "Build the Ultimate Display for Your Business or Event \ud83c\udf4b\ud83c\udf6c\ud83c\udf38  Are you ready to turn your passion into a business? Whether you are planning a rustic wedding, opening a lemonade stand with your kids, or selling handmade goods at a craft fair, this Wooden Market Cart is the perfect foundation for your success.  This isn't just a stand; it's a versatile Vendor Cart Pattern designed to be the centerpiece of any event. With its classic large wheels and charming canopy frame, it draws customers in and cre..."
   },
   {
     "id": "18",
@@ -168,8 +605,35 @@ export const products: Product[] = [
     "name": "DIY Farmstand Plans: Portable Produce, Flower, Bakery Cart (PDF Download)",
     "category": "DIY Farmstand",
     "price": 16.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/1767b1/7265675249/il_fullxfull.7265675249_iybi.jpg",
-    "description": "Update: I've added another updated free plan to the current plan. You'll get two plans for the price of one.  Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/1767b1/7265675249/il_fullxfull.7265675249_iybi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/38fedf/7217708226/il_fullxfull.7217708226_h5f3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/18e40d/7265675239/il_fullxfull.7265675239_exg3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f3fbfa/7265675251/il_fullxfull.7265675251_hruh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/463aa0/7265675237/il_fullxfull.7265675237_pza0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e0fa0f/7217708218/il_fullxfull.7217708218_odfv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6a87b7/7265675243/il_fullxfull.7265675243_lxef.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0752d8/7265675255/il_fullxfull.7265675255_4n9q.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d54124/7265675247/il_fullxfull.7265675247_7igx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/792802/7265675253/il_fullxfull.7265675253_4toq.jpg"
+    ],
+    "tags": [
+      "DIY_Farmstand",
+      "Roadside_Plant",
+      "Flower_Cart",
+      "Fruit_Stand",
+      "Vegetable_Stands",
+      "Roadside_Egg",
+      "Bakery_Cart",
+      "Sourdough_Cart",
+      "driveway_farmstand",
+      "farmer's_market",
+      "Flower_Stand",
+      "Mobile_Farm_Cart"
+    ],
+    "description": "Update: I've added another updated free plan to the current plan. You'll get two plans for the price of one.  Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s ..."
   },
   {
     "id": "19",
@@ -177,8 +641,35 @@ export const products: Product[] = [
     "name": "Lean To Carport DIY Plans | Gazebo Plans | Open Pavilion for Backyard & Patio | Attached Patio Roof Plan PDF | Custom Carports Woodworking",
     "category": "Lean to Plans",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/c82c02/7852960151/il_fullxfull.7852960151_pkvs.jpg",
-    "description": "Build the Perfect Shelter for Your Car or Patio!  Protect your vehicle from the elements or create a stunning covered outdoor living space with this heavy-duty DIY Lean-To Carport Plan. Whether you ne..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/c82c02/7852960151/il_fullxfull.7852960151_pkvs.jpg",
+      "https://i.etsystatic.com/37058139/r/il/40f972/7805018334/il_fullxfull.7805018334_ewjv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0ab5d5/7852960133/il_fullxfull.7852960133_hgkx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/188444/7805018380/il_fullxfull.7805018380_ibad.jpg",
+      "https://i.etsystatic.com/37058139/r/il/89cf2f/7805018374/il_fullxfull.7805018374_fu8i.jpg",
+      "https://i.etsystatic.com/37058139/r/il/18e0b0/7852960171/il_fullxfull.7852960171_cqrh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e3eea0/7805018458/il_fullxfull.7805018458_4wuk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9fd09f/7852960231/il_fullxfull.7852960231_mrdy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/732d68/7805018462/il_fullxfull.7805018462_33ug.jpg"
+    ],
+    "tags": [
+      "Lean_to_Plans",
+      "Attached_Carport",
+      "Patio_Roof_Plan",
+      "Wood_Porch_Shelter",
+      "10x24_Carport_Plan",
+      "1_Car_Carport",
+      "Front_Porch_Plan",
+      "Custom_Carports",
+      "Wood_Awning_Plan",
+      "DIY_Patio_Cover",
+      "Carport_Blueprints",
+      "Lean_To_Carport",
+      "Backyard_Shelter"
+    ],
+    "description": "Build the Perfect Shelter for Your Car or Patio!  Protect your vehicle from the elements or create a stunning covered outdoor living space with this heavy-duty DIY Lean-To Carport Plan. Whether you need an attached carport plan for your driveway or a spacious patio roof plan to upgrade your backyard, this comprehensive blueprint is designed for durability and style.  Instead of spending thousands on pre-fab structures, build your own custom wooden porch shelter! This versatile design is perfect ..."
   },
   {
     "id": "20",
@@ -186,8 +677,34 @@ export const products: Product[] = [
     "name": "DIY Tiered Plant Stand Plans | A-Frame Wood Ladder Shelf Blueprint (Digital Download)",
     "category": "tiered plant stand",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/af71b6/7766472312/il_fullxfull.7766472312_ttme.jpg",
-    "description": "Display Your Greenery with Style using DIY Tiered Plant Stand Plans!  Looking for the perfect way to organize your favorite flowers and herbs? Build your own beautiful and sturdy outdoor ladder shelf ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/af71b6/7766472312/il_fullxfull.7766472312_ttme.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f59148/7814417411/il_fullxfull.7814417411_4nke.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a37ba7/7766472318/il_fullxfull.7766472318_i715.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a025d5/7766472306/il_fullxfull.7766472306_9mt3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/83b564/7766472298/il_fullxfull.7766472298_5iqv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8e9246/7766472296/il_fullxfull.7766472296_krkf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/63573c/7814417445/il_fullxfull.7814417445_6f1q.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e30490/7814417449/il_fullxfull.7814417449_sitt.jpg"
+    ],
+    "tags": [
+      "tiered_plant_stand",
+      "outdoor_ladder",
+      "plant_stand_plans",
+      "diy_plant_stand",
+      "ladder_shelf",
+      "herb_planter_diy",
+      "plant_stand_diy",
+      "wood_plant_stand",
+      "garden_plant_shelf",
+      "flower_stand_plans",
+      "tiered_herb_garden",
+      "plant_stand_pdf",
+      "woodworking_plans"
+    ],
+    "description": "Display Your Greenery with Style using DIY Tiered Plant Stand Plans!  Looking for the perfect way to organize your favorite flowers and herbs? Build your own beautiful and sturdy outdoor ladder shelf with our comprehensive tiered plant stand plans. This elegant A-frame design is the ideal DIY planter stand design for your porch, patio, or indoor garden nook, offering a professional look that elevates any space.  Whether you need a functional tiered ladder herb garden for your kitchen or a decora..."
   },
   {
     "id": "21",
@@ -195,8 +712,33 @@ export const products: Product[] = [
     "name": "Farm Stand DIY Plans | Roadside Plant, Flower, Fruit Stand | Portable Egg, Vegetable Cart | Bakery, Sourdough Display | Farmer's Market",
     "category": "DIY Farmstand",
     "price": 16.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/2f761d/7165194896/il_fullxfull.7165194896_tumx.jpg",
-    "description": "Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vi..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/2f761d/7165194896/il_fullxfull.7165194896_tumx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d3aa77/7213182633/il_fullxfull.7213182633_j7bq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d7e323/7165194902/il_fullxfull.7165194902_72vg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7cd6e6/7165194912/il_fullxfull.7165194912_e6eb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/32e6b1/7233784320/il_fullxfull.7233784320_h638.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c9d2bd/7233784318/il_fullxfull.7233784318_s53w.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6aad18/7112557918/il_fullxfull.7112557918_l9jq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/55af1d/7160528159/il_fullxfull.7160528159_lbo4.jpg"
+    ],
+    "tags": [
+      "DIY_Farmstand",
+      "Roadside_Plant",
+      "Flower_Cart",
+      "Fruit_Stand",
+      "Vegetable_Stands",
+      "Roadside_Egg",
+      "Bakery_Cart",
+      "Sourdough_Cart",
+      "driveway_farmstand",
+      "farmer's_market",
+      "Flower_Stand",
+      "Mobile_Farm_Cart"
+    ],
+    "description": "Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s time to give that story the beautiful stage it deserves.  These detailed woodworking plans were designed not j..."
   },
   {
     "id": "22",
@@ -204,8 +746,36 @@ export const products: Product[] = [
     "name": "DIY Outdoor Storage Cabinet Plans | Tall Outdoor Shed Blueprint | Garden Tool Closet PDF",
     "category": "outdoor cabinet",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/41a741/7777430596/il_fullxfull.7777430596_odiz.jpg",
-    "description": "Organize Your Backyard with Premium DIY Tall Outdoor Storage Cabinet Plans!  Tired of a cluttered patio or an unorganized garage? Build the ultimate storage solution with our comprehensive outdoor sto..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/41a741/7777430596/il_fullxfull.7777430596_odiz.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8bc0e1/7825359073/il_fullxfull.7825359073_afca.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a3dfcc/7777430598/il_fullxfull.7777430598_llqu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/680104/7825359087/il_fullxfull.7825359087_b7zh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8b532c/7825359085/il_fullxfull.7825359085_kvi7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/56b6de/7825359103/il_fullxfull.7825359103_7t5i.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7ec731/7777430664/il_fullxfull.7777430664_lbte.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e8b3ad/7777430600/il_fullxfull.7777430600_7hg2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8498ba/7825359141/il_fullxfull.7825359141_ta7j.jpg",
+      "https://i.etsystatic.com/37058139/r/il/17cc99/7777430642/il_fullxfull.7777430642_azq0.jpg"
+    ],
+    "tags": [
+      "outdoor_cabinet",
+      "tall_outdoor_shed",
+      "storage_cabinet_diy",
+      "patio_storage_closet",
+      "garden_shed_plans",
+      "tool_storage_diy",
+      "outdoor_closet_pdf",
+      "cushion_storage",
+      "wood_cabinet_plans",
+      "patio_cupboard",
+      "tall_cabinet_plan",
+      "outdoor_furniture",
+      "woodworking_plans"
+    ],
+    "description": "Organize Your Backyard with Premium DIY Tall Outdoor Storage Cabinet Plans!  Tired of a cluttered patio or an unorganized garage? Build the ultimate storage solution with our comprehensive outdoor storage cabinet plans. Standing an impressive 10 feet tall, this massive tall outdoor shed features beautiful slatted doors that provide excellent ventilation\u2014perfect for storing damp hoses, patio cushions, soil bags, and gardening tools safely out of the elements.  Whether you are looking for a dedica..."
   },
   {
     "id": "23",
@@ -213,8 +783,32 @@ export const products: Product[] = [
     "name": "Egg Stand Plans |\u00a0Roadside Egg Selling Stand Plans | Farmstand Plans | Roadside Plant, Flower, Fruit Stand | Portable Egg, Vegetable Cart",
     "category": "DIY Farmstand",
     "price": 20.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/0fb1cf/7213276403/il_fullxfull.7213276403_hci5.jpg",
-    "description": "Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vi..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/0fb1cf/7213276403/il_fullxfull.7213276403_hci5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1d36be/7213276407/il_fullxfull.7213276407_q0kh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a79dbf/7213276409/il_fullxfull.7213276409_m9wa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/472fe1/7165288922/il_fullxfull.7165288922_jenm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7e63a8/7249467620/il_fullxfull.7249467620_8gbp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/55af1d/7160528159/il_fullxfull.7160528159_lbo4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6aad18/7112557918/il_fullxfull.7112557918_l9jq.jpg"
+    ],
+    "tags": [
+      "DIY_Farmstand",
+      "Roadside_Plant",
+      "Flower_Cart",
+      "Fruit_Stand",
+      "Vegetable_Stands",
+      "Roadside_Egg",
+      "Bakery_Cart",
+      "Sourdough_Cart",
+      "driveway_farmstand",
+      "farmer's_market",
+      "Flower_Stand",
+      "Mobile_Farm_Cart"
+    ],
+    "description": "Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s time to give that story the beautiful stage it deserves.  These detailed woodworking plans were designed not j..."
   },
   {
     "id": "24",
@@ -222,8 +816,35 @@ export const products: Product[] = [
     "name": "DIY Duck House Plan PDF | Wooden Duck Coop Blue Prints | Modern Duck Shed Build | Small Chicken Coup Design | Backyard Poultry Blueprint",
     "category": "Duck House Plan",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/105e95/7976592572/il_fullxfull.7976592572_yzpm.jpg",
-    "description": "Build a Beautiful, Safe, and Cozy Home for Your Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100% money-back guarantee..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/105e95/7976592572/il_fullxfull.7976592572_yzpm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9f5a40/8024546903/il_fullxfull.8024546903_tmgh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/94f596/8024546905/il_fullxfull.8024546905_njjq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2d0077/8024546909/il_fullxfull.8024546909_4rzs.jpg",
+      "https://i.etsystatic.com/37058139/r/il/87c0f9/7976592570/il_fullxfull.7976592570_aejy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/38309c/8024546911/il_fullxfull.8024546911_bw9s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d55500/7989793421/il_fullxfull.7989793421_dg5z.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a07c82/7941835568/il_fullxfull.7941835568_dwk7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/54cce6/7941835576/il_fullxfull.7941835576_1ghe.jpg"
+    ],
+    "tags": [
+      "Duck_House_Plan",
+      "Duck_Coop_Plan",
+      "Duck_Shed_Build",
+      "Movable_Duck_Coop",
+      "Small_Chicken_Coup",
+      "Modern_Duck_House",
+      "Quail_Cottage_Plans",
+      "DIY_Animal_Shelter",
+      "Woodworking_Plans",
+      "Backyard_Poultry",
+      "Duck_Enclosure_DIY",
+      "Wooden_Coop_Build",
+      "Duck_Coop"
+    ],
+    "description": "Build a Beautiful, Safe, and Cozy Home for Your Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages We are here for you! If you have any questions, need technical advice, or require help during your build process, simply send us a message throug..."
   },
   {
     "id": "25",
@@ -231,8 +852,35 @@ export const products: Product[] = [
     "name": "DIY Kids Playhouse Plans | Outdoor Lofted Playhouse PDF | 2 Story Wooden Clubhouse Build | Treehouse Blueprint | Playground Fort Plans",
     "category": "Playhouse Plans",
     "price": 9.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/9c1139/7805177406/il_fullxfull.7805177406_nh5r.jpg",
-    "description": "Build the Ultimate Two-Story Backyard Playhouse!  Give your kids the backyard of their dreams with these comprehensive DIY Kids Playhouse Plans! This impressive, large-scale wooden clubhouse features ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/9c1139/7805177406/il_fullxfull.7805177406_nh5r.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6057c0/7853119855/il_fullxfull.7853119855_qow2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/71cbc9/7853119897/il_fullxfull.7853119897_ko1e.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9352b3/7805177438/il_fullxfull.7805177438_f6et.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3f905f/7853119909/il_fullxfull.7853119909_153h.jpg",
+      "https://i.etsystatic.com/37058139/r/il/92321e/7853119905/il_fullxfull.7853119905_tmq9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5d3de6/7853119921/il_fullxfull.7853119921_nnx2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/966170/7805177472/il_fullxfull.7805177472_mhw7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c475c5/7853119929/il_fullxfull.7853119929_8fnz.jpg"
+    ],
+    "tags": [
+      "Playhouse_Plans",
+      "Kids_Playhouse_DIY",
+      "Lofted_Playhouse",
+      "Wooden_Clubhouse",
+      "Treehouse_Plans",
+      "Playground_Fort_Plan",
+      "Outdoor_Play_Set",
+      "DIY_Kids_Club_House",
+      "Playset_Build_Plan",
+      "2_Story_Playhouse",
+      "Playhouse_Blueprint",
+      "Backyard_Playground",
+      "Wood_Fort_Plans_PDF"
+    ],
+    "description": "Build the Ultimate Two-Story Backyard Playhouse!  Give your kids the backyard of their dreams with these comprehensive DIY Kids Playhouse Plans! This impressive, large-scale wooden clubhouse features a raised, lofted design, a full wrap-around front porch, sturdy stairs, and an enclosed upper cabin. It is the perfect foundation for the ultimate kids outdoor play structure.  Skip the flimsy pre-made kits and use this playhouse plans blueprint to build a durable, heavy-duty play fort that will las..."
   },
   {
     "id": "26",
@@ -240,8 +888,36 @@ export const products: Product[] = [
     "name": "DIY Mobile Table & Miter Saw Station Plans PDF | Rolling Tool Cart Blueprint | Woodworking Shop Workbench | Portable Power Tool Stand",
     "category": "Miter Saw Table",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/890bdc/7941835552/il_fullxfull.7941835552_m0u9.jpg",
-    "description": "Build the Ultimate Mobile Workstation for Your Workshop!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guaran..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/890bdc/7941835552/il_fullxfull.7941835552_m0u9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ca7a98/7989793417/il_fullxfull.7989793417_syfi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/194b1c/7941835554/il_fullxfull.7941835554_awep.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0b6d6c/7941835550/il_fullxfull.7941835550_g6yd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ba5483/7941835562/il_fullxfull.7941835562_kam1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ebea92/7941835560/il_fullxfull.7941835560_lskt.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3e73a7/7989793423/il_fullxfull.7989793423_ce10.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3eee87/7989793427/il_fullxfull.7989793427_aiyi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d55500/7989793421/il_fullxfull.7989793421_dg5z.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a07c82/7941835568/il_fullxfull.7941835568_dwk7.jpg"
+    ],
+    "tags": [
+      "Miter_Saw_Table",
+      "Table_Saw_Stand",
+      "Mobile_Workbench",
+      "Tool_Cart_DIY",
+      "Woodworking_Plans",
+      "Rolling_Shop_Cart",
+      "Power_Tool_Stand",
+      "Workbench_Blueprint",
+      "Workshop_Storage",
+      "Garage_Organization",
+      "DIY_Saw_Stand",
+      "Portable_Work_Table",
+      "Shop_Furniture_Plan"
+    ],
+    "description": "Build the Ultimate Mobile Workstation for Your Workshop!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take your workshop o..."
   },
   {
     "id": "27",
@@ -249,8 +925,36 @@ export const products: Product[] = [
     "name": "DIY Outdoor Bar Plans | Slatted Wood Mobile Bar Blueprint (PDF Download)",
     "category": "mobile bar plans",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/e7be7e/7825443415/il_fullxfull.7825443415_qho5.jpg",
-    "description": "Entertain in Style with Premium DIY Mobile Outdoor Bar Plans!  Ready to become the ultimate backyard host? Build your own stunning and highly functional mobile bar with our comprehensive woodworking p..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/e7be7e/7825443415/il_fullxfull.7825443415_qho5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0bbae7/7825443405/il_fullxfull.7825443405_cm80.jpg",
+      "https://i.etsystatic.com/37058139/r/il/aaf4fa/7777515824/il_fullxfull.7777515824_1rr6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/faf283/7825443403/il_fullxfull.7825443403_ts04.jpg",
+      "https://i.etsystatic.com/37058139/r/il/80d118/7777515826/il_fullxfull.7777515826_engj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d5dd44/7825443417/il_fullxfull.7825443417_lqay.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3da85b/7777515930/il_fullxfull.7777515930_j2n3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b55bea/7777515922/il_fullxfull.7777515922_ipcn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/99aa69/7777515892/il_fullxfull.7777515892_js9x.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e94995/7777515888/il_fullxfull.7777515888_592j.jpg"
+    ],
+    "tags": [
+      "mobile_bar_plans",
+      "outdoor_bar_diy",
+      "bar_on_wheels",
+      "patio_bar_plans",
+      "backyard_bar",
+      "portable_bar_diy",
+      "wedding_bar_plans",
+      "diy_bar_blueprint",
+      "wood_bar_design",
+      "outdoor_furniture",
+      "outside_bar_plan",
+      "beverage_station",
+      "woodworking_plans"
+    ],
+    "description": "Entertain in Style with Premium DIY Mobile Outdoor Bar Plans!  Ready to become the ultimate backyard host? Build your own stunning and highly functional mobile bar with our comprehensive woodworking plans. This premium outdoor bar features a beautiful slatted wood design, a spacious serving top, and heavy-duty caster wheels, making it the perfect build bar on wheels project for your patio, deck, or poolside.  Whether you are looking for stylish backyard bar plans for summer BBQs or elegant weddi..."
   },
   {
     "id": "28",
@@ -258,8 +962,36 @@ export const products: Product[] = [
     "name": "DIY Collapsible Coffee Cart Plans | Mobile Espresso Bar Blueprint (PDF)",
     "category": "Custom food cart",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/09b5b4/7532073947/il_fullxfull.7532073947_2mne.jpg",
-    "description": "\u2615 Build the Perfect Station for Your Coffee Business! Turn your passion into a business with these professional Coffee Cart Blueprint plans. Designed specifically for heavy-duty use, this cart is the ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/09b5b4/7532073947/il_fullxfull.7532073947_2mne.jpg",
+      "https://i.etsystatic.com/37058139/r/il/97bbf2/7484147806/il_fullxfull.7484147806_me55.jpg",
+      "https://i.etsystatic.com/37058139/r/il/344f37/7532073967/il_fullxfull.7532073967_kzjs.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8f187b/7484147820/il_fullxfull.7484147820_1048.jpg",
+      "https://i.etsystatic.com/37058139/r/il/66bfe8/7484147818/il_fullxfull.7484147818_7qmp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e96859/7484147786/il_fullxfull.7484147786_2seq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0999b2/7484147790/il_fullxfull.7484147790_4659.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4c7d0b/7484147788/il_fullxfull.7484147788_2nlv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f22612/7532073953/il_fullxfull.7532073953_5f27.jpg",
+      "https://i.etsystatic.com/37058139/r/il/09fbb0/7484148952/il_fullxfull.7484148952_kew6.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart",
+      "bar_cart"
+    ],
+    "description": "\u2615 Build the Perfect Station for Your Coffee Business! Turn your passion into a business with these professional Coffee Cart Blueprint plans. Designed specifically for heavy-duty use, this cart is the ideal foundation for a mobile espresso bar, a pop-up bakery, or a professional Foldable Stall for market vendors. Unlike flimsy tables, this Mobile Coffee Cart Build is engineered to handle the weight of professional espresso machines while maintaining a sleek, modern look. The 36-inch height is erg..."
   },
   {
     "id": "29",
@@ -267,8 +999,34 @@ export const products: Product[] = [
     "name": "DIY Humidor Build Plans | Glass Top Cigar Box Blueprint | Humidor Pattern PDF | DIY Woodworking Gifts",
     "category": "humidor build plans",
     "price": 4.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/1c1206/7804884508/il_fullxfull.7804884508_5eb6.jpg",
-    "description": "Craft the Perfect Elegant Keepsake with DIY Humidor Build Plans!  Looking for the ultimate present for a cigar aficionado or searching for sophisticated diy woodworking gifts? Build your own stunning ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/1c1206/7804884508/il_fullxfull.7804884508_5eb6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c655bc/7804884514/il_fullxfull.7804884514_7if6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9a9d97/7804884520/il_fullxfull.7804884520_d7zr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/250a31/7852825831/il_fullxfull.7852825831_pxg1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c6d7ec/7804884528/il_fullxfull.7804884528_65w0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f70c30/7852825827/il_fullxfull.7852825827_d80b.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d16656/7852825841/il_fullxfull.7852825841_2afx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8c38ba/7804884540/il_fullxfull.7804884540_gq4g.jpg"
+    ],
+    "tags": [
+      "humidor_build_plans",
+      "humidor_pattern",
+      "diy_woodworking_gift",
+      "wood_projects_small",
+      "plans_for_wooden_box",
+      "wood_craft_blueprint",
+      "cigar_box_diy",
+      "project_cut_list",
+      "desktop_humidor",
+      "humidor_cnc_file",
+      "humidor_svg",
+      "trending_woodworking",
+      "wood_boxes_pattern"
+    ],
+    "description": "Craft the Perfect Elegant Keepsake with DIY Humidor Build Plans!  Looking for the ultimate present for a cigar aficionado or searching for sophisticated diy woodworking gifts? Build your own stunning glass-top desktop humidor with our comprehensive step-by-step blueprints! This elegant design features a display glass top, front-mounted hygrometer placement, and a tight seal to keep humidity levels perfectly balanced.  Whether you are looking for wood projects small enough to build in a weekend o..."
   },
   {
     "id": "30",
@@ -276,8 +1034,34 @@ export const products: Product[] = [
     "name": "Tall Planter Box Plans | Modern Tapered Wood Outdoor Blueprint (PDF Download)",
     "category": "tall planter box",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/9de31d/7825369135/il_fullxfull.7825369135_2zry.jpg",
-    "description": "Elevate Your Greenery with Premium DIY Tall Planter Box Plans!  Looking to add a touch of modern elegance to your front porch, patio, or living room? Build your own stunning, high-end display with our..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/9de31d/7825369135/il_fullxfull.7825369135_2zry.jpg",
+      "https://i.etsystatic.com/37058139/r/il/af0ff2/7777440962/il_fullxfull.7777440962_4a8o.jpg",
+      "https://i.etsystatic.com/37058139/r/il/84520f/7777441002/il_fullxfull.7777441002_i635.jpg",
+      "https://i.etsystatic.com/37058139/r/il/aef1c0/7825369147/il_fullxfull.7825369147_i425.jpg",
+      "https://i.etsystatic.com/37058139/r/il/143cc0/7777441008/il_fullxfull.7777441008_17rq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1f7dd6/7825369097/il_fullxfull.7825369097_2pno.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9730f6/7777441028/il_fullxfull.7777441028_h6gf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d44674/7777441054/il_fullxfull.7777441054_k7dq.jpg"
+    ],
+    "tags": [
+      "tall_planter_box",
+      "tall_wood_planter",
+      "entryway_planter",
+      "outdoor_planter_diy",
+      "large_wooden_planter",
+      "diy_planter_plans",
+      "floor_planters_wood",
+      "cedar_flower_pots",
+      "tall_outside_planter",
+      "natural_wood_planter",
+      "slatted_planter_box",
+      "wood_plant_pot",
+      "woodworking_plans"
+    ],
+    "description": "Elevate Your Greenery with Premium DIY Tall Planter Box Plans!  Looking to add a touch of modern elegance to your front porch, patio, or living room? Build your own stunning, high-end display with our comprehensive tall planter box plans. This beautiful tapered and slatted design is the perfect entryway planter to showcase your favorite tall plants, ferns, or small indoor trees.  Whether you need a durable planter outside large wooden build to withstand the elements or sleek natural wood planter..."
   },
   {
     "id": "31",
@@ -285,17 +1069,57 @@ export const products: Product[] = [
     "name": "DIY Outdoor Grill Station Plans | BBQ Kitchen Cart Blueprint | Wooden Grill Table Build Guide",
     "category": "grill station plans",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/942760/7825202633/il_fullxfull.7825202633_cde6.jpg",
-    "description": "Upgrade Your Living Room with a Premium DIY Lift Top Coffee Table!  Are you looking for the perfect blend of style and functionality? Build your own stunning, multifunctional centerpiece with our comp..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/942760/7825202633/il_fullxfull.7825202633_cde6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b4a764/7825202619/il_fullxfull.7825202619_8nk5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/773b92/7825202661/il_fullxfull.7825202661_n0vy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0a862e/7825202645/il_fullxfull.7825202645_pytn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/79167c/7825202643/il_fullxfull.7825202643_bkwz.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fe653a/7777273416/il_fullxfull.7777273416_f6ez.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c78742/7825202681/il_fullxfull.7825202681_e4hm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/97d912/7777273442/il_fullxfull.7777273442_n30d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c24972/7777273438/il_fullxfull.7777273438_ljiu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f21dd7/7825202679/il_fullxfull.7825202679_a24w.jpg"
+    ],
+    "tags": [
+      "grill_station_plans",
+      "bbq_cart_plans",
+      "outdoor_kitchen_diy",
+      "grill_table_plans",
+      "bbq_grill_station",
+      "diy_grill_cart",
+      "griddle_stand_diy",
+      "bbq_table_plans",
+      "wooden_grill_cart",
+      "outdoor_bbq_kitchen",
+      "patio_grill_build",
+      "grill_station_pdf",
+      "woodworking_plans"
+    ],
+    "description": "Upgrade Your Living Room with a Premium DIY Lift Top Coffee Table!  Are you looking for the perfect blend of style and functionality? Build your own stunning, multifunctional centerpiece with our comprehensive coffee table blueprint. Featuring a sleek mid-century modern design with a built-in drawer, open display shelves, and a hidden compartment, this project is the ultimate DIY coffee table with storage.  Whether you are working from the couch or enjoying a meal in front of the TV, the elevate..."
   },
   {
     "id": "32",
     "slug": "personalized-mothers-day-newspaper-gift--printab",
     "name": "Personalized Mother's Day Newspaper Gift | Printable Card (Canva Template)",
-    "category": "",
+    "category": "DIY Plans",
     "price": 7.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/9e63c3/6831770614/il_fullxfull.6831770614_r114.jpg",
-    "description": "Create a Personalized Mother's Day Gift with Our Editable Newspaper Template!   Make this Mother's Day unforgettable with our editable newspaper template\u2014a unique, heartfelt gift that can be easily cu..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/9e63c3/6831770614/il_fullxfull.6831770614_r114.jpg",
+      "https://i.etsystatic.com/37058139/r/il/58a80b/6831770560/il_fullxfull.6831770560_o7v9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e2bfcd/6879746085/il_fullxfull.6879746085_gexy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8bfbd2/6879746095/il_fullxfull.6879746095_1yli.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9488e0/6831770464/il_fullxfull.6831770464_kgh8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0ca870/6879746159/il_fullxfull.6879746159_8jia.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0a3fef/6879746223/il_fullxfull.6879746223_gb2c.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c220b6/6879746123/il_fullxfull.6879746123_csy6.jpg"
+    ],
+    "tags": [],
+    "description": "Create a Personalized Mother's Day Gift with Our Editable Newspaper Template!   Make this Mother's Day unforgettable with our editable newspaper template\u2014a unique, heartfelt gift that can be easily customized to celebrate the incredible woman in your life! Whether you're expressing gratitude, love, or simply saying \"Happy Mother's Day!\", this template lets you design a keepsake that will be cherished forever.   Why You'll Love This Gift:   Simple & Stress-Free: Easily add your own text, photos, ..."
   },
   {
     "id": "33",
@@ -303,8 +1127,36 @@ export const products: Product[] = [
     "name": "DIY Wooden Bench with Pergola and Planters | Outdoor Garden Seating & Trellis Woodworking Plan",
     "category": "pergola swing chair",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/ce46cd/7766513674/il_fullxfull.7766513674_7zk7.jpg",
-    "description": "Transform Your Backyard with Premium DIY Pergola Swing Chair Plans!  Create the ultimate relaxation spot in your garden or on your patio! Our comprehensive pergola swing chair plans provide everything..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/ce46cd/7766513674/il_fullxfull.7766513674_7zk7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2637e0/7766513618/il_fullxfull.7766513618_gn70.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7265b0/7814458525/il_fullxfull.7814458525_rxd7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/759858/7814458457/il_fullxfull.7814458457_ttpk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4f2e0f/7814458527/il_fullxfull.7814458527_kmu5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5e72b7/7814458523/il_fullxfull.7814458523_rm0o.jpg",
+      "https://i.etsystatic.com/37058139/r/il/214419/7766513718/il_fullxfull.7766513718_9g0m.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3a5591/7814458547/il_fullxfull.7814458547_9zxa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a559b4/7766513710/il_fullxfull.7766513710_2kau.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7ebb45/7814458557/il_fullxfull.7814458557_lrj5.jpg"
+    ],
+    "tags": [
+      "pergola_swing_chair",
+      "outdoor_swing_plans",
+      "free_standing_swing",
+      "porch_swing_plans",
+      "diy_swing_frame",
+      "pergola_swing_set",
+      "modern_porch_swing",
+      "wooden_swing_diy",
+      "swing_set_plans",
+      "patio_swing_plans",
+      "diy_pergola_pdf",
+      "outdoor_furniture",
+      "woodworking_plans"
+    ],
+    "description": "Transform Your Backyard with Premium DIY Pergola Swing Chair Plans!  Create the ultimate relaxation spot in your garden or on your patio! Our comprehensive pergola swing chair plans provide everything you need to build a stunning, free standing swing that combines the elegance of a pergola with the comfort of a modern porch swing. This sturdy and stylish outdoor swing bed plans project is designed to be the centerpiece of your outdoor living area.  Whether you are looking for a diy swing frame t..."
   },
   {
     "id": "34",
@@ -312,8 +1164,25 @@ export const products: Product[] = [
     "name": "DIY Drum Carder Plans: Hand Crank Wool Fiber Tool (PDF Guide)",
     "category": "Drum Carder",
     "price": 9.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/a162d0/7246394266/il_fullxfull.7246394266_d9x4.jpg",
-    "description": "\ud83e\udd29 Build Your Own Petite Drum Carder \u2013 Affordable, Compact & Essential! \ud83d\udc11 Tired of endless hand-carding or looking for a professional-grade solution that doesn't break the bank? With this step-by-step ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/a162d0/7246394266/il_fullxfull.7246394266_d9x4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4e641b/7294354407/il_fullxfull.7294354407_tw90.jpg",
+      "https://i.etsystatic.com/37058139/r/il/893e67/7294354401/il_fullxfull.7294354401_hrb0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/59ad5e/7294354397/il_fullxfull.7294354397_mqq5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d7bbd5/7294354405/il_fullxfull.7294354405_t9kv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6d3f0c/7294354403/il_fullxfull.7294354403_4n0d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/64dc4e/7294354437/il_fullxfull.7294354437_n9bn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f9ac22/7286099401/il_fullxfull.7286099401_ooi8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/273b44/7144919048/il_fullxfull.7144919048_amqt.jpg"
+    ],
+    "tags": [
+      "Drum_Carder",
+      "DIY_Drum_Carder",
+      "Drum_Carder_Plan"
+    ],
+    "description": "\ud83e\udd29 Build Your Own Petite Drum Carder \u2013 Affordable, Compact & Essential! \ud83d\udc11 Tired of endless hand-carding or looking for a professional-grade solution that doesn't break the bank? With this step-by-step DIY Petite Drum Carder Plan, you can build your very own, fully functional wool carding machine for a fraction of the cost!  Perfect for fiber artists, hand spinners, and felters, this plan provides an affordable, high-quality, and homemade solution for your fiber prep needs. Give your fleece and mi..."
   },
   {
     "id": "35",
@@ -321,8 +1190,36 @@ export const products: Product[] = [
     "name": "Costco Party Pack Bundle | Birthday Decorations, Signs, Invite (Digital Download)",
     "category": "Costco Party Pack",
     "price": 7.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/5a427f/7097411385/il_fullxfull.7097411385_5npm.jpg",
-    "description": "Costco Party Pack | Customizable Price Signs PDF | Costco Birthday Party & Sign | Costco Themed Birthday Decorations | Printable Costco Pack  Get ready to throw the ultimate Costco party with our comp..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/5a427f/7097411385/il_fullxfull.7097411385_5npm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/85be59/7097411307/il_fullxfull.7097411307_ofzy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9fb614/7097411357/il_fullxfull.7097411357_l6f1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ad7f98/7097411325/il_fullxfull.7097411325_i4in.jpg",
+      "https://i.etsystatic.com/37058139/r/il/939516/7097411297/il_fullxfull.7097411297_m39b.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1b2a10/7097411321/il_fullxfull.7097411321_pep2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f8677b/7049447090/il_fullxfull.7049447090_bg9p.jpg",
+      "https://i.etsystatic.com/37058139/r/il/320ca2/7049447068/il_fullxfull.7049447068_hhsl.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6deab7/7097411463/il_fullxfull.7097411463_kvwb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/321b86/7097411457/il_fullxfull.7097411457_o5a8.jpg"
+    ],
+    "tags": [
+      "Costco_Party_Pack",
+      "Costco_Decorations",
+      "Costco_Invite",
+      "Costco_Printable",
+      "Costco_Digital",
+      "Costco_Cake_Topper",
+      "Costco_Favor_Tags",
+      "Costco_Party_Games",
+      "Costco_Birthday",
+      "Printable_Costco",
+      "Costco_Themed",
+      "Costco_Supplies",
+      "Customizable_Signs"
+    ],
+    "description": "Costco Party Pack | Customizable Price Signs PDF | Costco Birthday Party & Sign | Costco Themed Birthday Decorations | Printable Costco Pack  Get ready to throw the ultimate Costco party with our comprehensive Costco Party Pack! This Costco Party Pack includes everything you need for a memorable Costco themed birthday decorations celebration, from a Costco Birthday Party Invite to an awesome Costco Birthday Cake.  What's Included in Your Costco Party Pack?  This Costco Party Pack is loaded with ..."
   },
   {
     "id": "36",
@@ -330,8 +1227,36 @@ export const products: Product[] = [
     "name": "Champagne Cart DIY Plans | Mobile Bar with Storage Cabinets & Sink | Wedding Event Cart | Wooden Prosecco Bar Blueprint | Digital PDF",
     "category": "Custom food cart",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/3ce9d3/7532084899/il_fullxfull.7532084899_bdty.jpg",
-    "description": "\ud83e\udd42 Build the Ultimate Mobile Event Bar! Take your events to the next level with these premium plans for a Custom Champagne Cart featuring professional storage solutions. This isn't just a display cart;..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/3ce9d3/7532084899/il_fullxfull.7532084899_bdty.jpg",
+      "https://i.etsystatic.com/37058139/r/il/03878a/7484158352/il_fullxfull.7484158352_mxr0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d5098a/7484158342/il_fullxfull.7484158342_b2iy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/100a5b/7484158354/il_fullxfull.7484158354_r3dh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c09049/7484158346/il_fullxfull.7484158346_o0gf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4c1021/7532084893/il_fullxfull.7532084893_jjqa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0f4c21/7484158364/il_fullxfull.7484158364_9rme.jpg",
+      "https://i.etsystatic.com/37058139/r/il/33cf5c/7484158356/il_fullxfull.7484158356_25yw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e99991/7532084887/il_fullxfull.7532084887_t83f.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5e5253/7484158372/il_fullxfull.7484158372_29ii.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart",
+      "bar_cart"
+    ],
+    "description": "\ud83e\udd42 Build the Ultimate Mobile Event Bar! Take your events to the next level with these premium plans for a Custom Champagne Cart featuring professional storage solutions. This isn't just a display cart; it is a fully functional workstation designed for high-volume service at weddings, parties, and corporate events. Unlike smaller models, this Champagne Cart Custom Build includes spacious lower cabinets with glass doors, a cutout for an ice bucket or sink, and extending side shelves for maximum ser..."
   },
   {
     "id": "37",
@@ -339,8 +1264,36 @@ export const products: Product[] = [
     "name": "DIY Outdoor Double Chair Plans | Wooden Porch Furniture Blueprint | Double Seat Bench with Table PDF",
     "category": "diy double chair",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/aae6d6/7852749373/il_fullxfull.7852749373_6sgg.jpg",
-    "description": "Relax in Style with Premium DIY Outdoor Double Chair Plans!  Upgrade your front porch, patio, or backyard with the ultimate seating experience! Build your own stunning outdoor double chair with our co..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/aae6d6/7852749373/il_fullxfull.7852749373_6sgg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/244e3d/7804808030/il_fullxfull.7804808030_1e1u.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b0842b/7804808108/il_fullxfull.7804808108_nibx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cb5856/7804808106/il_fullxfull.7804808106_s7x4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a7a698/7852749399/il_fullxfull.7852749399_s58n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/153af8/7804808084/il_fullxfull.7804808084_r1ox.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d939f9/7852749413/il_fullxfull.7852749413_g7sk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c6da33/7804808146/il_fullxfull.7804808146_7s6j.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4b6054/7852749461/il_fullxfull.7852749461_f5im.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8f758d/7804808148/il_fullxfull.7804808148_njdj.jpg"
+    ],
+    "tags": [
+      "diy_double_chair",
+      "outdoor_bench_plans",
+      "double_chair_plans",
+      "wooden_porch_bench",
+      "garden_furniture_pdf",
+      "adirondack_bench",
+      "bench_with_table",
+      "2_seater_bench_diy",
+      "outdoor_bench_chair",
+      "jack_and_jill_bench",
+      "patio_seating_diy",
+      "wood_chair_plans",
+      "woodworking_plans"
+    ],
+    "description": "Relax in Style with Premium DIY Outdoor Double Chair Plans!  Upgrade your front porch, patio, or backyard with the ultimate seating experience! Build your own stunning outdoor double chair with our comprehensive woodworking plans. This beautiful and sturdy design features two comfortable angled seats separated by a convenient built-in tabletop\u2014perfect for enjoying your morning coffee or evening drinks.  Whether you are looking for stylish wooden porch furniture to elevate your home's curb appeal..."
   },
   {
     "id": "38",
@@ -348,8 +1301,35 @@ export const products: Product[] = [
     "name": "DIY Standing Wall Shelf Plans PDF | Wooden Shoe Rack & Storage Organizer | Multi-Purpose Slatted Wood Console",
     "category": "Standing Wall Shelf",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/a8d086/7941815626/il_fullxfull.7941815626_ii2s.jpg",
-    "description": "Build a Stylish and Practical Wooden Shelf to Organize Your Home!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-ba..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/a8d086/7941815626/il_fullxfull.7941815626_ii2s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c834ae/7989773559/il_fullxfull.7989773559_edz5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d3ee51/7989773579/il_fullxfull.7989773579_axmx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f385da/7989773573/il_fullxfull.7989773573_6m83.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c4c48f/7941815636/il_fullxfull.7941815636_es71.jpg",
+      "https://i.etsystatic.com/37058139/r/il/752fdc/7989773567/il_fullxfull.7989773567_ip6s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e5c5cc/7989773585/il_fullxfull.7989773585_mv0s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0d0da2/7989773577/il_fullxfull.7989773577_bwxw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/95ec19/7941815632/il_fullxfull.7941815632_bmbz.jpg"
+    ],
+    "tags": [
+      "Standing_Wall_Shelf",
+      "Wooden_Shoe_Rack",
+      "Shelf_Plans",
+      "Storage_Organizer",
+      "DIY_Wood_Shelf",
+      "Woodworking_Plans",
+      "Multi_Purpose_Shelf",
+      "Console_Table_Plan",
+      "DIY_Shoe_Organizer",
+      "Wood_Furniture_Plan",
+      "Entryway_Shelf",
+      "Plant_Stand_DIY",
+      "Wood_Projects"
+    ],
+    "description": "Build a Stylish and Practical Wooden Shelf to Organize Your Home!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Maximize yo..."
   },
   {
     "id": "39",
@@ -357,8 +1337,36 @@ export const products: Product[] = [
     "name": "Narrow Sideboard DIY Plans | Space-Saving Buffet Cabinet Blueprint (PDF Download)",
     "category": "kitchen sideboard",
     "price": 8.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/2c764c/7739910986/il_fullxfull.7739910986_n60u.jpg",
-    "description": "Maximize Your Kitchen Storage in Style! \ud83c\udf73\u2728  Are you struggling with a cluttered kitchen but lack the floor space for massive furniture? If you need a smart, elegant storage solution, these kitchen sid..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/2c764c/7739910986/il_fullxfull.7739910986_n60u.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1f84b4/7739910970/il_fullxfull.7739910970_tn7m.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fa10c0/7739910984/il_fullxfull.7739910984_6evu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9a1d55/7787866849/il_fullxfull.7787866849_jmy5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/dbf516/7739910988/il_fullxfull.7739910988_lsxx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/09d72f/7787866853/il_fullxfull.7787866853_8r5v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0df516/7739910998/il_fullxfull.7739910998_35s4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fe0560/7739911002/il_fullxfull.7739911002_hwjj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1f603e/7739910980/il_fullxfull.7739910980_6j8n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/70d55f/7787866869/il_fullxfull.7787866869_4biv.jpg"
+    ],
+    "tags": [
+      "kitchen_sideboard",
+      "narrow_sideboard",
+      "buffet_cabinet_diy",
+      "cabinet_plans_pdf",
+      "diy_kitchen_cabinet",
+      "buffet_building_plan",
+      "sideboard_blueprint",
+      "woodworking_plans",
+      "easy_cabinet_plans",
+      "kitchen_drawer_plans",
+      "diy_furniture_plans",
+      "storage_cabinet_diy",
+      "build_a_cabinet"
+    ],
+    "description": "Maximize Your Kitchen Storage in Style! \ud83c\udf73\u2728  Are you struggling with a cluttered kitchen but lack the floor space for massive furniture? If you need a smart, elegant storage solution, these kitchen sideboard DIY plans are exactly what you've been looking for.  Designed with a highly practical 14-inch depth, these narrow sideboard plans easily fit into tight kitchens, dining rooms, or hallways without blocking your walking path. The design is packed with multi-functional storage: a handy side towe..."
   },
   {
     "id": "40",
@@ -366,8 +1374,31 @@ export const products: Product[] = [
     "name": "Customizable Costco Font SVG Pack, PNG, JPG (Digital Download)",
     "category": "Costco Food Court",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/511e7e/7028916862/il_fullxfull.7028916862_tbrp.jpg",
-    "description": "Unleash Your Creativity with Our Customizable Costco Font Digital Pack!  Elevate your DIY projects, personalized gifts, and small business branding with our versatile collection of Costco-inspired fon..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/511e7e/7028916862/il_fullxfull.7028916862_tbrp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/95f522/7076895537/il_fullxfull.7076895537_nhdb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/89de10/7028916860/il_fullxfull.7028916860_56vv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e59b49/7076895541/il_fullxfull.7076895541_tufw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c9d093/7076895547/il_fullxfull.7076895547_r8x7.jpg"
+    ],
+    "tags": [
+      "Costco_Food_Court",
+      "Hot_Dog_Sign",
+      "Price_Tag_Template",
+      "Costco_Birthday",
+      "Digital_Download",
+      "Party_Decor",
+      "Restaurant_Sign",
+      "Instant_Download",
+      "Canva_Template",
+      "Custom_Sign",
+      "Foodie_Gift",
+      "Costco_Font_SVG",
+      "Costco_Font_PNG"
+    ],
+    "description": "Unleash Your Creativity with Our Customizable Costco Font Digital Pack!  Elevate your DIY projects, personalized gifts, and small business branding with our versatile collection of Costco-inspired font designs. This comprehensive digital pack includes SVG, PNG, and JPG formats, perfect for a wide range of applications from custom apparel to unique party decorations.  What's Included in Your Pack:  Customizable Costco Logos: Featuring the classic Costco Wholesale logo, plus options to personalize..."
   },
   {
     "id": "41",
@@ -375,8 +1406,35 @@ export const products: Product[] = [
     "name": "DIY Kids Rocking Chair Plans | Toddler Rocking Chair Pattern | Wood Working Plans Kids Rocker PDF",
     "category": "kids rocker plan",
     "price": 4.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/db0e68/7852817741/il_fullxfull.7852817741_mb0z.jpg",
-    "description": "Craft the Perfect Keepsake with DIY Kids Rocking Chair Plans!  Looking for a meaningful, handcrafted woodworking project for your little one? Build a beautiful, heirloom-quality piece of nursery furni..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/db0e68/7852817741/il_fullxfull.7852817741_mb0z.jpg",
+      "https://i.etsystatic.com/37058139/r/il/111c62/7852817731/il_fullxfull.7852817731_8qgy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a14dc0/7852817751/il_fullxfull.7852817751_2y9n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/60501a/7852817739/il_fullxfull.7852817739_7v2x.jpg",
+      "https://i.etsystatic.com/37058139/r/il/038bb6/7804876410/il_fullxfull.7804876410_8iki.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b0bd3a/7804876412/il_fullxfull.7804876412_ro8n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a04a18/7852817753/il_fullxfull.7852817753_41gp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/30613a/7804876450/il_fullxfull.7804876450_l8oa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ce9733/7852817781/il_fullxfull.7852817781_1tu6.jpg"
+    ],
+    "tags": [
+      "kids_rocker_plan",
+      "toddler_rocker_diy",
+      "childrens_chair_plan",
+      "kids_rocking_chair",
+      "diy_kids_chair",
+      "wood_working_rocker",
+      "bear_rocking_chair",
+      "toddler_chair_pdf",
+      "kids_wooden_chair",
+      "wooden_toy_plans",
+      "nursery_furniture",
+      "rocking_chair_diy",
+      "wood_furniture_plan"
+    ],
+    "description": "Craft the Perfect Keepsake with DIY Kids Rocking Chair Plans!  Looking for a meaningful, handcrafted woodworking project for your little one? Build a beautiful, heirloom-quality piece of nursery furniture with our comprehensive kids rocker plan. This adorable and sturdy wooden design is the perfect size for toddlers and young children, making it an ideal toddler rocking chair pattern for parents or grandparents to build as a special gift.  Whether you are searching for a cute bear rocking chair ..."
   },
   {
     "id": "42",
@@ -384,8 +1442,36 @@ export const products: Product[] = [
     "name": "DIY Potting Bench with Storage Plans | Potting Station Blueprint | Garden Workbench PDF",
     "category": "potting bench plans",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/45b80c/7825421079/il_fullxfull.7825421079_alx9.jpg",
-    "description": "Transform Your Gardening Experience with the Ultimate DIY Potting Bench Plans!  Get ready to take your gardening to the next level! Build your own stunning and highly functional potting station with o..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/45b80c/7825421079/il_fullxfull.7825421079_alx9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/eee59c/7825421073/il_fullxfull.7825421073_2488.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e11258/7777493158/il_fullxfull.7777493158_sv67.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3c15ff/7825421097/il_fullxfull.7825421097_m7zt.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a6d097/7777493154/il_fullxfull.7777493154_mrpb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1bb58b/7825421109/il_fullxfull.7825421109_jw4k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4be183/7825421169/il_fullxfull.7825421169_621u.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4c4397/7825421167/il_fullxfull.7825421167_p7wb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/acbfc6/7777493208/il_fullxfull.7777493208_ogw8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/22119b/7777493206/il_fullxfull.7777493206_tp83.jpg"
+    ],
+    "tags": [
+      "potting_bench_plans",
+      "potting_station",
+      "potting_table_diy",
+      "potting_workbench",
+      "garden_bench_plans",
+      "planting_bench",
+      "outdoor_workbench",
+      "bench_with_storage",
+      "potting_stand_pdf",
+      "garden_furniture_diy",
+      "woodworking_plans",
+      "diy_garden_projects",
+      "potting_table_build"
+    ],
+    "description": "Transform Your Gardening Experience with the Ultimate DIY Potting Bench Plans!  Get ready to take your gardening to the next level! Build your own stunning and highly functional potting station with our comprehensive woodworking plans. This premium potting bench with storage features a beautiful protective canopy, a slatted backboard for hanging tools, a spacious workspace, and enclosed bottom cabinets with rustic X-pattern doors to hide away soil bags and pots.  Whether you are looking for a co..."
   },
   {
     "id": "43",
@@ -393,8 +1479,36 @@ export const products: Product[] = [
     "name": "8ft Garage Workbench Plans | DIY Woodshop Table with Shelves (PDF Download)",
     "category": "Garage Workbench",
     "price": 7.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/d2cf4f/7679056257/il_fullxfull.7679056257_8tlr.jpg",
-    "description": "Garage Workbench Plans | 8ft Large Woodshop Table DIY | Heavy Duty Workbench with Shelves & Drawers  Stop working on the floor or shaky plastic tables. It\u2019s time to build the workspace you deserve. Th..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/d2cf4f/7679056257/il_fullxfull.7679056257_8tlr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bd5008/7679056287/il_fullxfull.7679056287_4w6p.jpg",
+      "https://i.etsystatic.com/37058139/r/il/28504c/7631105064/il_fullxfull.7631105064_1kf7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/17e0a6/7679056269/il_fullxfull.7679056269_c28u.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0dad46/7631105136/il_fullxfull.7631105136_8ohm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1cbbd3/7631105128/il_fullxfull.7631105128_mvj0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8f5a24/7679056255/il_fullxfull.7679056255_cgxg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/dace5f/7631105146/il_fullxfull.7631105146_npv6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3f3c98/7679056283/il_fullxfull.7679056283_ojqv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a6cc2f/7631105130/il_fullxfull.7631105130_ias0.jpg"
+    ],
+    "tags": [
+      "Garage_Workbench",
+      "Work_Bench_Plan",
+      "Workbench_Shelves",
+      "Large_Woodshop_Table",
+      "DIY_Workshop",
+      "Basement_Work_Bench",
+      "Worktable_Plan",
+      "Garage_Organization",
+      "Woodworking_Plans",
+      "8ft_Workbench",
+      "Tool_Storage_Bench",
+      "Assembly_Table",
+      "Digital_Blueprint"
+    ],
+    "description": "Garage Workbench Plans | 8ft Large Woodshop Table DIY | Heavy Duty Workbench with Shelves & Drawers  Stop working on the floor or shaky plastic tables. It\u2019s time to build the workspace you deserve. These Garage Workbench Plans will guide you in building a massive, rock-solid 8-foot (96\") workstation that serves as the command center for all your future projects.  Designed for serious DIYers and woodworkers, this isn't just a table; it's a complete Garage Organization System. With a perfect balan..."
   },
   {
     "id": "44",
@@ -402,8 +1516,28 @@ export const products: Product[] = [
     "name": "DIY Floating Bed Frame Plans | Rustic Wood, King Size (PDF Furniture)",
     "category": "woodworking plans",
     "price": 20.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/d2141c/7209989459/il_fullxfull.7209989459_qo83.jpg",
-    "description": "Create a Unique and Stylish Sanctuary with Our DIY Bed Frame Plans  Transform your bedroom into a comfortable and stylish retreat with our easy-to-follow woodworking plans. This DIY bed frame project ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/d2141c/7209989459/il_fullxfull.7209989459_qo83.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ffa301/7209989449/il_fullxfull.7209989449_kva7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c57a71/7209989465/il_fullxfull.7209989465_2ljk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c11eb7/7162000382/il_fullxfull.7162000382_mr4x.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d3ffc0/7209989457/il_fullxfull.7209989457_tnzq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ead293/7209989461/il_fullxfull.7209989461_nzl7.jpg"
+    ],
+    "tags": [
+      "woodworking_plans",
+      "Custom_Bed",
+      "Handmade_Wooden_Bed",
+      "PDF_Furniture",
+      "Bedroom_Furniture",
+      "DIY_Woodworking",
+      "Wooden_Bed_Frame",
+      "Solid_Wood_Bed",
+      "Rustic_Bed"
+    ],
+    "description": "Create a Unique and Stylish Sanctuary with Our DIY Bed Frame Plans  Transform your bedroom into a comfortable and stylish retreat with our easy-to-follow woodworking plans. This DIY bed frame project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of bedroom furniture that will last for years.  Why Build Your Own Bed Frame? Building your own bed frame isn't just a creative endeavor\u2014it\u2019s a way to get the exact style and size you want. Whether you..."
   },
   {
     "id": "45",
@@ -411,8 +1545,36 @@ export const products: Product[] = [
     "name": "DIY Outdoor Bar Plan: Folding Wooden Patio Bar Blueprint (PDF Digital Download)",
     "category": "birthday bar",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/29368c/7267181987/il_fullxfull.7267181987_scij.jpg",
-    "description": "Craft Your Perfect Event with Our Portable & Collapsible Wooden Bar!  Looking for a versatile and stylish solution for your next gathering? Our Portable & Collapsible Wooden Bar is the ultimate DIY ev..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/29368c/7267181987/il_fullxfull.7267181987_scij.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c2e5c8/7267181985/il_fullxfull.7267181985_7kv7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3ce3db/7219214544/il_fullxfull.7219214544_3vjf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/74ff4f/7267181993/il_fullxfull.7267181993_e5lg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3940c2/7219214562/il_fullxfull.7219214562_33wb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f43426/7219214548/il_fullxfull.7219214548_r4o6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5c4a7c/7219214558/il_fullxfull.7219214558_d7im.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e4e781/7267182005/il_fullxfull.7267182005_osg5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/23d77b/7267181999/il_fullxfull.7267181999_jb7s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/579d1e/7267182007/il_fullxfull.7267182007_e3lm.jpg"
+    ],
+    "tags": [
+      "birthday_bar",
+      "DIY_plan",
+      "event_bar",
+      "wooden_coffee_bar",
+      "bar_blueprint",
+      "folding_bar",
+      "DIY_coffee_bar",
+      "portable_bar",
+      "collapsible_bar",
+      "portable_event_bar",
+      "food_bar_plan",
+      "portable_coffee_bar",
+      "special_event_bar"
+    ],
+    "description": "Craft Your Perfect Event with Our Portable & Collapsible Wooden Bar!  Looking for a versatile and stylish solution for your next gathering? Our Portable & Collapsible Wooden Bar is the ultimate DIY event bar! Whether you're planning a birthday bar, a sophisticated special event bar, or a charming wooden coffee bar, this design provides the flexibility and elegance you need.  Key Features:  Effortless Portability: Designed as a folding bar and collapsible bar, it's incredibly easy to transport an..."
   },
   {
     "id": "46",
@@ -420,8 +1582,35 @@ export const products: Product[] = [
     "name": "DIY Catio Plans | Curved Cat House Enclosure Build Guide | Small Outdoor Cat Cage PDF",
     "category": "catio build plan",
     "price": 4.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/c3c89f/7852805169/il_fullxfull.7852805169_cf0b.jpg",
-    "description": "Give Your Indoor Cat the Purr-fect Outdoor Experience with DIY Window Catio Plans!  Does your feline friend love watching birds from the window? Give them a safe, breezy outdoor space with our compreh..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/c3c89f/7852805169/il_fullxfull.7852805169_cf0b.jpg",
+      "https://i.etsystatic.com/37058139/r/il/919afd/7804863904/il_fullxfull.7804863904_lwvq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9c5f58/7852805173/il_fullxfull.7852805173_7cay.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5b67a3/7852805175/il_fullxfull.7852805175_2g47.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5d2869/7804863928/il_fullxfull.7804863928_sw7p.jpg",
+      "https://i.etsystatic.com/37058139/r/il/deb6c2/7852805177/il_fullxfull.7852805177_7eoj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/feea7b/7852805189/il_fullxfull.7852805189_bw4j.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9e5edc/7852805195/il_fullxfull.7852805195_o0se.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d7b616/7852805211/il_fullxfull.7852805211_d2ic.jpg"
+    ],
+    "tags": [
+      "catio_build_plan",
+      "window_catio_plan",
+      "cat_enclosure_diy",
+      "cat_window_box",
+      "outdoor_cat_cage",
+      "cat_playpen_diy",
+      "diy_plans_catio",
+      "cat_condo_plans",
+      "small_catio_pdf",
+      "pet_furniture_diy",
+      "wood_cat_enclosure",
+      "outdoor_cat_house",
+      "woodworking_plans"
+    ],
+    "description": "Give Your Indoor Cat the Purr-fect Outdoor Experience with DIY Window Catio Plans!  Does your feline friend love watching birds from the window? Give them a safe, breezy outdoor space with our comprehensive DIY Window Catio Plans. This beautiful, compact, and uniquely curved outdoor cat cage is designed to attach securely outside a window or sit perfectly on a small balcony. It provides all the sights, sounds, and fresh air of the outdoors without any of the risks!  Whether you are looking for a..."
   },
   {
     "id": "47",
@@ -429,8 +1618,35 @@ export const products: Product[] = [
     "name": "8x16 Firewood Shed DIY Plans PDF | 2 Cord Wood Storage Rack Blueprint | Extra Large Dry Wood Shelter",
     "category": "8x16 firewood shed",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/c15863/7920897770/il_fullxfull.7920897770_bqz0.jpg",
-    "description": "DIY 8x16 Firewood Shed Plans PDF | 2 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/c15863/7920897770/il_fullxfull.7920897770_bqz0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/865e90/7968848797/il_fullxfull.7968848797_rxxj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a59352/7920897946/il_fullxfull.7920897946_88gm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ced87e/7920897956/il_fullxfull.7920897956_6rnc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c31628/7968849377/il_fullxfull.7968849377_cmry.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0e74a1/7968849333/il_fullxfull.7968849333_ocl4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f668c2/7920897494/il_fullxfull.7920897494_liqk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/71c5f1/7968848901/il_fullxfull.7968848901_8uut.jpg",
+      "https://i.etsystatic.com/37058139/r/il/af424a/7968849217/il_fullxfull.7968849217_7plq.jpg"
+    ],
+    "tags": [
+      "8x16_firewood_shed",
+      "2_cord_wood_rack",
+      "large_wood_shelter",
+      "wood_storage_pdf",
+      "outdoor_log_store",
+      "shed_with_firewood",
+      "fire_wood_rack_diy",
+      "heavy_duty_log_rack",
+      "woodworking_plans",
+      "backyard_shed_diy",
+      "log_storage_build",
+      "winter_wood_shed",
+      "wood_seasoning_rack"
+    ],
+    "description": "DIY 8x16 Firewood Shed Plans PDF | 2 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a massive, heavy-duty 8x16 Firewood Shed. Designed with an extra-deep profile to hold 2 full cords of wood, this structure is the ultimate high-capacity storage solution for homesteaders, cabin owners, and anyone who relies heavily on a wood stove to heat th..."
   },
   {
     "id": "48",
@@ -438,8 +1654,35 @@ export const products: Product[] = [
     "name": "DIY Extra-Long Mobile Workbench Plans | Garage Workstation (Digital Download)",
     "category": "woodworking",
     "price": 7.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/b1efa9/7158984260/il_fullxfull.7158984260_9rbz.jpg",
-    "description": "Extra-Long Workbench Plans | DIY 96-Inch Mobile Workstation | Heavy-Duty Garage Table  Tired of feeling cramped while working on your projects? It's time to build a workbench that can handle anything ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/b1efa9/7158984260/il_fullxfull.7158984260_9rbz.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b0d9f8/7206973957/il_fullxfull.7206973957_euc6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b3f224/7206973959/il_fullxfull.7206973959_i4vd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a6ae35/7206973949/il_fullxfull.7206973949_h1mn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4b3231/7158984250/il_fullxfull.7158984250_8ulu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9c4cd3/7206973951/il_fullxfull.7206973951_giez.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8884f3/7158984280/il_fullxfull.7158984280_r04d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/60b69f/7206973987/il_fullxfull.7206973987_rjvi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4b1367/7045515514/il_fullxfull.7045515514_1jyi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d74773/7045515490/il_fullxfull.7045515490_gw2f.jpg"
+    ],
+    "tags": [
+      "woodworking",
+      "plans",
+      "beginner",
+      "small_workbench",
+      "small_shop_workbench",
+      "garage_workbench",
+      "diy_workbench",
+      "garden_bench",
+      "workbench",
+      "how_to_make",
+      "build",
+      "how_to_build"
+    ],
+    "description": "Extra-Long Workbench Plans | DIY 96-Inch Mobile Workstation | Heavy-Duty Garage Table  Tired of feeling cramped while working on your projects? It's time to build a workbench that can handle anything you throw at it. Our DIY Extra-Long Workbench Plans provide a complete guide to constructing a professional-grade, heavy-duty workstation that offers an incredible amount of space and versatility for your workshop or garage.  This is more than just a bench; it's a true workhorse. This digital downlo..."
   },
   {
     "id": "49",
@@ -447,8 +1690,35 @@ export const products: Product[] = [
     "name": "4x10 Firewood Shed DIY Plans PDF | Wood Storage Rack Blueprint | Large Dry Wood Shelter",
     "category": "4x10 firewood shed",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/a7fcf4/7968816317/il_fullxfull.7968816317_jisq.jpg",
-    "description": "DIY 4x10 Firewood Shed Plans PDF | 1 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/a7fcf4/7968816317/il_fullxfull.7968816317_jisq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/84e036/7968815873/il_fullxfull.7968815873_id6k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8607d0/7920864616/il_fullxfull.7920864616_68qn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7aee66/7920864738/il_fullxfull.7920864738_997d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2bd8d1/7920864574/il_fullxfull.7920864574_rnfb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a768a5/7920864578/il_fullxfull.7920864578_eucv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e05247/7968816377/il_fullxfull.7968816377_1ec7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/001454/7968816335/il_fullxfull.7968816335_f3xr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c6620c/7920864750/il_fullxfull.7920864750_fns9.jpg"
+    ],
+    "tags": [
+      "4x10_firewood_shed",
+      "1_cord_wood_rack",
+      "single_cord_storage",
+      "wood_storage_pdf",
+      "dry_wood_shelter",
+      "outdoor_log_store",
+      "shed_with_firewood",
+      "fire_wood_rack_diy",
+      "heavy_duty_log_rack",
+      "woodworking_plans",
+      "backyard_shed_diy",
+      "log_storage_build",
+      "wood_seasoning_rack"
+    ],
+    "description": "DIY 4x10 Firewood Shed Plans PDF | 1 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 4x10 Firewood Shed. Designed with a perfect 1-cord capacity, this structure is the ideal storage solution for homesteaders, cabin owners, and anyone who relies on a wood stove to heat their home through the winter.  Engineered for Perfect Seaso..."
   },
   {
     "id": "50",
@@ -456,8 +1726,36 @@ export const products: Product[] = [
     "name": "DIY Toy Chest Bench Plans: Wooden Storage Furniture (Digital Download)",
     "category": "DIY Plans",
     "price": 4.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/af2376/7254103060/il_fullxfull.7254103060_mdll.jpg",
-    "description": "The Ultimate DIY Wooden Toy Chest & Storage Bench Plans  \ud83c\udf1f Transform Clutter into Charm with Our Easy-to-Build Plans! \ud83c\udf1f  Tired of tripping over toys? Ready for a stylish storage solution that actually..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/af2376/7254103060/il_fullxfull.7254103060_mdll.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fc14c3/7302051697/il_fullxfull.7302051697_1n7p.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c6413e/7254103088/il_fullxfull.7254103088_i8l3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/75a843/7302051683/il_fullxfull.7302051683_gp13.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a62023/7254103070/il_fullxfull.7254103070_hrps.jpg",
+      "https://i.etsystatic.com/37058139/r/il/485410/7302051677/il_fullxfull.7302051677_8933.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b34ec3/7254103058/il_fullxfull.7254103058_t6ih.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cc3d9e/7254103086/il_fullxfull.7254103086_qmsm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/193504/7254103080/il_fullxfull.7254103080_tp80.jpg",
+      "https://i.etsystatic.com/37058139/r/il/068740/7254103068/il_fullxfull.7254103068_1te3.jpg"
+    ],
+    "tags": [
+      "DIY_Plans",
+      "Woodworking_Plans",
+      "Toy_Storage",
+      "Storage_Bench",
+      "Toy_Chest",
+      "Wooden_Chest",
+      "Cabinet_Plans",
+      "Storage_Furniture",
+      "Outdoor_Storage",
+      "Workbench_Plans",
+      "Storage_Cubbies",
+      "Treasure_Chest",
+      "Wooden_Storage_Box"
+    ],
+    "description": "The Ultimate DIY Wooden Toy Chest & Storage Bench Plans  \ud83c\udf1f Transform Clutter into Charm with Our Easy-to-Build Plans! \ud83c\udf1f  Tired of tripping over toys? Ready for a stylish storage solution that actually works? Our DIY Toy Chest Bench Plans are the perfect answer for organizing your home, especially the kids' room or living area!  This is not just a storage box; it\u2019s a robust wooden storage bench that doubles as comfortable seating, making tidying up a breeze and adding functional d\u00e9cor to any spac..."
   },
   {
     "id": "51",
@@ -465,8 +1763,35 @@ export const products: Product[] = [
     "name": "Tiered Planter Box Plans | Wooden Garden Build Guide (PDF Download)",
     "category": "tiered planter box",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/0a81ae/7825309451/il_fullxfull.7825309451_9vif.jpg",
-    "description": "Grow Your Own Beautiful Garden with DIY Tiered Planter Box Plans!  Maximize your growing space and add a touch of rustic charm to your backyard, patio, or balcony with our comprehensive tiered planter..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/0a81ae/7825309451/il_fullxfull.7825309451_9vif.jpg",
+      "https://i.etsystatic.com/37058139/r/il/09e9d6/7825309421/il_fullxfull.7825309421_mt9s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/452af5/7777380798/il_fullxfull.7777380798_lg14.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7ea848/7825309501/il_fullxfull.7825309501_d6fi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/315d65/7777380800/il_fullxfull.7777380800_t1hr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9de52a/7825309491/il_fullxfull.7825309491_sgjs.jpg",
+      "https://i.etsystatic.com/37058139/r/il/422e80/7825309483/il_fullxfull.7825309483_947b.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1a4482/7777380828/il_fullxfull.7777380828_s0do.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ffa1a1/7825309509/il_fullxfull.7825309509_nw6b.jpg"
+    ],
+    "tags": [
+      "tiered_planter_box",
+      "planter_build_plan",
+      "garden_planter_plans",
+      "vertical_garden_diy",
+      "vegetable_planter",
+      "stepped_planter_diy",
+      "wood_planter_pattern",
+      "2_tier_planter",
+      "raised_garden_bed",
+      "outdoor_herb_garden",
+      "patio_planter_diy",
+      "flower_box_plans",
+      "woodworking_plans"
+    ],
+    "description": "Grow Your Own Beautiful Garden with DIY Tiered Planter Box Plans!  Maximize your growing space and add a touch of rustic charm to your backyard, patio, or balcony with our comprehensive tiered planter box plans. This sturdy, stepped wooden design features two spacious planting levels, making it the perfect planters for vegetables, fresh herbs, or a vibrant floral display.  Whether you are looking for an easy vertical garden diy project for the weekend or professional garden planters plans to bui..."
   },
   {
     "id": "52",
@@ -474,8 +1799,33 @@ export const products: Product[] = [
     "name": "Rotating Bookshelf | Revolving Bookcase | Furniture Plans for Woodworkers | DIY Bookcase Plans PDF | Easy-to-Build Wooden Bookshelf",
     "category": "bookshelf plans",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/052a77/7202274449/il_fullxfull.7202274449_xo4x.jpg",
-    "description": "Unlock Your Inner Craftsman with These Ultimate Woodworking Plans!  Are you searching for your next inspiring woodworking project? Look no further! This comprehensive DIY plan is your all-in-one guide..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/052a77/7202274449/il_fullxfull.7202274449_xo4x.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8d28a4/7202274443/il_fullxfull.7202274443_jwio.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3d93bc/7154283962/il_fullxfull.7154283962_3rri.jpg",
+      "https://i.etsystatic.com/37058139/r/il/87d411/7202274423/il_fullxfull.7202274423_ef95.jpg",
+      "https://i.etsystatic.com/37058139/r/il/788e05/7202274427/il_fullxfull.7202274427_2xgb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5216da/7201579933/il_fullxfull.7201579933_1g8m.jpg",
+      "https://i.etsystatic.com/37058139/r/il/689a55/7153586172/il_fullxfull.7153586172_6gd1.jpg"
+    ],
+    "tags": [
+      "bookshelf_plans",
+      "diy_bookshelf",
+      "bookcase_plans",
+      "woodworking_plans",
+      "wooden_bookcase",
+      "wall_bookshelves",
+      "built_in_bookcase",
+      "books_cabinet",
+      "small_bookcase_plans",
+      "easy_bookshelf",
+      "woodworking_project",
+      "corner_bookshelf",
+      "Rotating_Bookshelf"
+    ],
+    "description": "Unlock Your Inner Craftsman with These Ultimate Woodworking Plans!  Are you searching for your next inspiring woodworking project? Look no further! This comprehensive DIY plan is your all-in-one guide to building a stunning and highly functional rotating bookshelf. Designed for woodworkers of all skill levels, our detailed blueprints turn a complex-looking project into a rewarding and achievable experience. This isn't just a book shelf; it\u2019s a centerpiece of conversation, a space-saving solution..."
   },
   {
     "id": "53",
@@ -483,8 +1833,36 @@ export const products: Product[] = [
     "name": "DIY Wardrobe Plan | Closet Storage Cabinet Blueprint | Wooden Tall Dresser Plans PDF",
     "category": "wardrobe plan",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/67c4d1/7776991188/il_fullxfull.7776991188_lzd5.jpg",
-    "description": "Maximize Your Bedroom Storage with Premium DIY Wardrobe Plans!  Running out of space for your clothes? Build your own beautiful and spacious closet storage cabinet with our comprehensive wardrobe plan..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/67c4d1/7776991188/il_fullxfull.7776991188_lzd5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fbb673/7776991170/il_fullxfull.7776991170_ajg1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/875b0a/7824919369/il_fullxfull.7824919369_aagv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/76d566/7776991182/il_fullxfull.7776991182_6xdh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ce5869/7824919381/il_fullxfull.7824919381_ogv6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/72a018/7776991180/il_fullxfull.7776991180_kja7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5bca3b/7776991228/il_fullxfull.7776991228_3wn4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a665b7/7824919419/il_fullxfull.7824919419_2k7z.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fd0635/7776991232/il_fullxfull.7776991232_g38l.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a14bbc/7824919431/il_fullxfull.7824919431_5xjz.jpg"
+    ],
+    "tags": [
+      "wardrobe_plan",
+      "diy_closet_build",
+      "cabinet_plans",
+      "closet_storage",
+      "built_in_wardrobe",
+      "tall_dresser_plan",
+      "closet_organizer",
+      "wood_wardrobe_pdf",
+      "closet_cabinet_diy",
+      "bedroom_furniture",
+      "clothes_closet_build",
+      "wood_cabinet_plans",
+      "woodworking_plans"
+    ],
+    "description": "Maximize Your Bedroom Storage with Premium DIY Wardrobe Plans!  Running out of space for your clothes? Build your own beautiful and spacious closet storage cabinet with our comprehensive wardrobe plan. This classic double-door design features a generous hanging area and two large bottom drawers, making it the perfect diy closet build for bedrooms, entryways, or guest rooms.  Whether you are looking for built-in wardrobe plans to customize your space or detailed cabinet plans to improve your wood..."
   },
   {
     "id": "54",
@@ -492,8 +1870,35 @@ export const products: Product[] = [
     "name": "DIY Workbench Plans | Garage Workbench with Pegboard PDF | Wood Workbench Shelf | Easy DIY Garage Workshop Workbench",
     "category": "Workbench Plans 72",
     "price": 4.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/569fff/7805317200/il_fullxfull.7805317200_53gn.jpg",
-    "description": "Build the Ultimate Classic Garage Workbench!  Every great project starts with a solid foundation. Transform your garage or shop with these comprehensive DIY Workbench Plans 72 Inch! This heavy-duty, t..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/569fff/7805317200/il_fullxfull.7805317200_53gn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/547300/7853261089/il_fullxfull.7853261089_tuuq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c96f08/7805317192/il_fullxfull.7805317192_45sl.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cf684b/7853261093/il_fullxfull.7853261093_3is0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a3da0e/7853261099/il_fullxfull.7853261099_r5hr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/62b0cd/7853261097/il_fullxfull.7853261097_jfwr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e90ab4/7853261109/il_fullxfull.7853261109_36rl.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2df2ac/7805317206/il_fullxfull.7805317206_hb4l.jpg",
+      "https://i.etsystatic.com/37058139/r/il/998796/7853261111/il_fullxfull.7853261111_8w1i.jpg"
+    ],
+    "tags": [
+      "Workbench_Plans_72",
+      "Garage_Workbench",
+      "Pegboard_Workbench",
+      "Wood_Workbench_Shelf",
+      "DIY_Workbench_PDF",
+      "Woodworking_Bench",
+      "Workshop_Table_Plan",
+      "Easy_DIY_Workbench",
+      "Tool_Storage_Bench",
+      "Heavy_Duty_Workbench",
+      "Craft_Table_Plans",
+      "DIY_Shop_Furniture",
+      "Garage_Organization"
+    ],
+    "description": "Build the Ultimate Classic Garage Workbench!  Every great project starts with a solid foundation. Transform your garage or shop with these comprehensive DIY Workbench Plans 72 Inch! This heavy-duty, traditional design features a massive 6-foot solid wood work surface, a sturdy lower wood workbench shelf for heavy equipment, and a full-size integrated pegboard backer to keep all your essential tools organized and within arm's reach.  Whether you need a reliable station for workbench home & hobby ..."
   },
   {
     "id": "55",
@@ -501,8 +1906,36 @@ export const products: Product[] = [
     "name": "DIY Pyramid Strawberry Planter Plans | Wooden Strawberry Tower PDF | 4 Tier Planter Box Blueprint | Stacked Garden Bed",
     "category": "Pyramid Planter",
     "price": 3.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/831173/7805158064/il_fullxfull.7805158064_k6ew.jpg",
-    "description": "Build the Ultimate Pyramid Strawberry Tower!  Maximize your garden space and grow a massive harvest with this comprehensive DIY Pyramid Strawberry Planter Plan! This beautiful, space-saving 4-tier des..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/831173/7805158064/il_fullxfull.7805158064_k6ew.jpg",
+      "https://i.etsystatic.com/37058139/r/il/beb2fb/7805158058/il_fullxfull.7805158058_9mdg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/984987/7853100507/il_fullxfull.7853100507_s164.jpg",
+      "https://i.etsystatic.com/37058139/r/il/dc46a3/7853100505/il_fullxfull.7853100505_ve43.jpg",
+      "https://i.etsystatic.com/37058139/r/il/432178/7805158084/il_fullxfull.7805158084_a1xq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e07628/7853100511/il_fullxfull.7853100511_7lqc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c367c3/7853100545/il_fullxfull.7853100545_agpw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a3fe40/7853100519/il_fullxfull.7853100519_ssp9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/652859/7853100559/il_fullxfull.7853100559_6dkb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/72b0c8/7805158130/il_fullxfull.7805158130_oozf.jpg"
+    ],
+    "tags": [
+      "Pyramid_Planter",
+      "Strawberry_Tower",
+      "Tiered_Planter_Box",
+      "Strawberry_Planter",
+      "Wood_Pyramid_Planter",
+      "Stacked_Planter",
+      "Garden_Box_Blueprint",
+      "Outdoor_Planter_Plan",
+      "DIY_Garden_Planter",
+      "4_Tier_Planter_Box",
+      "Wood_Planter_Tower",
+      "Raised_Garden_Bed",
+      "Strawberry_Pyramid"
+    ],
+    "description": "Build the Ultimate Pyramid Strawberry Tower!  Maximize your garden space and grow a massive harvest with this comprehensive DIY Pyramid Strawberry Planter Plan! This beautiful, space-saving 4-tier design is perfect for growing strawberries, herbs, or cascading flowers. Whether you are looking for a stunning wooden strawberry tower for your backyard or highly efficient tiered planter plans for a patio, this blueprint has you covered.  Forget buying expensive, flimsy plastic towers. Use these pyra..."
   },
   {
     "id": "56",
@@ -510,8 +1943,33 @@ export const products: Product[] = [
     "name": "Wood Pet Bed | DIY Dog Bed With Legs Plan | DIY Raised Dog Bed Furniture | Build a Custom Wooden Pet Bed | Elevated Dog Bed for Large Dogs",
     "category": "pet bed",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/65ffb7/7159214358/il_fullxfull.7159214358_3ak0.jpg",
-    "description": "Create a Comfy and Stylish Haven for Your Best Friend with Our DIY Dog Bed Plans  Elevate your pet\u2019s comfort and your home's style with our easy-to-follow woodworking plans. This DIY dog bed project i..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/65ffb7/7159214358/il_fullxfull.7159214358_3ak0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2671eb/7207203761/il_fullxfull.7207203761_tcj6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2cf5a0/7159214360/il_fullxfull.7159214360_6gsd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/04de4b/7207203769/il_fullxfull.7207203769_fefi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a00ffe/7207203771/il_fullxfull.7207203771_owgg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4c2d9c/7207203779/il_fullxfull.7207203779_45mp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9aad5e/7159214356/il_fullxfull.7159214356_ssr1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5a3d40/7207203777/il_fullxfull.7207203777_ow2q.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c7b8e9/7159214362/il_fullxfull.7159214362_fijh.jpg"
+    ],
+    "tags": [
+      "pet_bed",
+      "DIY_plans",
+      "dog_bed",
+      "dog_beds",
+      "woodworking_plans",
+      "dog_furniture",
+      "dog_bed_furniture",
+      "custom_dog_bed",
+      "large_dog_bed",
+      "wooden_dog_bed",
+      "diy_Dog_bed"
+    ],
+    "description": "Create a Comfy and Stylish Haven for Your Best Friend with Our DIY Dog Bed Plans  Elevate your pet\u2019s comfort and your home's style with our easy-to-follow woodworking plans. This DIY dog bed project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of dog furniture that will last for years.  Why an Elevated Dog Bed?  A raised dog bed isn't just a design choice\u2014it's a health-conscious one. By lifting your pet off the floor, this bed provides better..."
   },
   {
     "id": "57",
@@ -519,8 +1977,36 @@ export const products: Product[] = [
     "name": "DIY Chicken and Duck Coop Plans PDF | 8x4 Modern Duck House | Lightweight Chicken Coop Build | Quail Cottage Blueprint | Kippenhok DIY",
     "category": "Duck House Plan",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/02d160/8024575087/il_fullxfull.8024575087_3fe9.jpg",
-    "description": "Build a Safe, Spacious, and Easy-to-Clean Home for Your Multi-Species Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/02d160/8024575087/il_fullxfull.8024575087_3fe9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b80ef7/8024575069/il_fullxfull.8024575069_2itb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2910ff/8024575077/il_fullxfull.8024575077_1gvb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e687e6/8024575071/il_fullxfull.8024575071_ak5n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0cfa4a/7976621370/il_fullxfull.7976621370_kwpn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a4b5d9/7976621368/il_fullxfull.7976621368_10rk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0b6c2a/8024575083/il_fullxfull.8024575083_eunw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d1a094/8024575079/il_fullxfull.8024575079_bqvf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3f4154/8024575099/il_fullxfull.8024575099_3j2g.jpg",
+      "https://i.etsystatic.com/37058139/r/il/670e50/7976621404/il_fullxfull.7976621404_lbs6.jpg"
+    ],
+    "tags": [
+      "Duck_House_Plan",
+      "Duck_Coop_Plans",
+      "Lightweight_Coop_DIY",
+      "Modern_Duck_House",
+      "Duck_Shed_Build",
+      "Quail_Cottage_Plans",
+      "4x8_Chicken_Coop",
+      "Poultry_Grow_Out_Pen",
+      "Chicken_Castle_Plans",
+      "Kippenhok",
+      "Kurnik",
+      "Duck_Run_and_Coop",
+      "Duck_Pen_Plan"
+    ],
+    "description": "Build a Safe, Spacious, and Easy-to-Clean Home for Your Multi-Species Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages We are here for you! If you have any questions, need technical advice, or require help during your build process, simply se..."
   },
   {
     "id": "58",
@@ -528,8 +2014,35 @@ export const products: Product[] = [
     "name": "DIY Small Chicken Coop Plans with Run PDF | Woodworking Plans for Modern Chicken Coops | Backyard Poultry Breeding Pen | Quail Cottage Build",
     "category": "Chicken Coop Plan",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/62e289/7976607272/il_fullxfull.7976607272_lit8.jpg",
-    "description": "Build a Safe, Simple, and Beautiful Home for Your Small Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100% money-back g..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/62e289/7976607272/il_fullxfull.7976607272_lit8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/22ba96/7976607274/il_fullxfull.7976607274_ong4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/01762d/7976607268/il_fullxfull.7976607268_1w01.jpg",
+      "https://i.etsystatic.com/37058139/r/il/35f2bc/8024561401/il_fullxfull.8024561401_caie.jpg",
+      "https://i.etsystatic.com/37058139/r/il/96190e/8024561395/il_fullxfull.8024561395_h49t.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8d70af/8024561405/il_fullxfull.8024561405_ozbf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c6ff44/8024561403/il_fullxfull.8024561403_2l01.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5bdc4a/8024561427/il_fullxfull.8024561427_mwog.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0ed5c1/8024561443/il_fullxfull.8024561443_535d.jpg"
+    ],
+    "tags": [
+      "Chicken_Coop_Plan",
+      "Small_Chicken_Coop",
+      "Woodworking_Plans",
+      "Coop_With_Run_DIY",
+      "Breeding_Pen_Build",
+      "Backyard_Poultry",
+      "Quail_Coop_DIY",
+      "Modern_Chicken_Coop",
+      "DIY_Farm_Build",
+      "Chicken_Enclosure",
+      "Wooden_Coop_Design",
+      "Predator_Proof_Run",
+      "DIY_Animal_Shelter"
+    ],
+    "description": "Build a Safe, Simple, and Beautiful Home for Your Small Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages We are here for you! If you have any questions, need technical advice, or require help during your build process, simply send us a messag..."
   },
   {
     "id": "59",
@@ -537,8 +2050,36 @@ export const products: Product[] = [
     "name": "DIY Chicken Coop Plans With Run PDF | Large Chicken Coop Plan | Walk in Chicken Coop Plan | Garden Chicken Coop and Run | Duck Coop Plans",
     "category": "Chicken Coop Plan",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/0c20c4/7976568270/il_fullxfull.7976568270_2bwp.jpg",
-    "description": "Build the Ultimate Predator-Proof Paradise for Your Flock!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guar..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/0c20c4/7976568270/il_fullxfull.7976568270_2bwp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/18b0b5/7976568276/il_fullxfull.7976568276_5hjm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2afd4c/8024522747/il_fullxfull.8024522747_gv9s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/31f2cc/7976568278/il_fullxfull.7976568278_21dp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/302f7c/8024522773/il_fullxfull.8024522773_biua.jpg",
+      "https://i.etsystatic.com/37058139/r/il/33fc43/7976568302/il_fullxfull.7976568302_2f29.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a83375/8024522959/il_fullxfull.8024522959_1yg7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e4ecfe/8024522957/il_fullxfull.8024522957_ildq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3b4e6b/8024522945/il_fullxfull.8024522945_ozah.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d55500/7989793421/il_fullxfull.7989793421_dg5z.jpg"
+    ],
+    "tags": [
+      "Chicken_Coop_Plan",
+      "Walk_in_Chicken_Coop",
+      "Garden_Chicken_Coop",
+      "Duck_Coop_Plans",
+      "Quail_Cottage_Plans",
+      "DIY_Chicken_Coup",
+      "Backyard_Poultry",
+      "Woodworking_Plans",
+      "12_Chickens_Coop",
+      "Predator_Proof_Coop",
+      "Farm_Animal_Housing",
+      "Chicken_Coop_Run",
+      "Large_Chicken_Coop"
+    ],
+    "description": "Build the Ultimate Predator-Proof Paradise for Your Flock!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages  Building a backyard farm is an exciting journey, and we are here to help! If you have any questions or need advice during your build, simpl..."
   },
   {
     "id": "60",
@@ -546,8 +2087,33 @@ export const products: Product[] = [
     "name": "6x12 Firewood Shed Plans: DIY Sloped Roof Woodshed (PDF Download)",
     "category": "Firewood Shed",
     "price": 4.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/ec6288/7305929223/il_fullxfull.7305929223_bvf3.jpg",
-    "description": "\ud83d\udd25 Stop Burning Wet Wood! Build Your Dream Woodshed Today! \ud83d\udd25 Tired of struggling with soggy, smoking logs? Our 6x12 Firewood Shed Plans are the perfect solution to keep your wood dry, seasoned, and rea..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/ec6288/7305929223/il_fullxfull.7305929223_bvf3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a97b2d/7257981132/il_fullxfull.7257981132_rnp2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1107cf/7257981128/il_fullxfull.7257981128_n45d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0ec8bf/7257981130/il_fullxfull.7257981130_71il.jpg",
+      "https://i.etsystatic.com/37058139/r/il/eece01/7257981126/il_fullxfull.7257981126_fqwp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fdd03c/7257981144/il_fullxfull.7257981144_dfsh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/008c44/7305929277/il_fullxfull.7305929277_9cca.jpg"
+    ],
+    "tags": [
+      "Firewood_Shed",
+      "Woodshed_Plans",
+      "Outdoor_Storage",
+      "Wood_Rack",
+      "DIY_Plans",
+      "Firewood_Rack",
+      "2_Cord_Wood",
+      "Tool_Shed",
+      "1_Cord_Wood",
+      "Pallet_Wood",
+      "Shed_Plans",
+      "Firewood_Holder",
+      "6x8_Firewood"
+    ],
+    "description": "\ud83d\udd25 Stop Burning Wet Wood! Build Your Dream Woodshed Today! \ud83d\udd25 Tired of struggling with soggy, smoking logs? Our 6x12 Firewood Shed Plans are the perfect solution to keep your wood dry, seasoned, and ready for the fire pit or stove. This isn't just a shed; it's the ultimate DIY project to enhance your backyard and ensure perfectly seasoned fuel all winter long!  \ud83c\udfe1 About These 6x12 Wood Shed Plans \ud83c\udfe1 These are complete DIY plans to build a sturdy, attractive 6' x 12' Firewood Storage Shed (or Woodshe..."
   },
   {
     "id": "61",
@@ -555,8 +2121,36 @@ export const products: Product[] = [
     "name": "DIY Outdoor Corner Bench Plans | L Shaped Planter Bench Blueprint | Wooden Garden Seating PDF",
     "category": "corner bench plans",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/894972/7824953345/il_fullxfull.7824953345_o6zw.jpg",
-    "description": "Create the Ultimate Backyard Oasis with DIY L-Shaped Corner Bench Plans!  Upgrade your patio, garden, or fire pit area with our stunning outdoor corner bench plans. This unique L-shaped design feature..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/894972/7824953345/il_fullxfull.7824953345_o6zw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f07959/7824953363/il_fullxfull.7824953363_9taj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a252c0/7824953369/il_fullxfull.7824953369_g7m2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/dedd6d/7824953357/il_fullxfull.7824953357_2n9d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d053de/7824953365/il_fullxfull.7824953365_ev4r.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fd8b5d/7777024904/il_fullxfull.7777024904_gjfq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/62bd91/7777024914/il_fullxfull.7777024914_3yiu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ecaac6/7777024920/il_fullxfull.7777024920_9037.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ea2404/7777024936/il_fullxfull.7777024936_hcns.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2eff96/7824953393/il_fullxfull.7824953393_f662.jpg"
+    ],
+    "tags": [
+      "corner_bench_plans",
+      "planter_bench_diy",
+      "l_shaped_bench",
+      "outdoor_bench_pdf",
+      "garden_bench_plans",
+      "patio_seating_diy",
+      "diy_corner_bench",
+      "wood_bench_plans",
+      "bench_with_planter",
+      "outdoor_furniture",
+      "corner_seating_plan",
+      "corner_nook_diy",
+      "woodworking_plans"
+    ],
+    "description": "Create the Ultimate Backyard Oasis with DIY L-Shaped Corner Bench Plans!  Upgrade your patio, garden, or fire pit area with our stunning outdoor corner bench plans. This unique L-shaped design features a beautiful built-in planter box at the center, allowing you to seamlessly blend comfortable seating with your favorite flowers, herbs, or ambient lighting. It is the perfect diy garden seating project to elevate your outdoor living space.  Whether you are looking for an L shaped bench for enterta..."
   },
   {
     "id": "62",
@@ -564,8 +2158,36 @@ export const products: Product[] = [
     "name": "DIY Rolling Tool Station Plans | Mobile Tool Storage Cabinet PDF | Wood Tool Cabinet on Wheels | Hobby Organizer Cart | Garage Storage",
     "category": "Rolling Tool Box",
     "price": 4.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/38577a/7805298226/il_fullxfull.7805298226_cz8d.jpg",
-    "description": "Build the Ultimate Mobile Tool & Storage Station!  Maximize your workshop or craft room efficiency with this incredibly versatile DIY Rolling Tool Station Plan. Designed with mobility and maximum stor..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/38577a/7805298226/il_fullxfull.7805298226_cz8d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/760dda/7805298232/il_fullxfull.7805298232_p8ah.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e30a35/7805298242/il_fullxfull.7805298242_7a5q.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ec780a/7853241805/il_fullxfull.7853241805_88j8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c12be7/7853241801/il_fullxfull.7853241801_qzy1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/af16cc/7805298246/il_fullxfull.7805298246_o3ow.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c42225/7805298236/il_fullxfull.7805298236_jsos.jpg",
+      "https://i.etsystatic.com/37058139/r/il/afec39/7805298258/il_fullxfull.7805298258_fiv8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0354ba/7805298252/il_fullxfull.7805298252_q4ea.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4a60f5/7853241821/il_fullxfull.7853241821_7otp.jpg"
+    ],
+    "tags": [
+      "Rolling_Tool_Box",
+      "Tool_Station_Plan",
+      "Tool_Storage_Cabinet",
+      "Garage_Tool_Cabinet",
+      "Hobby_Organizer_Plan",
+      "Model_Paint_Station",
+      "Mobile_Tool_Cart",
+      "Wood_Toolbox_DIY",
+      "Sandpaper_Storage",
+      "Craft_Station_Cart",
+      "Rolling_Tool_Chest",
+      "Workshop_Storage",
+      "DIY_Storage_Rack"
+    ],
+    "description": "Build the Ultimate Mobile Tool & Storage Station!  Maximize your workshop or craft room efficiency with this incredibly versatile DIY Rolling Tool Station Plan. Designed with mobility and maximum storage in mind, this tall organizer cart features multiple shallow shelves perfect for storing hand tools, hardware, sandpaper, or acting as a high-capacity hobby organizer for your craft supplies and paints.  Whether you need a functional tool storage cabinet that rolls right up to your workbench, or ..."
   },
   {
     "id": "63",
@@ -573,8 +2195,36 @@ export const products: Product[] = [
     "name": "Champagne Cart Blueprint | DIY Mobile Bar, Wedding Event Cart (Custom Build)",
     "category": "Custom food cart",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/598b00/7484112044/il_fullxfull.7484112044_cg0l.jpg",
-    "description": "\ud83e\udd42 Build Your Own Elegant Champagne & Event Cart! Create the ultimate focal point for your next event with these comprehensive Champagne Cart Custom Build plans. Whether you are a DIY enthusiast lookin..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/598b00/7484112044/il_fullxfull.7484112044_cg0l.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b0cf4a/7532037673/il_fullxfull.7532037673_qdx9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7aa743/7484112064/il_fullxfull.7484112064_app6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5a5d77/7484112088/il_fullxfull.7484112088_l6v8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c5614f/7532037719/il_fullxfull.7532037719_f3v2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/09e5a6/7532037721/il_fullxfull.7532037721_qc4x.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7a7168/7532037679/il_fullxfull.7532037679_o5to.jpg",
+      "https://i.etsystatic.com/37058139/r/il/79d3d6/7484112040/il_fullxfull.7484112040_4x3r.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9dac20/7484112050/il_fullxfull.7484112050_3heh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c1c7f5/7532037705/il_fullxfull.7532037705_q3uh.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart",
+      "bar_cart"
+    ],
+    "description": "\ud83e\udd42 Build Your Own Elegant Champagne & Event Cart! Create the ultimate focal point for your next event with these comprehensive Champagne Cart Custom Build plans. Whether you are a DIY enthusiast looking to build a beautiful piece for your home, or a rental business owner wanting to add a high-ROI item to your inventory, this design is perfect for you. This isn't just a cart; it\u2019s a statement piece. Designed to be sturdy yet elegant, this Personalized Mobile Bar Cart features a timeless design wit..."
   },
   {
     "id": "64",
@@ -582,8 +2232,34 @@ export const products: Product[] = [
     "name": "DIY Kitchen Pantry Cabinet Plans | Kitchen Organizer Build Blueprint | Standing Storage Guide",
     "category": "kitchen pantry plans",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/e032dd/7766243460/il_fullxfull.7766243460_cl8y.jpg",
-    "description": "Transform Your Backyard with Premium 6x8 ft DIY Outdoor Sauna Plans!  Ready to build your own relaxing retreat? Our comprehensive DIY outdoor sauna plans are designed for both beginners and experience..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/e032dd/7766243460/il_fullxfull.7766243460_cl8y.jpg",
+      "https://i.etsystatic.com/37058139/r/il/34886f/7814189469/il_fullxfull.7814189469_n6qt.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f6ed7d/7766243476/il_fullxfull.7766243476_p32i.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9ceeb0/7814189447/il_fullxfull.7814189447_9mlr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ca47c4/7766243452/il_fullxfull.7766243452_c0ek.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ab0483/7814189467/il_fullxfull.7814189467_r3r7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/15edac/7814189435/il_fullxfull.7814189435_liyn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/48d882/7766243444/il_fullxfull.7766243444_216t.jpg"
+    ],
+    "tags": [
+      "kitchen_pantry_plans",
+      "pantry_cabinet_plans",
+      "canning_storage",
+      "kitchen_organizer",
+      "tall_cupboard_plans",
+      "diy_kitchen_cabinets",
+      "standing_pantry",
+      "diy_pantry_build",
+      "kitchen_storage_plan",
+      "cupboard_ideas",
+      "pantry_built_ins",
+      "wood_pantry_diy",
+      "freestanding_pantry"
+    ],
+    "description": "Transform Your Backyard with Premium 6x8 ft DIY Outdoor Sauna Plans!  Ready to build your own relaxing retreat? Our comprehensive DIY outdoor sauna plans are designed for both beginners and experienced DIYers. This modern, wooden backyard sauna comfortably fits 4 to 6 people, making it the perfect addition to your outdoor space for a dry sauna or traditional steam experience.  These step-by-step sauna building blueprints remove the guesswork from your DIY project, saving you time and money.  \ud83d\udcd0 S..."
   },
   {
     "id": "65",
@@ -591,8 +2267,34 @@ export const products: Product[] = [
     "name": "8x20 Firewood Shed DIY Plans PDF | 3 Cord Wood Storage Rack Blueprint | Extra Large Dry Wood Shelter",
     "category": "8x20 firewood shed",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/68c973/7920893222/il_fullxfull.7920893222_ica8.jpg",
-    "description": "DIY 8x20 Firewood Shed Plans PDF | 3 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/68c973/7920893222/il_fullxfull.7920893222_ica8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f84577/7968844471/il_fullxfull.7968844471_knqj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d91983/7968844727/il_fullxfull.7968844727_o6gl.jpg",
+      "https://i.etsystatic.com/37058139/r/il/eb095a/7968844781/il_fullxfull.7968844781_ebdg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1b8fbb/7920893240/il_fullxfull.7920893240_qeo7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/65856d/7920892682/il_fullxfull.7920892682_517z.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b7dc20/7920892722/il_fullxfull.7920892722_i0p3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9cc35e/7920892980/il_fullxfull.7920892980_8oa9.jpg"
+    ],
+    "tags": [
+      "8x20_firewood_shed",
+      "3_cord_wood_rack",
+      "large_wood_shelter",
+      "wood_storage_pdf",
+      "outdoor_log_store",
+      "shed_with_firewood",
+      "fire_wood_rack_diy",
+      "heavy_duty_log_rack",
+      "woodworking_plans",
+      "backyard_shed_diy",
+      "log_storage_build",
+      "winter_wood_shed",
+      "wood_seasoning_rack"
+    ],
+    "description": "DIY 8x20 Firewood Shed Plans PDF | 3 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a massive, heavy-duty 8x20 Firewood Shed. Designed with an ultra-deep profile to hold a full 3 cords of wood, this structure is the ultimate high-capacity storage solution for homesteaders, large cabin owners, and anyone who relies heavily on a wood stove to..."
   },
   {
     "id": "66",
@@ -600,8 +2302,35 @@ export const products: Product[] = [
     "name": "DIY Outdoor Sauna Plans | Modern Sauna Blueprints PDF | Sauna With Window | Sauna With Shower Plans | Backyard Sauna Building Design",
     "category": "Outdoor Sauna Plan",
     "price": 9.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/c203c2/7805208504/il_fullxfull.7805208504_igyu.jpg",
-    "description": "Build Your Own Backyard Oasis!  Transform your backyard into a luxury retreat with these comprehensive DIY Outdoor Sauna Plans. This stunning modern outdoor sauna design features a spacious hot room w..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/c203c2/7805208504/il_fullxfull.7805208504_igyu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3fb39b/7853151357/il_fullxfull.7853151357_msty.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8658fe/7805208500/il_fullxfull.7805208500_84fm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/615de5/7805208498/il_fullxfull.7805208498_8qmc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bb9d06/7805208502/il_fullxfull.7805208502_5yiu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0a12c5/7853151373/il_fullxfull.7853151373_14hy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2796ee/7853151369/il_fullxfull.7853151369_e8tm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6a59a7/7853151391/il_fullxfull.7853151391_mk13.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2010e3/7853151397/il_fullxfull.7853151397_s8qk.jpg"
+    ],
+    "tags": [
+      "Outdoor_Sauna_Plan",
+      "Sauna_Blueprints",
+      "Sauna_With_Window",
+      "Sauna_Diy",
+      "Build_a_Sauna",
+      "Homemade_Sauna",
+      "Outdoor_Sauna_Design",
+      "Traditional_Sauna",
+      "Sauna_With_Shower",
+      "Backyard_Sauna_Build",
+      "Wood_Sauna_Plan",
+      "Sauna_Building",
+      "Modern_Sauna_PDF"
+    ],
+    "description": "Build Your Own Backyard Oasis!  Transform your backyard into a luxury retreat with these comprehensive DIY Outdoor Sauna Plans. This stunning modern outdoor sauna design features a spacious hot room with a large scenic window, plus an attached covered porch perfectly designed for cooling down, storing firewood, or installing an outdoor shower\u2014making it the ultimate match for anyone looking for sauna with shower plans.  Skip the expensive pre-fab kits. Whether you are looking to build a tradition..."
   },
   {
     "id": "67",
@@ -609,8 +2338,36 @@ export const products: Product[] = [
     "name": "DIY Geometric Bookshelf Plans | Large Asymmetrical Bookcase Blueprint | Abstract Wall Book Shelves PDF",
     "category": "geometric bookshelf",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/fa06c7/7777254082/il_fullxfull.7777254082_1lpn.jpg",
-    "description": "Upgrade Your Living Room with a Premium DIY Lift Top Coffee Table!  Are you looking for the perfect blend of style and functionality? Build your own stunning, multifunctional centerpiece with our comp..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/fa06c7/7777254082/il_fullxfull.7777254082_1lpn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/25fa56/7777254076/il_fullxfull.7777254076_b8uy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ff5b09/7825183229/il_fullxfull.7825183229_qq2i.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f200a8/7777254096/il_fullxfull.7777254096_limm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/59cbfb/7825183251/il_fullxfull.7825183251_4vil.jpg",
+      "https://i.etsystatic.com/37058139/r/il/35fa55/7825183235/il_fullxfull.7825183235_qs8k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1a9341/7777254118/il_fullxfull.7777254118_dgme.jpg",
+      "https://i.etsystatic.com/37058139/r/il/02d4d9/7825183249/il_fullxfull.7825183249_c1ko.jpg",
+      "https://i.etsystatic.com/37058139/r/il/723f20/7777254112/il_fullxfull.7777254112_c8nz.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4b9425/7825183253/il_fullxfull.7825183253_gicd.jpg"
+    ],
+    "tags": [
+      "geometric_bookshelf",
+      "asymmetrical_shelf",
+      "abstract_bookcase",
+      "large_bookshelf_diy",
+      "bookcase_plans",
+      "wall_shelves_diy",
+      "modern_bookcase",
+      "wood_shelf_plans",
+      "diy_bookshelf_pdf",
+      "vertical_book_shelf",
+      "geometric_shelving",
+      "office_bookshelf",
+      "woodworking_plans"
+    ],
+    "description": "Upgrade Your Living Room with a Premium DIY Lift Top Coffee Table!  Are you looking for the perfect blend of style and functionality? Build your own stunning, multifunctional centerpiece with our comprehensive coffee table blueprint. Featuring a sleek mid-century modern design with a built-in drawer, open display shelves, and a hidden compartment, this project is the ultimate DIY coffee table with storage.  Whether you are working from the couch or enjoying a meal in front of the TV, the elevate..."
   },
   {
     "id": "68",
@@ -618,8 +2375,27 @@ export const products: Product[] = [
     "name": "DIY Outdoor Kitchen Plans PDF | Backyard Bar Blueprint | Pergola with Bar Underneath | Back Yard BBQ Shack Build | Outside Bar Woodworking",
     "category": "Outdoor Kitchen Plan",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/855ea9/7989604791/il_fullxfull.7989604791_tdta.jpg",
-    "description": "[The Hook & Support Promise]  Transform your backyard into the ultimate entertainment space with our comprehensive DIY Outdoor Kitchen & Backyard Bar Plans! Whether you are a weekend warrior or an exp..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/855ea9/7989604791/il_fullxfull.7989604791_tdta.jpg",
+      "https://i.etsystatic.com/37058139/r/il/40c88e/7989604777/il_fullxfull.7989604777_his7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e6de33/7989604805/il_fullxfull.7989604805_4m4s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ee4f7c/7941645348/il_fullxfull.7941645348_80tq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/331a5a/7989604789/il_fullxfull.7989604789_4jfc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/89de36/7941645356/il_fullxfull.7941645356_321c.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4fefa2/7941645366/il_fullxfull.7941645366_i2wn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/da37e6/7989604815/il_fullxfull.7989604815_n9gu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bb2e35/7941645370/il_fullxfull.7941645370_di9v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/736cb3/7989604819/il_fullxfull.7989604819_di0w.jpg"
+    ],
+    "tags": [
+      "Outdoor_Kitchen_Plan",
+      "DIY_Bar_Plan",
+      "Backyard_Bar_DIY",
+      "BBQ_Shack_Plans"
+    ],
+    "description": "[The Hook & Support Promise]  Transform your backyard into the ultimate entertainment space with our comprehensive DIY Outdoor Kitchen & Backyard Bar Plans! Whether you are a weekend warrior or an experienced builder, we are here to ensure your project is a success. Need help or have questions during the build? Don't worry! We provide full, ongoing support via Etsy messages to guide you every step of the way.  [About This Build]   Get ready for summer BBQs and outdoor parties! This contemporary ..."
   },
   {
     "id": "69",
@@ -627,8 +2403,34 @@ export const products: Product[] = [
     "name": "DIY Giant Connect 4 Outdoor Game Plans PDF | Backyard Yard Game Blueprint | Life Size Wooden 4-in-a-Row Strategy Game",
     "category": "Connect 4 Game DIY",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/c70fe0/7941873404/il_fullxfull.7941873404_n8fz.jpg",
-    "description": "Bring Giant-Sized Fun to Your Next Backyard Party with This DIY Connect 4 Game!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/c70fe0/7941873404/il_fullxfull.7941873404_n8fz.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d0e6d8/7941873380/il_fullxfull.7941873380_9uxv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e89783/7941873408/il_fullxfull.7941873408_1yoo.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e672e0/7941873410/il_fullxfull.7941873410_o1u6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1457e1/7941873406/il_fullxfull.7941873406_4p0x.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9905cc/7941873392/il_fullxfull.7941873392_df3u.jpg",
+      "https://i.etsystatic.com/37058139/r/il/21b80e/7989830327/il_fullxfull.7989830327_124x.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b0f7c6/7941873426/il_fullxfull.7941873426_grdo.jpg"
+    ],
+    "tags": [
+      "Connect_4_Game_DIY",
+      "Giant_Yard_Game",
+      "Backyard_Games",
+      "Outdoor_Party_Game",
+      "Wooden_Connect_4",
+      "Yard_Game_Plans",
+      "Life_Size_Game",
+      "Woodworking_Plans",
+      "Family_Game_Night",
+      "Wedding_Yard_Game",
+      "4_in_a_Row_Game",
+      "DIY_Outdoor_Fun",
+      "Strategy_Game_Build"
+    ],
+    "description": "Bring Giant-Sized Fun to Your Next Backyard Party with This DIY Connect 4 Game!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Buil..."
   },
   {
     "id": "70",
@@ -636,8 +2438,36 @@ export const products: Product[] = [
     "name": "DIY Mobile Serving Cart Plan \u2013 Charcuterie Bar, Coffee Station (PDF)",
     "category": "Custom food cart",
     "price": 16.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/fe88dd/7112557894/il_fullxfull.7112557894_ans3.jpg",
-    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/fe88dd/7112557894/il_fullxfull.7112557894_ans3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/974973/7160528113/il_fullxfull.7160528113_1hsr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ae0ddb/7160528111/il_fullxfull.7160528111_rpkp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d2c8a3/7160528115/il_fullxfull.7160528115_sirc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d10ac9/7112557898/il_fullxfull.7112557898_ej63.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9f62be/7160528109/il_fullxfull.7160528109_p7xq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/dfac44/7268045268/il_fullxfull.7268045268_e7ja.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0f685d/7112557912/il_fullxfull.7112557912_oto2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/55af1d/7160528159/il_fullxfull.7160528159_lbo4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6aad18/7112557918/il_fullxfull.7112557918_l9jq.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "Food_cart",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart"
+    ],
+    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests from a stunning, custom-built cart that perfectly complements your unique style. This isn't just a project; it's your ticket to creating the ultimate custom food cart or a show-stopping mobile bar. Our meticulously designed PDF guide gives you all the tools and knowledge to bring this elegant, mode..."
   },
   {
     "id": "71",
@@ -645,8 +2475,36 @@ export const products: Product[] = [
     "name": "DIY Mobile Workbench with Tote Storage Plans PDF | Rolling Shop Cart & Organizer Blueprint | 3-Drawer Garage Utility Table | Woodworking",
     "category": "Mobile Workbench",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/c89932/7941909444/il_fullxfull.7941909444_gzto.jpg",
-    "description": "The Ultimate Workshop Hybrid: A Heavy-Duty Workbench That Organizes Itself!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/c89932/7941909444/il_fullxfull.7941909444_gzto.jpg",
+      "https://i.etsystatic.com/37058139/r/il/081790/7989866141/il_fullxfull.7989866141_j06k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4bff21/7941909450/il_fullxfull.7941909450_pj04.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c68d94/7989866145/il_fullxfull.7989866145_r9jh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/301c39/7989866139/il_fullxfull.7989866139_3k2o.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a4e1f9/7989866143/il_fullxfull.7989866143_elx5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/081035/7941909460/il_fullxfull.7941909460_hqwl.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0300d5/7989866155/il_fullxfull.7989866155_5snk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e6b54e/7989866149/il_fullxfull.7989866149_hky8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b83022/7989866153/il_fullxfull.7989866153_56ay.jpg"
+    ],
+    "tags": [
+      "Mobile_Workbench",
+      "Tote_Storage_Rack",
+      "Shop_Cart_DIY",
+      "Woodworking_Plans",
+      "Garage_Organizer",
+      "Rolling_Workbench",
+      "Tool_Storage",
+      "Utility_Cart",
+      "DIY_Furniture",
+      "Workbench_Plans",
+      "Bin_Storage_DIY",
+      "Shop_Furniture",
+      "Garage_Workshop_Plan"
+    ],
+    "description": "The Ultimate Workshop Hybrid: A Heavy-Duty Workbench That Organizes Itself!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Ongoing Support via Etsy Messages  We\u2019ve got your back! If you run into any questions during your build or need a bit of technical advice, just shoot us a mes..."
   },
   {
     "id": "72",
@@ -654,8 +2512,35 @@ export const products: Product[] = [
     "name": "DIY Rotating Shoe Rack Plans | Spinning Woodworking Blueprint (Digital Download)",
     "category": "rotating shoe rack",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/3c1453/7777079770/il_fullxfull.7777079770_suoc.jpg",
-    "description": "Maximize Your Closet Space with Premium DIY Rotating Shoe Rack Plans!  Tired of messy closets and piles of shoes? Build the ultimate storage solution with our comprehensive rotating shoe rack plans. T..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/3c1453/7777079770/il_fullxfull.7777079770_suoc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ada8f4/7825008379/il_fullxfull.7825008379_ci4e.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c15455/7825008279/il_fullxfull.7825008279_l9dp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/71f759/7777079764/il_fullxfull.7777079764_5qsq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/448474/7825008293/il_fullxfull.7825008293_jn2r.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c0794c/7777079754/il_fullxfull.7777079754_lz04.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2751d1/7777079778/il_fullxfull.7777079778_aate.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fb62d6/7825008291/il_fullxfull.7825008291_ment.jpg",
+      "https://i.etsystatic.com/37058139/r/il/18d209/7825008305/il_fullxfull.7825008305_2j42.jpg"
+    ],
+    "tags": [
+      "rotating_shoe_rack",
+      "spinning_shoe_rack",
+      "shoe_carousel_diy",
+      "shoe_tower_plans",
+      "cnc_shoe_rack",
+      "shoe_rack_revolving",
+      "diy_shoe_organizer",
+      "wood_shoe_shelf",
+      "shoe_display_stand",
+      "closet_organization",
+      "shoe_cabinet_dxf",
+      "custom_closet_diy",
+      "woodworking_plans"
+    ],
+    "description": "Maximize Your Closet Space with Premium DIY Rotating Shoe Rack Plans!  Tired of messy closets and piles of shoes? Build the ultimate storage solution with our comprehensive rotating shoe rack plans. This impressive, multi-tier spinning shoe display allows you to easily store and access dozens of pairs of shoes with a simple spin. Perfect for walk-in closets, bedrooms, or entryways, this diy shoe carousel plans project will completely transform your organization.  Whether you are looking for a st..."
   },
   {
     "id": "73",
@@ -663,8 +2548,36 @@ export const products: Product[] = [
     "name": "DIY Swingset With Playhouse Plans | Wooden Playset Plan PDF | Backyard Playground Plans",
     "category": "swingset plans",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/593432/7766488926/il_fullxfull.7766488926_73ws.jpg",
-    "description": "Build the Ultimate Backyard Adventure with DIY Swingset & Playhouse Plans!  Give your kids the outdoor space of their dreams! Our comprehensive wooden playset plan provides everything you need to buil..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/593432/7766488926/il_fullxfull.7766488926_73ws.jpg",
+      "https://i.etsystatic.com/37058139/r/il/68005a/7814433847/il_fullxfull.7814433847_hmjb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8b7267/7814433845/il_fullxfull.7814433845_dwz5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/556cbf/7814433911/il_fullxfull.7814433911_kju2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9ea58d/7766488936/il_fullxfull.7766488936_hzmn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e5f59f/7766488940/il_fullxfull.7766488940_btwr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3323e2/7766488930/il_fullxfull.7766488930_p8hh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/53e942/7814433991/il_fullxfull.7814433991_k730.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fc4a41/7814433977/il_fullxfull.7814433977_mspi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/77484d/7766488984/il_fullxfull.7766488984_bwb2.jpg"
+    ],
+    "tags": [
+      "swingset_plans",
+      "wooden_playset_plan",
+      "diy_playset_pdf",
+      "backyard_playground",
+      "playhouse_build",
+      "play_sets_outside",
+      "swingset_playhouse",
+      "outdoor_playset",
+      "wooden_playhouse",
+      "play_ground_plans",
+      "diy_swingset",
+      "kids_playset_diy",
+      "woodworking_plans"
+    ],
+    "description": "Build the Ultimate Backyard Adventure with DIY Swingset & Playhouse Plans!  Give your kids the outdoor space of their dreams! Our comprehensive wooden playset plan provides everything you need to build a professional-grade, sturdy, and fun-filled playground. This all-in-one design features a classic swingset with playhouse tower, a secure ladder, and a shaded platform, making it the perfect diy playhouse kids outdoor project for your family.  Whether you are looking for backyard playground plans..."
   },
   {
     "id": "74",
@@ -672,8 +2585,35 @@ export const products: Product[] = [
     "name": "DIY Wooden Pet Bed Plans PDF | Moon Shaped Cat & Dog Bed Blueprint | Baby Cradle Wood Plan | Custom Wooden Pet Furniture",
     "category": "Cat Bed Plans",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/234271/7989710245/il_fullxfull.7989710245_jp9q.jpg",
-    "description": "Build a Cozy and Unique Dream Bed for Your Beloved Pet or Little One!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% mone..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/234271/7989710245/il_fullxfull.7989710245_jp9q.jpg",
+      "https://i.etsystatic.com/37058139/r/il/779de5/7989710235/il_fullxfull.7989710235_fcy3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bbd155/7989710233/il_fullxfull.7989710233_2js0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/90f123/7941751970/il_fullxfull.7941751970_zyqa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1bfe21/7989710237/il_fullxfull.7989710237_995o.jpg",
+      "https://i.etsystatic.com/37058139/r/il/940fac/7941751962/il_fullxfull.7941751962_7iq0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e25873/7941751992/il_fullxfull.7941751992_n4ao.jpg",
+      "https://i.etsystatic.com/37058139/r/il/218819/7989710253/il_fullxfull.7989710253_466k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f9e05f/7989710329/il_fullxfull.7989710329_liq5.jpg"
+    ],
+    "tags": [
+      "Cat_Bed_Plans",
+      "Dog_Bed_DIY",
+      "Baby_Cradle_Plan",
+      "Wooden_Pet_Furniture",
+      "Moon_Shaped_Bed",
+      "Woodworking_Plans",
+      "Pet_Bed_Blueprint",
+      "DIY_Cat_House",
+      "Small_Dog_Bed",
+      "Newborn_Prop_Plan",
+      "DIY_Pet_Bed",
+      "Furniture_Plans",
+      "Doll_Bed_Plan"
+    ],
+    "description": "Build a Cozy and Unique Dream Bed for Your Beloved Pet or Little One!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Create ..."
   },
   {
     "id": "75",
@@ -681,8 +2621,34 @@ export const products: Product[] = [
     "name": "DIY Workbench Plans with Drawers | Modular Work Table for Garage | Garage Work Bench Blueprints | Woodworking Table with Shelves",
     "category": "Workbench Plans",
     "price": 3.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/891f47/7853132891/il_fullxfull.7853132891_pahj.jpg",
-    "description": "Build the Ultimate Modular Workbench & Storage System!  Transform your garage, workshop, or craft room with these highly versatile DIY Workbench Plans. This brilliant modular design allows you to buil..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/891f47/7853132891/il_fullxfull.7853132891_pahj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/431399/7805190414/il_fullxfull.7805190414_q63j.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c544c6/7805190406/il_fullxfull.7805190406_e30g.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6f2f98/7805190418/il_fullxfull.7805190418_2kc8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e1b0f9/7853132873/il_fullxfull.7853132873_jgr4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8d9787/7853132887/il_fullxfull.7853132887_ju8q.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bffd30/7805190410/il_fullxfull.7805190410_54u1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fdbe5d/7853132889/il_fullxfull.7853132889_b2vq.jpg"
+    ],
+    "tags": [
+      "Workbench_Plans",
+      "Workbench_DIY",
+      "Garage_Work_Bench",
+      "Work_Bench_Shelf",
+      "DIY_Craft_Workbench",
+      "Work_Table_Garage",
+      "Workbench_Drawers",
+      "Modular_Workbench",
+      "Woodworking_Table",
+      "Tool_Work_Bench",
+      "Garage_Storage_Plan",
+      "Shop_Storage_Plans",
+      "Wood_Shop_Furniture"
+    ],
+    "description": "Build the Ultimate Modular Workbench & Storage System!  Transform your garage, workshop, or craft room with these highly versatile DIY Workbench Plans. This brilliant modular design allows you to build a single heavy-duty unit with a spacious drawer and lower shelf, or build multiple units and place them side-by-side to create a massive, custom-length woodworking table with shelves!  Whether you need a compact DIY craft workbench, a dedicated tool station, or a full-wall garage work bench, this ..."
   },
   {
     "id": "76",
@@ -690,8 +2656,30 @@ export const products: Product[] = [
     "name": "DIY Log Cabin Birdhouse Plans PDF | Large Bird Box Woodworking Blueprint | Fancy Birdhouse Plans to Build",
     "category": "Birdhouse Plans",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/06a2ad/7989694797/il_fullxfull.7989694797_b1n5.jpg",
-    "description": "Build Your Own Rustic Garden Retreat: DIY Log Cabin Birdhouse Plans!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/06a2ad/7989694797/il_fullxfull.7989694797_b1n5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ec818c/7941735914/il_fullxfull.7941735914_d7o9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ae4442/7989694787/il_fullxfull.7989694787_o91k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/16d13e/7941735920/il_fullxfull.7941735920_ot2t.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5b1605/7941735908/il_fullxfull.7941735908_ox31.jpg",
+      "https://i.etsystatic.com/37058139/r/il/dcbba7/7989694785/il_fullxfull.7989694785_4a08.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9dc876/7941735918/il_fullxfull.7941735918_etyc.jpg"
+    ],
+    "tags": [
+      "Birdhouse_Plans",
+      "Diy_Birdhouse_Plans",
+      "Birdhouse_Plans_Wood",
+      "Fancy_Birdhouse",
+      "Bird_House_To_Build",
+      "Birdhouse_Pdf",
+      "Cedar_Bird_House",
+      "Birdbox_Plans",
+      "Garden_Wood_Projects",
+      "Log_Cabin_Birdhouse"
+    ],
+    "description": "Build Your Own Rustic Garden Retreat: DIY Log Cabin Birdhouse Plans!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Invite b..."
   },
   {
     "id": "77",
@@ -699,8 +2687,36 @@ export const products: Product[] = [
     "name": "DIY Compost Bin Plans PDF | Dual Chamber Wooden Composter Blueprint | 2-Bay Garden Compost Box | Yard Waste Bin Woodworking Project",
     "category": "Compost Bin Plans",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/f63239/7989741369/il_fullxfull.7989741369_6dbr.jpg",
-    "description": "Build the Ultimate Dual-Chamber Compost Bin for Your Garden!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back gu..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/f63239/7989741369/il_fullxfull.7989741369_6dbr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/eca8a4/7941782862/il_fullxfull.7941782862_nzga.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ed2be4/7989741371/il_fullxfull.7989741371_qa9t.jpg",
+      "https://i.etsystatic.com/37058139/r/il/83ae2c/7941782896/il_fullxfull.7941782896_9ki5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c5d356/7989741401/il_fullxfull.7989741401_a8j6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f08f0e/7989741395/il_fullxfull.7989741395_gtpr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2e4cc3/7941782932/il_fullxfull.7941782932_8u6x.jpg",
+      "https://i.etsystatic.com/37058139/r/il/746b53/7941782910/il_fullxfull.7941782910_9pge.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b75e2f/7941782908/il_fullxfull.7941782908_n14l.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5bd6f9/7941782916/il_fullxfull.7941782916_2672.jpg"
+    ],
+    "tags": [
+      "Compost_Bin_Plans",
+      "Wooden_Composter",
+      "Dual_Chamber_Compost",
+      "Garden_Compost_Bin",
+      "DIY_Compost_Box",
+      "Woodworking_Plans",
+      "2_Bay_Composter",
+      "Compost_Bin_DIY",
+      "Yard_Waste_Bin",
+      "Gardening_Wood_Plan",
+      "Wood_Composter_Build",
+      "Outdoor_Bin_Plans",
+      "Garden_Woodworking"
+    ],
+    "description": "Build the Ultimate Dual-Chamber Compost Bin for Your Garden!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take your garden..."
   },
   {
     "id": "78",
@@ -708,8 +2724,35 @@ export const products: Product[] = [
     "name": "DIY Shoe Rack Plans PDF | Building Plans Shoe Cabinet | Wooden Shoe Storage Blueprint | Modular Shoe Rack | Plywood Shoe Shelf Plan",
     "category": "Shoe Rack Plans",
     "price": 4.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/9da9cf/7853162515/il_fullxfull.7853162515_h0en.jpg",
-    "description": "Build the Ultimate Entryway Organizer & Shoe Cabinet!  Tired of entryway clutter? Transform your home organization with these comprehensive DIY Shoe Rack Plans. This isn't just a simple rack; it is a ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/9da9cf/7853162515/il_fullxfull.7853162515_h0en.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b456b2/7853162495/il_fullxfull.7853162495_phik.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6e5718/7805219966/il_fullxfull.7805219966_gm5s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1ee8dc/7853162505/il_fullxfull.7853162505_7zjf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/091429/7853162501/il_fullxfull.7853162501_d1ax.jpg",
+      "https://i.etsystatic.com/37058139/r/il/763014/7853162507/il_fullxfull.7853162507_q4ft.jpg",
+      "https://i.etsystatic.com/37058139/r/il/962cfc/7805219976/il_fullxfull.7805219976_6ysd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cb20fe/7853162531/il_fullxfull.7853162531_ds8n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3c07b4/7805219978/il_fullxfull.7805219978_x5io.jpg"
+    ],
+    "tags": [
+      "Shoe_Rack_Plans",
+      "Shoe_Cabinet_Plans",
+      "Shoe_Storage_DIY",
+      "Modular_Shoe_Rack",
+      "Wooden_Shoe_Rack",
+      "DIY_Shoe_Rack_PDF",
+      "Plywood_Shoe_Shelf",
+      "Shoe_Organizer_Plan",
+      "Woodworking_Plans",
+      "Shoe_Holder_Plans",
+      "Entryway_Shoe_Rack",
+      "Closet_Shoe_Storage",
+      "Furniture_Build_Plan"
+    ],
+    "description": "Build the Ultimate Entryway Organizer & Shoe Cabinet!  Tired of entryway clutter? Transform your home organization with these comprehensive DIY Shoe Rack Plans. This isn't just a simple rack; it is a premium piece of furniture featuring elegant curved open shelving for your everyday footwear, plus a built-in side cabinet and drawers to hide away boots, accessories, or out-of-season shoes.  Whether you are looking for highly detailed shoe rack wood working plans to upgrade your mudroom or a styli..."
   },
   {
     "id": "79",
@@ -717,8 +2760,36 @@ export const products: Product[] = [
     "name": "DIY Outdoor Table Plans | Large Farmhouse Table | Tall Table Plans PDF | 9ft Dining Table Blueprints | Barn Table Plans Woodworking",
     "category": "Outdoor Table Plans",
     "price": 4.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/288c29/7853089971/il_fullxfull.7853089971_58y4.jpg",
-    "description": "Build a Stunning Large-Scale Outdoor Farmhouse Table!  Host the ultimate backyard barbecues and outdoor dinners with this massive DIY Outdoor Table Plan! Designed to impress, this sturdy, slat-top tab..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/288c29/7853089971/il_fullxfull.7853089971_58y4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2f10e6/7853089965/il_fullxfull.7853089965_sgas.jpg",
+      "https://i.etsystatic.com/37058139/r/il/69ca63/7853089985/il_fullxfull.7853089985_s6je.jpg",
+      "https://i.etsystatic.com/37058139/r/il/519367/7853089987/il_fullxfull.7853089987_rs79.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6ad698/7853089979/il_fullxfull.7853089979_af1n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2af5c0/7853089981/il_fullxfull.7853089981_hdrc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7c5a30/7805147454/il_fullxfull.7805147454_l1jc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/432317/7853090029/il_fullxfull.7853090029_i4i5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8baa29/7805147482/il_fullxfull.7805147482_lp1f.jpg",
+      "https://i.etsystatic.com/37058139/r/il/625cef/7805147490/il_fullxfull.7805147490_dxxi.jpg"
+    ],
+    "tags": [
+      "Outdoor_Table_Plans",
+      "Farmhouse_Table_DIY",
+      "Tall_Table_Plans",
+      "Dining_Table_Plan",
+      "10ft_Table_Plans",
+      "Barn_Table_Plans",
+      "DIY_Harvest_Table",
+      "Kitchen_Table_DIY",
+      "Woodworking_Plans",
+      "Patio_Table_Plan",
+      "Large_Picnic_Table",
+      "Trestle_Table_Plan",
+      "DIY_Wood_Furniture"
+    ],
+    "description": "Build a Stunning Large-Scale Outdoor Farmhouse Table!  Host the ultimate backyard barbecues and outdoor dinners with this massive DIY Outdoor Table Plan! Designed to impress, this sturdy, slat-top table features a classic trestle base and a slightly elevated profile, making it a perfect fit for those searching for tall table plans or bar height farmhouse designs.  At nearly 9 feet long, this blueprint rivals expensive 10ft table plans and provides plenty of seating for large families or entertai..."
   },
   {
     "id": "80",
@@ -726,8 +2797,36 @@ export const products: Product[] = [
     "name": "DIY 2-Story Playhouse Plans | Kids Elevated Backyard Fort Blueprint (PDF Download)",
     "category": "playhouse plans",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/b60fc0/7777546754/il_fullxfull.7777546754_3eni.jpg",
-    "description": "Build the Ultimate Backyard Adventure with DIY 2-Story Playhouse Plans!  Create a magical outdoor space where your kids' imaginations can run wild! Build your own stunning and sturdy outdoor play hous..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/b60fc0/7777546754/il_fullxfull.7777546754_3eni.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b696f6/7777546704/il_fullxfull.7777546704_lu7e.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ddea9f/7777546758/il_fullxfull.7777546758_a8y9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/875bd7/7825474369/il_fullxfull.7825474369_hnm1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bb4cda/7825474225/il_fullxfull.7825474225_gb6v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4cc132/7777546692/il_fullxfull.7777546692_lawu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ee866a/7777546764/il_fullxfull.7777546764_5ezo.jpg",
+      "https://i.etsystatic.com/37058139/r/il/69b10f/7825474357/il_fullxfull.7825474357_nb7w.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3960ca/7825474343/il_fullxfull.7825474343_1vly.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9171f0/7825474385/il_fullxfull.7825474385_miuw.jpg"
+    ],
+    "tags": [
+      "playhouse_plans",
+      "diy_playhouse",
+      "outdoor_play_house",
+      "playset_plans",
+      "kids_clubhouse_diy",
+      "tree_house_plans",
+      "elevated_playhouse",
+      "wooden_playhouse",
+      "backyard_playground",
+      "playhouse_outdoor",
+      "kids_fort_plans",
+      "large_playhouse",
+      "woodworking_plans"
+    ],
+    "description": "Build the Ultimate Backyard Adventure with DIY 2-Story Playhouse Plans!  Create a magical outdoor space where your kids' imaginations can run wild! Build your own stunning and sturdy outdoor play house with our comprehensive woodworking plans. This impressive two-story design features an enclosed upper clubhouse, a spacious viewing balcony, a fun slide exit, and a shaded lower deck. It is the perfect elevated playhouse project to transform your backyard into a private playground.  Whether you ar..."
   },
   {
     "id": "81",
@@ -735,8 +2834,28 @@ export const products: Product[] = [
     "name": "DIY Carpenter Bee Trap Plans PDF | Flat Roof Wood Bee | Mason Jar Insect Trap | Wooden Bumble Bee Trap for Outside",
     "category": "Carpenter Bee Trap",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/e55b78/7989225573/il_fullxfull.7989225573_boui.jpg",
-    "description": "[The Hook & Support Promise]  Protect your outdoor spaces from destructive wood-boring bees with our simple and highly effective DIY Carpenter Bee Trap Plans! This compact, flat-roof design is a fanta..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/e55b78/7989225573/il_fullxfull.7989225573_boui.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a6323b/7941266284/il_fullxfull.7941266284_kh4i.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1065f3/7941266288/il_fullxfull.7941266288_p42p.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9ddc6f/7941266290/il_fullxfull.7941266290_h9yz.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8be16e/7989225581/il_fullxfull.7989225581_nofi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d05e4f/7989225585/il_fullxfull.7989225585_t8or.jpg",
+      "https://i.etsystatic.com/37058139/r/il/650b93/7989225625/il_fullxfull.7989225625_figc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/facbde/7989225611/il_fullxfull.7989225611_5rjy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/83057e/7989225623/il_fullxfull.7989225623_fie8.jpg"
+    ],
+    "tags": [
+      "Carpenter_Bee_Trap",
+      "Wood_Bee_Catcher",
+      "Flat_Roof_Bee_Trap",
+      "Bee_Trap_Mason_Jar",
+      "Bee_Traps_Outside",
+      "DIY_Bee_Trap_Plan"
+    ],
+    "description": "[The Hook & Support Promise]  Protect your outdoor spaces from destructive wood-boring bees with our simple and highly effective DIY Carpenter Bee Trap Plans! This compact, flat-roof design is a fantastic, beginner-friendly woodworking project. Need assistance while building? We are always here to help! We provide full, ongoing support via Etsy messages to answer any questions and guide you through the process.  [About This Build]  Say goodbye to chemical sprays and hello to a natural, long-last..."
   },
   {
     "id": "82",
@@ -744,8 +2863,35 @@ export const products: Product[] = [
     "name": "DIY Foldable Checkout Stand Plans: Portable Plywood Design (PDF Pattern)",
     "category": "Portable Checkout",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/93cdab/7284412563/il_fullxfull.7284412563_8ogt.jpg",
-    "description": "\ud83d\uded2 Mobile Wooden Portable Sales Stand | Modern Plywood Design  Introduction: Engineered for the Perfect Brand Experience  Are you looking for a flexible trade show booth, a distinctive pop-up shop, or ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/93cdab/7284412563/il_fullxfull.7284412563_8ogt.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ebec48/7284412559/il_fullxfull.7284412559_f34q.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1f2715/7236448170/il_fullxfull.7236448170_pxm0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a02585/7284412571/il_fullxfull.7284412571_jqdo.jpg",
+      "https://i.etsystatic.com/37058139/r/il/43a27b/7284412567/il_fullxfull.7284412567_rykc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a167c4/7284412561/il_fullxfull.7284412561_nrem.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b3532f/7284412569/il_fullxfull.7284412569_fulp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6ba808/7284412587/il_fullxfull.7284412587_s7cb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d7ab3d/7236448180/il_fullxfull.7236448180_143o.jpg"
+    ],
+    "tags": [
+      "Portable_Checkout",
+      "Collapsible_Stand",
+      "Vendor_Kiosk",
+      "Wood_Cashwrap",
+      "DIY_Plans",
+      "Foldable_Stand",
+      "Market_Shelf",
+      "Coffee_Cart",
+      "Host_Stand",
+      "Pop_Up_Counter",
+      "A_Frame_Stand",
+      "Setup_Plans",
+      "Checkout_SVG"
+    ],
+    "description": "\ud83d\uded2 Mobile Wooden Portable Sales Stand | Modern Plywood Design  Introduction: Engineered for the Perfect Brand Experience  Are you looking for a flexible trade show booth, a distinctive pop-up shop, or a high-impact product display area? Instantly capture your customers' attention with our impressive, functional, and modern Mobile Portable Sales Stand!  Constructed from high-quality natural-tone plywood, this stand is designed to tell your brand's story while providing you with maximum efficiency ..."
   },
   {
     "id": "83",
@@ -753,8 +2899,35 @@ export const products: Product[] = [
     "name": "Raised Chicken Coop Plans for 6-8 Chickens | Cabin Style Hen House Blueprint (PDF)",
     "category": "chicken coop plans",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/3bf8b5/7825494443/il_fullxfull.7825494443_7yt4.jpg",
-    "description": "Build a Safe and Beautiful Home for Your Flock with DIY Chicken Coop Plans!  Ready to start your backyard homesteading journey? Build the ultimate safe haven for your flock with our comprehensive DIY ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/3bf8b5/7825494443/il_fullxfull.7825494443_7yt4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a09c16/7825494435/il_fullxfull.7825494435_9m7z.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4c3891/7777566302/il_fullxfull.7777566302_nugh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f4a17e/7825494439/il_fullxfull.7825494439_ljcf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/caebf1/7777566328/il_fullxfull.7777566328_id5g.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7e7f09/7777566396/il_fullxfull.7777566396_m282.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cf0ca1/7777566374/il_fullxfull.7777566374_9912.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7b2c99/7777566384/il_fullxfull.7777566384_5zf3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/68cb8f/7825494485/il_fullxfull.7825494485_b7kf.jpg"
+    ],
+    "tags": [
+      "chicken_coop_plans",
+      "diy_chicken_coop",
+      "6_chicken_coop",
+      "8_chicken_coop",
+      "raised_coop_plan",
+      "hen_house_blueprint",
+      "backyard_chicken",
+      "poultry_housing",
+      "diy_hen_house",
+      "cabin_chicken_coop",
+      "wood_chicken_coop",
+      "chicken_run_plans",
+      "woodworking_plans"
+    ],
+    "description": "Build a Safe and Beautiful Home for Your Flock with DIY Chicken Coop Plans!  Ready to start your backyard homesteading journey? Build the ultimate safe haven for your flock with our comprehensive DIY chicken coop plans. This beautiful, cabin-style raised coop is designed to comfortably house 6 to 8 chickens. It features easy-access nesting boxes for gathering eggs, large double front doors for effortless cleaning, and an elevated design that provides a shaded run area underneath while keeping yo..."
   },
   {
     "id": "84",
@@ -762,8 +2935,34 @@ export const products: Product[] = [
     "name": "Costco Food Court Sign | Printable Menu, Price Tag (Digital Download)",
     "category": "Costco Food Court",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/49b4a4/7071469565/il_fullxfull.7071469565_7y2x.jpg",
-    "description": "Bring the Costco Food Court Vibe Home! Craving that classic Costco experience? Now you can bring the fun and deliciousness of the Costco Food Court right to your own space with our collection of digit..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/49b4a4/7071469565/il_fullxfull.7071469565_7y2x.jpg",
+      "https://i.etsystatic.com/37058139/r/il/28c7bb/7321595412/il_fullxfull.7321595412_5yd5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a504b8/7023490856/il_fullxfull.7023490856_71pa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3b695b/7023490860/il_fullxfull.7023490860_pnie.jpg",
+      "https://i.etsystatic.com/37058139/r/il/08f7a1/7071469563/il_fullxfull.7071469563_64tj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fb30c4/7071469561/il_fullxfull.7071469561_54bx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/59303a/7071469581/il_fullxfull.7071469581_mvq4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/80d4fc/7071469585/il_fullxfull.7071469585_sscy.jpg"
+    ],
+    "tags": [
+      "Costco_Food_Court",
+      "Hot_Dog_Sign",
+      "Printable_Menu",
+      "Price_Tag_Template",
+      "Costco_Birthday",
+      "Digital_Download",
+      "Party_Decor",
+      "Kitchen_Wall_Art",
+      "Restaurant_Sign",
+      "Instant_Download",
+      "Canva_Template",
+      "Custom_Sign",
+      "Foodie_Gift"
+    ],
+    "description": "Bring the Costco Food Court Vibe Home! Craving that classic Costco experience? Now you can bring the fun and deliciousness of the Costco Food Court right to your own space with our collection of digital download and printable signs! Perfect for parties, home decor, or just a bit of everyday fun, these items are designed to capture that iconic Costco charm.  What's Included: Costco Food Court Sign 18x24: Get the full Costco Food Court experience with this large, eye-catching sign! Perfect for set..."
   },
   {
     "id": "85",
@@ -771,8 +2970,36 @@ export const products: Product[] = [
     "name": "Mid-Century Modern Bookshelf Plans | Geometric Wood Bookcase Blueprint (Digital Download)",
     "category": "bookshelf plans",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/b0af91/7825290819/il_fullxfull.7825290819_46i2.jpg",
-    "description": "Add Mid-Century Modern Charm to Your Home with DIY Geometric Bookshelf Plans!  Looking for a unique way to display your books, plants, and decor? Build your own stunning piece of furniture with our co..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/b0af91/7825290819/il_fullxfull.7825290819_46i2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/101d52/7777361524/il_fullxfull.7777361524_qn7a.jpg",
+      "https://i.etsystatic.com/37058139/r/il/721311/7777361532/il_fullxfull.7777361532_gs08.jpg",
+      "https://i.etsystatic.com/37058139/r/il/af97b9/7825290815/il_fullxfull.7825290815_p3g1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f81607/7825290809/il_fullxfull.7825290809_47tk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c2532b/7825290813/il_fullxfull.7825290813_ewtp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bae807/7825290843/il_fullxfull.7825290843_a1sn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/474eee/7777361572/il_fullxfull.7777361572_kbv2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a1ac27/7777361548/il_fullxfull.7777361548_tarb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e87b1d/7825290829/il_fullxfull.7825290829_phl6.jpg"
+    ],
+    "tags": [
+      "bookshelf_plans",
+      "bookcase_diy",
+      "geometric_shelf",
+      "asymmetrical_shelf",
+      "mid_century_bookcase",
+      "wood_shelf_plans",
+      "diy_furniture_plans",
+      "standing_bookcase",
+      "cubical_bookcase",
+      "woodworking_plans",
+      "book_shelf_build",
+      "retro_shelving",
+      "shelf_pattern_pdf"
+    ],
+    "description": "Add Mid-Century Modern Charm to Your Home with DIY Geometric Bookshelf Plans!  Looking for a unique way to display your books, plants, and decor? Build your own stunning piece of furniture with our comprehensive bookshelf plans woodworking guide. This modern, asymmetrical design features open cubical spaces and stylish angled legs, making it the perfect standing bookcase for your living room, home office, or bedroom.  Whether you are searching for a pattern for bookshelf to challenge your DIY sk..."
   },
   {
     "id": "86",
@@ -780,8 +3007,34 @@ export const products: Product[] = [
     "name": "Candy Cart DIY Plan PDF | \u0130ce Cream Cart | Dessert Cart | Wedding Sweet Table Cart | Collapsible Wooden Sweet Bar for Sale, Party Treat Cart",
     "category": "foldable cart",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/ee7bd9/7193098367/il_fullxfull.7193098367_eyey.jpg",
-    "description": "Rustic Charm for Your Special Day: The Collapsible Wedding & Event Cart  Bring a touch of timeless elegance to your next celebration with our handcrafted wooden sweet cart. Perfect for weddings, parti..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/ee7bd9/7193098367/il_fullxfull.7193098367_eyey.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5e275a/7145110080/il_fullxfull.7145110080_hwrt.jpg",
+      "https://i.etsystatic.com/37058139/r/il/dea08f/7193098381/il_fullxfull.7193098381_5cy3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c17b4e/7145110086/il_fullxfull.7145110086_r3ml.jpg",
+      "https://i.etsystatic.com/37058139/r/il/280037/7145110038/il_fullxfull.7145110038_b3eq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8f1f98/7193098353/il_fullxfull.7193098353_72gx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c88d7c/7145110098/il_fullxfull.7145110098_2q4e.jpg",
+      "https://i.etsystatic.com/37058139/r/il/008de4/7193098389/il_fullxfull.7193098389_4j32.jpg",
+      "https://i.etsystatic.com/37058139/r/il/88d4f4/7145110102/il_fullxfull.7145110102_758y.jpg"
+    ],
+    "tags": [
+      "foldable_cart",
+      "bar_carts",
+      "DIY_Cart",
+      "Party_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Candy_Bar",
+      "Sweet_Bar",
+      "Wooden_Cart",
+      "Candy_Cart",
+      "Sweet_cart",
+      "Event_Cart"
+    ],
+    "description": "Rustic Charm for Your Special Day: The Collapsible Wedding & Event Cart  Bring a touch of timeless elegance to your next celebration with our handcrafted wooden sweet cart. Perfect for weddings, parties, birthdays, and corporate events, this versatile cart isn't just a piece of decor\u2014it's a focal point that will charm your guests and create unforgettable memories.  Designed for Convenience and Style Our Collapsible Wooden Sweet Bar for Sale is the perfect blend of classic charm and modern functi..."
   },
   {
     "id": "87",
@@ -789,8 +3042,33 @@ export const products: Product[] = [
     "name": "DIY Mobile Bar Cart | Coffee Cart | Custom Food Cart Plan PDF | Wedding Cart | Collapsible Beverage Cart | Vendor Cart | Foldable Bar Cart",
     "category": "Custom food cart",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/29bdd6/7210204963/il_fullxfull.7210204963_nex5.jpg",
-    "description": "DIY Mobile Bar Cart Plans: The Ultimate Collapsible Vendor Cart Blueprint  Ready to create the perfect centerpiece for your next event? This is not just a plan; it's your ticket to building a beautifu..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/29bdd6/7210204963/il_fullxfull.7210204963_nex5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/423a99/7162214398/il_fullxfull.7162214398_bnt5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7fb123/7162214406/il_fullxfull.7162214406_k42a.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b757e2/7162214412/il_fullxfull.7162214412_jud4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4f7346/7162214400/il_fullxfull.7162214400_ach0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3c90ab/7144919042/il_fullxfull.7144919042_kzxy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/273b44/7144919048/il_fullxfull.7144919048_amqt.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart",
+      "bar_cart"
+    ],
+    "description": "DIY Mobile Bar Cart Plans: The Ultimate Collapsible Vendor Cart Blueprint  Ready to create the perfect centerpiece for your next event? This is not just a plan; it's your ticket to building a beautiful, professional-grade mobile bar or vendor cart. Our meticulously designed, step-by-step PDF guide gives you everything you need to bring this elegant and modern design to life. Imagine effortlessly serving guests from a stunning, custom-built cart that perfectly fits your unique style.  Unmatched C..."
   },
   {
     "id": "88",
@@ -798,8 +3076,36 @@ export const products: Product[] = [
     "name": "Mid Century Modern TV Console Plans | Slatted Doors Woodworking PDF",
     "category": "tv console plans",
     "price": 8.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/4bfa3f/7739894696/il_fullxfull.7739894696_bzzg.jpg",
-    "description": "Why settle for flimsy, store-bought particleboard when you can build a stunning custom centerpiece? If you love the warm, retro aesthetic, these TV console stand DIY plans are exactly what you need. T..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/4bfa3f/7739894696/il_fullxfull.7739894696_bzzg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ca9e3e/7787850353/il_fullxfull.7787850353_b409.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4dee8d/7787850377/il_fullxfull.7787850377_qq2u.jpg",
+      "https://i.etsystatic.com/37058139/r/il/173008/7739894694/il_fullxfull.7739894694_8cma.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b048ca/7787850357/il_fullxfull.7787850357_qxar.jpg",
+      "https://i.etsystatic.com/37058139/r/il/929f6d/7787850411/il_fullxfull.7787850411_66q1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/be6ea1/7787850415/il_fullxfull.7787850415_2eh3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2dd583/7739894722/il_fullxfull.7739894722_5enm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/df6bf1/7787850403/il_fullxfull.7787850403_8t8k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/148879/7739894734/il_fullxfull.7739894734_kq9j.jpg"
+    ],
+    "tags": [
+      "tv_console_plans",
+      "diy_tv_stand",
+      "media_console_plan",
+      "mid_century_tv_stand",
+      "woodworking_plans",
+      "modern_tv_stand",
+      "wide_tv_console",
+      "tv_unit_plan",
+      "70s_furniture_plan",
+      "wood_media_console",
+      "entertainment_center",
+      "retro_tv_stand",
+      "custom_tv_stand_diy"
+    ],
+    "description": "Why settle for flimsy, store-bought particleboard when you can build a stunning custom centerpiece? If you love the warm, retro aesthetic, these TV console stand DIY plans are exactly what you need. This comprehensive modern TV stand PDF guides you through creating a beautiful, high-quality piece of mid century furniture that looks like it came straight out of a high-end designer showroom. Featuring iconic angled legs and gorgeous slatted sliding doors, this 70s inspired entertainment stand effo..."
   },
   {
     "id": "89",
@@ -807,8 +3113,35 @@ export const products: Product[] = [
     "name": "DIY Bookcase Plans PDF | Easy-to-Build Wooden Bookshelf, Wall Shelf Project | Minimalist Mid-Century Furniture",
     "category": "bookshelf plans",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/b35185/7154191940/il_fullxfull.7154191940_58x5.jpg",
-    "description": "Unlock your inner craftsman and build a stunning piece of furniture for your home. This comprehensive PDF plan provides everything you need to construct a beautiful, modern bookcase yourself, saving y..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/b35185/7154191940/il_fullxfull.7154191940_58x5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fbacd2/7154191938/il_fullxfull.7154191938_if2a.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c73e6b/7202183113/il_fullxfull.7202183113_qci6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/dafc1f/7154191944/il_fullxfull.7154191944_732j.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0643da/7202183111/il_fullxfull.7202183111_neu0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4c0bee/7202183177/il_fullxfull.7202183177_7ps3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7c8b7c/7202183175/il_fullxfull.7202183175_nxq2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/689a55/7153586172/il_fullxfull.7153586172_6gd1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5216da/7201579933/il_fullxfull.7201579933_1g8m.jpg"
+    ],
+    "tags": [
+      "bookshelf_plans",
+      "diy_bookshelf",
+      "bookcase_plans",
+      "woodworking_plans",
+      "wooden_bookcase",
+      "diy_shelf",
+      "wall_bookshelves",
+      "built_in_bookcase",
+      "books_cabinet",
+      "small_bookcase_plans",
+      "easy_bookshelf",
+      "woodworking_project",
+      "corner_bookshelf"
+    ],
+    "description": "Unlock your inner craftsman and build a stunning piece of furniture for your home. This comprehensive PDF plan provides everything you need to construct a beautiful, modern bookcase yourself, saving you money and giving you the satisfaction of a handmade project. Our easy-to-follow guide takes the guesswork out of building, making it a perfect project for DIYers of all skill levels.  What's Included in Your Digital Download? This detailed PDF is packed with all the information you'll need to tur..."
   },
   {
     "id": "90",
@@ -816,8 +3149,35 @@ export const products: Product[] = [
     "name": "DIY Flag Retirement Box Plans | American Flag Drop Box Woodworking PDF | Veteran Memorial Collection Blueprint | Patriotic Wood Box Template",
     "category": "Flag Retirement Box",
     "price": 4.99,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/944f37/7852894247/il_fullxfull.7852894247_lgbg.jpg",
-    "description": "Build a Respectful & Sturdy Flag Retirement Drop Box!  Looking for a meaningful woodworking project? This comprehensive DIY Flag Retirement Box Plan provides everything you need to build a dedicated, ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/944f37/7852894247/il_fullxfull.7852894247_lgbg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b46364/7804952866/il_fullxfull.7804952866_dhq1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7d82ba/7852894271/il_fullxfull.7852894271_25ht.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b81ac5/7852894241/il_fullxfull.7852894241_a6pd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b9cbc2/7852894249/il_fullxfull.7852894249_iazd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b94c91/7852894251/il_fullxfull.7852894251_s990.jpg",
+      "https://i.etsystatic.com/37058139/r/il/92538b/7852894297/il_fullxfull.7852894297_gyjr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/718819/7852894295/il_fullxfull.7852894295_mzg9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/389ba0/7804952932/il_fullxfull.7804952932_6n47.jpg"
+    ],
+    "tags": [
+      "Flag_Retirement_Box",
+      "American_Flag_Box",
+      "Flag_Storage_Box",
+      "Patriotic_Wood_Box",
+      "Flag_Drop_Box_Plan",
+      "Veteran_Shadow_Box",
+      "Wood_Flag_Box_DIY",
+      "Retirement_Flag_Box",
+      "Flag_Display_Boxes",
+      "Military_Flag_Box",
+      "Eagle_Scout_Project",
+      "Woodworking_PDF",
+      "Memorial_Box_Plan"
+    ],
+    "description": "Build a Respectful & Sturdy Flag Retirement Drop Box!  Looking for a meaningful woodworking project? This comprehensive DIY Flag Retirement Box Plan provides everything you need to build a dedicated, weather-resistant outdoor collection box for the respectful disposal of worn American flags. Perfect for Eagle Scout projects, local VFW posts, fire stations, or community centers.  While many search for an American Flag Storage Box or Flag Display Boxes for indoors, this large-scale structure is de..."
   },
   {
     "id": "91",
@@ -825,8 +3185,29 @@ export const products: Product[] = [
     "name": "Mobile Lumber Storage Cart DIY Plan: Scrapwood Organizer (PDF)",
     "category": "Scrap Storage",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/31aa69/7241756456/il_fullxfull.7241756456_fhqp.jpg",
-    "description": "\u2728 The Ultimate Workshop Upgrade: Mobile Lumber Storage Cart DIY Plan  Tired of the Lumber Chaos? Reclaim your workspace and revolutionize your organization with this expertly designed DIY Mobile Lumbe..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/31aa69/7241756456/il_fullxfull.7241756456_fhqp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b129f0/7289714429/il_fullxfull.7289714429_took.jpg",
+      "https://i.etsystatic.com/37058139/r/il/740dea/7241756452/il_fullxfull.7241756452_bn5o.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3337a6/7289714425/il_fullxfull.7289714425_sbaa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f68971/7241756454/il_fullxfull.7241756454_hyhp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/71ebc7/7289714431/il_fullxfull.7289714431_4dny.jpg"
+    ],
+    "tags": [
+      "Scrap_Storage",
+      "Lumber_Cart",
+      "Tote_Storage",
+      "Lumber_Storage",
+      "Scrap_Wood_Cart",
+      "Wood_Storage_Cart",
+      "Wood_Storage",
+      "Woodworking_Plans",
+      "Storage_Cart_Plans",
+      "Mobile_Wood_Cart"
+    ],
+    "description": "\u2728 The Ultimate Workshop Upgrade: Mobile Lumber Storage Cart DIY Plan  Tired of the Lumber Chaos? Reclaim your workspace and revolutionize your organization with this expertly designed DIY Mobile Lumber Cart Plan! This isn't just a blueprint; it's your ticket to a cleaner, more efficient, and professional-looking wood workshop. Stop tripping over scraps and start building!  \ud83c\udf1f Why This Plan is a Must-Have for Every Woodworker:  Massive Storage, Small Footprint: Our ingenious vertical design allows..."
   },
   {
     "id": "92",
@@ -834,8 +3215,33 @@ export const products: Product[] = [
     "name": "Coffee Cart Plans | Portable Espresso Bar Blueprint | DIY Collapsible Mobile Coffee, Drink Vendor Cart Design",
     "category": "Custom food cart",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/4dda19/7147756308/il_fullxfull.7147756308_hokk.jpg",
-    "description": "DIY Mobile Bar Cart Plans: The Ultimate Collapsible Vendor Cart Blueprint  Ready to create the perfect centerpiece for your next event? This is not just a plan; it's your ticket to building a beautifu..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/4dda19/7147756308/il_fullxfull.7147756308_hokk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9217e4/7195745303/il_fullxfull.7195745303_25dt.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d0b5a5/7195745311/il_fullxfull.7195745311_qerf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3c8408/7195745317/il_fullxfull.7195745317_j51d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b80b1e/7147769338/il_fullxfull.7147769338_6q7s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3c90ab/7144919042/il_fullxfull.7144919042_kzxy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/273b44/7144919048/il_fullxfull.7144919048_amqt.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart",
+      "bar_cart"
+    ],
+    "description": "DIY Mobile Bar Cart Plans: The Ultimate Collapsible Vendor Cart Blueprint  Ready to create the perfect centerpiece for your next event? This is not just a plan; it's your ticket to building a beautiful, professional-grade mobile bar or vendor cart. Our meticulously designed, step-by-step PDF guide gives you everything you need to bring this elegant and modern design to life. Imagine effortlessly serving guests from a stunning, custom-built cart that perfectly fits your unique style.  Unmatched C..."
   },
   {
     "id": "93",
@@ -843,8 +3249,33 @@ export const products: Product[] = [
     "name": "Work Bench With Storage DIY Plan | Garage Workbench and Woodworking Table with Shelves - Custom Stationary Desk Plan",
     "category": "woodworking",
     "price": 7.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/069f1f/7289733619/il_fullxfull.7289733619_2l96.jpg",
-    "description": "Build Your Ultimate Workshop: Heavy-Duty Workbench DIY Plan Stop looking at messy spaces and start building! These professional, easy-to-follow plans are your blueprint to constructing the Ultimate Wo..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/069f1f/7289733619/il_fullxfull.7289733619_2l96.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e1f6fb/7289733517/il_fullxfull.7289733517_8iyu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/264493/7289733673/il_fullxfull.7289733673_54xs.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a906ba/7241775368/il_fullxfull.7241775368_6og5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/010717/7241775302/il_fullxfull.7241775302_fwie.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c6d56b/7241775300/il_fullxfull.7241775300_l07x.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4b1367/7045515514/il_fullxfull.7045515514_1jyi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d74773/7045515490/il_fullxfull.7045515490_gw2f.jpg"
+    ],
+    "tags": [
+      "woodworking",
+      "small_workbench",
+      "small_shop_workbench",
+      "garage_workbench",
+      "diy_workbench",
+      "garden_bench",
+      "workbench",
+      "build",
+      "Workbench_Storage",
+      "Desk_Garage",
+      "Basement_Work_Bench",
+      "Worktable"
+    ],
+    "description": "Build Your Ultimate Workshop: Heavy-Duty Workbench DIY Plan Stop looking at messy spaces and start building! These professional, easy-to-follow plans are your blueprint to constructing the Ultimate Work Bench with Storage\u2014the centerpiece every serious workshop deserves. Say goodbye to clutter and hello to efficient, organized crafting.  Workbench Features That Set You Up For Success This isn't just a table; it's a custom stationary workstation designed for durability, storage, and comfort.  Mass..."
   },
   {
     "id": "94",
@@ -852,8 +3283,36 @@ export const products: Product[] = [
     "name": "Modern Slatted Planter Bench Plans | Outdoor Seating Blueprint (PDF Download)",
     "category": "planter bench plans",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/f16d50/7825382765/il_fullxfull.7825382765_ea8t.jpg",
-    "description": "Upgrade Your Outdoor Space with a Modern DIY Planter Bench!  Transform your garden, patio, or front porch with our comprehensive planter bench plans. This unique, modern slatted design seamlessly comb..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/f16d50/7825382765/il_fullxfull.7825382765_ea8t.jpg",
+      "https://i.etsystatic.com/37058139/r/il/257dcb/7825382755/il_fullxfull.7825382755_cdus.jpg",
+      "https://i.etsystatic.com/37058139/r/il/df3acb/7777454616/il_fullxfull.7777454616_csx3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/74ac4c/7777454620/il_fullxfull.7777454620_3ua3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a4d223/7777454636/il_fullxfull.7777454636_az79.jpg",
+      "https://i.etsystatic.com/37058139/r/il/05b9e7/7777454618/il_fullxfull.7777454618_ic97.jpg",
+      "https://i.etsystatic.com/37058139/r/il/15a1d7/7825382821/il_fullxfull.7825382821_ewec.jpg",
+      "https://i.etsystatic.com/37058139/r/il/578c6d/7777454670/il_fullxfull.7777454670_mc70.jpg",
+      "https://i.etsystatic.com/37058139/r/il/05008b/7777454680/il_fullxfull.7777454680_701r.jpg",
+      "https://i.etsystatic.com/37058139/r/il/393887/7777454692/il_fullxfull.7777454692_qgfb.jpg"
+    ],
+    "tags": [
+      "planter_bench_plans",
+      "bench_with_planter",
+      "planter_bench_combo",
+      "diy_outdoor_bench",
+      "wood_planter_bench",
+      "front_porch_bench",
+      "garden_bench_plan",
+      "modern_bench_diy",
+      "patio_seating_plans",
+      "planter_box_bench",
+      "wood_furniture_plan",
+      "outdoor_planter_diy",
+      "woodworking_plans"
+    ],
+    "description": "Upgrade Your Outdoor Space with a Modern DIY Planter Bench!  Transform your garden, patio, or front porch with our comprehensive planter bench plans. This unique, modern slatted design seamlessly combines a comfortable seating area with an integrated planter box, creating the ultimate planter bench combo diy project. It is the perfect front porch bench and planter to showcase your favorite flowers, ornamental grasses, or herbs while providing a relaxing spot to sit.  Whether you are looking for ..."
   },
   {
     "id": "95",
@@ -861,8 +3320,36 @@ export const products: Product[] = [
     "name": "DIY Murphy Desk Plans | Wall Mounted Fold Down Table Blueprint (Digital Download)",
     "category": "murphy desk plans",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/cec310/7814618837/il_fullxfull.7814618837_qgfv.jpg",
-    "description": "Maximize Your Space with Premium DIY Wall Mounted Murphy Desk Plans!  Tired of bulky desks taking up your valuable floor space? Build your own stylish and functional workspace with our comprehensive m..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/cec310/7814618837/il_fullxfull.7814618837_qgfv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9e5eba/7814618827/il_fullxfull.7814618827_igyo.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fb01cf/7814618833/il_fullxfull.7814618833_e5mb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/844d46/7766673712/il_fullxfull.7766673712_lwb2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/af25f2/7814618835/il_fullxfull.7814618835_8btz.jpg",
+      "https://i.etsystatic.com/37058139/r/il/08c0bc/7814618847/il_fullxfull.7814618847_hmjr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/47a07a/7766673732/il_fullxfull.7766673732_di7b.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c88c4a/7766673710/il_fullxfull.7766673710_6due.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3b34f9/7766673734/il_fullxfull.7766673734_5k9v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/073548/7766673722/il_fullxfull.7766673722_2llk.jpg"
+    ],
+    "tags": [
+      "murphy_desk_plans",
+      "fold_down_table",
+      "wall_mounted_desk",
+      "smart_furniture",
+      "small_space_desk",
+      "folding_table_diy",
+      "diy_floating_desk",
+      "desk_with_storage",
+      "wall_table_plans",
+      "murphy_table_pdf",
+      "craft_table_plans",
+      "desk_blueprint",
+      "woodworking_plans"
+    ],
+    "description": "Maximize Your Space with Premium DIY Wall Mounted Murphy Desk Plans!  Tired of bulky desks taking up your valuable floor space? Build your own stylish and functional workspace with our comprehensive murphy desk plans. This innovative design features a spacious wall mounted fold down table that easily tucks away when not in use, revealing built-in shelving for your books, decor, or office supplies. It is the ultimate small space solutions project for home offices, bedrooms, or studio apartments. ..."
   },
   {
     "id": "96",
@@ -870,8 +3357,35 @@ export const products: Product[] = [
     "name": "DIY Outdoor Hidden Storage Coffee Table Plans PDF | Wooden Deck Box Blueprint | Patio Furniture Woodworking Build",
     "category": "Outdoor Coffee Table",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/812aa0/7941703038/il_fullxfull.7941703038_n7bg.jpg",
-    "description": "100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/812aa0/7941703038/il_fullxfull.7941703038_n7bg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ffdd25/7941703030/il_fullxfull.7941703030_3l3v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/15e118/7941703042/il_fullxfull.7941703042_ecuc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e29fc8/7941703040/il_fullxfull.7941703040_eybu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/24553c/7989662333/il_fullxfull.7989662333_trbk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f8497b/7941703046/il_fullxfull.7941703046_4df8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ca55e5/7941703076/il_fullxfull.7941703076_jspe.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0aca2c/7941703072/il_fullxfull.7941703072_k3ep.jpg",
+      "https://i.etsystatic.com/37058139/r/il/875899/7941703068/il_fullxfull.7941703068_8125.jpg"
+    ],
+    "tags": [
+      "Outdoor_Coffee_Table",
+      "Storage_Coffee_Table",
+      "Deck_Box_Plans",
+      "Patio_Furniture_DIY",
+      "Hidden_Storage_Table",
+      "Woodworking_Plans",
+      "Wood_Table_Plans",
+      "DIY_Coffee_Table",
+      "Rustic_Outdoor_Table",
+      "Garden_Furniture",
+      "Storage_Box_Wood",
+      "Barn_Door_Furniture",
+      "Woodworking_Build"
+    ],
+    "description": "100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Upgrade your patio or backyard with this stunning DIY Outdoor Hidden Storage C..."
   },
   {
     "id": "97",
@@ -879,8 +3393,36 @@ export const products: Product[] = [
     "name": "DIY Champagne Cart Plans: Mobile Bar, Event Cart Blueprints (Digital Download)",
     "category": "Custom food cart",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/a43b08/7484167462/il_fullxfull.7484167462_buq1.jpg",
-    "description": "\ud83e\udd42 Build Your Own Elegant Champagne & Event Cart! Create the ultimate focal point for your next event with these comprehensive Champagne Cart Custom Build plans. Whether you are a DIY enthusiast lookin..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/a43b08/7484167462/il_fullxfull.7484167462_buq1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ab104f/7532093641/il_fullxfull.7532093641_k9b8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/335acb/7532093657/il_fullxfull.7532093657_6i09.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d36d99/7484167432/il_fullxfull.7484167432_d0cs.jpg",
+      "https://i.etsystatic.com/37058139/r/il/51959c/7484167456/il_fullxfull.7484167456_7m0c.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e2f964/7484167454/il_fullxfull.7484167454_kfcx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d87e3d/7532093673/il_fullxfull.7532093673_scbn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0334c8/7484167460/il_fullxfull.7484167460_i06q.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2c3e2b/7532093681/il_fullxfull.7532093681_5r0u.jpg",
+      "https://i.etsystatic.com/37058139/r/il/388842/7484167464/il_fullxfull.7484167464_lfvr.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart",
+      "bar_cart"
+    ],
+    "description": "\ud83e\udd42 Build Your Own Elegant Champagne & Event Cart! Create the ultimate focal point for your next event with these comprehensive Champagne Cart Custom Build plans. Whether you are a DIY enthusiast looking to build a beautiful piece for your home, or a rental business owner wanting to add a high-ROI item to your inventory, this design is perfect for you. This isn't just a cart; it\u2019s a statement piece. Designed to be sturdy yet elegant, this Personalized Mobile Bar Cart features a timeless design wit..."
   },
   {
     "id": "98",
@@ -888,8 +3430,36 @@ export const products: Product[] = [
     "name": "Mobile Coffee Cart DIY Plans | Collapsible Barista Station (PDF Download)",
     "category": "Custom food cart",
     "price": 15.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/ddbb8a/7484142852/il_fullxfull.7484142852_75az.jpg",
-    "description": "\u2615 Start Your Mobile Coffee Business in Style!  Are you dreaming of launching your own pop-up coffee shop or upgrading your event setup? These Mobile Coffee Cart Build plans are your first step toward ..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/ddbb8a/7484142852/il_fullxfull.7484142852_75az.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7f0cf0/7484142854/il_fullxfull.7484142854_5hil.jpg",
+      "https://i.etsystatic.com/37058139/r/il/069d49/7532069097/il_fullxfull.7532069097_5vny.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6f226f/7484142856/il_fullxfull.7484142856_epw7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f96536/7532069137/il_fullxfull.7532069137_m71f.jpg",
+      "https://i.etsystatic.com/37058139/r/il/126866/7484142814/il_fullxfull.7484142814_58c9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9abe88/7532069103/il_fullxfull.7532069103_ecf8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/54c631/7484142830/il_fullxfull.7484142830_pqt5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7c0355/7532069105/il_fullxfull.7532069105_kpnv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/86ae7d/7532061717/il_fullxfull.7532061717_pbm9.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart",
+      "bar_cart"
+    ],
+    "description": "\u2615 Start Your Mobile Coffee Business in Style!  Are you dreaming of launching your own pop-up coffee shop or upgrading your event setup? These Mobile Coffee Cart Build plans are your first step toward success. Designed with a modern, trendy slatted aesthetic, this cart isn't just a workspace; it's a customer magnet. We designed this Coffee Cart Blueprint specifically for entrepreneurs who need flexibility. Whether you are serving espresso at weddings, selling jewelry at craft fairs, or running a ..."
   },
   {
     "id": "99",
@@ -897,8 +3467,36 @@ export const products: Product[] = [
     "name": "DIY Outdoor Dining Set Plans | Wooden Patio Table, Chairs Blueprint (Digital Download)",
     "category": "outdoor dining set",
     "price": 10.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/12cbdb/7777045354/il_fullxfull.7777045354_tiqg.jpg",
-    "description": "Transform Your Backyard with Premium DIY Outdoor Dining Set Plans!  Get ready to host unforgettable summer barbecues and family dinners! Upgrade your patio, deck, or garden with our comprehensive outd..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/12cbdb/7777045354/il_fullxfull.7777045354_tiqg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ddd729/7777045334/il_fullxfull.7777045334_i24j.jpg",
+      "https://i.etsystatic.com/37058139/r/il/702ef9/7824974113/il_fullxfull.7824974113_rfa7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a68894/7824974141/il_fullxfull.7824974141_4sl4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e730ef/7777045352/il_fullxfull.7777045352_3t9n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4a5ac0/7824974139/il_fullxfull.7824974139_cxk7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/12d621/7777045382/il_fullxfull.7777045382_auqm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ebb14b/7824974181/il_fullxfull.7824974181_mxic.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b63f83/7777045390/il_fullxfull.7777045390_ge85.jpg",
+      "https://i.etsystatic.com/37058139/r/il/833d9b/7824974183/il_fullxfull.7824974183_okc0.jpg"
+    ],
+    "tags": [
+      "outdoor_dining_set",
+      "patio_table_plans",
+      "outdoor_table_plan",
+      "wooden_patio_chairs",
+      "patio_furniture_diy",
+      "dining_table_plans",
+      "diy_patio_set",
+      "wood_patio_table",
+      "garden_table_diy",
+      "outdoor_chair_plan",
+      "outdoor_table_diy",
+      "wood_furniture_plans",
+      "woodworking_plans"
+    ],
+    "description": "Transform Your Backyard with Premium DIY Outdoor Dining Set Plans!  Get ready to host unforgettable summer barbecues and family dinners! Upgrade your patio, deck, or garden with our comprehensive outdoor dining set plans. This professional blueprint includes step-by-step instructions to build both a stunning, heavy-duty slatted outdoor dining table and perfectly matching, comfortable armchairs.  Whether you are looking for stylish wooden patio table and chairs to complete your outdoor oasis or a..."
   },
   {
     "id": "100",
@@ -906,7 +3504,1798 @@ export const products: Product[] = [
     "name": "Floral 90th Birthday Invitation | Photo Keepsake (Digital)",
     "category": "90th birthday invite",
     "price": 5.0,
+    "currency": "USD",
     "image": "https://i.etsystatic.com/37058139/r/il/958265/7097697948/il_fullxfull.7097697948_l7x7.jpg",
-    "description": "Honor a Milestone: Personalized 90th Birthday Invitation with Photo  Planning a 90th birthday party is a special way to celebrate a life well-lived. Our 90th birthday invitation template is the perfec..."
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/958265/7097697948/il_fullxfull.7097697948_l7x7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/676a3b/7097697952/il_fullxfull.7097697952_7hwy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/adb808/7097697946/il_fullxfull.7097697946_brjk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/66377c/7097697964/il_fullxfull.7097697964_9g5n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c05a42/7145657957/il_fullxfull.7145657957_r1lr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a3fed6/7145657949/il_fullxfull.7145657949_tv1t.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8dad44/7097697962/il_fullxfull.7097697962_pxyn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/62ec77/7145657961/il_fullxfull.7145657961_f8ww.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c92c57/7097697958/il_fullxfull.7097697958_ns6e.jpg"
+    ],
+    "tags": [
+      "90th_birthday_invite",
+      "90th_party_decor",
+      "birthday_invite",
+      "90th_digital_invite",
+      "invitation_for_her",
+      "90th_birthday_party",
+      "90th_birthday_decor",
+      "simple_photo_invite",
+      "90th_invitation",
+      "look_who's_90",
+      "90th_Birthday",
+      "digital_invite",
+      "simple_birthday"
+    ],
+    "description": "Honor a Milestone: Personalized 90th Birthday Invitation with Photo  Planning a 90th birthday party is a special way to celebrate a life well-lived. Our 90th birthday invitation template is the perfect start to this momentous occasion, whether you're looking for a 90th Birthday Invitation for Men or a special 90th Birthday Invitations for Women. This isn't just a simple invite; it's a keepsake that marks nine decades of life. Our template makes it easy to create a personalized 90th Birthday Invi..."
+  },
+  {
+    "id": "101",
+    "slug": "wooden-mini-greenhouse-build-plans-balcony-garden",
+    "name": "Wooden Mini Greenhouse Build Plans, Balcony Garden Cold Frame (Digital Download)",
+    "category": "mini greenhouse",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/6cf08e/7814395781/il_fullxfull.7814395781_9qru.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/6cf08e/7814395781/il_fullxfull.7814395781_9qru.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fb84d6/7766450876/il_fullxfull.7766450876_34lf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/da9d3f/7814395793/il_fullxfull.7814395793_5oda.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e7e172/7766450946/il_fullxfull.7766450946_304e.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5ac863/7766450922/il_fullxfull.7766450922_5yop.jpg",
+      "https://i.etsystatic.com/37058139/r/il/206b92/7766450970/il_fullxfull.7766450970_4up9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7588eb/7766450966/il_fullxfull.7766450966_4f6j.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3fd775/7814395839/il_fullxfull.7814395839_70jg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/029ede/7814395847/il_fullxfull.7814395847_7iv9.jpg"
+    ],
+    "tags": [
+      "mini_greenhouse",
+      "greenhouse_plan",
+      "indoor_greenhouse",
+      "porch_greenhouse",
+      "balcony_greenhouse",
+      "cold_frame_plan",
+      "walk_in_greenhouse",
+      "wood_greenhouse",
+      "tiny_greenhouse",
+      "greenhouse_build",
+      "diy_cold_frame",
+      "diy_greenhouse_pdf",
+      "woodworking_plans"
+    ],
+    "description": "Extend Your Growing Season with Premium DIY Mini Greenhouse Plans!  Ready to protect your plants and grow your own food year-round? Build your own beautiful and functional plant shelter with our comprehensive mini greenhouse build plans. Whether you are looking for a stylish wooden greenhouse for balcony spaces, an indoor greenhouse design, or practical greenhouse plans for porch and patio areas, this versatile lean-to structure is the perfect solution.  Designed to easily attach to an existing ..."
+  },
+  {
+    "id": "102",
+    "slug": "diy-meditation-table-plans-pdf--wooden-zen-platfo",
+    "name": "DIY Meditation Table Plans PDF | Wooden Zen Platform Blueprint | Ergonomic Yoga Bench | Slanted Floor Seating Stool",
+    "category": "Meditation Table",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/c73635/7989788097/il_fullxfull.7989788097_jv8d.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/c73635/7989788097/il_fullxfull.7989788097_jv8d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/57976d/7941829918/il_fullxfull.7941829918_2zzf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2787f2/7941829920/il_fullxfull.7941829920_lxid.jpg",
+      "https://i.etsystatic.com/37058139/r/il/32db20/7941829922/il_fullxfull.7941829922_iubd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d23a7a/7941829928/il_fullxfull.7941829928_ciu9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0d22e2/7941829916/il_fullxfull.7941829916_q61z.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0d9dd3/7989788135/il_fullxfull.7989788135_pwpf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a665e0/7941829956/il_fullxfull.7941829956_uh90.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ac7307/7989788117/il_fullxfull.7989788117_9p1t.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5c24e9/7989788115/il_fullxfull.7989788115_h1en.jpg"
+    ],
+    "tags": [
+      "Meditation_Table",
+      "Zen_Platform",
+      "Yoga_Bench_Plan",
+      "Meditation_Stool",
+      "DIY_Furniture_Plan",
+      "Woodworking_Plans",
+      "Slanted_Wood_Stool",
+      "Floor_Seating",
+      "CNC_Plywood_Plan",
+      "Wellness_Furniture",
+      "Floor_Desk_Plan",
+      "Meditation_Chair",
+      "Plywood_Furniture"
+    ],
+    "description": "Build Your Own Tranquil Space with This Ergonomic Zen Meditation Platform!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Cr..."
+  },
+  {
+    "id": "103",
+    "slug": "diy-mobile-jigsaw-station-plans-pdf--rolling-work",
+    "name": "DIY Mobile Jigsaw Station Plans PDF | Rolling Workbench Tool Cart Blueprint | Woodworking Shop Cart | Portable Power Tool Stand",
+    "category": "Jigsaw Station",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/723f59/7941822954/il_fullxfull.7941822954_1zmr.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/723f59/7941822954/il_fullxfull.7941822954_1zmr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/858325/7941822958/il_fullxfull.7941822958_r7tp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/edd46a/7989780983/il_fullxfull.7989780983_m1xj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0a19b5/7989780989/il_fullxfull.7989780989_arzx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3d116a/7989780991/il_fullxfull.7989780991_m77o.jpg",
+      "https://i.etsystatic.com/37058139/r/il/35a4c5/7989780985/il_fullxfull.7989780985_re5j.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b50cc6/7941822984/il_fullxfull.7941822984_p6uu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b37b48/7989780993/il_fullxfull.7989780993_1wps.jpg",
+      "https://i.etsystatic.com/37058139/r/il/391bef/7941822990/il_fullxfull.7941822990_j9xp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1b5f79/7941822986/il_fullxfull.7941822986_ww4u.jpg"
+    ],
+    "tags": [
+      "Jigsaw_Station",
+      "Mobile_Workbench",
+      "Tool_Cart_DIY",
+      "Woodworking_Plans",
+      "Rolling_Shop_Cart",
+      "Power_Tool_Stand",
+      "Workbench_Blueprint",
+      "Workshop_Storage",
+      "Garage_Organization",
+      "Plywood_Cart_Plan",
+      "DIY_Saw_Stand",
+      "Portable_Work_Table",
+      "Shop_Furniture_Plan"
+    ],
+    "description": "Build the Perfect Mobile Workstation for Your Tools!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take your workshop organ..."
+  },
+  {
+    "id": "104",
+    "slug": "diy-work-table-plans-pdf--modern-computer-desk-wi",
+    "name": "DIY Work Table Plans PDF | Modern Computer Desk with Drawers Blueprint | Home Office Study Table | Plywood Woodworking Desk Plan",
+    "category": "Work Table Plans",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/509e94/7941805460/il_fullxfull.7941805460_bj4t.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/509e94/7941805460/il_fullxfull.7941805460_bj4t.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bd238f/7989763737/il_fullxfull.7989763737_n0k8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/113ec6/7941805456/il_fullxfull.7941805456_tvxp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2accb2/7941805450/il_fullxfull.7941805450_mq4c.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7af095/7989763739/il_fullxfull.7989763739_clm0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1c35de/7989763751/il_fullxfull.7989763751_r1yv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c10dab/7941805468/il_fullxfull.7941805468_an3n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/df704b/7989763755/il_fullxfull.7989763755_oxj4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e8850e/7989763753/il_fullxfull.7989763753_22n2.jpg"
+    ],
+    "tags": [
+      "Work_Table_Plans",
+      "DIY_Desk_Blueprint",
+      "Computer_Desk_Plan",
+      "Office_Desk_DIY",
+      "Desk_With_Drawers",
+      "Study_Table_Build",
+      "Woodworking_Plans",
+      "Plywood_Desk",
+      "Modern_Desk_Plan",
+      "Furniture_Plans",
+      "Privacy_Desk",
+      "Home_Office_DIY",
+      "Writing_Desk_Plan"
+    ],
+    "description": "Build Your Ultimate Focused Workspace with This Modern DIY Work Table!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Upgrad..."
+  },
+  {
+    "id": "105",
+    "slug": "diy-hoop-coop-chicken-tractor-plans-pdf--portable",
+    "name": "DIY Hoop Coop Chicken Tractor Plans PDF | Portable Poultry House on Wheels | Cattle Panel Mobile Coop Blueprint | Chicken Run Build Guide",
+    "category": "chicken tractor plan",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/035083/7913220996/il_fullxfull.7913220996_elx7.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/035083/7913220996/il_fullxfull.7913220996_elx7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9cd873/7913220370/il_fullxfull.7913220370_em1u.jpg",
+      "https://i.etsystatic.com/37058139/r/il/817bfc/7913220894/il_fullxfull.7913220894_o1w0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a25f7f/7961176951/il_fullxfull.7961176951_qyrg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/132706/7961176873/il_fullxfull.7961176873_kiah.jpg",
+      "https://i.etsystatic.com/37058139/r/il/25c056/7961176827/il_fullxfull.7961176827_40lm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ab3965/7961176811/il_fullxfull.7961176811_5knx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5e4b6c/7913220840/il_fullxfull.7913220840_hkwj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/090623/7913220808/il_fullxfull.7913220808_ezpb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2425d3/7961177027/il_fullxfull.7961177027_idmi.jpg"
+    ],
+    "tags": [
+      "chicken_tractor_plan",
+      "hoop_coop_diy",
+      "mobile_coop_wheels",
+      "tractor_coop_build",
+      "cattle_panel_coop",
+      "chicken_run_pdf",
+      "walk_in_chicken_coop",
+      "backyard_poultry",
+      "homesteading_build",
+      "poultry_housing_diy",
+      "mobile_brooder_plan",
+      "woodworking_plans",
+      "portable_coop"
+    ],
+    "description": "Raise Healthier Flocks: The Ultimate Walk-In Mobile Chicken Tractor  Upgrade your backyard homesteading with a heavy-duty, mobile poultry house designed for fresh pasture and ultimate flock security. This comprehensive digital woodworking blueprint provides the exact instructions to build a massive, walk-in Hoop Coop Chicken Tractor. Utilizing a cost-effective and incredibly strong cattle panel arch design, this portable coop allows you to easily move your flock to fresh grass daily while keepin..."
+  },
+  {
+    "id": "106",
+    "slug": "diy-large-welcome-sign-planter-plans-pdf--70inch",
+    "name": "DIY Large Welcome Sign Planter Plans PDF | 70-Inch Tall Porch Plant Stand Blueprint",
+    "category": "welcome planter diy",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/feb0d2/7951131277/il_fullxfull.7951131277_83im.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/feb0d2/7951131277/il_fullxfull.7951131277_83im.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f4ab8a/7903179246/il_fullxfull.7903179246_cw8e.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e336a4/7903179256/il_fullxfull.7903179256_4otx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/acae85/7903179254/il_fullxfull.7903179254_trid.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ba1851/7951131275/il_fullxfull.7951131275_mrjp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a559b4/7766513710/il_fullxfull.7766513710_2kau.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3a5591/7814458547/il_fullxfull.7814458547_9zxa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7ebb45/7814458557/il_fullxfull.7814458557_lrj5.jpg"
+    ],
+    "tags": [
+      "welcome_planter_diy",
+      "porch_planter_box",
+      "wood_welcome_sign",
+      "garden_planter_plan",
+      "hanging_basket_stand",
+      "wood_project_diy",
+      "front_porch_decor",
+      "cedar_planter_plans",
+      "diy_plant_stand",
+      "woodworking_plans",
+      "welcome_sign_stand",
+      "outdoor_garden_craft",
+      "fall_wood_decor"
+    ],
+    "description": "Transform your home\u2019s curb appeal with a true statement piece. This comprehensive digital woodworking blueprint provides the exact instructions to build a massive, towering Welcome Sign Planter Box. Standing at an impressive 70 inches tall, this design commands attention from the street, creating a warm, highly visible, and inviting entrance to your front porch, driveway, or garden pathway.  Why settle for small, easily overlooked porch decor when you can build a heavy-duty, custom wooden landma..."
+  },
+  {
+    "id": "107",
+    "slug": "diy-square-wedding-arch-plans-pdf--wooden-rustic",
+    "name": "DIY Square Wedding Arch Plans PDF | Wooden Rustic Arbor Blueprint | Bridal Shower Photo Backdrop | Outdoor Ceremony Woodworking Guide",
+    "category": "triangle arch plans",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/dc76a0/7913160814/il_fullxfull.7913160814_oxof.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/dc76a0/7913160814/il_fullxfull.7913160814_oxof.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ad1386/7913160018/il_fullxfull.7913160018_q1a3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/76f4c2/7913160962/il_fullxfull.7913160962_5xo8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cac6b0/7913160946/il_fullxfull.7913160946_6mjy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/36f834/7913160944/il_fullxfull.7913160944_htg3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/92a02d/7961116949/il_fullxfull.7961116949_i8es.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8015ae/7913160108/il_fullxfull.7913160108_8i8r.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d2fa2a/7913160160/il_fullxfull.7913160160_a96v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b0feb4/7913160512/il_fullxfull.7913160512_2b9k.jpg"
+    ],
+    "tags": [
+      "triangle_arch_plans",
+      "wooden_wedding_arch",
+      "wedding_arbor_design",
+      "collapsible_arch_diy",
+      "diy_wedding_backdrop",
+      "simple_arch_plans",
+      "rustic_wedding_arbor",
+      "3_piece_arch_build",
+      "woodworking_plans",
+      "wedding_trellis_pdf",
+      "event_prop_build",
+      "pinterest_arch_diy",
+      "wedding_decor"
+    ],
+    "description": "Frame Your Perfect Moment: The Classic Square Wedding Arch Blueprint  Create a timeless, breathtaking focal point for your ceremony. This digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, classic Square Wooden Wedding Arch. Whether you are framing a scenic outdoor altar, creating a lush photo backdrop for a bridal shower, or building a reliable prop for your event rental business, this structure delivers a perfect blend of rustic charm and structu..."
+  },
+  {
+    "id": "108",
+    "slug": "diy-acrylic-cube-box-plans-wooden-frame-display-c",
+    "name": "DIY Acrylic Cube Box Plans: Wooden Frame Display Case Blueprint | Clear Collectible Box PDF",
+    "category": "acrylic cube box",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/680a47/7804783148/il_fullxfull.7804783148_8u2z.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/680a47/7804783148/il_fullxfull.7804783148_8u2z.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1cd784/7804783140/il_fullxfull.7804783140_hv1g.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4269df/7852724715/il_fullxfull.7852724715_qtyu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ccd7c2/7852724703/il_fullxfull.7852724703_bonw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1ba775/7804783146/il_fullxfull.7804783146_jf8i.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f742c0/7852724707/il_fullxfull.7852724707_nyag.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0ec769/7804783158/il_fullxfull.7804783158_j6xn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/29fc3a/7804783150/il_fullxfull.7804783150_ndhg.jpg"
+    ],
+    "tags": [
+      "acrylic_cube_box",
+      "display_case_diy",
+      "clear_display_box",
+      "wood_acrylic_box",
+      "collectible_case",
+      "shadow_box_plans",
+      "tabletop_display",
+      "glass_box_plans",
+      "memorabilia_case",
+      "diy_display_box",
+      "display_case_plans",
+      "acrylic_case_wood",
+      "woodworking_plans"
+    ],
+    "description": "Showcase Your Treasures with a Beautiful DIY Acrylic Cube Box!  Looking for an elegant way to protect and display your favorite collectibles, memorabilia, or small plants? Build your own stunning acrylic cube box with our comprehensive woodworking plans. This minimalist design features a sturdy wooden frame and clear acrylic (or glass) panels, creating the perfect tabletop display case that blends seamlessly with any home decor.  Whether you need a custom collectible box to keep dust away from y..."
+  },
+  {
+    "id": "109",
+    "slug": "diy-mobile-miter-saw-stand-plans-pdf--rolling-sho",
+    "name": "DIY Mobile Miter Saw Stand Plans PDF | Rolling Shop Cart Blueprint | Chop Saw Workbench | Tool Storage Stand Woodworking",
+    "category": "Miter Saw Stand",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/23c50b/7989838749/il_fullxfull.7989838749_1cw5.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/23c50b/7989838749/il_fullxfull.7989838749_1cw5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/350d04/7941881988/il_fullxfull.7941881988_i800.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3c4840/7989838759/il_fullxfull.7989838759_1m2t.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b64376/7989838757/il_fullxfull.7989838757_px01.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4b47b4/7989838761/il_fullxfull.7989838761_5wki.jpg",
+      "https://i.etsystatic.com/37058139/r/il/44ced7/7989838767/il_fullxfull.7989838767_e8bq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9e125a/7941882032/il_fullxfull.7941882032_i7y7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/de7641/7989838797/il_fullxfull.7989838797_qqxv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2a432c/7941882034/il_fullxfull.7941882034_d698.jpg"
+    ],
+    "tags": [
+      "Miter_Saw_Stand",
+      "Rolling_Shop_Cart",
+      "Chop_Saw_Workbench",
+      "Tool_Storage_DIY",
+      "Woodworking_Plans",
+      "Mobile_Workstation",
+      "Garage_Organization",
+      "DIY_Tool_Stand",
+      "Shop_Furniture_Plan",
+      "Plywood_Workbench",
+      "Workshop_DIY",
+      "Rolling_Tool_Base",
+      "Saw_Stand_Blueprint"
+    ],
+    "description": "Build the Ultimate Mobile Base for Your Miter Saw!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take the hassle out of hea..."
+  },
+  {
+    "id": "110",
+    "slug": "diy-engraved-prayer-board-plans-pdf--wooden-inter",
+    "name": "DIY Engraved Prayer Board Plans PDF | Wooden Intercession Plaque Blueprint | Religious Wall Art Build | Custom Prayer Platform Woodworking",
+    "category": "Prayer Board Plan",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/ec21a1/7941866640/il_fullxfull.7941866640_mexy.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/ec21a1/7941866640/il_fullxfull.7941866640_mexy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/357084/7989823557/il_fullxfull.7989823557_m7au.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ca2dd2/7989823583/il_fullxfull.7989823583_ifi8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c4af35/7989823561/il_fullxfull.7989823561_sd9l.jpg",
+      "https://i.etsystatic.com/37058139/r/il/374fb2/7941866662/il_fullxfull.7941866662_5se1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9d78b2/7941866656/il_fullxfull.7941866656_pz6v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4c3390/7941866708/il_fullxfull.7941866708_5itq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4804dd/7941866686/il_fullxfull.7941866686_ismi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4958a4/7989823601/il_fullxfull.7989823601_nm80.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b85dbb/7941866700/il_fullxfull.7941866700_c5o0.jpg"
+    ],
+    "tags": [
+      "Prayer_Board_Plan",
+      "Religious_Wall_Art",
+      "Wooden_Prayer_Plaque",
+      "Intercession_Board",
+      "Woodworking_Plans",
+      "Engraved_Wood_Sign",
+      "Christian_Wall_Decor",
+      "Prayer_Platform",
+      "DIY_Wood_Sign",
+      "Spiritual_Art_Build",
+      "CNC_Router_Plan",
+      "Laser_Engraving_Plan",
+      "Custom_Prayer_Board"
+    ],
+    "description": "Craft a Beautiful, Meaningful Wooden Prayer Board for Your Home!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Create a stu..."
+  },
+  {
+    "id": "111",
+    "slug": "diy-raised-planter-bed-plans-pdf--wooden-elevated",
+    "name": "DIY Raised Planter Bed Plans PDF | Wooden Elevated Garden Box Blueprint | Rustic Barn Door Planter | Vegetable Garden Bed Woodworking",
+    "category": "Raised Planter Bed",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/a952ba/7989809559/il_fullxfull.7989809559_q1s7.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/a952ba/7989809559/il_fullxfull.7989809559_q1s7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7bda0e/7941851848/il_fullxfull.7941851848_1km7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8ef425/7941851872/il_fullxfull.7941851872_l2d8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6787a3/7941851868/il_fullxfull.7941851868_9i5e.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c75fdc/7941851870/il_fullxfull.7941851870_r0po.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4f5bbb/7941851866/il_fullxfull.7941851866_mmbb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/af641d/7941851888/il_fullxfull.7941851888_ki0n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d3c1ba/7989809593/il_fullxfull.7989809593_3893.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e90ee4/7989809603/il_fullxfull.7989809603_lbj8.jpg"
+    ],
+    "tags": [
+      "Raised_Planter_Bed",
+      "Garden_Box_Plans",
+      "DIY_Planter_Box",
+      "Wooden_Garden_Bed",
+      "Elevated_Planter",
+      "Woodworking_Plans",
+      "Rustic_Planter_DIY",
+      "Barn_Door_Planter",
+      "Vegetable_Garden",
+      "Wood_Garden_Box",
+      "Outdoor_Planter_Plan",
+      "Patio_Garden_Bed",
+      "Garden_Wood_Project"
+    ],
+    "description": "Build a Beautiful, Rustic Raised Planter Bed for Your Garden!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Transform your ..."
+  },
+  {
+    "id": "112",
+    "slug": "diy-dog-house-with-porch-plans-pdf--large-wooden",
+    "name": "DIY Dog House with Porch Plans PDF | Large Wooden Pet Cabin Blueprint | Outdoor Dog Kennel Build | Covered Deck Pet Shelter",
+    "category": "Dog House Plans",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/1e5dd3/7989801329/il_fullxfull.7989801329_tgna.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/1e5dd3/7989801329/il_fullxfull.7989801329_tgna.jpg",
+      "https://i.etsystatic.com/37058139/r/il/80ca3b/7941843654/il_fullxfull.7941843654_ttf6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e3157d/7941843678/il_fullxfull.7941843678_tuv8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cde4b4/7989801323/il_fullxfull.7989801323_ceso.jpg",
+      "https://i.etsystatic.com/37058139/r/il/37a2d1/7989801331/il_fullxfull.7989801331_6ysk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/366e1e/7941843698/il_fullxfull.7941843698_n2uc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/745079/7989801337/il_fullxfull.7989801337_ode3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1eac88/7941843708/il_fullxfull.7941843708_23q5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e93a6f/7941843716/il_fullxfull.7941843716_noda.jpg"
+    ],
+    "tags": [
+      "Dog_House_Plans",
+      "Dog_Kennel_DIY",
+      "Dog_Cabin_Blueprint",
+      "Pet_Shelter_Build",
+      "Wooden_Dog_House",
+      "Dog_House_With_Porch",
+      "Large_Dog_House",
+      "Woodworking_Plans",
+      "Outdoor_Pet_Bed",
+      "DIY_Pet_Furniture",
+      "Yard_Dog_House",
+      "Dog_Shed_Plan",
+      "Custom_Dog_House"
+    ],
+    "description": "Build the Ultimate Dream Home for Your Furry Best Friend!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Treat your loyal co..."
+  },
+  {
+    "id": "113",
+    "slug": "diy-tiered-display-stand-plan-craft-fair--weddin",
+    "name": "DIY Tiered Display Stand Plan: Craft Fair & Wedding (PDF Download)",
+    "category": "Cupcake Stand Wood",
+    "price": 6.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/b1f5f3/7046549846/il_fullxfull.7046549846_4r8v.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/b1f5f3/7046549846/il_fullxfull.7046549846_4r8v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8b0df6/7046549850/il_fullxfull.7046549850_p5sm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5c118a/7046549854/il_fullxfull.7046549854_pq6h.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4c9ad5/7046549858/il_fullxfull.7046549858_ouby.jpg"
+    ],
+    "tags": [
+      "Cupcake_Stand_Wood",
+      "Cup_Cake_Holder",
+      "Ladder_Treat_Stand",
+      "Wood_Cupcake_Display",
+      "Cupcake_Stand",
+      "Cupcake_Holder",
+      "Ladder_Treat",
+      "Cupcake_Display",
+      "Diy_Wood"
+    ],
+    "description": "Unleash Your Crafting Potential: Build Your Own Wooden Tiered Display Stand!  Looking to showcase your products or party treats in a stylish and effective way? This comprehensive DIY Wooden Display Stand PDF plan provides all the detailed blueprints and patterns you need to construct your own sturdy, portable, and aesthetically pleasing multi-level stand \u2013 perfect for any occasion!  What You Get with Your Purchase:  This listing is for INSTANT DOWNLOAD DIGITAL PLANS ONLY. You will receive a comp..."
+  },
+  {
+    "id": "114",
+    "slug": "diy-built-in-cabinets-plans--large-mudroom-hall-t",
+    "name": "DIY Built In Cabinets Plans | Large Mudroom Hall Tree Blueprint | Wall Unit Storage Cabinet PDF",
+    "category": "built in cabinets",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/52a2e1/7852787737/il_fullxfull.7852787737_4o81.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/52a2e1/7852787737/il_fullxfull.7852787737_4o81.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a4376e/7804846562/il_fullxfull.7804846562_ixq7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f7103f/7852787751/il_fullxfull.7852787751_c05h.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6776c4/7852787739/il_fullxfull.7852787739_4il8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ed6494/7852787749/il_fullxfull.7852787749_nz92.jpg",
+      "https://i.etsystatic.com/37058139/r/il/30bd43/7804846560/il_fullxfull.7804846560_9vk2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/561795/7852787759/il_fullxfull.7852787759_8tll.jpg"
+    ],
+    "tags": [
+      "built_in_cabinets",
+      "mudroom_plans",
+      "hall_tree_plans",
+      "storage_cabinet_diy",
+      "entryway_cabinet",
+      "wall_unit_plans",
+      "diy_built_in",
+      "closet_build_plan",
+      "furniture_blueprint",
+      "mudroom_bench_diy",
+      "wood_cabinet_plans",
+      "coat_rack_built_in",
+      "woodworking_plans"
+    ],
+    "description": "Transform Your Entryway with Premium DIY Built-In Cabinets Plans!  Tired of entryway clutter? Upgrade your home with a stunning, high-end storage solution using our comprehensive built in cabinets plans. This massive, custom-style mudroom hall tree features a comfortable seating bench, spacious lower drawers and cubbies for shoes, an elegant beadboard coat-hanging area, and illuminated upper storage sections. It is the ultimate storage cabinet plans project to keep your family organized in style..."
+  },
+  {
+    "id": "115",
+    "slug": "diy-earring-holder-easy-diy-jewelry-organizer-fo",
+    "name": "DIY Earring Holder |\u00a0Easy DIY Jewelry Organizer for Earrings | Wood Earring Display with Holes | Earring Holder Stand",
+    "category": "Laser Cut Files",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/3fd8f4/7167454946/il_fullxfull.7167454946_ikw9.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/3fd8f4/7167454946/il_fullxfull.7167454946_ikw9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/61be46/7613310541/il_fullxfull.7613310541_rgtz.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ca53f1/7167454938/il_fullxfull.7167454938_iy4w.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b164b9/7215442415/il_fullxfull.7215442415_1aat.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2fd308/7215442409/il_fullxfull.7215442409_bz0e.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4dac6a/7215442411/il_fullxfull.7215442411_cvv6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4688d8/7167454944/il_fullxfull.7167454944_ng5o.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6aad18/7112557918/il_fullxfull.7112557918_l9jq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/55af1d/7160528159/il_fullxfull.7160528159_lbo4.jpg"
+    ],
+    "tags": [
+      "Laser_Cut_Files",
+      "Jewelry_Display",
+      "Jewelry_Organizer",
+      "Necklace_Holder",
+      "Earring_Holder",
+      "Earring_Display",
+      "Earring_Organizer",
+      "Necklace_Display",
+      "DIY_Organizer",
+      "Earring_Stand",
+      "Wood_Jewelry_Rack",
+      "DIY_Jewelry_Stand",
+      "DIY_Earring_Stand"
+    ],
+    "description": "ThIs Is not a physIcal product.   If you purchase It, you wIll not receIve a physIcal product.    ThIs Is just a DIY plan!  Rescue your jewelry from tangled drawers and display it like a work of art! With this elegant Jewelry Tree Stand DIY plan, you can create a solution that is both highly functional and beautifully decorative for organizing your necklaces, earrings, and bracelets.  Inspired by nature, this tree design offers numerous branches, providing a massive storage capacity for all your..."
+  },
+  {
+    "id": "116",
+    "slug": "diy-small-firewood-shed-plans-pdf--outdoor-log-st",
+    "name": "DIY Small Firewood Shed Plans PDF | Outdoor Log Storage Blueprint | Lean-To Wood Storage Shed | Garden Firewood Rack Woodworking Plan",
+    "category": "Firewood Shed Plans",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/805efc/7941922262/il_fullxfull.7941922262_c7qq.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/805efc/7941922262/il_fullxfull.7941922262_c7qq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/119774/7941922258/il_fullxfull.7941922258_ra2c.jpg",
+      "https://i.etsystatic.com/37058139/r/il/097577/7941922278/il_fullxfull.7941922278_bnkg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f59046/7941922274/il_fullxfull.7941922274_h4lg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cba3b1/7989878821/il_fullxfull.7989878821_reov.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fb84d0/7989878825/il_fullxfull.7989878825_s26o.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c0935e/7989878883/il_fullxfull.7989878883_9okv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ead7ab/7941922330/il_fullxfull.7941922330_7lrd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9df7dc/7989878885/il_fullxfull.7989878885_16fx.jpg"
+    ],
+    "tags": [
+      "Firewood_Shed_Plans",
+      "Log_Storage_DIY",
+      "Outdoor_Wood_Shed",
+      "Firewood_Rack_Plans",
+      "Lean_To_Shed_Build",
+      "Garden_Storage_DIY",
+      "Woodworking_Plans",
+      "Firewood_Seasoning",
+      "Log_Store_Blueprint",
+      "Large_Wood_Shed",
+      "Yard_Storage",
+      "DIY_Shed_Plans",
+      "Fireplace_Wood"
+    ],
+    "description": "Keep Your Firewood Dry and Perfectly Seasoned with This Heavy-Duty DIY Shed!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Ongoing Support via Etsy Messages  Building a structure can be a big task, and we are here to support you every step of the way. If you have any questions, n..."
+  },
+  {
+    "id": "117",
+    "slug": "diy-27-gallon-tote-storage-rack-plans-pdf--heavy",
+    "name": "DIY 27 Gallon Tote Storage Rack Plans PDF | Heavy Duty Garage Organizer for 10 Bins | Tote Storage Rack Blueprint | Woodworking Project",
+    "category": "Tote Storage Rack",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/fa5ca1/7941887828/il_fullxfull.7941887828_klhs.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/fa5ca1/7941887828/il_fullxfull.7941887828_klhs.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4527d7/7941887850/il_fullxfull.7941887850_trni.jpg",
+      "https://i.etsystatic.com/37058139/r/il/46eda8/7989844375/il_fullxfull.7989844375_5ufj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f900b6/7989844379/il_fullxfull.7989844379_ppsx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e9dad8/7989844391/il_fullxfull.7989844391_ii78.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b20218/7989844373/il_fullxfull.7989844373_dhjf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bca245/7989844431/il_fullxfull.7989844431_5aa5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/671df3/7941887870/il_fullxfull.7941887870_ad1l.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f9add3/7941887876/il_fullxfull.7941887876_lged.jpg"
+    ],
+    "tags": [
+      "Tote_Storage_Rack",
+      "27_Gallon_Tote_Rack",
+      "Garage_Storage_Plans",
+      "Heavy_Duty_Organizer",
+      "Bin_Storage_DIY",
+      "Tote_Organizer_PDF",
+      "Storage_Bin_Rack",
+      "Workshop_Storage",
+      "Plywood_Storage_Rack",
+      "10_Tote_Rack",
+      "Home_Organization",
+      "Woodworking_Plans",
+      "Garage_Shelving"
+    ],
+    "description": "Take Control of Your Garage Chaos with the Ultimate 10-Tote Storage Rack!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Sto..."
+  },
+  {
+    "id": "118",
+    "slug": "diy-tree-bookshelf-plans-pdf--artistic-branch-wal",
+    "name": "DIY Tree Bookshelf Plans PDF | Artistic Branch Wall Library Blueprint | Unique Floating Bookcase | Nature Inspired Woodworking Plan",
+    "category": "Tree Bookshelf",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/2123b2/7941915354/il_fullxfull.7941915354_8wob.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/2123b2/7941915354/il_fullxfull.7941915354_8wob.jpg",
+      "https://i.etsystatic.com/37058139/r/il/08b59c/7989871969/il_fullxfull.7989871969_cqx8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/eb8bc9/7941915352/il_fullxfull.7941915352_pagn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/26ff85/7941915356/il_fullxfull.7941915356_otgf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/33267e/7989871983/il_fullxfull.7989871983_hzqe.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5fa8c8/7989871985/il_fullxfull.7989871985_owd3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/54e2e4/7989872003/il_fullxfull.7989872003_vjai.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c646c5/7941915380/il_fullxfull.7941915380_70qb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d72d92/7989871995/il_fullxfull.7989871995_r6yi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/669f1d/7941915366/il_fullxfull.7941915366_cbqa.jpg"
+    ],
+    "tags": [
+      "Tree_Bookshelf",
+      "Floating_Library",
+      "Branch_Wall_Shelf",
+      "Unique_Bookcase",
+      "Woodworking_Plans",
+      "Nursery_Decor",
+      "Modern_Bookshelf",
+      "DIY_Tree_Shelf",
+      "Home_Office_Decor",
+      "Nature_Inspired",
+      "Wall_Art_Furniture",
+      "Floating_Wood_Shelf",
+      "DIY_Home_Library"
+    ],
+    "description": "Transform Your Space into an Enchanted Library with This DIY Tree Bookshelf!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this artistic project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Ongoing Support via Etsy Messages  We are here to help you grow your project! If you have any questions, need technical advice, or require guidance ..."
+  },
+  {
+    "id": "119",
+    "slug": "diy-27-gallon-tote-storage-rack-plans-pdf--mega-g",
+    "name": "DIY 27 Gallon Tote Storage Rack Plans PDF | Mega Garage Organizer for 30 Totes | Extra Large Bin Storage Blueprint",
+    "category": "Tote Storage Rack",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/e3f186/7941901848/il_fullxfull.7941901848_3i0q.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/e3f186/7941901848/il_fullxfull.7941901848_3i0q.jpg",
+      "https://i.etsystatic.com/37058139/r/il/981819/7941901856/il_fullxfull.7941901856_8yyb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/642892/7989858681/il_fullxfull.7989858681_jkun.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7934a2/7941901836/il_fullxfull.7941901836_fqni.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ab7fa1/7941901842/il_fullxfull.7941901842_n3ou.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c5883d/7941901844/il_fullxfull.7941901844_bxdi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9b6a92/7989858685/il_fullxfull.7989858685_l86y.jpg",
+      "https://i.etsystatic.com/37058139/r/il/83dfc4/7989858687/il_fullxfull.7989858687_hkry.jpg"
+    ],
+    "tags": [
+      "Tote_Storage_Rack",
+      "27_Gallon_Bin_Rack",
+      "Mega_Garage_Storage",
+      "Heavy_Duty_Organizer",
+      "Bin_Storage_DIY",
+      "30_Tote_Storage",
+      "Extra_Large_Rack",
+      "Storage_Rack_PDF",
+      "Woodworking_Plans",
+      "Warehouse_Storage",
+      "Garage_DIY_Project",
+      "Custom_Storage_Wall"
+    ],
+    "description": "The Ultimate Storage Solution: Build a Mega 30-Tote Organization System!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages  We are committed to your success! If you have any questions, need technical advice, or require help during your build process..."
+  },
+  {
+    "id": "120",
+    "slug": "diy-27-gallon-tote-storage-rack-plans-pdf--heavy",
+    "name": "DIY 27 Gallon Tote Storage Rack Plans PDF | Heavy Duty Garage Organizer for 20 Totes | Large Bin Storage Blueprint | Workshop Shelving DIY",
+    "category": "Tote Storage Rack",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/cb9cae/7941895092/il_fullxfull.7941895092_59l7.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/cb9cae/7941895092/il_fullxfull.7941895092_59l7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d18611/7989852221/il_fullxfull.7989852221_htf3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/dc8d65/7989852217/il_fullxfull.7989852217_hyhx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/31ed1a/7941895090/il_fullxfull.7941895090_nrp8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/95871c/7941895094/il_fullxfull.7941895094_5csl.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d1f114/7989852231/il_fullxfull.7989852231_oxgw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0e28c3/7989852225/il_fullxfull.7989852225_dbz9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c001cc/7989852233/il_fullxfull.7989852233_ogzu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8eafd7/7941895100/il_fullxfull.7941895100_pi8c.jpg"
+    ],
+    "tags": [
+      "Tote_Storage_Rack",
+      "27_Gallon_Bin_Rack",
+      "Garage_Storage_Plans",
+      "Heavy_Duty_Organizer",
+      "Bin_Storage_DIY",
+      "20_Tote_Storage",
+      "Workshop_Shelving",
+      "Storage_Rack_PDF",
+      "Woodworking_Plans",
+      "Home_Organization",
+      "Garage_DIY_Project",
+      "Large_Capacity_Rack",
+      "Black_and_Yellow"
+    ],
+    "description": "Maximize Your Storage Potential with the Ultimate 20-Tote Storage Rack!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages  We are here for you! If you have any questions, need technical advice, or require help during your build process, simply send ..."
+  },
+  {
+    "id": "121",
+    "slug": "king-size-floating-bed-frame-plans--diy-rustic-wo",
+    "name": "King Size Floating Bed Frame Plans | DIY Rustic Wood Design (PDF)",
+    "category": "woodworking plans",
+    "price": 20.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/8546f3/7162088216/il_fullxfull.7162088216_201y.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/8546f3/7162088216/il_fullxfull.7162088216_201y.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8c96f1/7162088226/il_fullxfull.7162088226_774m.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cc88aa/7162088220/il_fullxfull.7162088220_fz3e.jpg",
+      "https://i.etsystatic.com/37058139/r/il/581c50/7210077547/il_fullxfull.7210077547_3mh0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bbce43/7210077553/il_fullxfull.7210077553_rimm.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9d230b/7162088218/il_fullxfull.7162088218_bk09.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9f6df5/7162088248/il_fullxfull.7162088248_1ywf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/33cb3f/7162088246/il_fullxfull.7162088246_h6ow.jpg"
+    ],
+    "tags": [
+      "woodworking_plans",
+      "Custom_Bed",
+      "Handmade_Wooden_Bed",
+      "PDF_Furniture",
+      "Bedroom_Furniture",
+      "DIY_Woodworking",
+      "Wooden_Bed_Frame",
+      "Solid_Wood_Bed",
+      "Rustic_Bed"
+    ],
+    "description": "Create a Unique and Stylish Sanctuary with Our DIY Bed Frame Plans  Transform your bedroom into a comfortable and stylish retreat with our easy-to-follow woodworking plans. This DIY bed frame project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of bedroom furniture that will last for years.  Why Build Your Own Bed Frame? Building your own bed frame isn't just a creative endeavor\u2014it\u2019s a way to get the exact style and size you want. Whether you..."
+  },
+  {
+    "id": "122",
+    "slug": "diy-triangle-wedding-arch-plans-pdf--set-of-3-woo",
+    "name": "DIY Triangle Wedding Arch Plans PDF | Set of 3 Wooden Arbor Backdrop | Collapsible Ceremony Trellis | Rustic Outdoor Wedding Woodworking",
+    "category": "triangle arch plans",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/03fcef/7961102375/il_fullxfull.7961102375_aml9.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/03fcef/7961102375/il_fullxfull.7961102375_aml9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ff0731/7913146084/il_fullxfull.7913146084_gl0k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5fd4fa/7961102515/il_fullxfull.7961102515_5pbo.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3e85ad/7961102469/il_fullxfull.7961102469_8k53.jpg",
+      "https://i.etsystatic.com/37058139/r/il/39fb5a/7913146774/il_fullxfull.7913146774_ms8v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a5c491/7961102441/il_fullxfull.7961102441_9ok0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0c426c/7913146162/il_fullxfull.7913146162_jqok.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a3f091/7961101937/il_fullxfull.7961101937_f279.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b703ca/7961102275/il_fullxfull.7961102275_h3ze.jpg"
+    ],
+    "tags": [
+      "triangle_arch_plans",
+      "wooden_wedding_arch",
+      "wedding_arbor_design",
+      "collapsible_arch_diy",
+      "diy_wedding_backdrop",
+      "simple_arch_plans",
+      "rustic_wedding_arbor",
+      "3_piece_arch_build",
+      "woodworking_plans",
+      "wedding_trellis_pdf",
+      "event_prop_build",
+      "pinterest_arch_diy",
+      "wedding_decor"
+    ],
+    "description": "Create a Breathtaking Backdrop: The 3-Piece Triangle Wedding Arch Blueprint  Elevate your outdoor wedding, vow renewal, or event photography with a stunning architectural centerpiece. This digital woodworking blueprint provides the precise instructions to build a modern, nested set of three triangular wooden arches. Highly sought after on Pinterest and by wedding planners, this geometric backdrop perfectly frames the couple and provides a magnificent structure for floral arrangements and drapery..."
+  },
+  {
+    "id": "123",
+    "slug": "diy-open-wardrobe-plans-pdf--wooden-clothes-rack",
+    "name": "DIY Open Wardrobe Plans PDF | Wooden Clothes Rack with Shelves | Bedroom Clothing Rack and Organizer | Closet Storage System",
+    "category": "Clothes Rack Shelves",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/88d311/7989676415/il_fullxfull.7989676415_sqx4.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/88d311/7989676415/il_fullxfull.7989676415_sqx4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a6ee59/7989676403/il_fullxfull.7989676403_6q57.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1d2ec5/7989676419/il_fullxfull.7989676419_tehd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ee9866/7989676413/il_fullxfull.7989676413_5qu8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d9f203/7941717478/il_fullxfull.7941717478_pfll.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f8be4f/7989676407/il_fullxfull.7989676407_bnnv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f3e412/7989676431/il_fullxfull.7989676431_8461.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b158c0/7989676439/il_fullxfull.7989676439_2s63.jpg"
+    ],
+    "tags": [
+      "Clothes_Rack_Shelves",
+      "Wardrobe_Shelves",
+      "Clothes_Storage_Wood",
+      "Hanging_Storage_Unit",
+      "Wood_Rack_Clothes",
+      "Open_Wardrobe_Plan",
+      "Closet_Organizer_DIY",
+      "Woodworking_Plans",
+      "Vertical_Storage_DIY",
+      "Garment_Rack_Build",
+      "Custom_Closet_Plan",
+      "Furniture_Wood_Plans",
+      "Bedroom_Clothing"
+    ],
+    "description": "Build Your Dream Closet with This Elegant DIY Open Wardrobe System!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Transform..."
+  },
+  {
+    "id": "124",
+    "slug": "diy-corner-bookshelf-plans-pdf--artistic-triangle",
+    "name": "DIY Corner Bookshelf Plans PDF | Artistic Triangle Wall Shelf | Space-Saving Wood Corner Unit | Hanging Corner Bookcase & Decor",
+    "category": "bookcase plans",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/88492a/7201795807/il_fullxfull.7201795807_qysp.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/88492a/7201795807/il_fullxfull.7201795807_qysp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ca3214/7201795809/il_fullxfull.7201795809_q3k6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/97a006/7153803250/il_fullxfull.7153803250_7gnx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/01c9d2/7201795805/il_fullxfull.7201795805_31iy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9597f5/7201795815/il_fullxfull.7201795815_byyt.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a243d3/7201795811/il_fullxfull.7201795811_xvai.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5ea260/7201795843/il_fullxfull.7201795843_jihr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1225b3/7201795841/il_fullxfull.7201795841_i8a0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c0e2ec/7201795849/il_fullxfull.7201795849_63qz.jpg"
+    ],
+    "tags": [
+      "bookcase_plans",
+      "wooden_bookcase",
+      "diy_shelf",
+      "wall_bookshelves",
+      "books_cabinet",
+      "small_bookcase_plans",
+      "easy_bookshelf",
+      "corner_bookshelf",
+      "corner_shelf",
+      "diy_plans",
+      "bookshelf",
+      "woodworking_plans",
+      "corner_cabinet"
+    ],
+    "description": "Transform That Empty Corner with Our DIY Corner Shelf Plans!  Don't let valuable space go to waste. Our instant-download PDF DIY Corner Bookshelf Plans are your key to transforming an awkward corner into a stunning focal point. This unique artistic triangle bookshelf design isn't just for storage; it's a statement piece that adds style and character to any room.  Why Choose Our Plans?  Smart, Space-Saving Design: This clever wood corner shelf is perfect for apartments, small homes, or any room w..."
+  },
+  {
+    "id": "125",
+    "slug": "diy-laundry-basket-tower-plans-pdf--wooden-laundr",
+    "name": "DIY Laundry Basket Tower Plans PDF | Wooden Laundry Hamper Organizer | Clothes Basket Holder DIY | Laundry Shelf Plans",
+    "category": "Laundry Basket Tower",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/1ca3fa/7941684774/il_fullxfull.7941684774_5v2v.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/1ca3fa/7941684774/il_fullxfull.7941684774_5v2v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7f889c/7989644377/il_fullxfull.7989644377_kvch.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cd0898/7989644381/il_fullxfull.7989644381_d4n8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d3d6db/7989644383/il_fullxfull.7989644383_8p0d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/420375/7989644387/il_fullxfull.7989644387_7sf0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9d1290/7941684770/il_fullxfull.7941684770_9fjv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0f10b0/7941684804/il_fullxfull.7941684804_oh5c.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b0f5fb/7941684810/il_fullxfull.7941684810_ezsb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/34b819/7989644417/il_fullxfull.7989644417_ka4z.jpg"
+    ],
+    "tags": [
+      "Laundry_Basket_Tower",
+      "Diy_Laundry_Plans",
+      "Laundry_Shelf_Plans",
+      "Laundry_Room_Diy",
+      "Organizer_Plans",
+      "Laundry_Stand_Plans",
+      "Woodworking_Plans",
+      "Wood_Hamper_Build",
+      "Hamper_Plans",
+      "Laundry_Basket",
+      "Laundry_Organizer",
+      "Clothes_Holder",
+      "Laundry"
+    ],
+    "description": "Transform Your Laundry Space with This Elegant DIY Laundry Basket Tower!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build Say g..."
+  },
+  {
+    "id": "126",
+    "slug": "diy-living-room-sideboard-with-frosted-glass-plans",
+    "name": "DIY Living Room Sideboard with Frosted Glass Plans PDF | Wood Buffet & Storage Cabinet Build | Woodworking Plan for Beginners",
+    "category": "Sideboard Cabinet",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/3c9f39/7989622017/il_fullxfull.7989622017_aim8.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/3c9f39/7989622017/il_fullxfull.7989622017_aim8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/75f456/7989622031/il_fullxfull.7989622031_17rx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e9bad2/7989622023/il_fullxfull.7989622023_r0wy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/eae596/7989622035/il_fullxfull.7989622035_31wc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5255fe/7989622029/il_fullxfull.7989622029_26pw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b84141/7989622025/il_fullxfull.7989622025_rmvr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/679031/7941662366/il_fullxfull.7941662366_ifox.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7a1e2a/7989622043/il_fullxfull.7989622043_4c4h.jpg",
+      "https://i.etsystatic.com/37058139/r/il/50e106/7941662374/il_fullxfull.7941662374_aurm.jpg"
+    ],
+    "tags": [
+      "Sideboard_Cabinet",
+      "Woodworking_Plans",
+      "Sideboard_Plans",
+      "Dresser_Plans",
+      "Shaker_Sideboard",
+      "Buffet_Table_Plans",
+      "Large_Cabinet_Plans",
+      "Diy_Buffet_Plans",
+      "Buffet_Build_Plans",
+      "Storage_Plans",
+      "Credenza_Plans",
+      "Cabinet_Plans"
+    ],
+    "description": "100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Add a modern touch and fantastic storage to your home! This elegant wooden sid..."
+  },
+  {
+    "id": "127",
+    "slug": "diy-tiered-planter-stand-woodworking-plans-pdf",
+    "name": "DIY Tiered Planter Stand Woodworking Plans (PDF)",
+    "category": "DIY Planter",
+    "price": 8.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/e5ddb1/7279777322/il_fullxfull.7279777322_abj6.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/e5ddb1/7279777322/il_fullxfull.7279777322_abj6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bc1b9f/7327723255/il_fullxfull.7327723255_bl8b.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6e54fb/7279777316/il_fullxfull.7279777316_bhtw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/febdc8/7279777328/il_fullxfull.7279777328_6p1v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3749f7/7327723257/il_fullxfull.7327723257_ltkd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/73c648/7279777310/il_fullxfull.7279777310_o5z1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/269d99/7279777362/il_fullxfull.7279777362_nzq7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/00649e/7327723299/il_fullxfull.7327723299_9obh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4974c7/7298910157/il_fullxfull.7298910157_ctzu.jpg"
+    ],
+    "tags": [
+      "DIY_Planter",
+      "Large_Planter",
+      "Raised_Garden_Bed",
+      "Woodworking_Plans",
+      "Patio_Decor",
+      "Flower_Box",
+      "Herb_Garden",
+      "Trellis_Planter",
+      "Deck_Storage",
+      "Garden_Shelf",
+      "Planter_Stand",
+      "Planter_Plans",
+      "Outdoor_Furniture"
+    ],
+    "description": "DIY Large Planter & Raised Garden Bed with Trellis Woodworking Plans  Tired of expensive, flimsy store-bought garden furniture? Dreaming of a lush, organized outdoor space that makes gardening comfortable and stylish?  Our Ultimate Tiered Planter Plans transform your patio, deck, or balcony into a stunning focal point. These plans don't just show you how to build a box\u2014they give you the blueprint for a commanding, multi-functional Patio Decor centerpiece that combines massive planting volume wit..."
+  },
+  {
+    "id": "128",
+    "slug": "diy-collapsible-coffee-cart-plans-mobile-bar-blue",
+    "name": "DIY Collapsible Coffee Cart Plans: Mobile Bar Blueprint (PDF Pattern)",
+    "category": "Custom food cart",
+    "price": 15.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/af8db8/7286099369/il_fullxfull.7286099369_ssdu.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/af8db8/7286099369/il_fullxfull.7286099369_ssdu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f7a339/7238136820/il_fullxfull.7238136820_108h.jpg",
+      "https://i.etsystatic.com/37058139/r/il/96d811/7238136822/il_fullxfull.7238136822_iapq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ffa37b/7286099371/il_fullxfull.7286099371_avbb.jpg",
+      "https://i.etsystatic.com/37058139/r/il/da2d01/7286099367/il_fullxfull.7286099367_b1kw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/eaa6cf/7286099375/il_fullxfull.7286099375_aubu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c55342/7286111105/il_fullxfull.7286111105_1m0c.jpg",
+      "https://i.etsystatic.com/37058139/r/il/08cf96/7286099407/il_fullxfull.7286099407_423o.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f9ac22/7286099401/il_fullxfull.7286099401_ooi8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/273b44/7144919048/il_fullxfull.7144919048_amqt.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart",
+      "bar_cart"
+    ],
+    "description": "Here is a compelling Etsy product description based on the details you provided, structured for clarity and to attract buyers. DIY Mobile Coffe Cart Plans: The Ultimate Collapsible Vendor Cart Blueprint  Ready to create the perfect centerpiece for your next event? This is not just a plan; it's your ticket to building a beautiful, professional-grade mobile bar or vendor cart. Our meticulously designed, step-by-step PDF guide gives you everything you need to bring this elegant and modern design to..."
+  },
+  {
+    "id": "129",
+    "slug": "farmstand-plans--mobile-flower-stand-cart--farme",
+    "name": "Farmstand Plans | Mobile Flower Stand Cart | Farmers Market Display | Roadside Fruit & Vegetable Stands | Bakery Cart Plans",
+    "category": "DIY Farmstand",
+    "price": 16.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/baea26/7213037779/il_fullxfull.7213037779_21en.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/baea26/7213037779/il_fullxfull.7213037779_21en.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0129c8/7213037795/il_fullxfull.7213037795_ewvo.jpg",
+      "https://i.etsystatic.com/37058139/r/il/373ff1/7213037807/il_fullxfull.7213037807_6w3a.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6b5e0e/7213037797/il_fullxfull.7213037797_5ntf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/55fa52/7213037787/il_fullxfull.7213037787_2t05.jpg",
+      "https://i.etsystatic.com/37058139/r/il/02c829/7165049264/il_fullxfull.7165049264_5j2k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/55af1d/7160528159/il_fullxfull.7160528159_lbo4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6aad18/7112557918/il_fullxfull.7112557918_l9jq.jpg"
+    ],
+    "tags": [
+      "DIY_Farmstand",
+      "Roadside_Plant",
+      "Flower_Cart",
+      "Fruit_Stand",
+      "Vegetable_Stands",
+      "Roadside_Egg",
+      "Bakery_Cart",
+      "Sourdough_Cart",
+      "driveway_farmstand",
+      "farmer's_market",
+      "Flower_Stand",
+      "Mobile_Farm_Cart"
+    ],
+    "description": "Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s time to give that story the beautiful stage it deserves.  These detailed woodworking plans were designed not j..."
+  },
+  {
+    "id": "130",
+    "slug": "portable-wooden-bar-plan-collapsible-diy-event-ba",
+    "name": "Portable Wooden Bar Plan: Collapsible DIY Event Bar Design",
+    "category": "birthday bar",
+    "price": 15.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/1c42e4/7216003213/il_fullxfull.7216003213_nzs6.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/1c42e4/7216003213/il_fullxfull.7216003213_nzs6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d24427/7168017708/il_fullxfull.7168017708_rd0l.jpg",
+      "https://i.etsystatic.com/37058139/r/il/32d665/7168017704/il_fullxfull.7168017704_43sd.jpg",
+      "https://i.etsystatic.com/37058139/r/il/baf6ed/7216003211/il_fullxfull.7216003211_5gsl.jpg",
+      "https://i.etsystatic.com/37058139/r/il/31016d/7216003231/il_fullxfull.7216003231_ltdx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/515ade/7168017706/il_fullxfull.7168017706_cr9s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/421e7b/7216003299/il_fullxfull.7216003299_l9v4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/327a77/7216003273/il_fullxfull.7216003273_sbg3.jpg"
+    ],
+    "tags": [
+      "birthday_bar",
+      "DIY_plan",
+      "event_bar",
+      "wooden_coffee_bar",
+      "bar_blueprint",
+      "folding_bar",
+      "DIY_coffee_bar",
+      "portable_bar",
+      "collapsible_bar",
+      "portable_event_bar",
+      "food_bar_plan",
+      "portable_coffee_bar",
+      "special_event_bar"
+    ],
+    "description": "Craft Your Perfect Event with Our Portable & Collapsible Wooden Bar!  Looking for a versatile and stylish solution for your next gathering? Our Portable & Collapsible Wooden Bar is the ultimate DIY event bar! Whether you're planning a birthday bar, a sophisticated special event bar, or a charming wooden coffee bar, this design provides the flexibility and elegance you need.  Key Features:  Effortless Portability: Designed as a folding bar and collapsible bar, it's incredibly easy to transport an..."
+  },
+  {
+    "id": "131",
+    "slug": "single-bed-storage-plans--minimalist-platform-woo",
+    "name": "Single Bed Storage Plans | Minimalist Platform Woodworking (Digital Download)",
+    "category": "single bed plan",
+    "price": 8.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/9114e2/7787837289/il_fullxfull.7787837289_a264.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/9114e2/7787837289/il_fullxfull.7787837289_a264.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6af32f/7787837249/il_fullxfull.7787837249_8j4e.jpg",
+      "https://i.etsystatic.com/37058139/r/il/064b79/7739881338/il_fullxfull.7739881338_1zq9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ae2b0f/7739881330/il_fullxfull.7739881330_kbyx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7ecbcf/7787837261/il_fullxfull.7787837261_kuol.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c48f9c/7787837287/il_fullxfull.7787837287_iomw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5c46b1/7787837279/il_fullxfull.7787837279_7zdp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1073cb/7739881340/il_fullxfull.7739881340_273m.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c8e91f/7739881336/il_fullxfull.7739881336_seen.jpg",
+      "https://i.etsystatic.com/37058139/r/il/738f2f/7787837295/il_fullxfull.7787837295_d7m8.jpg"
+    ],
+    "tags": [
+      "single_bed_plan",
+      "bed_with_storage",
+      "diy_wood_bed",
+      "platform_bed_plan",
+      "narrow_bed_frame",
+      "woodworking_plans",
+      "storage_bed_diy",
+      "kids_bed_plan",
+      "single_platform_bed",
+      "diy_furniture_plan",
+      "bookcase_headboard",
+      "wooden_bed_build",
+      "bed_diy_instructions"
+    ],
+    "description": "Tired of tripping over things in a tight bedroom? Whether you are outfitting a small guest room, upgrading a kid's space, or maximizing a tiny apartment, this is the exact wood bed plan you\u2019ve been searching for.  This digital guide provides the ultimate single bed with storage underneath DIY plans. Designed with a custom narrow footprint (32\" wide), it perfectly balances a sleek sleeping area with highly functional under-bed cubbies and a smart bookcase headboard. Keep your favorite books, phon..."
+  },
+  {
+    "id": "132",
+    "slug": "8x10-firewood-shed-plans-diy-sloped-roof-woodshed",
+    "name": "8x10 Firewood Shed Plans: DIY Sloped Roof Woodshed (PDF Download)",
+    "category": "Firewood Shed",
+    "price": 4.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/118c70/7250951324/il_fullxfull.7250951324_pl81.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/118c70/7250951324/il_fullxfull.7250951324_pl81.jpg",
+      "https://i.etsystatic.com/37058139/r/il/46ff96/7250951332/il_fullxfull.7250951332_3vmc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c83645/7250951310/il_fullxfull.7250951310_g2y7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5a381e/7298905333/il_fullxfull.7298905333_85zr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5ba7b3/7298965841/il_fullxfull.7298965841_autv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4974c7/7298910157/il_fullxfull.7298910157_ctzu.jpg",
+      "https://i.etsystatic.com/37058139/r/il/218687/7298971957/il_fullxfull.7298971957_3idk.jpg"
+    ],
+    "tags": [
+      "Firewood_Shed",
+      "Woodshed_Plans",
+      "Outdoor_Storage",
+      "Wood_Rack",
+      "DIY_Plans",
+      "Firewood_Rack",
+      "2_Cord_Wood",
+      "Tool_Shed",
+      "1_Cord_Wood",
+      "Pallet_Wood",
+      "Shed_Plans",
+      "Firewood_Holder",
+      "8x10_Firewood_Shed"
+    ],
+    "description": "\ud83d\udd25 Stop Burning Wet Wood! Build Your Dream Woodshed Today! \ud83d\udd25 Tired of struggling with soggy, smoking logs? Our 8x10 Firewood Shed Plans are the perfect solution to keep your wood dry, seasoned, and ready for the fire pit or stove. This isn't just a shed; it's the ultimate DIY project to enhance your backyard and ensure perfectly seasoned fuel all winter long!  \ud83c\udfe1 About These 8x10Wood Shed Plans \ud83c\udfe1 These are complete DIY plans to build a sturdy, attractive 8x10 Firewood Storage Shed (or Woodshed) wi..."
+  },
+  {
+    "id": "133",
+    "slug": "costco-halloween-party-pack-printable-decorations",
+    "name": "Costco Halloween Party Pack: Printable Decorations & Games (PDF Download",
+    "category": "Costco Party Pack",
+    "price": 7.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/db27d3/7021675920/il_fullxfull.7021675920_432y.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/db27d3/7021675920/il_fullxfull.7021675920_432y.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e5a37c/7067196865/il_fullxfull.7067196865_aatp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a7fe66/7067196855/il_fullxfull.7067196855_99ay.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e31ab6/7019218802/il_fullxfull.7019218802_qdhs.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b0fadf/7019218798/il_fullxfull.7019218798_6cqz.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2ef709/7019218804/il_fullxfull.7019218804_rxp2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f365ab/7067196875/il_fullxfull.7067196875_md5b.jpg",
+      "https://i.etsystatic.com/37058139/r/il/235454/7019218820/il_fullxfull.7019218820_r1h5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2625b2/7019218844/il_fullxfull.7019218844_snav.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0e7cd3/7019218862/il_fullxfull.7019218862_seg8.jpg"
+    ],
+    "tags": [
+      "Costco_Party_Pack",
+      "Costco_Decorations",
+      "Costco_Invite",
+      "Costco_Printable",
+      "Costco_Digital",
+      "Costco_Cake_Topper",
+      "Costco_Favor_Tags",
+      "Costco_Party_Games",
+      "Costco_Birthday",
+      "Printable_Costco",
+      "Costco_Themed",
+      "Costco_Supplies",
+      "Customizable_Signs"
+    ],
+    "description": "Costco Party Pack | Customizable Price Signs PDF | Costco Birthday Party & Sign | Costco Themed Birthday Decorations | Printable Costco Pack  Get ready to throw the ultimate Costco party with our comprehensive Costco Party Pack! This Costco Party Pack includes everything you need for a memorable Costco themed birthday decorations celebration, from a Costco Birthday Party Invite to an awesome Costco Birthday Cake.  What's Included in Your Costco Party Pack?  This Costco Party Pack is loaded with ..."
+  },
+  {
+    "id": "134",
+    "slug": "diy-porch-swing-stand-plans--circular-pergola-blu",
+    "name": "DIY Porch Swing Stand Plans | Circular Pergola Blueprint | Outdoor Patio Furniture Plans | Backyard Arbor Swing Build | Wood Canopy",
+    "category": "Porch Swing Stand",
+    "price": 9.99,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/a43ad4/7805280552/il_fullxfull.7805280552_i6te.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/a43ad4/7805280552/il_fullxfull.7805280552_i6te.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5d76ea/7853223765/il_fullxfull.7853223765_4zpy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1dbd62/7853223789/il_fullxfull.7853223789_etzg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fadfe9/7805280550/il_fullxfull.7805280550_i9z0.jpg",
+      "https://i.etsystatic.com/37058139/r/il/eb8bb1/7805280554/il_fullxfull.7805280554_mfxn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b678fc/7853223785/il_fullxfull.7853223785_gaau.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b0fbd7/7805280564/il_fullxfull.7805280564_t9oy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ecbfe1/7853223855/il_fullxfull.7853223855_d70d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/238d50/7805280616/il_fullxfull.7805280616_gc4y.jpg"
+    ],
+    "tags": [
+      "Porch_Swing_Stand",
+      "Patio_Furniture_Plan",
+      "Circular_Pergola",
+      "Backyard_Swing_DIY",
+      "Arbor_Bench_Plan",
+      "Outdoor_Swing_Frame",
+      "Wood_Canopy_Plan",
+      "Yard_DIY_Projects",
+      "Backyard_Corner",
+      "Pergola_Blueprint",
+      "Gazebo_Plans",
+      "Swing_Set_Plans",
+      "DIY_Patio_Furniture"
+    ],
+    "description": "Build a Stunning Circular Porch Swing & Pergola!  Create the ultimate relaxing oasis in your garden with this unique DIY Porch Swing Stand Plan. Perfect for outdoor entertainers, this eye-catching circular arbor design features a sturdy base deck and a comfortable suspended bench, making it the perfect focal point for your back yard patio or garden.  Whether you are looking to build a cozy DIY backyard corner or simply want to upgrade your outdoor space with premium patio furniture plans, this b..."
+  },
+  {
+    "id": "135",
+    "slug": "spiral-wooden-christmas-tree-plans--diy-spiral-ch",
+    "name": "Spiral Wooden Christmas Tree plans | DIY Spiral Christmas Tree, One Board Spiral Tree, Build Plan | Landscape Tree Plan PDF Printable",
+    "category": "Woodworking Plan",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/7baf5e/7036862672/il_fullxfull.7036862672_e6yf.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/7baf5e/7036862672/il_fullxfull.7036862672_e6yf.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9f8326/7036862638/il_fullxfull.7036862638_onua.jpg",
+      "https://i.etsystatic.com/37058139/r/il/80b675/7084830603/il_fullxfull.7084830603_4e6t.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b06061/7036862634/il_fullxfull.7036862634_mkwy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8e7ce6/7084830595/il_fullxfull.7084830595_f96d.jpg",
+      "https://i.etsystatic.com/37058139/r/il/40414d/7084830627/il_fullxfull.7084830627_l4ev.jpg",
+      "https://i.etsystatic.com/37058139/r/il/1946fd/7036862636/il_fullxfull.7036862636_2okh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e9e18f/7036862640/il_fullxfull.7036862640_rlnr.jpg"
+    ],
+    "tags": [
+      "Woodworking_Plan",
+      "DIY_plans",
+      "PDF_Download",
+      "workbench",
+      "Landscape_Tree_Plan",
+      "Build_Plan",
+      "One_Board_Spiral",
+      "Spiral_Christmas",
+      "Christmas_Tree",
+      "Spiral_Wooden",
+      "Tree_Plan"
+    ],
+    "description": "Spiral Wooden Christmas Tree Plans | DIY Modern Holiday Decor | One Board Spiral Tree Build Plan | Landscape Tree Plan PDF Printable  Transform your holiday decor with our easy-to-follow plans for a stunning Spiral Wooden Christmas Tree! This unique and modern design offers a refreshing alternative to traditional trees, adding a touch of contemporary elegance to any space. Perfect for DIY enthusiasts, these plans guide you through creating a beautiful, minimalist tree that's sure to be a convers..."
+  },
+  {
+    "id": "136",
+    "slug": "diy-12-ft-farmhouse-table-plans--rustic-outdoor-b",
+    "name": "DIY 12 ft Farmhouse Table Plans | Rustic Outdoor Bench Table (Digital Download)",
+    "category": "Outdoor Farm Table",
+    "price": 7.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/59c4ac/7040220338/il_fullxfull.7040220338_plgl.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/59c4ac/7040220338/il_fullxfull.7040220338_plgl.jpg",
+      "https://i.etsystatic.com/37058139/r/il/05bd24/7040220348/il_fullxfull.7040220348_gh1j.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4dfb95/7088185537/il_fullxfull.7088185537_5ipr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8a1c57/7088185525/il_fullxfull.7088185525_4rqn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9c7fed/7088185527/il_fullxfull.7088185527_z3ax.jpg",
+      "https://i.etsystatic.com/37058139/r/il/77066d/7040220334/il_fullxfull.7040220334_eopj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/97aa6a/7040220368/il_fullxfull.7040220368_gdh8.jpg"
+    ],
+    "tags": [
+      "Outdoor_Farm_Table",
+      "Farmhouse_Table",
+      "12Ft_Table_Plans",
+      "Wooden_Table_DIY",
+      "Table_Plans",
+      "Outdoor_Table",
+      "Farm_Table_Plans",
+      "Dining_Table",
+      "DIY_Table",
+      "Woodwork_Plans",
+      "Extra_Long_Table",
+      "Farmhouse_Bench",
+      "12_Ft_Bench_Table"
+    ],
+    "description": "Outdoor Farmhouse 12-Foot Bench Table Plans: DIY Extra-Long Dining & Entry Table Are you looking to build the perfect outdoor farm table that combines rustic charm with ample seating? Our comprehensive farmhouse table plans are exactly what you need! These wooden table plans are designed to help you create a stunning 12 ft table that doubles as a comfortable 12 foot bench, making it an ideal outdoor dining table and even a unique entry table.  Product Description: Transform your backyard or dini..."
+  },
+  {
+    "id": "137",
+    "slug": "diy-adirondack-chair-plans--outdoor-garden-furnit",
+    "name": "DIY Adirondack Chair Plans | Outdoor Garden Furniture Blueprint (Digital PDF)",
+    "category": "Adirondack Chair",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/3cca01/7679169159/il_fullxfull.7679169159_hwoi.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/3cca01/7679169159/il_fullxfull.7679169159_hwoi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4cc538/7679169161/il_fullxfull.7679169161_k5g3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2c7e34/7631218420/il_fullxfull.7631218420_sn4v.jpg",
+      "https://i.etsystatic.com/37058139/r/il/aa177b/7679169175/il_fullxfull.7679169175_b081.jpg",
+      "https://i.etsystatic.com/37058139/r/il/893fed/7631218406/il_fullxfull.7631218406_dc04.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2a359f/7631218416/il_fullxfull.7631218416_kfm7.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fe2251/7679169163/il_fullxfull.7679169163_oe9r.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ed5025/7631218422/il_fullxfull.7631218422_aj8f.jpg",
+      "https://i.etsystatic.com/37058139/r/il/62f089/7679169179/il_fullxfull.7679169179_ev1f.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5fa6c5/7679169167/il_fullxfull.7679169167_1wue.jpg"
+    ],
+    "tags": [
+      "Adirondack_Chair",
+      "Woodworking_Plans",
+      "DIY_Garden_Chair",
+      "Outdoor_Furniture",
+      "Patio_Chair_Plans",
+      "Wooden_Lawn_Chair",
+      "Fire_Pit_Seating",
+      "Deck_Chair_DIY",
+      "Adirondack_Pattern",
+      "Easy_Wood_Project",
+      "Backyard_Decor",
+      "Digital_Blueprint",
+      "Comfortable_Chair"
+    ],
+    "description": "Classic Adirondack Chair Plans | DIY Outdoor Garden Furniture Blueprint  There is nothing quite like sinking into a classic Adirondack chair on a sunny afternoon. With its wide armrests perfect for resting a cold drink and a contoured seat designed for comfort, this chair is the undisputed king of outdoor furniture.  Now, you can build your own high-quality garden chairs for a fraction of the cost of buying them pre-made. These DIY Adirondack Chair Plans are designed to be simple, sturdy, and st..."
+  },
+  {
+    "id": "138",
+    "slug": "diy-picnic-table-plans-with-backrest--outdoor-tab",
+    "name": "DIY Picnic Table Plans with Backrest | Outdoor Table Plans PDF | Picnic Bench Blueprint | Outside Table and Benches Woodworking Template",
+    "category": "Picnic Table Plans",
+    "price": 2.99,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/f100e7/7852938461/il_fullxfull.7852938461_safg.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/f100e7/7852938461/il_fullxfull.7852938461_safg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/df539c/7804996542/il_fullxfull.7804996542_nf7p.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e464fa/7804996550/il_fullxfull.7804996550_4d49.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cb4303/7804996560/il_fullxfull.7804996560_rtia.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a32462/7852938477/il_fullxfull.7852938477_lhkz.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0af385/7852938459/il_fullxfull.7852938459_k53n.jpg",
+      "https://i.etsystatic.com/37058139/r/il/68f81f/7852938479/il_fullxfull.7852938479_syjy.jpg",
+      "https://i.etsystatic.com/37058139/r/il/22a764/7804996572/il_fullxfull.7804996572_gl9g.jpg",
+      "https://i.etsystatic.com/37058139/r/il/90b560/7852938495/il_fullxfull.7852938495_2kua.jpg"
+    ],
+    "tags": [
+      "Picnic_Table_Plans",
+      "Outdoor_Table_Plans",
+      "Picnic_Bench",
+      "Table_Diy_Plan",
+      "Picnic_Table_Easy",
+      "Woodworking_Popular",
+      "Barn_Table_Plans",
+      "Plans_to_Build",
+      "Diy_Picnic_Table_Kit",
+      "Outside_Table_DIY",
+      "Table_Blueprints",
+      "Simple_Picnic_Table",
+      "Woodworking_Template"
+    ],
+    "description": "Build the Ultimate Comfortable Picnic Table!  Upgrade your backyard, patio, or garden with this DIY Sturdy Picnic Table Easy build plan! Unlike standard backless designs, this comprehensive Table DIY Plan features comfortable backrests, making it perfect for long outdoor dinners, family gatherings, or just relaxing in the sun.  Whether you are looking for simple picnic table plans for a weekend project or professional outdoor table plans to expand your woodworking portfolio, these blueprints pro..."
+  },
+  {
+    "id": "139",
+    "slug": "christmas-tree-topper-star--diy-wooden-tree-toppe",
+    "name": "Christmas Tree Topper Star | DIY Wooden Tree Topper Plans | Rustic Christmas Tree Topper | Barnwood Tree Topper (Digital Download)",
+    "category": "Woodworking Plan",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/a611d8/7389306402/il_fullxfull.7389306402_n9z8.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/a611d8/7389306402/il_fullxfull.7389306402_n9z8.jpg",
+      "https://i.etsystatic.com/37058139/r/il/feacd1/7389306416/il_fullxfull.7389306416_7ord.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b22203/7437224829/il_fullxfull.7437224829_svmv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3090fb/7389306400/il_fullxfull.7389306400_9v13.jpg",
+      "https://i.etsystatic.com/37058139/r/il/39ab10/7389306404/il_fullxfull.7389306404_3h46.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a4e047/7389306398/il_fullxfull.7389306398_4011.jpg"
+    ],
+    "tags": [
+      "Woodworking_Plan",
+      "DIY_plans",
+      "Landscape_Tree_Plan",
+      "Build_Plan",
+      "One_Board_Spiral",
+      "Spiral_Christmas",
+      "Christmas_Tree",
+      "Spiral_Wooden",
+      "Tree_Plan",
+      "Christmas_Display",
+      "Christmas_Village"
+    ],
+    "description": "Stop searching for the perfect finishing touch. Build it.  Crown your Christmas tree with this stunning, handmade Wood Christmas Tree Topper Star. With our comprehensive DIY Wooden Tree Topper Plans, you can create a beautiful, 12-inch star that blends timeless charm with a modern farmhouse aesthetic.  This design is the very definition of a Rustic Christmas Tree Topper. The angled, faceted construction gives it a high-end, 3D look that catches the light beautifully, while the simple geometry gi..."
+  },
+  {
+    "id": "140",
+    "slug": "diy-coffee-cart-plans--collapsible-mobile-espress",
+    "name": "DIY Coffee Cart Plans | Collapsible Mobile Espresso Bar | Foldable Market Stall Blueprint | Portable Catering Cart Build | Digital PDF",
+    "category": "Custom food cart",
+    "price": 15.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/cf7466/7532061723/il_fullxfull.7532061723_69lh.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/cf7466/7532061723/il_fullxfull.7532061723_69lh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b9a1e9/7484135534/il_fullxfull.7484135534_hhg2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/55f1df/7484135538/il_fullxfull.7484135538_fx12.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e14068/7532061659/il_fullxfull.7532061659_ta4k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/142ac5/7532061721/il_fullxfull.7532061721_m08b.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bf517e/7484135482/il_fullxfull.7484135482_qndl.jpg",
+      "https://i.etsystatic.com/37058139/r/il/526d77/7484135542/il_fullxfull.7484135542_6gxg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f39147/7532061711/il_fullxfull.7532061711_7ddv.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6000d6/7484135546/il_fullxfull.7484135546_6s91.jpg",
+      "https://i.etsystatic.com/37058139/r/il/86ae7d/7532061717/il_fullxfull.7532061717_pbm9.jpg"
+    ],
+    "tags": [
+      "Custom_food_cart",
+      "Charcuterie_cart",
+      "foldable_cart",
+      "bar_carts",
+      "DIY_Cart",
+      "Party_cart",
+      "beverage_cart",
+      "coffee_cart",
+      "collapsible_cart",
+      "wedding_cart",
+      "Mobile_bar",
+      "vendor_cart",
+      "bar_cart"
+    ],
+    "description": "\u2615 Build the Perfect Station for Your Coffee Business!  Turn your passion into a business with these professional Coffee Cart Blueprint plans. Designed specifically for heavy-duty use, this cart is the ideal foundation for a mobile espresso bar, a pop-up bakery, or a professional Foldable Stall for market vendors.  Unlike flimsy tables, this Mobile Coffee Cart Build is engineered to handle the weight of professional espresso machines while maintaining a sleek, modern look. The 36-inch height is e..."
+  },
+  {
+    "id": "141",
+    "slug": "mobile-miter-saw-station-plans-flip-top-workbench",
+    "name": "Mobile Miter Saw Station Plans: Flip Top Workbench with Wood Storage (PDF)",
+    "category": "Woodworking Plan",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/b3e287/7032436170/il_fullxfull.7032436170_b6sn.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/b3e287/7032436170/il_fullxfull.7032436170_b6sn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/aa7130/7032436162/il_fullxfull.7032436162_nm0w.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7f7b43/7080408495/il_fullxfull.7080408495_c2ua.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6394ab/7032436158/il_fullxfull.7032436158_6zjt.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fc4c7d/7080408503/il_fullxfull.7080408503_3oq2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/51384d/7080408489/il_fullxfull.7080408489_mv4u.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e4ca18/7080408523/il_fullxfull.7080408523_ixyg.jpg"
+    ],
+    "tags": [
+      "Woodworking_Plan",
+      "DIY_plans",
+      "PDF_Download",
+      "Outdoor_Patio_Bench",
+      "workbench",
+      "table_saw",
+      "router_table",
+      "workbench_plans",
+      "table_saw_workbench",
+      "dewalt_workbench",
+      "miter_saw_station",
+      "miter_saw_bench",
+      "flip_top_workbench"
+    ],
+    "description": "Mobile Miter Saw Table Plans, Miter Saw Station, Garage Work Bench Plans, Miter Saw Bench, Woodworking Plans, Miter Saw Rack   Unlock the full potential of your workshop with our comprehensive DIY Workbench Plans! This detailed guide empowers you to build the ultimate Table Saw Workbench and Miter Saw Station Mobile Stand, designed for efficiency and versatility.  Are you tired of cluttered spaces? Our Flip Top Workbench design seamlessly integrates your Table Saw and Router Table into one space..."
+  },
+  {
+    "id": "142",
+    "slug": "diy-triple-bunk-bed-plans--3-tier-bunk-bed-with-s",
+    "name": "DIY Triple Bunk Bed Plans | 3 Tier Bunk Bed with Storage Stairs | Wooden Loft Bed Blueprint PDF",
+    "category": "triple bunk bed",
+    "price": 4.99,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/867d31/7852796317/il_fullxfull.7852796317_c7rh.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/867d31/7852796317/il_fullxfull.7852796317_c7rh.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7a12c6/7804854978/il_fullxfull.7804854978_3jw3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b4bf3b/7852796305/il_fullxfull.7852796305_ag21.jpg",
+      "https://i.etsystatic.com/37058139/r/il/8198fa/7804854972/il_fullxfull.7804854972_k1bl.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ddcc45/7852796315/il_fullxfull.7852796315_l053.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6d29ab/7804854976/il_fullxfull.7804854976_aydi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/15d6d1/7804854982/il_fullxfull.7804854982_9n7l.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ac5442/7852796327/il_fullxfull.7852796327_luj6.jpg"
+    ],
+    "tags": [
+      "triple_bunk_bed",
+      "bunk_bed_plans",
+      "bed_with_stairs",
+      "storage_stairs_bed",
+      "3_tier_bunk_bed",
+      "loft_bed_plans",
+      "diy_bunk_bed",
+      "woodworking_plans",
+      "wooden_bunk_bed",
+      "kids_bed_frame",
+      "adult_loft_bed",
+      "custom_bed_build",
+      "bedroom_furniture"
+    ],
+    "description": "Maximize Your Space with Premium DIY Triple Tier Bunk Bed Plans!  Running out of floor space in the kids' room, guest room, or vacation cabin? Build the ultimate sleepover setup with our comprehensive triple tier bunk bed plans. This incredible, heavy-duty wooden design comfortably stacks three beds and features a super-safe, built-in staircase. Even better, each step doubles as a spacious pull-out drawer, making it the perfect bunk bed with storage stairs to keep toys, clothes, and bedding orga..."
+  },
+  {
+    "id": "143",
+    "slug": "modern-bird-feeder-plans--hanging-xframe-design",
+    "name": "Modern Bird Feeder Plans | Hanging X-Frame Design (PDF)",
+    "category": "Bird Feeder Plan",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/8ed1d8/7488363676/il_fullxfull.7488363676_db67.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/8ed1d8/7488363676/il_fullxfull.7488363676_db67.jpg",
+      "https://i.etsystatic.com/37058139/r/il/6a8b68/7536298261/il_fullxfull.7536298261_8kzj.jpg",
+      "https://i.etsystatic.com/37058139/r/il/335873/7488363670/il_fullxfull.7488363670_hsbg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2489aa/7536298257/il_fullxfull.7536298257_2vs9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7c36e6/7536298249/il_fullxfull.7536298249_jady.jpg",
+      "https://i.etsystatic.com/37058139/r/il/81d6bb/7488363672/il_fullxfull.7488363672_69bk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e5b73e/7536298245/il_fullxfull.7536298245_ofca.jpg"
+    ],
+    "tags": [
+      "Bird_Feeder_Plan",
+      "Bird_Station_DIY",
+      "Modern_Birdhouse",
+      "Woodworking_Plan",
+      "Garden_Decor",
+      "Standing_Feeder",
+      "Bird_Hotel_Plan",
+      "Wildlife_Garden",
+      "Cedar_Feeder_DIY",
+      "Tower_Feeder",
+      "Outdoor_Wood_Plan",
+      "Backyard_Project",
+      "Digital_Pattern"
+    ],
+    "description": "\ud83d\udc26 Invite Nature into Your Garden with Style!  Transform your backyard into a birdwatcher's paradise with these premium Bird Feeder Plans. This isn't just a simple box; it is a stylish, modern piece of garden decor featuring a unique \"X-frame\" design and a protective roof structure.  Designed for both functionality and aesthetics, this Bird Feeder Blueprint guides you to build a sturdy hanging station that keeps seeds dry while offering an unobstructed view of your feathered friends.  Why You\u2019ll ..."
+  },
+  {
+    "id": "144",
+    "slug": "modern-sideboard-plans--slatted-door-midcentury",
+    "name": "Modern Sideboard Plans | Slatted Door, Mid-Century Legs (Digital Download)",
+    "category": "woodworking plans",
+    "price": 8.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/7c36db/7787874263/il_fullxfull.7787874263_2svk.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/7c36db/7787874263/il_fullxfull.7787874263_2svk.jpg",
+      "https://i.etsystatic.com/37058139/r/il/aa332f/7787874271/il_fullxfull.7787874271_d8k1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5783bf/7787874279/il_fullxfull.7787874279_p43k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/941c13/7787874265/il_fullxfull.7787874265_6w1i.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3b125f/7739918734/il_fullxfull.7739918734_5z2f.jpg",
+      "https://i.etsystatic.com/37058139/r/il/bbc22b/7787874283/il_fullxfull.7787874283_bnp2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/082874/7739918736/il_fullxfull.7739918736_471x.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d8b7d5/7787874297/il_fullxfull.7787874297_lwkr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e35fa4/7739918744/il_fullxfull.7739918744_cfri.jpg",
+      "https://i.etsystatic.com/37058139/r/il/a0965b/7787874293/il_fullxfull.7787874293_pudz.jpg"
+    ],
+    "tags": [
+      "woodworking_plans",
+      "modern_sideboard",
+      "entryway_table_plan",
+      "buffet_cabinet_plan",
+      "diy_woodworking",
+      "solid_wood_cabinet",
+      "diy_sideboard_plans",
+      "sideboard_blueprint",
+      "living_room_cabinet",
+      "sideboard_plans",
+      "cabinet_blue_prints",
+      "diy_plans_cabinet",
+      "wooden_sideboard"
+    ],
+    "description": "Looking for the perfect balance of hidden storage and stylish display space? Whether you need a sleek modern sideboard for your living room, a functional entryway table plan, or a chic buffet cabinet plan for your dining area, this versatile design has you covered.  This comprehensive digital guide provides easy-to-follow woodworking plans to build your very own wooden sideboard cabinet. Featuring a beautiful slatted sliding door and mid-century modern legs, this piece instantly elevates any roo..."
+  },
+  {
+    "id": "145",
+    "slug": "6x12-firewood-shed-diy-plans-pdf--3-cord-wood-sto",
+    "name": "6x12 Firewood Shed DIY Plans PDF | 3 Cord Wood Storage Rack Blueprint | Large Dry Wood Shelter",
+    "category": "6x12 firewood shed",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/4f2380/7968835825/il_fullxfull.7968835825_occa.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/4f2380/7968835825/il_fullxfull.7968835825_occa.jpg",
+      "https://i.etsystatic.com/37058139/r/il/c65f9e/7968835415/il_fullxfull.7968835415_a4b1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/35f5ed/7920884438/il_fullxfull.7920884438_4atx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/cdf558/7968835891/il_fullxfull.7968835891_6ats.jpg",
+      "https://i.etsystatic.com/37058139/r/il/fdea68/7920884494/il_fullxfull.7920884494_oyym.jpg",
+      "https://i.etsystatic.com/37058139/r/il/eaba87/7920884502/il_fullxfull.7920884502_366h.jpg",
+      "https://i.etsystatic.com/37058139/r/il/16dec7/7968835605/il_fullxfull.7968835605_oju6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/748cfe/7920884348/il_fullxfull.7920884348_pcz9.jpg",
+      "https://i.etsystatic.com/37058139/r/il/691e23/7920884532/il_fullxfull.7920884532_egov.jpg"
+    ],
+    "tags": [
+      "6x12_firewood_shed",
+      "3_cord_wood_rack",
+      "wood_storage_pdf",
+      "large_wood_shelter",
+      "outdoor_log_store",
+      "shed_with_firewood",
+      "fire_wood_rack_diy",
+      "heavy_duty_log_rack",
+      "woodworking_plans",
+      "backyard_shed_diy",
+      "log_storage_build",
+      "winter_wood_shed",
+      "wood_seasoning_rack"
+    ],
+    "description": "DIY 6x12 Firewood Shed Plans PDF | 3 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a massive, heavy-duty 6x12 Firewood Shed. Designed with an extra-deep profile to hold a full 3 cords of wood, this structure is the ultimate high-capacity storage solution for homesteaders, cabin owners, and anyone who relies heavily on a wood stove to heat ..."
+  },
+  {
+    "id": "146",
+    "slug": "3x6-firewood-shed-diy-plans-pdf--small-wood-stora",
+    "name": "3x6 Firewood Shed DIY Plans PDF | Small Wood Storage Rack Blueprint |  Dry Wood Shelter",
+    "category": "3x6 firewood shed",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/f8cdda/7920875662/il_fullxfull.7920875662_iuix.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/f8cdda/7920875662/il_fullxfull.7920875662_iuix.jpg",
+      "https://i.etsystatic.com/37058139/r/il/57c558/7968827033/il_fullxfull.7968827033_oya1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/27cf50/7920875722/il_fullxfull.7920875722_3ykc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/db30cf/7968827395/il_fullxfull.7968827395_mftg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/823b2a/7920875738/il_fullxfull.7920875738_hhft.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3b0a26/7968827217/il_fullxfull.7968827217_6imp.jpg",
+      "https://i.etsystatic.com/37058139/r/il/07079a/7968827153/il_fullxfull.7968827153_881k.jpg",
+      "https://i.etsystatic.com/37058139/r/il/305ba2/7920875594/il_fullxfull.7920875594_jkfx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7b64e2/7968827387/il_fullxfull.7968827387_1iou.jpg"
+    ],
+    "tags": [
+      "3x6_firewood_shed",
+      "compact_wood_rack",
+      "firewood_storage_pdf",
+      "small_log_store_diy",
+      "dry_wood_shelter",
+      "shed_with_firewood",
+      "fire_wood_rack_diy",
+      "heavy_duty_log_rack",
+      "woodworking_plans",
+      "backyard_shed_diy",
+      "log_storage_build",
+      "wood_seasoning_rack",
+      "outdoor_firewood"
+    ],
+    "description": "DIY 3x6 Firewood Shed Plans PDF | Compact Wood Storage Rack Blueprint  Stop letting your firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 3x6 Firewood Shed. Designed with a perfectly compact capacity, this structure is the ideal storage solution for homeowners with fireplaces, fire pits, or anyone needing a smaller, organized log store.  Engineered for Perfect Seasoning & Protection:  Max..."
+  },
+  {
+    "id": "147",
+    "slug": "4x12-firewood-shed-diy-plans-pdf--2-cord-wood-sto",
+    "name": "4x12 Firewood Shed DIY Plans PDF | 2 Cord Wood Storage Rack Blueprint | Large Dry Wood Shelter",
+    "category": "4x12 firewood shed",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/fe952c/7968803253/il_fullxfull.7968803253_1i8e.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/fe952c/7968803253/il_fullxfull.7968803253_1i8e.jpg",
+      "https://i.etsystatic.com/37058139/r/il/2008b7/7920851468/il_fullxfull.7920851468_3xn2.jpg",
+      "https://i.etsystatic.com/37058139/r/il/7208af/7920851866/il_fullxfull.7920851866_9vhx.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d6304d/7920851956/il_fullxfull.7920851956_aem5.jpg",
+      "https://i.etsystatic.com/37058139/r/il/105458/7968803453/il_fullxfull.7968803453_q34f.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d7c335/7968803399/il_fullxfull.7968803399_eta6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/4d2e75/7968803615/il_fullxfull.7968803615_km0f.jpg",
+      "https://i.etsystatic.com/37058139/r/il/f77b42/7968803427/il_fullxfull.7968803427_lfqc.jpg",
+      "https://i.etsystatic.com/37058139/r/il/145969/7920851832/il_fullxfull.7920851832_gj8p.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ab4af5/7968803577/il_fullxfull.7968803577_80ts.jpg"
+    ],
+    "tags": [
+      "4x12_firewood_shed",
+      "2_cord_wood_rack",
+      "firewood_storage_pdf",
+      "dry_wood_shelter",
+      "wood_shed_plans",
+      "outdoor_log_store",
+      "shed_with_firewood",
+      "fire_wood_rack_diy",
+      "heavy_duty_log_rack",
+      "woodworking_plans",
+      "backyard_shed_diy"
+    ],
+    "description": "DIY 4x12 Firewood Shed Plans PDF | 2 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 4x12 Firewood Shed. Designed with a generous 2-cord capacity, this structure is the perfect mid-sized solution for homesteaders, cabin owners, and anyone who relies on a wood stove to heat their home through the winter.  Engineered for Perfect ..."
+  },
+  {
+    "id": "148",
+    "slug": "lifesize-santa-sleigh--reindeer-plans--2d-plywo",
+    "name": "Life-Size Santa Sleigh & Reindeer Plans | 2D Plywood Template for Outdoor Christmas Decor | DIY Silhouette Pattern | PDF Woodworking",
+    "category": "Santa Sleigh Plan",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/7b405b/7536304411/il_fullxfull.7536304411_qn3c.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/7b405b/7536304411/il_fullxfull.7536304411_qn3c.jpg",
+      "https://i.etsystatic.com/37058139/r/il/25f094/7488369696/il_fullxfull.7488369696_cejr.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ac6208/7488369684/il_fullxfull.7488369684_hqzi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/15ef3f/7536304423/il_fullxfull.7536304423_c3bi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/9705e2/7488369660/il_fullxfull.7488369660_j3t8.jpg"
+    ],
+    "tags": [
+      "Santa_Sleigh_Plan",
+      "Reindeer_Template",
+      "Christmas_Yard_Art",
+      "Outdoor_Decor_DIY",
+      "Woodworking_Plan",
+      "Holiday_Photo_Prop",
+      "Life_Size_Sleigh",
+      "Winter_Wonderland",
+      "Lawn_Ornament",
+      "Plywood_Project",
+      "Xmas_Garden_Decor",
+      "Santas_Sleigh",
+      "Digital_Pattern"
+    ],
+    "description": "\ud83c\udf85 Create a Magical Silhouette in Your Front Yard!  Turn your home into a holiday landmark with these Santa Sleigh Diy Plans. This design focuses on the classic 2D profile, making it the perfect project for cutting out of plywood or MDF sheets. Whether you use a simple jigsaw or a CNC machine, these Sleigh Blueprints will help you create a stunning life-size display. This set is designed to be a showstopper. It features the elegant side profile of Santa's sleigh along with the matching reindeer, ..."
+  },
+  {
+    "id": "149",
+    "slug": "4x16-firewood-shed-diy-plans-pdf--3-cord-wood-sto",
+    "name": "4x16 Firewood Shed DIY Plans PDF | 3 Cord Wood Storage Rack Blueprint | Large Dry Wood Shelter",
+    "category": "firewood shed plan",
+    "price": 5.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/2458e2/7968792495/il_fullxfull.7968792495_pi5s.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/2458e2/7968792495/il_fullxfull.7968792495_pi5s.jpg",
+      "https://i.etsystatic.com/37058139/r/il/e15b45/7968792493/il_fullxfull.7968792493_cujn.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0e00ef/7920840640/il_fullxfull.7920840640_4ulg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/3b8d06/7920840644/il_fullxfull.7920840644_1b7p.jpg",
+      "https://i.etsystatic.com/37058139/r/il/847d10/7968792497/il_fullxfull.7968792497_lefw.jpg",
+      "https://i.etsystatic.com/37058139/r/il/d216ce/7968792501/il_fullxfull.7968792501_i8i3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/0bf8d2/7920840676/il_fullxfull.7920840676_aeor.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5207a1/7920840670/il_fullxfull.7920840670_r4t4.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5e24d2/7968792533/il_fullxfull.7968792533_m306.jpg"
+    ],
+    "tags": [
+      "firewood_shed_plan",
+      "4x16_wood_shed",
+      "3_cord_wood_rack",
+      "dry_wood_shelter",
+      "16_firewood_storage",
+      "wood_shed_plans",
+      "outdoor_log_store",
+      "shed_with_firewood",
+      "fire_wood_rack_diy",
+      "heavy_duty_log_rack",
+      "wood_working_plans",
+      "firewood_storage_pdf"
+    ],
+    "description": "Easy 4x16 Firewood Shed DIY Plans PDF   Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 4x16 Firewood Shed. Designed with a massive 3-cord capacity, this structure is an absolute necessity for homesteaders, cabin owners, and anyone who relies on a wood stove to heat their home through the winter.  Engineered for Perfect Seasoning & Protection:  Maximum Airflow ..."
+  },
+  {
+    "id": "150",
+    "slug": "covered-garden-swing-plans--diy-aframe-bench-wit",
+    "name": "Covered Garden Swing Plans | DIY A-Frame Bench with Roof (PDF Blueprint",
+    "category": "Wooden Swing Plans",
+    "price": 10.0,
+    "currency": "USD",
+    "image": "https://i.etsystatic.com/37058139/r/il/e9d4e8/7679218863/il_fullxfull.7679218863_humi.jpg",
+    "images": [
+      "https://i.etsystatic.com/37058139/r/il/e9d4e8/7679218863/il_fullxfull.7679218863_humi.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b419c9/7631268288/il_fullxfull.7631268288_o425.jpg",
+      "https://i.etsystatic.com/37058139/r/il/685bb6/7631268318/il_fullxfull.7631268318_92se.jpg",
+      "https://i.etsystatic.com/37058139/r/il/650b8c/7631268330/il_fullxfull.7631268330_i5l3.jpg",
+      "https://i.etsystatic.com/37058139/r/il/66c5fa/7631268326/il_fullxfull.7631268326_ccuq.jpg",
+      "https://i.etsystatic.com/37058139/r/il/b03066/7679218855/il_fullxfull.7679218855_goi6.jpg",
+      "https://i.etsystatic.com/37058139/r/il/80ddd2/7631268340/il_fullxfull.7631268340_7ii1.jpg",
+      "https://i.etsystatic.com/37058139/r/il/ef66fe/7679218835/il_fullxfull.7679218835_pmfg.jpg",
+      "https://i.etsystatic.com/37058139/r/il/313513/7631268328/il_fullxfull.7631268328_jz0p.jpg",
+      "https://i.etsystatic.com/37058139/r/il/5fbd64/7679218845/il_fullxfull.7679218845_gn0k.jpg"
+    ],
+    "tags": [
+      "Wooden_Swing_Plans",
+      "Covered_Swing_DIY",
+      "A-Frame_Swing_Stand",
+      "Swing_With_Roof",
+      "Garden_Furniture",
+      "Self_Supporting",
+      "Porch_Swing_Stand",
+      "Outdoor_Glider_Plan",
+      "Swing_Bench_Build",
+      "Yard_Swing_Project",
+      "Patio_Seating_DIY",
+      "Woodworking_Plans",
+      "Digital_Blueprint"
+    ],
+    "description": "Create Your Own Backyard Sanctuary \ud83c\udf3f\u2728  Imagine enjoying your morning coffee or watching the sunset while gently swaying in your own handmade garden swing. This isn't just a swing; it's a complete Covered Swing Bench with a beautiful pergola-style roof that defines your outdoor space.  With these easy-to-follow Wooden Garden Swing Plans, you can build a stunning, self-supporting structure that doesn't require a big tree or a porch ceiling. Place it anywhere on your lawn, patio, or deck!  Why You\u2019..."
   }
 ];

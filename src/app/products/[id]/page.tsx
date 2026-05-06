@@ -2,7 +2,7 @@ import React from 'react';
 import { products, Product } from '@/data/products';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ShieldCheck, Truck, RefreshCw, Info, FileText } from 'lucide-react';
+import { ShieldCheck, Truck, RefreshCw, Info, FileText, Tag as TagIcon } from 'lucide-react';
 import { Metadata } from 'next';
 
 interface Props {
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: product.name,
       description: product.description,
-      images: [product.image],
+      images: product.images,
     },
   };
 }
@@ -42,7 +42,7 @@ export default async function ProductPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: product.name,
-    image: product.image,
+    image: product.images,
     description: product.description,
     brand: {
       '@type': 'Brand',
@@ -51,7 +51,7 @@ export default async function ProductPage({ params }: Props) {
     offers: {
       '@type': 'Offer',
       price: product.price,
-      priceCurrency: 'USD',
+      priceCurrency: product.currency,
       availability: 'https://schema.org/InStock',
     },
   };
@@ -68,14 +68,23 @@ export default async function ProductPage({ params }: Props) {
       </div>
 
       <div className="product-detail-grid">
-        <div className="product-detail-image">
-          <img src={product.image} alt={`${product.name} - ${product.category} by Bizilla`} />
+        <div className="product-detail-image-gallery">
+          <div className="main-image">
+            <img src={product.image} alt={product.name} />
+          </div>
+          <div className="thumbnail-grid">
+            {product.images.slice(1).map((img, idx) => (
+              <div key={idx} className="thumbnail-item">
+                <img src={img} alt={`${product.name} - view ${idx + 2}`} />
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="product-detail-info">
           <div className="product-detail-category">{product.category}</div>
           <h1 className="product-detail-title">{product.name}</h1>
-          <div className="product-detail-price">${product.price.toFixed(2)}</div>
+          <div className="product-detail-price">{product.currency === 'USD' ? '$' : product.currency}{product.price.toFixed(2)}</div>
           
           <div className="product-detail-section">
             <h2 className="section-small-title"><Info size={14} /> DESCRIPTION</h2>
@@ -83,6 +92,17 @@ export default async function ProductPage({ params }: Props) {
               {product.description}
             </p>
           </div>
+
+          {product.tags && product.tags.length > 0 && (
+            <div className="product-detail-section">
+              <h2 className="section-small-title"><TagIcon size={14} /> TAGS</h2>
+              <div className="product-tags">
+                {product.tags.map((tag, idx) => (
+                  <span key={idx} className="tag-badge">{tag}</span>
+                ))}
+              </div>
+            </div>
+          )}
 
           <div className="product-detail-actions">
             <button className="btn btn-primary w-full">
@@ -93,25 +113,24 @@ export default async function ProductPage({ params }: Props) {
           <div className="product-detail-section">
             <h2 className="section-small-title"><FileText size={14} /> SPECIFICATIONS</h2>
             <ul className="product-specs">
-              <li><span>Material</span> <span>Sustainable Composite</span></li>
-              <li><span>Origin</span> <span>Designed in Berlin</span></li>
-              <li><span>Weight</span> <span>450g</span></li>
-              <li><span>Dimensions</span> <span>12 x 12 x 5 cm</span></li>
+              <li><span>Material</span> <span>Sustainable Wood / Digital PDF</span></li>
+              <li><span>Format</span> <span>Instant Download</span></li>
+              <li><span>Support</span> <span>24/7 Builder Support</span></li>
             </ul>
           </div>
 
           <div className="product-detail-meta">
             <div className="meta-item">
               <Truck size={18} strokeWidth={1} />
-              <span>Complimentary shipping on orders over $200</span>
+              <span>Instant Digital Delivery</span>
             </div>
             <div className="meta-item">
               <ShieldCheck size={18} strokeWidth={1} />
-              <span>2-year extended warranty included</span>
+              <span>Verified DIY Plans</span>
             </div>
             <div className="meta-item">
               <RefreshCw size={18} strokeWidth={1} />
-              <span>30-day effortless returns</span>
+              <span>Happiness Guarantee</span>
             </div>
           </div>
         </div>
@@ -119,12 +138,12 @@ export default async function ProductPage({ params }: Props) {
 
       <div className="product-story-section">
         <div className="story-content">
-          <h2 className="story-title">Behind the Design</h2>
+          <h2 className="story-title">About the Project</h2>
           <p>
-            Every piece in the Bizilla collection is a testament to our philosophy of reduction. 
-            We spent eighteen months refining the form of the {product.name}, ensuring that 
-            every curve and edge serves a functional purpose while maintaining a visual 
-            silence that complements any environment.
+            This {product.name} has been meticulously drafted to provide clear, 
+            concise instructions for builders of all skill levels. We focus on 
+            material efficiency and structural integrity, ensuring your build 
+            lasts for years to come.
           </p>
         </div>
       </div>
