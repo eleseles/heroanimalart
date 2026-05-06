@@ -102,20 +102,6 @@ export default async function ProductPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <div className="product-top-meta">
-        <div className="meta-dates">
-          <div className="date-item">
-            <Calendar size={14} />
-            <span>PUBLISHED: <strong>{product.publishedAt}</strong></span>
-          </div>
-          <div className="meta-separator">|</div>
-          <div className="date-item">
-            <Clock size={14} />
-            <span>MODIFIED: <strong>{product.modifiedAt}</strong></span>
-          </div>
-        </div>
-      </div>
-
       <div className="breadcrumbs">
         <Link href="/">COLLECTION</Link> / <span>{product.category}</span> / <span>{product.name}</span>
       </div>
@@ -218,6 +204,21 @@ export default async function ProductPage({ params }: Props) {
           ))}
         </div>
       </section>
+
+      {/* Bottom Meta Dates */}
+      <div className="product-bottom-meta">
+        <div className="meta-dates">
+          <div className="date-item">
+            <Calendar size={12} />
+            <span>Published: {product.publishedAt}</span>
+          </div>
+          <div className="meta-separator">•</div>
+          <div className="date-item">
+            <Clock size={12} />
+            <span>Modified: {product.modifiedAt}</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
