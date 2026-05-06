@@ -125,18 +125,6 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </div>
       </div>
-
-      <div className="product-story-section">
-        <div className="story-content">
-          <h2 className="story-title">About the Project</h2>
-          <p>
-            This {product.name} has been meticulously drafted to provide clear, 
-            concise instructions for builders of all skill levels. We focus on 
-            material efficiency and structural integrity, ensuring your build 
-            lasts for years to come.
-          </p>
-        </div>
-      </div>
     </div>
   );
 }
