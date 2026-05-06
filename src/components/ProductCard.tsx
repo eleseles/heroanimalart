@@ -1,15 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+import { Product } from '@/data/products';
 
 interface ProductCardProps {
-  product: {
-    id: string;
-    slug: string;
-    name: string;
-    category: string;
-    price: number;
-    image: string;
-  };
+  product: Product;
 }
 
 export default function ProductCard({ product }: ProductCardProps) {

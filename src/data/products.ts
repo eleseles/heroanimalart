@@ -1,4 +1,14 @@
-export const products = [
+export interface Product {
+  id: string;
+  slug: string;
+  name: string;
+  category: string;
+  price: number;
+  image: string;
+  description: string;
+}
+
+export const products: Product[] = [
   {
     "id": "1",
     "slug": "diy-santa-sleigh--reindeer-plans--lifesize-outd",

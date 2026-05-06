@@ -1,5 +1,5 @@
 import React from 'react';
-import { products } from '@/data/products';
+import { products, Product } from '@/data/products';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ShieldCheck, Truck, RefreshCw, Info, FileText } from 'lucide-react';
@@ -11,7 +11,7 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const product = products.find((p) => p.slug === slug);
+  const product = products.find((p: Product) => p.slug === slug);
 
   if (!product) return { title: 'Product Not Found' };
 
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
-  const product = products.find((p) => p.slug === slug);
+  const product = products.find((p: Product) => p.slug === slug);
 
   if (!product) {
     notFound();
@@ -133,7 +133,7 @@ export default async function ProductPage({ params }: Props) {
 }
 
 export async function generateStaticParams() {
-  return products.map((product) => ({
+  return products.map((product: Product) => ({
     slug: product.slug,
   }));
 }
