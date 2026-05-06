@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface ProductGalleryProps {
   images: string[];
@@ -9,8 +9,13 @@ interface ProductGalleryProps {
 
 export default function ProductGallery({ images, name }: ProductGalleryProps) {
   const [activeImage, setActiveImage] = useState(images[0]);
+  const [currentUrl, setCurrentUrl] = useState('');
 
-  const pinterestSaveUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}&media=${encodeURIComponent(activeImage)}&description=${encodeURIComponent(name)}`;
+  useEffect(() => {
+    setCurrentUrl(window.location.href);
+  }, []);
+
+  const pinterestSaveUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(currentUrl)}&media=${encodeURIComponent(activeImage)}&description=${encodeURIComponent(name)}`;
 
   return (
     <div className="product-detail-image-gallery">
