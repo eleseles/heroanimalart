@@ -784,3 +784,13 @@ h1, h2, h3, h4, h5, h6 {
 .pinterest-save-btn svg {
   flex-shrink: 0;
 }
+
+.related-products-section {
+  margin-top: 8rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.related-products-section .section-header {
+  margin-bottom: 3rem;
+}

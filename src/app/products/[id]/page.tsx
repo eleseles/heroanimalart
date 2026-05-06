@@ -2,9 +2,10 @@ import React from 'react';
 import { products, Product } from '@/data/products';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ShieldCheck, Truck, RefreshCw, Info, FileText, Tag as TagIcon } from 'lucide-react';
+import { ShieldCheck, Truck, RefreshCw, Info, FileText, Tag as TagIcon, ArrowRight } from 'lucide-react';
 import { Metadata } from 'next';
 import ProductGallery from '@/components/ProductGallery';
+import ProductCard from '@/components/ProductCard';
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -36,6 +37,19 @@ export default async function ProductPage({ params }: Props) {
 
   if (!product) {
     notFound();
+  }
+
+  // Get related products (same category, excluding current)
+  const relatedProducts = products
+    .filter((p: Product) => p.category === product.category && p.id !== product.id)
+    .slice(0, 4);
+  
+  // If not enough related products, fill with others
+  if (relatedProducts.length < 4) {
+    const others = products
+      .filter((p: Product) => p.id !== product.id && !relatedProducts.find(rp => rp.id === p.id))
+      .slice(0, 4 - relatedProducts.length);
+    relatedProducts.push(...others);
   }
 
   // Structured Data for SEO
@@ -125,6 +139,19 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </div>
       </div>
+
+      {/* Related Products Section */}
+      <section className="related-products-section">
+        <div className="section-header">
+          <h2 className="section-title">You Might Also Like</h2>
+          <Link href="/products" className="section-link">View All <ArrowRight size={16} /></Link>
+        </div>
+        <div className="products-grid">
+          {relatedProducts.map((p) => (
+            <ProductCard key={p.id} product={p} />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
