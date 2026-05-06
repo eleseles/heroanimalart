@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ShieldCheck, Truck, RefreshCw, Info, FileText, Tag as TagIcon } from 'lucide-react';
 import { Metadata } from 'next';
+import ProductGallery from '@/components/ProductGallery';
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -68,18 +69,7 @@ export default async function ProductPage({ params }: Props) {
       </div>
 
       <div className="product-detail-grid">
-        <div className="product-detail-image-gallery">
-          <div className="main-image">
-            <img src={product.image} alt={product.name} />
-          </div>
-          <div className="thumbnail-grid">
-            {product.images.slice(1).map((img, idx) => (
-              <div key={idx} className="thumbnail-item">
-                <img src={img} alt={`${product.name} - view ${idx + 2}`} />
-              </div>
-            ))}
-          </div>
-        </div>
+        <ProductGallery images={product.images} name={product.name} />
 
         <div className="product-detail-info">
           <div className="product-detail-category">{product.category}</div>

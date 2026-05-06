@@ -738,3 +738,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.75rem;
   letter-spacing: 0.05em;
 }
+
+.thumbnail-item.active {
+  border: 1px solid var(--text-primary);
+}
+
+.thumbnail-item.active img {
+  opacity: 1;
+}
+
+.thumbnail-item:not(.active) img {
+  opacity: 0.6;
+}
