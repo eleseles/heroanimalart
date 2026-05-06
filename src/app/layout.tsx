@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  verification: {
+    other: {
+      'p:domain_verify': '6c8d3c84aaedf525f44f8032be6db0cb',
+    },
+  },
 };
 
 export default function RootLayout({
