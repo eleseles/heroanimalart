@@ -2,6 +2,7 @@ import React from 'react';
 import ProductCard from '@/components/ProductCard';
 import { products } from '@/data/products';
 import { ArrowRight } from 'lucide-react';
+import Insights from '@/components/Insights';
 
 export default function Home() {
   return (
@@ -74,6 +75,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Insights Section */}
+      <Insights />
 
       {/* Newsletter Section */}
       <section className="section container">
