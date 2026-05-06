@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     template: "%s | Bizilla"
   },
   description: "Discover the future with Bizilla's premium selection of tech gadgets, wearables, and minimal objects.",
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({

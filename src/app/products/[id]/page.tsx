@@ -18,6 +18,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${product.name} | Bizilla Studio`,
     description: product.description,
+    alternates: {
+      canonical: `/products/${id}`,
+    },
     openGraph: {
       title: product.name,
       description: product.description,
