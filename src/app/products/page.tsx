@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ShopPage() {
   return (
-    <div className="container" style={{ paddingTop: '120px', paddingBottom: '8rem' }}>
+    <div className="container" style={{ paddingTop: '120px', paddingBottom: '4rem' }}>
       <div className="section-header">
         <h1 className="section-title">All Products</h1>
         <div style={{ fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
