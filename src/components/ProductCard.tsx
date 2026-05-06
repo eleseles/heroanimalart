@@ -4,6 +4,7 @@ import Link from 'next/link';
 interface ProductCardProps {
   product: {
     id: string;
+    slug: string;
     name: string;
     category: string;
     price: number;
@@ -13,7 +14,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <Link href={`/products/${product.id}`} className="product-card">
+    <Link href={`/products/${product.slug}`} className="product-card">
       <div className="product-image-container">
         <img src={product.image} alt={product.name} className="product-image" />
       </div>

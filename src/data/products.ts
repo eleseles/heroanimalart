@@ -1,6 +1,7 @@
 export const products = [
   {
     id: '1',
+    slug: 'aura-sync-pro-headphones',
     name: 'Aura Sync Pro Headphones',
     category: 'Audio',
     price: 349.99,
@@ -9,6 +10,7 @@ export const products = [
   },
   {
     id: '2',
+    slug: 'nexus-quantum-watch',
     name: 'Nexus Quantum Watch',
     category: 'Wearables',
     price: 299.99,
@@ -17,6 +19,7 @@ export const products = [
   },
   {
     id: '3',
+    slug: 'stellar-mechanical-keyboard',
     name: 'Stellar Mechanical Keyboard',
     category: 'Accessories',
     price: 189.50,
@@ -25,6 +28,7 @@ export const products = [
   },
   {
     id: '4',
+    slug: 'nova-vision-vr-headset',
     name: 'Nova Vision VR Headset',
     category: 'Gaming',
     price: 599.00,
@@ -33,6 +37,7 @@ export const products = [
   },
   {
     id: '5',
+    slug: 'echo-drone-x-1',
     name: 'Echo Drone X-1',
     category: 'Cameras',
     price: 899.99,
@@ -41,6 +46,7 @@ export const products = [
   },
   {
     id: '6',
+    slug: 'zenith-studio-microphone',
     name: 'Zenith Studio Microphone',
     category: 'Audio',
     price: 149.99,
