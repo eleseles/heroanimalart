@@ -9,6 +9,8 @@ export interface Product {
   images: string[];
   tags: string[];
   description: string;
+  publishedAt: string;
+  modifiedAt: string;
 }
 
 export const products: Product[] = [
@@ -45,7 +47,9 @@ export const products: Product[] = [
       "Santas_Sleigh",
       "Digital_Pattern"
     ],
-    "description": "\ud83c\udf85 Bring the Magic of the North Pole to Your Front Yard!  Create a show-stopping holiday display this year with these comprehensive Santa Sleigh Diy Plans. This isn't just a decoration; it\u2019s a life-size experience. Designed to be sturdy and majestic, this set includes blueprints for both the classic wooden sleigh and the matching reindeer. Whether you are a woodworker looking for a festive project or a family wanting to create the ultimate Outdoor Christmas Diy photo booth for the neighborhood, t..."
+    "description": "\ud83c\udf85 Bring the Magic of the North Pole to Your Front Yard!  Create a show-stopping holiday display this year with these comprehensive Santa Sleigh Diy Plans. This isn't just a decoration; it\u2019s a life-size experience. Designed to be sturdy and majestic, this set includes blueprints for both the classic wooden sleigh and the matching reindeer. Whether you are a woodworker looking for a festive project or a family wanting to create the ultimate Outdoor Christmas Diy photo booth for the neighborhood, t...",
+    "publishedAt": "JAN 30, 2026",
+    "modifiedAt": "FEB 08, 2026"
   },
   {
     "id": "2",
@@ -81,7 +85,9 @@ export const products: Product[] = [
       "outdoor_garden_craft",
       "fall_wood_decor"
     ],
-    "description": "Enhance Your Home's Curb Appeal with a Weekend Woodworking Project  Create a warm, inviting entrance to your home with a beautiful custom woodworking piece you can build yourself. This digital blueprint provides the exact, step-by-step instructions to craft a charming Welcome Sign Planter Box. Combining a spacious plant bed with a tall display post, it is the perfect statement piece to greet your guests at the front door, porch, or garden entrance.  Skip the overpriced, mass-produced garden cent..."
+    "description": "Enhance Your Home's Curb Appeal with a Weekend Woodworking Project  Create a warm, inviting entrance to your home with a beautiful custom woodworking piece you can build yourself. This digital blueprint provides the exact, step-by-step instructions to craft a charming Welcome Sign Planter Box. Combining a spacious plant bed with a tall display post, it is the perfect statement piece to greet your guests at the front door, porch, or garden entrance.  Skip the overpriced, mass-produced garden cent...",
+    "publishedAt": "FEB 04, 2026",
+    "modifiedAt": "MAR 02, 2026"
   },
   {
     "id": "3",
@@ -118,7 +124,9 @@ export const products: Product[] = [
       "diy_kids_furniture",
       "woodworking_plans"
     ],
-    "description": "Build the Ultimate Outdoor Play Space: The Jumbo 8-Foot Mud Kitchen  Get your kids off the screens and into nature! This comprehensive digital woodworking blueprint provides the exact plans to build a massive, multi-station outdoor mud kitchen. Perfect for siblings, playdates, and Montessori-style sensory play, this durable wooden kitchen will provide years of imaginative, messy fun right in your backyard.  Why buy a flimsy plastic playset when you can build a heavy-duty, beautiful wooden play k..."
+    "description": "Build the Ultimate Outdoor Play Space: The Jumbo 8-Foot Mud Kitchen  Get your kids off the screens and into nature! This comprehensive digital woodworking blueprint provides the exact plans to build a massive, multi-station outdoor mud kitchen. Perfect for siblings, playdates, and Montessori-style sensory play, this durable wooden kitchen will provide years of imaginative, messy fun right in your backyard.  Why buy a flimsy plastic playset when you can build a heavy-duty, beautiful wooden play k...",
+    "publishedAt": "JAN 19, 2026",
+    "modifiedAt": "FEB 15, 2026"
   },
   {
     "id": "4",
@@ -153,7 +161,9 @@ export const products: Product[] = [
       "Cigar_Storage_Plan",
       "DIY_Humidor_Project"
     ],
-    "description": "Build the Ultimate Large-Capacity Cigar Humidor Cabinet!  Looking for a premium woodworking project that stands out? This comprehensive DIY Humidor Cabinet Plan provides everything you need to build a stunning, professional-grade cigar display case. Perfect for serious cigar aficionados, lounge owners, or any woodworker looking to craft a high-end cigar humidor without paying premium retail prices.  This detailed woodworking blueprint features elegant glass doors, lower storage compartments, and..."
+    "description": "Build the Ultimate Large-Capacity Cigar Humidor Cabinet!  Looking for a premium woodworking project that stands out? This comprehensive DIY Humidor Cabinet Plan provides everything you need to build a stunning, professional-grade cigar display case. Perfect for serious cigar aficionados, lounge owners, or any woodworker looking to craft a high-end cigar humidor without paying premium retail prices.  This detailed woodworking blueprint features elegant glass doors, lower storage compartments, and...",
+    "publishedAt": "JAN 04, 2026",
+    "modifiedAt": "JAN 22, 2026"
   },
   {
     "id": "5",
@@ -189,7 +199,9 @@ export const products: Product[] = [
       "furniture_blueprint",
       "woodworking_plans"
     ],
-    "description": "Experience Ultimate Relaxation with DIY Arc Floor Rocking Chair Plans!  Looking for the perfect ergonomic seat for reading, gaming, or lounging on the porch? Build your own stunning floor rocking chair with our comprehensive woodworking plans. This beautiful arc chair rocker features a unique slatted, curved design that conforms to your body, providing a comfortable, zero-gravity feel. It is the ultimate rocking lounger project to upgrade your living room, reading nook, or backyard deck!  Whethe..."
+    "description": "Experience Ultimate Relaxation with DIY Arc Floor Rocking Chair Plans!  Looking for the perfect ergonomic seat for reading, gaming, or lounging on the porch? Build your own stunning floor rocking chair with our comprehensive woodworking plans. This beautiful arc chair rocker features a unique slatted, curved design that conforms to your body, providing a comfortable, zero-gravity feel. It is the ultimate rocking lounger project to upgrade your living room, reading nook, or backyard deck!  Whethe...",
+    "publishedAt": "FEB 26, 2026",
+    "modifiedAt": "MAR 12, 2026"
   },
   {
     "id": "6",
@@ -222,7 +234,9 @@ export const products: Product[] = [
       "DIY_Jewelry_Stand",
       "DIY_Earring_Stand"
     ],
-    "description": "Rescue your jewelry from tangled drawers and display it like a work of art! With this elegant Jewelry Tree Stand DIY plan, you can create a solution that is both highly functional and beautifully decorative for organizing your necklaces, earrings, and bracelets.  Inspired by nature, this tree design offers numerous branches, providing a massive storage capacity for all your favorite accessories, from long necklaces to hoop earrings. Create this stunning organizer with your own laser cutter or CN..."
+    "description": "Rescue your jewelry from tangled drawers and display it like a work of art! With this elegant Jewelry Tree Stand DIY plan, you can create a solution that is both highly functional and beautifully decorative for organizing your necklaces, earrings, and bracelets.  Inspired by nature, this tree design offers numerous branches, providing a massive storage capacity for all your favorite accessories, from long necklaces to hoop earrings. Create this stunning organizer with your own laser cutter or CN...",
+    "publishedAt": "MAR 02, 2026",
+    "modifiedAt": "MAR 04, 2026"
   },
   {
     "id": "7",
@@ -258,7 +272,9 @@ export const products: Product[] = [
       "Playroom_Furniture",
       "Toy_Organizer_Wood"
     ],
-    "description": "Build the Ultimate Kids Play & Storage Table!  Tired of stepping on toy bricks? Transform your child's playroom with this comprehensive DIY Lego Table Plan! Designed with both fun and organization in mind, this kids activity table features a recessed top to keep building blocks and train tracks contained, plus built-in lower shelving perfectly sized for standard plastic storage bins.  Whether you want to build a dedicated train table, a craft station, or a playroom toy storage organizer, this de..."
+    "description": "Build the Ultimate Kids Play & Storage Table!  Tired of stepping on toy bricks? Transform your child's playroom with this comprehensive DIY Lego Table Plan! Designed with both fun and organization in mind, this kids activity table features a recessed top to keep building blocks and train tracks contained, plus built-in lower shelving perfectly sized for standard plastic storage bins.  Whether you want to build a dedicated train table, a craft station, or a playroom toy storage organizer, this de...",
+    "publishedAt": "JAN 19, 2026",
+    "modifiedAt": "JAN 28, 2026"
   },
   {
     "id": "8",
@@ -295,7 +311,9 @@ export const products: Product[] = [
       "ceremony_canopy_plan",
       "wedding_trellis"
     ],
-    "description": "Bring the Chapel Outdoors: Build a Majestic 3D Church Wedding Arbor  Capture the traditional elegance and architectural grandeur of a church wedding in any outdoor setting. This digital woodworking blueprint provides the exact, step-by-step instructions to build a monumental, 3D Chapel-Style Wedding Arch. Towering at nearly 13 feet tall and spanning 10 feet wide, this pavilion-style structure creates an awe-inspiring, immersive altar that perfectly frames the couple.  Whether you are a wedding v..."
+    "description": "Bring the Chapel Outdoors: Build a Majestic 3D Church Wedding Arbor  Capture the traditional elegance and architectural grandeur of a church wedding in any outdoor setting. This digital woodworking blueprint provides the exact, step-by-step instructions to build a monumental, 3D Chapel-Style Wedding Arch. Towering at nearly 13 feet tall and spanning 10 feet wide, this pavilion-style structure creates an awe-inspiring, immersive altar that perfectly frames the couple.  Whether you are a wedding v...",
+    "publishedAt": "FEB 12, 2026",
+    "modifiedAt": "FEB 25, 2026"
   },
   {
     "id": "9",
@@ -330,7 +348,9 @@ export const products: Product[] = [
       "Outdoor_Decor",
       "Modern_Wood_Fence"
     ],
-    "description": "\ud83c\udf1f DIY Modern Fence Panel Plan - Wood & Metal Railing (PDF Download) \ud83c\udf1f  Sturdy Wood Frame / Vertical Post Supported / Beginner-Friendly  The easiest way to bring a luxurious, modern look to your yard is here! Skip the expensive custom orders. This beginner-friendly PDF plan shows you step-by-step how to build a stunning fence panel that combines natural wood with sleek metal infill railing.  Our design is tailored for standard dimensional lumber\u2014the thick wood materials and commonly used \"Wild Ho..."
+    "description": "\ud83c\udf1f DIY Modern Fence Panel Plan - Wood & Metal Railing (PDF Download) \ud83c\udf1f  Sturdy Wood Frame / Vertical Post Supported / Beginner-Friendly  The easiest way to bring a luxurious, modern look to your yard is here! Skip the expensive custom orders. This beginner-friendly PDF plan shows you step-by-step how to build a stunning fence panel that combines natural wood with sleek metal infill railing.  Our design is tailored for standard dimensional lumber\u2014the thick wood materials and commonly used \"Wild Ho...",
+    "publishedAt": "FEB 10, 2026",
+    "modifiedAt": "MAR 09, 2026"
   },
   {
     "id": "10",
@@ -348,7 +368,9 @@ export const products: Product[] = [
       "https://i.etsystatic.com/37058139/r/il/b24b97/6805548156/il_fullxfull.6805548156_ci83.jpg"
     ],
     "tags": [],
-    "description": "If you\u2019re planning the ultimate Costco party, look no further! Our Costco birthday party invitation and decoration set is designed to bring all the iconic vibes of your favorite warehouse. Perfect for Costco lovers, this customizable Costco sign and menu template on Canva lets you easily create a fully personalized Costco birthday experience.  Whether it's a classic Costco hot dog bar or a nod to the famous Costco Kirkland brand, our Costco party decor will impress guests of all ages. These uniq..."
+    "description": "If you\u2019re planning the ultimate Costco party, look no further! Our Costco birthday party invitation and decoration set is designed to bring all the iconic vibes of your favorite warehouse. Perfect for Costco lovers, this customizable Costco sign and menu template on Canva lets you easily create a fully personalized Costco birthday experience.  Whether it's a classic Costco hot dog bar or a nod to the famous Costco Kirkland brand, our Costco party decor will impress guests of all ages. These uniq...",
+    "publishedAt": "FEB 08, 2026",
+    "modifiedAt": "FEB 18, 2026"
   },
   {
     "id": "11",
@@ -383,7 +405,9 @@ export const products: Product[] = [
       "Mobile_bar",
       "vendor_cart"
     ],
-    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests from a stunning, custom-built cart that perfectly complements your unique style. This isn't just a project; it's your ticket to creating the ultimate custom food cart or a show-stopping mobile bar. Our meticulously designed PDF guide gives you all the tools and knowledge to bring this elegant, mode..."
+    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests from a stunning, custom-built cart that perfectly complements your unique style. This isn't just a project; it's your ticket to creating the ultimate custom food cart or a show-stopping mobile bar. Our meticulously designed PDF guide gives you all the tools and knowledge to bring this elegant, mode...",
+    "publishedAt": "JAN 16, 2026",
+    "modifiedAt": "FEB 09, 2026"
   },
   {
     "id": "12",
@@ -420,7 +444,9 @@ export const products: Product[] = [
       "Digital_Download",
       "Woodcraft_Template"
     ],
-    "description": "Build a Timeless Heirloom with Your Own Hands \ud83d\udc34\u2728  Are you looking for a meaningful DIY project that will be cherished for years? This Wooden Rocking Horse Plan is designed to help you create a beautiful, modern, and sturdy ride-on toy that fits perfectly in any nursery or playroom.  Unlike complicated traditional designs, this simple rocking horse DIY project features clean lines and a minimalist aesthetic. It\u2019s not just a toy; it\u2019s a piece of furniture that celebrates the warmth of wood. Whethe..."
+    "description": "Build a Timeless Heirloom with Your Own Hands \ud83d\udc34\u2728  Are you looking for a meaningful DIY project that will be cherished for years? This Wooden Rocking Horse Plan is designed to help you create a beautiful, modern, and sturdy ride-on toy that fits perfectly in any nursery or playroom.  Unlike complicated traditional designs, this simple rocking horse DIY project features clean lines and a minimalist aesthetic. It\u2019s not just a toy; it\u2019s a piece of furniture that celebrates the warmth of wood. Whethe...",
+    "publishedAt": "FEB 25, 2026",
+    "modifiedAt": "MAR 22, 2026"
   },
   {
     "id": "13",
@@ -457,7 +483,9 @@ export const products: Product[] = [
       "Garden_Wood_Plan",
       "DIY_Wood_Project"
     ],
-    "description": "Hide Those Ugly Trash Cans with This Premium Wooden Enclosure!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Instantly upgr..."
+    "description": "Hide Those Ugly Trash Cans with This Premium Wooden Enclosure!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Instantly upgr...",
+    "publishedAt": "JAN 20, 2026",
+    "modifiedAt": "JAN 21, 2026"
   },
   {
     "id": "14",
@@ -494,7 +522,9 @@ export const products: Product[] = [
       "Mobile_bar",
       "vendor_cart"
     ],
-    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests from a stunning, custom-built cart that perfectly complements your unique style. This isn't just a project; it's your ticket to creating the ultimate custom food cart or a show-stopping mobile bar. Our meticulously designed PDF guide gives you all the tools and knowledge to bring this elegant, mode..."
+    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests from a stunning, custom-built cart that perfectly complements your unique style. This isn't just a project; it's your ticket to creating the ultimate custom food cart or a show-stopping mobile bar. Our meticulously designed PDF guide gives you all the tools and knowledge to bring this elegant, mode...",
+    "publishedAt": "JAN 16, 2026",
+    "modifiedAt": "FEB 03, 2026"
   },
   {
     "id": "15",
@@ -524,7 +554,9 @@ export const products: Product[] = [
       "Solid_Wood_Bed",
       "Rustic_Bed"
     ],
-    "description": "Create a Unique and Stylish Sanctuary with Our DIY Bed Frame Plans  Transform your bedroom into a comfortable and stylish retreat with our easy-to-follow woodworking plans. This DIY bed frame project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of bedroom furniture that will last for years.  Why Build Your Own Bed Frame? Building your own bed frame isn't just a creative endeavor\u2014it\u2019s a way to get the exact style and size you want. Whether you..."
+    "description": "Create a Unique and Stylish Sanctuary with Our DIY Bed Frame Plans  Transform your bedroom into a comfortable and stylish retreat with our easy-to-follow woodworking plans. This DIY bed frame project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of bedroom furniture that will last for years.  Why Build Your Own Bed Frame? Building your own bed frame isn't just a creative endeavor\u2014it\u2019s a way to get the exact style and size you want. Whether you...",
+    "publishedAt": "FEB 07, 2026",
+    "modifiedAt": "FEB 08, 2026"
   },
   {
     "id": "16",
@@ -560,7 +592,9 @@ export const products: Product[] = [
       "diy_planter_box",
       "woodworking_plans"
     ],
-    "description": "Greet Your Guests in Style with a DIY Tall Welcome Planter Stand!  Looking for the perfect front porch decor to showcase your beautiful spring flowers? Build your own stunning wood welcome stand with planter using our comprehensive woodworking plans. This tall, 4-tier vertical design is perfect for holding multiple pots, lanterns, or an elegant \"Welcome\" sign at the top. It is the ultimate farmhouse style planter project to boost your home's curb appeal!  Whether you need a sturdy planter stand ..."
+    "description": "Greet Your Guests in Style with a DIY Tall Welcome Planter Stand!  Looking for the perfect front porch decor to showcase your beautiful spring flowers? Build your own stunning wood welcome stand with planter using our comprehensive woodworking plans. This tall, 4-tier vertical design is perfect for holding multiple pots, lanterns, or an elegant \"Welcome\" sign at the top. It is the ultimate farmhouse style planter project to boost your home's curb appeal!  Whether you need a sturdy planter stand ...",
+    "publishedAt": "FEB 28, 2026",
+    "modifiedAt": "MAR 14, 2026"
   },
   {
     "id": "17",
@@ -597,7 +631,9 @@ export const products: Product[] = [
       "Woodworking_Plans",
       "Digital_Blueprint"
     ],
-    "description": "Build the Ultimate Display for Your Business or Event \ud83c\udf4b\ud83c\udf6c\ud83c\udf38  Are you ready to turn your passion into a business? Whether you are planning a rustic wedding, opening a lemonade stand with your kids, or selling handmade goods at a craft fair, this Wooden Market Cart is the perfect foundation for your success.  This isn't just a stand; it's a versatile Vendor Cart Pattern designed to be the centerpiece of any event. With its classic large wheels and charming canopy frame, it draws customers in and cre..."
+    "description": "Build the Ultimate Display for Your Business or Event \ud83c\udf4b\ud83c\udf6c\ud83c\udf38  Are you ready to turn your passion into a business? Whether you are planning a rustic wedding, opening a lemonade stand with your kids, or selling handmade goods at a craft fair, this Wooden Market Cart is the perfect foundation for your success.  This isn't just a stand; it's a versatile Vendor Cart Pattern designed to be the centerpiece of any event. With its classic large wheels and charming canopy frame, it draws customers in and cre...",
+    "publishedAt": "FEB 05, 2026",
+    "modifiedAt": "FEB 24, 2026"
   },
   {
     "id": "18",
@@ -633,7 +669,9 @@ export const products: Product[] = [
       "Flower_Stand",
       "Mobile_Farm_Cart"
     ],
-    "description": "Update: I've added another updated free plan to the current plan. You'll get two plans for the price of one.  Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s ..."
+    "description": "Update: I've added another updated free plan to the current plan. You'll get two plans for the price of one.  Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s ...",
+    "publishedAt": "JAN 29, 2026",
+    "modifiedAt": "FEB 07, 2026"
   },
   {
     "id": "19",
@@ -669,7 +707,9 @@ export const products: Product[] = [
       "Lean_To_Carport",
       "Backyard_Shelter"
     ],
-    "description": "Build the Perfect Shelter for Your Car or Patio!  Protect your vehicle from the elements or create a stunning covered outdoor living space with this heavy-duty DIY Lean-To Carport Plan. Whether you need an attached carport plan for your driveway or a spacious patio roof plan to upgrade your backyard, this comprehensive blueprint is designed for durability and style.  Instead of spending thousands on pre-fab structures, build your own custom wooden porch shelter! This versatile design is perfect ..."
+    "description": "Build the Perfect Shelter for Your Car or Patio!  Protect your vehicle from the elements or create a stunning covered outdoor living space with this heavy-duty DIY Lean-To Carport Plan. Whether you need an attached carport plan for your driveway or a spacious patio roof plan to upgrade your backyard, this comprehensive blueprint is designed for durability and style.  Instead of spending thousands on pre-fab structures, build your own custom wooden porch shelter! This versatile design is perfect ...",
+    "publishedAt": "JAN 26, 2026",
+    "modifiedAt": "FEB 20, 2026"
   },
   {
     "id": "20",
@@ -704,7 +744,9 @@ export const products: Product[] = [
       "plant_stand_pdf",
       "woodworking_plans"
     ],
-    "description": "Display Your Greenery with Style using DIY Tiered Plant Stand Plans!  Looking for the perfect way to organize your favorite flowers and herbs? Build your own beautiful and sturdy outdoor ladder shelf with our comprehensive tiered plant stand plans. This elegant A-frame design is the ideal DIY planter stand design for your porch, patio, or indoor garden nook, offering a professional look that elevates any space.  Whether you need a functional tiered ladder herb garden for your kitchen or a decora..."
+    "description": "Display Your Greenery with Style using DIY Tiered Plant Stand Plans!  Looking for the perfect way to organize your favorite flowers and herbs? Build your own beautiful and sturdy outdoor ladder shelf with our comprehensive tiered plant stand plans. This elegant A-frame design is the ideal DIY planter stand design for your porch, patio, or indoor garden nook, offering a professional look that elevates any space.  Whether you need a functional tiered ladder herb garden for your kitchen or a decora...",
+    "publishedAt": "FEB 17, 2026",
+    "modifiedAt": "MAR 13, 2026"
   },
   {
     "id": "21",
@@ -738,7 +780,9 @@ export const products: Product[] = [
       "Flower_Stand",
       "Mobile_Farm_Cart"
     ],
-    "description": "Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s time to give that story the beautiful stage it deserves.  These detailed woodworking plans were designed not j..."
+    "description": "Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s time to give that story the beautiful stage it deserves.  These detailed woodworking plans were designed not j...",
+    "publishedAt": "FEB 21, 2026",
+    "modifiedAt": "MAR 10, 2026"
   },
   {
     "id": "22",
@@ -775,7 +819,9 @@ export const products: Product[] = [
       "outdoor_furniture",
       "woodworking_plans"
     ],
-    "description": "Organize Your Backyard with Premium DIY Tall Outdoor Storage Cabinet Plans!  Tired of a cluttered patio or an unorganized garage? Build the ultimate storage solution with our comprehensive outdoor storage cabinet plans. Standing an impressive 10 feet tall, this massive tall outdoor shed features beautiful slatted doors that provide excellent ventilation\u2014perfect for storing damp hoses, patio cushions, soil bags, and gardening tools safely out of the elements.  Whether you are looking for a dedica..."
+    "description": "Organize Your Backyard with Premium DIY Tall Outdoor Storage Cabinet Plans!  Tired of a cluttered patio or an unorganized garage? Build the ultimate storage solution with our comprehensive outdoor storage cabinet plans. Standing an impressive 10 feet tall, this massive tall outdoor shed features beautiful slatted doors that provide excellent ventilation\u2014perfect for storing damp hoses, patio cushions, soil bags, and gardening tools safely out of the elements.  Whether you are looking for a dedica...",
+    "publishedAt": "FEB 25, 2026",
+    "modifiedAt": "MAR 14, 2026"
   },
   {
     "id": "23",
@@ -808,7 +854,9 @@ export const products: Product[] = [
       "Flower_Stand",
       "Mobile_Farm_Cart"
     ],
-    "description": "Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s time to give that story the beautiful stage it deserves.  These detailed woodworking plans were designed not j..."
+    "description": "Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s time to give that story the beautiful stage it deserves.  These detailed woodworking plans were designed not j...",
+    "publishedAt": "FEB 01, 2026",
+    "modifiedAt": "FEB 09, 2026"
   },
   {
     "id": "24",
@@ -844,7 +892,9 @@ export const products: Product[] = [
       "Wooden_Coop_Build",
       "Duck_Coop"
     ],
-    "description": "Build a Beautiful, Safe, and Cozy Home for Your Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages We are here for you! If you have any questions, need technical advice, or require help during your build process, simply send us a message throug..."
+    "description": "Build a Beautiful, Safe, and Cozy Home for Your Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages We are here for you! If you have any questions, need technical advice, or require help during your build process, simply send us a message throug...",
+    "publishedAt": "FEB 15, 2026",
+    "modifiedAt": "FEB 19, 2026"
   },
   {
     "id": "25",
@@ -880,7 +930,9 @@ export const products: Product[] = [
       "Backyard_Playground",
       "Wood_Fort_Plans_PDF"
     ],
-    "description": "Build the Ultimate Two-Story Backyard Playhouse!  Give your kids the backyard of their dreams with these comprehensive DIY Kids Playhouse Plans! This impressive, large-scale wooden clubhouse features a raised, lofted design, a full wrap-around front porch, sturdy stairs, and an enclosed upper cabin. It is the perfect foundation for the ultimate kids outdoor play structure.  Skip the flimsy pre-made kits and use this playhouse plans blueprint to build a durable, heavy-duty play fort that will las..."
+    "description": "Build the Ultimate Two-Story Backyard Playhouse!  Give your kids the backyard of their dreams with these comprehensive DIY Kids Playhouse Plans! This impressive, large-scale wooden clubhouse features a raised, lofted design, a full wrap-around front porch, sturdy stairs, and an enclosed upper cabin. It is the perfect foundation for the ultimate kids outdoor play structure.  Skip the flimsy pre-made kits and use this playhouse plans blueprint to build a durable, heavy-duty play fort that will las...",
+    "publishedAt": "JAN 06, 2026",
+    "modifiedAt": "JAN 29, 2026"
   },
   {
     "id": "26",
@@ -917,7 +969,9 @@ export const products: Product[] = [
       "Portable_Work_Table",
       "Shop_Furniture_Plan"
     ],
-    "description": "Build the Ultimate Mobile Workstation for Your Workshop!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take your workshop o..."
+    "description": "Build the Ultimate Mobile Workstation for Your Workshop!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take your workshop o...",
+    "publishedAt": "FEB 08, 2026",
+    "modifiedAt": "MAR 03, 2026"
   },
   {
     "id": "27",
@@ -954,7 +1008,9 @@ export const products: Product[] = [
       "beverage_station",
       "woodworking_plans"
     ],
-    "description": "Entertain in Style with Premium DIY Mobile Outdoor Bar Plans!  Ready to become the ultimate backyard host? Build your own stunning and highly functional mobile bar with our comprehensive woodworking plans. This premium outdoor bar features a beautiful slatted wood design, a spacious serving top, and heavy-duty caster wheels, making it the perfect build bar on wheels project for your patio, deck, or poolside.  Whether you are looking for stylish backyard bar plans for summer BBQs or elegant weddi..."
+    "description": "Entertain in Style with Premium DIY Mobile Outdoor Bar Plans!  Ready to become the ultimate backyard host? Build your own stunning and highly functional mobile bar with our comprehensive woodworking plans. This premium outdoor bar features a beautiful slatted wood design, a spacious serving top, and heavy-duty caster wheels, making it the perfect build bar on wheels project for your patio, deck, or poolside.  Whether you are looking for stylish backyard bar plans for summer BBQs or elegant weddi...",
+    "publishedAt": "FEB 20, 2026",
+    "modifiedAt": "FEB 28, 2026"
   },
   {
     "id": "28",
@@ -991,7 +1047,9 @@ export const products: Product[] = [
       "vendor_cart",
       "bar_cart"
     ],
-    "description": "\u2615 Build the Perfect Station for Your Coffee Business! Turn your passion into a business with these professional Coffee Cart Blueprint plans. Designed specifically for heavy-duty use, this cart is the ideal foundation for a mobile espresso bar, a pop-up bakery, or a professional Foldable Stall for market vendors. Unlike flimsy tables, this Mobile Coffee Cart Build is engineered to handle the weight of professional espresso machines while maintaining a sleek, modern look. The 36-inch height is erg..."
+    "description": "\u2615 Build the Perfect Station for Your Coffee Business! Turn your passion into a business with these professional Coffee Cart Blueprint plans. Designed specifically for heavy-duty use, this cart is the ideal foundation for a mobile espresso bar, a pop-up bakery, or a professional Foldable Stall for market vendors. Unlike flimsy tables, this Mobile Coffee Cart Build is engineered to handle the weight of professional espresso machines while maintaining a sleek, modern look. The 36-inch height is erg...",
+    "publishedAt": "FEB 13, 2026",
+    "modifiedAt": "FEB 17, 2026"
   },
   {
     "id": "29",
@@ -1026,7 +1084,9 @@ export const products: Product[] = [
       "trending_woodworking",
       "wood_boxes_pattern"
     ],
-    "description": "Craft the Perfect Elegant Keepsake with DIY Humidor Build Plans!  Looking for the ultimate present for a cigar aficionado or searching for sophisticated diy woodworking gifts? Build your own stunning glass-top desktop humidor with our comprehensive step-by-step blueprints! This elegant design features a display glass top, front-mounted hygrometer placement, and a tight seal to keep humidity levels perfectly balanced.  Whether you are looking for wood projects small enough to build in a weekend o..."
+    "description": "Craft the Perfect Elegant Keepsake with DIY Humidor Build Plans!  Looking for the ultimate present for a cigar aficionado or searching for sophisticated diy woodworking gifts? Build your own stunning glass-top desktop humidor with our comprehensive step-by-step blueprints! This elegant design features a display glass top, front-mounted hygrometer placement, and a tight seal to keep humidity levels perfectly balanced.  Whether you are looking for wood projects small enough to build in a weekend o...",
+    "publishedAt": "FEB 24, 2026",
+    "modifiedAt": "MAR 07, 2026"
   },
   {
     "id": "30",
@@ -1061,7 +1121,9 @@ export const products: Product[] = [
       "wood_plant_pot",
       "woodworking_plans"
     ],
-    "description": "Elevate Your Greenery with Premium DIY Tall Planter Box Plans!  Looking to add a touch of modern elegance to your front porch, patio, or living room? Build your own stunning, high-end display with our comprehensive tall planter box plans. This beautiful tapered and slatted design is the perfect entryway planter to showcase your favorite tall plants, ferns, or small indoor trees.  Whether you need a durable planter outside large wooden build to withstand the elements or sleek natural wood planter..."
+    "description": "Elevate Your Greenery with Premium DIY Tall Planter Box Plans!  Looking to add a touch of modern elegance to your front porch, patio, or living room? Build your own stunning, high-end display with our comprehensive tall planter box plans. This beautiful tapered and slatted design is the perfect entryway planter to showcase your favorite tall plants, ferns, or small indoor trees.  Whether you need a durable planter outside large wooden build to withstand the elements or sleek natural wood planter...",
+    "publishedAt": "JAN 02, 2026",
+    "modifiedAt": "JAN 26, 2026"
   },
   {
     "id": "31",
@@ -1098,7 +1160,9 @@ export const products: Product[] = [
       "grill_station_pdf",
       "woodworking_plans"
     ],
-    "description": "Upgrade Your Living Room with a Premium DIY Lift Top Coffee Table!  Are you looking for the perfect blend of style and functionality? Build your own stunning, multifunctional centerpiece with our comprehensive coffee table blueprint. Featuring a sleek mid-century modern design with a built-in drawer, open display shelves, and a hidden compartment, this project is the ultimate DIY coffee table with storage.  Whether you are working from the couch or enjoying a meal in front of the TV, the elevate..."
+    "description": "Upgrade Your Living Room with a Premium DIY Lift Top Coffee Table!  Are you looking for the perfect blend of style and functionality? Build your own stunning, multifunctional centerpiece with our comprehensive coffee table blueprint. Featuring a sleek mid-century modern design with a built-in drawer, open display shelves, and a hidden compartment, this project is the ultimate DIY coffee table with storage.  Whether you are working from the couch or enjoying a meal in front of the TV, the elevate...",
+    "publishedAt": "JAN 14, 2026",
+    "modifiedAt": "JAN 20, 2026"
   },
   {
     "id": "32",
@@ -1119,7 +1183,9 @@ export const products: Product[] = [
       "https://i.etsystatic.com/37058139/r/il/c220b6/6879746123/il_fullxfull.6879746123_csy6.jpg"
     ],
     "tags": [],
-    "description": "Create a Personalized Mother's Day Gift with Our Editable Newspaper Template!   Make this Mother's Day unforgettable with our editable newspaper template\u2014a unique, heartfelt gift that can be easily customized to celebrate the incredible woman in your life! Whether you're expressing gratitude, love, or simply saying \"Happy Mother's Day!\", this template lets you design a keepsake that will be cherished forever.   Why You'll Love This Gift:   Simple & Stress-Free: Easily add your own text, photos, ..."
+    "description": "Create a Personalized Mother's Day Gift with Our Editable Newspaper Template!   Make this Mother's Day unforgettable with our editable newspaper template\u2014a unique, heartfelt gift that can be easily customized to celebrate the incredible woman in your life! Whether you're expressing gratitude, love, or simply saying \"Happy Mother's Day!\", this template lets you design a keepsake that will be cherished forever.   Why You'll Love This Gift:   Simple & Stress-Free: Easily add your own text, photos, ...",
+    "publishedAt": "JAN 23, 2026",
+    "modifiedAt": "JAN 25, 2026"
   },
   {
     "id": "33",
@@ -1156,7 +1222,9 @@ export const products: Product[] = [
       "outdoor_furniture",
       "woodworking_plans"
     ],
-    "description": "Transform Your Backyard with Premium DIY Pergola Swing Chair Plans!  Create the ultimate relaxation spot in your garden or on your patio! Our comprehensive pergola swing chair plans provide everything you need to build a stunning, free standing swing that combines the elegance of a pergola with the comfort of a modern porch swing. This sturdy and stylish outdoor swing bed plans project is designed to be the centerpiece of your outdoor living area.  Whether you are looking for a diy swing frame t..."
+    "description": "Transform Your Backyard with Premium DIY Pergola Swing Chair Plans!  Create the ultimate relaxation spot in your garden or on your patio! Our comprehensive pergola swing chair plans provide everything you need to build a stunning, free standing swing that combines the elegance of a pergola with the comfort of a modern porch swing. This sturdy and stylish outdoor swing bed plans project is designed to be the centerpiece of your outdoor living area.  Whether you are looking for a diy swing frame t...",
+    "publishedAt": "FEB 11, 2026",
+    "modifiedAt": "FEB 18, 2026"
   },
   {
     "id": "34",
@@ -1182,7 +1250,9 @@ export const products: Product[] = [
       "DIY_Drum_Carder",
       "Drum_Carder_Plan"
     ],
-    "description": "\ud83e\udd29 Build Your Own Petite Drum Carder \u2013 Affordable, Compact & Essential! \ud83d\udc11 Tired of endless hand-carding or looking for a professional-grade solution that doesn't break the bank? With this step-by-step DIY Petite Drum Carder Plan, you can build your very own, fully functional wool carding machine for a fraction of the cost!  Perfect for fiber artists, hand spinners, and felters, this plan provides an affordable, high-quality, and homemade solution for your fiber prep needs. Give your fleece and mi..."
+    "description": "\ud83e\udd29 Build Your Own Petite Drum Carder \u2013 Affordable, Compact & Essential! \ud83d\udc11 Tired of endless hand-carding or looking for a professional-grade solution that doesn't break the bank? With this step-by-step DIY Petite Drum Carder Plan, you can build your very own, fully functional wool carding machine for a fraction of the cost!  Perfect for fiber artists, hand spinners, and felters, this plan provides an affordable, high-quality, and homemade solution for your fiber prep needs. Give your fleece and mi...",
+    "publishedAt": "JAN 23, 2026",
+    "modifiedAt": "JAN 24, 2026"
   },
   {
     "id": "35",
@@ -1219,7 +1289,9 @@ export const products: Product[] = [
       "Costco_Supplies",
       "Customizable_Signs"
     ],
-    "description": "Costco Party Pack | Customizable Price Signs PDF | Costco Birthday Party & Sign | Costco Themed Birthday Decorations | Printable Costco Pack  Get ready to throw the ultimate Costco party with our comprehensive Costco Party Pack! This Costco Party Pack includes everything you need for a memorable Costco themed birthday decorations celebration, from a Costco Birthday Party Invite to an awesome Costco Birthday Cake.  What's Included in Your Costco Party Pack?  This Costco Party Pack is loaded with ..."
+    "description": "Costco Party Pack | Customizable Price Signs PDF | Costco Birthday Party & Sign | Costco Themed Birthday Decorations | Printable Costco Pack  Get ready to throw the ultimate Costco party with our comprehensive Costco Party Pack! This Costco Party Pack includes everything you need for a memorable Costco themed birthday decorations celebration, from a Costco Birthday Party Invite to an awesome Costco Birthday Cake.  What's Included in Your Costco Party Pack?  This Costco Party Pack is loaded with ...",
+    "publishedAt": "JAN 21, 2026",
+    "modifiedAt": "FEB 10, 2026"
   },
   {
     "id": "36",
@@ -1256,7 +1328,9 @@ export const products: Product[] = [
       "vendor_cart",
       "bar_cart"
     ],
-    "description": "\ud83e\udd42 Build the Ultimate Mobile Event Bar! Take your events to the next level with these premium plans for a Custom Champagne Cart featuring professional storage solutions. This isn't just a display cart; it is a fully functional workstation designed for high-volume service at weddings, parties, and corporate events. Unlike smaller models, this Champagne Cart Custom Build includes spacious lower cabinets with glass doors, a cutout for an ice bucket or sink, and extending side shelves for maximum ser..."
+    "description": "\ud83e\udd42 Build the Ultimate Mobile Event Bar! Take your events to the next level with these premium plans for a Custom Champagne Cart featuring professional storage solutions. This isn't just a display cart; it is a fully functional workstation designed for high-volume service at weddings, parties, and corporate events. Unlike smaller models, this Champagne Cart Custom Build includes spacious lower cabinets with glass doors, a cutout for an ice bucket or sink, and extending side shelves for maximum ser...",
+    "publishedAt": "JAN 20, 2026",
+    "modifiedAt": "JAN 26, 2026"
   },
   {
     "id": "37",
@@ -1293,7 +1367,9 @@ export const products: Product[] = [
       "wood_chair_plans",
       "woodworking_plans"
     ],
-    "description": "Relax in Style with Premium DIY Outdoor Double Chair Plans!  Upgrade your front porch, patio, or backyard with the ultimate seating experience! Build your own stunning outdoor double chair with our comprehensive woodworking plans. This beautiful and sturdy design features two comfortable angled seats separated by a convenient built-in tabletop\u2014perfect for enjoying your morning coffee or evening drinks.  Whether you are looking for stylish wooden porch furniture to elevate your home's curb appeal..."
+    "description": "Relax in Style with Premium DIY Outdoor Double Chair Plans!  Upgrade your front porch, patio, or backyard with the ultimate seating experience! Build your own stunning outdoor double chair with our comprehensive woodworking plans. This beautiful and sturdy design features two comfortable angled seats separated by a convenient built-in tabletop\u2014perfect for enjoying your morning coffee or evening drinks.  Whether you are looking for stylish wooden porch furniture to elevate your home's curb appeal...",
+    "publishedAt": "FEB 18, 2026",
+    "modifiedAt": "MAR 20, 2026"
   },
   {
     "id": "38",
@@ -1329,7 +1405,9 @@ export const products: Product[] = [
       "Plant_Stand_DIY",
       "Wood_Projects"
     ],
-    "description": "Build a Stylish and Practical Wooden Shelf to Organize Your Home!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Maximize yo..."
+    "description": "Build a Stylish and Practical Wooden Shelf to Organize Your Home!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Maximize yo...",
+    "publishedAt": "FEB 26, 2026",
+    "modifiedAt": "MAR 21, 2026"
   },
   {
     "id": "39",
@@ -1366,7 +1444,9 @@ export const products: Product[] = [
       "storage_cabinet_diy",
       "build_a_cabinet"
     ],
-    "description": "Maximize Your Kitchen Storage in Style! \ud83c\udf73\u2728  Are you struggling with a cluttered kitchen but lack the floor space for massive furniture? If you need a smart, elegant storage solution, these kitchen sideboard DIY plans are exactly what you've been looking for.  Designed with a highly practical 14-inch depth, these narrow sideboard plans easily fit into tight kitchens, dining rooms, or hallways without blocking your walking path. The design is packed with multi-functional storage: a handy side towe..."
+    "description": "Maximize Your Kitchen Storage in Style! \ud83c\udf73\u2728  Are you struggling with a cluttered kitchen but lack the floor space for massive furniture? If you need a smart, elegant storage solution, these kitchen sideboard DIY plans are exactly what you've been looking for.  Designed with a highly practical 14-inch depth, these narrow sideboard plans easily fit into tight kitchens, dining rooms, or hallways without blocking your walking path. The design is packed with multi-functional storage: a handy side towe...",
+    "publishedAt": "JAN 09, 2026",
+    "modifiedAt": "JAN 31, 2026"
   },
   {
     "id": "40",
@@ -1398,7 +1478,9 @@ export const products: Product[] = [
       "Costco_Font_SVG",
       "Costco_Font_PNG"
     ],
-    "description": "Unleash Your Creativity with Our Customizable Costco Font Digital Pack!  Elevate your DIY projects, personalized gifts, and small business branding with our versatile collection of Costco-inspired font designs. This comprehensive digital pack includes SVG, PNG, and JPG formats, perfect for a wide range of applications from custom apparel to unique party decorations.  What's Included in Your Pack:  Customizable Costco Logos: Featuring the classic Costco Wholesale logo, plus options to personalize..."
+    "description": "Unleash Your Creativity with Our Customizable Costco Font Digital Pack!  Elevate your DIY projects, personalized gifts, and small business branding with our versatile collection of Costco-inspired font designs. This comprehensive digital pack includes SVG, PNG, and JPG formats, perfect for a wide range of applications from custom apparel to unique party decorations.  What's Included in Your Pack:  Customizable Costco Logos: Featuring the classic Costco Wholesale logo, plus options to personalize...",
+    "publishedAt": "JAN 09, 2026",
+    "modifiedAt": "FEB 04, 2026"
   },
   {
     "id": "41",
@@ -1434,7 +1516,9 @@ export const products: Product[] = [
       "rocking_chair_diy",
       "wood_furniture_plan"
     ],
-    "description": "Craft the Perfect Keepsake with DIY Kids Rocking Chair Plans!  Looking for a meaningful, handcrafted woodworking project for your little one? Build a beautiful, heirloom-quality piece of nursery furniture with our comprehensive kids rocker plan. This adorable and sturdy wooden design is the perfect size for toddlers and young children, making it an ideal toddler rocking chair pattern for parents or grandparents to build as a special gift.  Whether you are searching for a cute bear rocking chair ..."
+    "description": "Craft the Perfect Keepsake with DIY Kids Rocking Chair Plans!  Looking for a meaningful, handcrafted woodworking project for your little one? Build a beautiful, heirloom-quality piece of nursery furniture with our comprehensive kids rocker plan. This adorable and sturdy wooden design is the perfect size for toddlers and young children, making it an ideal toddler rocking chair pattern for parents or grandparents to build as a special gift.  Whether you are searching for a cute bear rocking chair ...",
+    "publishedAt": "FEB 12, 2026",
+    "modifiedAt": "FEB 17, 2026"
   },
   {
     "id": "42",
@@ -1471,7 +1555,9 @@ export const products: Product[] = [
       "diy_garden_projects",
       "potting_table_build"
     ],
-    "description": "Transform Your Gardening Experience with the Ultimate DIY Potting Bench Plans!  Get ready to take your gardening to the next level! Build your own stunning and highly functional potting station with our comprehensive woodworking plans. This premium potting bench with storage features a beautiful protective canopy, a slatted backboard for hanging tools, a spacious workspace, and enclosed bottom cabinets with rustic X-pattern doors to hide away soil bags and pots.  Whether you are looking for a co..."
+    "description": "Transform Your Gardening Experience with the Ultimate DIY Potting Bench Plans!  Get ready to take your gardening to the next level! Build your own stunning and highly functional potting station with our comprehensive woodworking plans. This premium potting bench with storage features a beautiful protective canopy, a slatted backboard for hanging tools, a spacious workspace, and enclosed bottom cabinets with rustic X-pattern doors to hide away soil bags and pots.  Whether you are looking for a co...",
+    "publishedAt": "JAN 12, 2026",
+    "modifiedAt": "FEB 05, 2026"
   },
   {
     "id": "43",
@@ -1508,7 +1594,9 @@ export const products: Product[] = [
       "Assembly_Table",
       "Digital_Blueprint"
     ],
-    "description": "Garage Workbench Plans | 8ft Large Woodshop Table DIY | Heavy Duty Workbench with Shelves & Drawers  Stop working on the floor or shaky plastic tables. It\u2019s time to build the workspace you deserve. These Garage Workbench Plans will guide you in building a massive, rock-solid 8-foot (96\") workstation that serves as the command center for all your future projects.  Designed for serious DIYers and woodworkers, this isn't just a table; it's a complete Garage Organization System. With a perfect balan..."
+    "description": "Garage Workbench Plans | 8ft Large Woodshop Table DIY | Heavy Duty Workbench with Shelves & Drawers  Stop working on the floor or shaky plastic tables. It\u2019s time to build the workspace you deserve. These Garage Workbench Plans will guide you in building a massive, rock-solid 8-foot (96\") workstation that serves as the command center for all your future projects.  Designed for serious DIYers and woodworkers, this isn't just a table; it's a complete Garage Organization System. With a perfect balan...",
+    "publishedAt": "JAN 07, 2026",
+    "modifiedAt": "JAN 18, 2026"
   },
   {
     "id": "44",
@@ -1537,7 +1625,9 @@ export const products: Product[] = [
       "Solid_Wood_Bed",
       "Rustic_Bed"
     ],
-    "description": "Create a Unique and Stylish Sanctuary with Our DIY Bed Frame Plans  Transform your bedroom into a comfortable and stylish retreat with our easy-to-follow woodworking plans. This DIY bed frame project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of bedroom furniture that will last for years.  Why Build Your Own Bed Frame? Building your own bed frame isn't just a creative endeavor\u2014it\u2019s a way to get the exact style and size you want. Whether you..."
+    "description": "Create a Unique and Stylish Sanctuary with Our DIY Bed Frame Plans  Transform your bedroom into a comfortable and stylish retreat with our easy-to-follow woodworking plans. This DIY bed frame project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of bedroom furniture that will last for years.  Why Build Your Own Bed Frame? Building your own bed frame isn't just a creative endeavor\u2014it\u2019s a way to get the exact style and size you want. Whether you...",
+    "publishedAt": "JAN 05, 2026",
+    "modifiedAt": "JAN 31, 2026"
   },
   {
     "id": "45",
@@ -1574,7 +1664,9 @@ export const products: Product[] = [
       "portable_coffee_bar",
       "special_event_bar"
     ],
-    "description": "Craft Your Perfect Event with Our Portable & Collapsible Wooden Bar!  Looking for a versatile and stylish solution for your next gathering? Our Portable & Collapsible Wooden Bar is the ultimate DIY event bar! Whether you're planning a birthday bar, a sophisticated special event bar, or a charming wooden coffee bar, this design provides the flexibility and elegance you need.  Key Features:  Effortless Portability: Designed as a folding bar and collapsible bar, it's incredibly easy to transport an..."
+    "description": "Craft Your Perfect Event with Our Portable & Collapsible Wooden Bar!  Looking for a versatile and stylish solution for your next gathering? Our Portable & Collapsible Wooden Bar is the ultimate DIY event bar! Whether you're planning a birthday bar, a sophisticated special event bar, or a charming wooden coffee bar, this design provides the flexibility and elegance you need.  Key Features:  Effortless Portability: Designed as a folding bar and collapsible bar, it's incredibly easy to transport an...",
+    "publishedAt": "JAN 20, 2026",
+    "modifiedAt": "FEB 01, 2026"
   },
   {
     "id": "46",
@@ -1610,7 +1702,9 @@ export const products: Product[] = [
       "outdoor_cat_house",
       "woodworking_plans"
     ],
-    "description": "Give Your Indoor Cat the Purr-fect Outdoor Experience with DIY Window Catio Plans!  Does your feline friend love watching birds from the window? Give them a safe, breezy outdoor space with our comprehensive DIY Window Catio Plans. This beautiful, compact, and uniquely curved outdoor cat cage is designed to attach securely outside a window or sit perfectly on a small balcony. It provides all the sights, sounds, and fresh air of the outdoors without any of the risks!  Whether you are looking for a..."
+    "description": "Give Your Indoor Cat the Purr-fect Outdoor Experience with DIY Window Catio Plans!  Does your feline friend love watching birds from the window? Give them a safe, breezy outdoor space with our comprehensive DIY Window Catio Plans. This beautiful, compact, and uniquely curved outdoor cat cage is designed to attach securely outside a window or sit perfectly on a small balcony. It provides all the sights, sounds, and fresh air of the outdoors without any of the risks!  Whether you are looking for a...",
+    "publishedAt": "JAN 21, 2026",
+    "modifiedAt": "FEB 10, 2026"
   },
   {
     "id": "47",
@@ -1646,7 +1740,9 @@ export const products: Product[] = [
       "winter_wood_shed",
       "wood_seasoning_rack"
     ],
-    "description": "DIY 8x16 Firewood Shed Plans PDF | 2 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a massive, heavy-duty 8x16 Firewood Shed. Designed with an extra-deep profile to hold 2 full cords of wood, this structure is the ultimate high-capacity storage solution for homesteaders, cabin owners, and anyone who relies heavily on a wood stove to heat th..."
+    "description": "DIY 8x16 Firewood Shed Plans PDF | 2 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a massive, heavy-duty 8x16 Firewood Shed. Designed with an extra-deep profile to hold 2 full cords of wood, this structure is the ultimate high-capacity storage solution for homesteaders, cabin owners, and anyone who relies heavily on a wood stove to heat th...",
+    "publishedAt": "JAN 21, 2026",
+    "modifiedAt": "JAN 26, 2026"
   },
   {
     "id": "48",
@@ -1682,7 +1778,9 @@ export const products: Product[] = [
       "build",
       "how_to_build"
     ],
-    "description": "Extra-Long Workbench Plans | DIY 96-Inch Mobile Workstation | Heavy-Duty Garage Table  Tired of feeling cramped while working on your projects? It's time to build a workbench that can handle anything you throw at it. Our DIY Extra-Long Workbench Plans provide a complete guide to constructing a professional-grade, heavy-duty workstation that offers an incredible amount of space and versatility for your workshop or garage.  This is more than just a bench; it's a true workhorse. This digital downlo..."
+    "description": "Extra-Long Workbench Plans | DIY 96-Inch Mobile Workstation | Heavy-Duty Garage Table  Tired of feeling cramped while working on your projects? It's time to build a workbench that can handle anything you throw at it. Our DIY Extra-Long Workbench Plans provide a complete guide to constructing a professional-grade, heavy-duty workstation that offers an incredible amount of space and versatility for your workshop or garage.  This is more than just a bench; it's a true workhorse. This digital downlo...",
+    "publishedAt": "JAN 02, 2026",
+    "modifiedAt": "JAN 30, 2026"
   },
   {
     "id": "49",
@@ -1718,7 +1816,9 @@ export const products: Product[] = [
       "log_storage_build",
       "wood_seasoning_rack"
     ],
-    "description": "DIY 4x10 Firewood Shed Plans PDF | 1 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 4x10 Firewood Shed. Designed with a perfect 1-cord capacity, this structure is the ideal storage solution for homesteaders, cabin owners, and anyone who relies on a wood stove to heat their home through the winter.  Engineered for Perfect Seaso..."
+    "description": "DIY 4x10 Firewood Shed Plans PDF | 1 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 4x10 Firewood Shed. Designed with a perfect 1-cord capacity, this structure is the ideal storage solution for homesteaders, cabin owners, and anyone who relies on a wood stove to heat their home through the winter.  Engineered for Perfect Seaso...",
+    "publishedAt": "JAN 17, 2026",
+    "modifiedAt": "FEB 13, 2026"
   },
   {
     "id": "50",
@@ -1755,7 +1855,9 @@ export const products: Product[] = [
       "Treasure_Chest",
       "Wooden_Storage_Box"
     ],
-    "description": "The Ultimate DIY Wooden Toy Chest & Storage Bench Plans  \ud83c\udf1f Transform Clutter into Charm with Our Easy-to-Build Plans! \ud83c\udf1f  Tired of tripping over toys? Ready for a stylish storage solution that actually works? Our DIY Toy Chest Bench Plans are the perfect answer for organizing your home, especially the kids' room or living area!  This is not just a storage box; it\u2019s a robust wooden storage bench that doubles as comfortable seating, making tidying up a breeze and adding functional d\u00e9cor to any spac..."
+    "description": "The Ultimate DIY Wooden Toy Chest & Storage Bench Plans  \ud83c\udf1f Transform Clutter into Charm with Our Easy-to-Build Plans! \ud83c\udf1f  Tired of tripping over toys? Ready for a stylish storage solution that actually works? Our DIY Toy Chest Bench Plans are the perfect answer for organizing your home, especially the kids' room or living area!  This is not just a storage box; it\u2019s a robust wooden storage bench that doubles as comfortable seating, making tidying up a breeze and adding functional d\u00e9cor to any spac...",
+    "publishedAt": "FEB 23, 2026",
+    "modifiedAt": "MAR 04, 2026"
   },
   {
     "id": "51",
@@ -1791,7 +1893,9 @@ export const products: Product[] = [
       "flower_box_plans",
       "woodworking_plans"
     ],
-    "description": "Grow Your Own Beautiful Garden with DIY Tiered Planter Box Plans!  Maximize your growing space and add a touch of rustic charm to your backyard, patio, or balcony with our comprehensive tiered planter box plans. This sturdy, stepped wooden design features two spacious planting levels, making it the perfect planters for vegetables, fresh herbs, or a vibrant floral display.  Whether you are looking for an easy vertical garden diy project for the weekend or professional garden planters plans to bui..."
+    "description": "Grow Your Own Beautiful Garden with DIY Tiered Planter Box Plans!  Maximize your growing space and add a touch of rustic charm to your backyard, patio, or balcony with our comprehensive tiered planter box plans. This sturdy, stepped wooden design features two spacious planting levels, making it the perfect planters for vegetables, fresh herbs, or a vibrant floral display.  Whether you are looking for an easy vertical garden diy project for the weekend or professional garden planters plans to bui...",
+    "publishedAt": "JAN 25, 2026",
+    "modifiedAt": "JAN 27, 2026"
   },
   {
     "id": "52",
@@ -1825,7 +1929,9 @@ export const products: Product[] = [
       "corner_bookshelf",
       "Rotating_Bookshelf"
     ],
-    "description": "Unlock Your Inner Craftsman with These Ultimate Woodworking Plans!  Are you searching for your next inspiring woodworking project? Look no further! This comprehensive DIY plan is your all-in-one guide to building a stunning and highly functional rotating bookshelf. Designed for woodworkers of all skill levels, our detailed blueprints turn a complex-looking project into a rewarding and achievable experience. This isn't just a book shelf; it\u2019s a centerpiece of conversation, a space-saving solution..."
+    "description": "Unlock Your Inner Craftsman with These Ultimate Woodworking Plans!  Are you searching for your next inspiring woodworking project? Look no further! This comprehensive DIY plan is your all-in-one guide to building a stunning and highly functional rotating bookshelf. Designed for woodworkers of all skill levels, our detailed blueprints turn a complex-looking project into a rewarding and achievable experience. This isn't just a book shelf; it\u2019s a centerpiece of conversation, a space-saving solution...",
+    "publishedAt": "JAN 14, 2026",
+    "modifiedAt": "FEB 10, 2026"
   },
   {
     "id": "53",
@@ -1862,7 +1968,9 @@ export const products: Product[] = [
       "wood_cabinet_plans",
       "woodworking_plans"
     ],
-    "description": "Maximize Your Bedroom Storage with Premium DIY Wardrobe Plans!  Running out of space for your clothes? Build your own beautiful and spacious closet storage cabinet with our comprehensive wardrobe plan. This classic double-door design features a generous hanging area and two large bottom drawers, making it the perfect diy closet build for bedrooms, entryways, or guest rooms.  Whether you are looking for built-in wardrobe plans to customize your space or detailed cabinet plans to improve your wood..."
+    "description": "Maximize Your Bedroom Storage with Premium DIY Wardrobe Plans!  Running out of space for your clothes? Build your own beautiful and spacious closet storage cabinet with our comprehensive wardrobe plan. This classic double-door design features a generous hanging area and two large bottom drawers, making it the perfect diy closet build for bedrooms, entryways, or guest rooms.  Whether you are looking for built-in wardrobe plans to customize your space or detailed cabinet plans to improve your wood...",
+    "publishedAt": "JAN 19, 2026",
+    "modifiedAt": "FEB 08, 2026"
   },
   {
     "id": "54",
@@ -1898,7 +2006,9 @@ export const products: Product[] = [
       "DIY_Shop_Furniture",
       "Garage_Organization"
     ],
-    "description": "Build the Ultimate Classic Garage Workbench!  Every great project starts with a solid foundation. Transform your garage or shop with these comprehensive DIY Workbench Plans 72 Inch! This heavy-duty, traditional design features a massive 6-foot solid wood work surface, a sturdy lower wood workbench shelf for heavy equipment, and a full-size integrated pegboard backer to keep all your essential tools organized and within arm's reach.  Whether you need a reliable station for workbench home & hobby ..."
+    "description": "Build the Ultimate Classic Garage Workbench!  Every great project starts with a solid foundation. Transform your garage or shop with these comprehensive DIY Workbench Plans 72 Inch! This heavy-duty, traditional design features a massive 6-foot solid wood work surface, a sturdy lower wood workbench shelf for heavy equipment, and a full-size integrated pegboard backer to keep all your essential tools organized and within arm's reach.  Whether you need a reliable station for workbench home & hobby ...",
+    "publishedAt": "JAN 10, 2026",
+    "modifiedAt": "JAN 26, 2026"
   },
   {
     "id": "55",
@@ -1935,7 +2045,9 @@ export const products: Product[] = [
       "Raised_Garden_Bed",
       "Strawberry_Pyramid"
     ],
-    "description": "Build the Ultimate Pyramid Strawberry Tower!  Maximize your garden space and grow a massive harvest with this comprehensive DIY Pyramid Strawberry Planter Plan! This beautiful, space-saving 4-tier design is perfect for growing strawberries, herbs, or cascading flowers. Whether you are looking for a stunning wooden strawberry tower for your backyard or highly efficient tiered planter plans for a patio, this blueprint has you covered.  Forget buying expensive, flimsy plastic towers. Use these pyra..."
+    "description": "Build the Ultimate Pyramid Strawberry Tower!  Maximize your garden space and grow a massive harvest with this comprehensive DIY Pyramid Strawberry Planter Plan! This beautiful, space-saving 4-tier design is perfect for growing strawberries, herbs, or cascading flowers. Whether you are looking for a stunning wooden strawberry tower for your backyard or highly efficient tiered planter plans for a patio, this blueprint has you covered.  Forget buying expensive, flimsy plastic towers. Use these pyra...",
+    "publishedAt": "FEB 14, 2026",
+    "modifiedAt": "FEB 21, 2026"
   },
   {
     "id": "56",
@@ -1969,7 +2081,9 @@ export const products: Product[] = [
       "wooden_dog_bed",
       "diy_Dog_bed"
     ],
-    "description": "Create a Comfy and Stylish Haven for Your Best Friend with Our DIY Dog Bed Plans  Elevate your pet\u2019s comfort and your home's style with our easy-to-follow woodworking plans. This DIY dog bed project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of dog furniture that will last for years.  Why an Elevated Dog Bed?  A raised dog bed isn't just a design choice\u2014it's a health-conscious one. By lifting your pet off the floor, this bed provides better..."
+    "description": "Create a Comfy and Stylish Haven for Your Best Friend with Our DIY Dog Bed Plans  Elevate your pet\u2019s comfort and your home's style with our easy-to-follow woodworking plans. This DIY dog bed project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of dog furniture that will last for years.  Why an Elevated Dog Bed?  A raised dog bed isn't just a design choice\u2014it's a health-conscious one. By lifting your pet off the floor, this bed provides better...",
+    "publishedAt": "FEB 01, 2026",
+    "modifiedAt": "FEB 04, 2026"
   },
   {
     "id": "57",
@@ -2006,7 +2120,9 @@ export const products: Product[] = [
       "Duck_Run_and_Coop",
       "Duck_Pen_Plan"
     ],
-    "description": "Build a Safe, Spacious, and Easy-to-Clean Home for Your Multi-Species Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages We are here for you! If you have any questions, need technical advice, or require help during your build process, simply se..."
+    "description": "Build a Safe, Spacious, and Easy-to-Clean Home for Your Multi-Species Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages We are here for you! If you have any questions, need technical advice, or require help during your build process, simply se...",
+    "publishedAt": "JAN 08, 2026",
+    "modifiedAt": "FEB 07, 2026"
   },
   {
     "id": "58",
@@ -2042,7 +2158,9 @@ export const products: Product[] = [
       "Predator_Proof_Run",
       "DIY_Animal_Shelter"
     ],
-    "description": "Build a Safe, Simple, and Beautiful Home for Your Small Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages We are here for you! If you have any questions, need technical advice, or require help during your build process, simply send us a messag..."
+    "description": "Build a Safe, Simple, and Beautiful Home for Your Small Flock!  100% Satisfaction & Money-Back Guarantee! We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages We are here for you! If you have any questions, need technical advice, or require help during your build process, simply send us a messag...",
+    "publishedAt": "FEB 15, 2026",
+    "modifiedAt": "MAR 11, 2026"
   },
   {
     "id": "59",
@@ -2079,7 +2197,9 @@ export const products: Product[] = [
       "Chicken_Coop_Run",
       "Large_Chicken_Coop"
     ],
-    "description": "Build the Ultimate Predator-Proof Paradise for Your Flock!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages  Building a backyard farm is an exciting journey, and we are here to help! If you have any questions or need advice during your build, simpl..."
+    "description": "Build the Ultimate Predator-Proof Paradise for Your Flock!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages  Building a backyard farm is an exciting journey, and we are here to help! If you have any questions or need advice during your build, simpl...",
+    "publishedAt": "FEB 15, 2026",
+    "modifiedAt": "FEB 26, 2026"
   },
   {
     "id": "60",
@@ -2113,7 +2233,9 @@ export const products: Product[] = [
       "Firewood_Holder",
       "6x8_Firewood"
     ],
-    "description": "\ud83d\udd25 Stop Burning Wet Wood! Build Your Dream Woodshed Today! \ud83d\udd25 Tired of struggling with soggy, smoking logs? Our 6x12 Firewood Shed Plans are the perfect solution to keep your wood dry, seasoned, and ready for the fire pit or stove. This isn't just a shed; it's the ultimate DIY project to enhance your backyard and ensure perfectly seasoned fuel all winter long!  \ud83c\udfe1 About These 6x12 Wood Shed Plans \ud83c\udfe1 These are complete DIY plans to build a sturdy, attractive 6' x 12' Firewood Storage Shed (or Woodshe..."
+    "description": "\ud83d\udd25 Stop Burning Wet Wood! Build Your Dream Woodshed Today! \ud83d\udd25 Tired of struggling with soggy, smoking logs? Our 6x12 Firewood Shed Plans are the perfect solution to keep your wood dry, seasoned, and ready for the fire pit or stove. This isn't just a shed; it's the ultimate DIY project to enhance your backyard and ensure perfectly seasoned fuel all winter long!  \ud83c\udfe1 About These 6x12 Wood Shed Plans \ud83c\udfe1 These are complete DIY plans to build a sturdy, attractive 6' x 12' Firewood Storage Shed (or Woodshe...",
+    "publishedAt": "FEB 24, 2026",
+    "modifiedAt": "MAR 13, 2026"
   },
   {
     "id": "61",
@@ -2150,7 +2272,9 @@ export const products: Product[] = [
       "corner_nook_diy",
       "woodworking_plans"
     ],
-    "description": "Create the Ultimate Backyard Oasis with DIY L-Shaped Corner Bench Plans!  Upgrade your patio, garden, or fire pit area with our stunning outdoor corner bench plans. This unique L-shaped design features a beautiful built-in planter box at the center, allowing you to seamlessly blend comfortable seating with your favorite flowers, herbs, or ambient lighting. It is the perfect diy garden seating project to elevate your outdoor living space.  Whether you are looking for an L shaped bench for enterta..."
+    "description": "Create the Ultimate Backyard Oasis with DIY L-Shaped Corner Bench Plans!  Upgrade your patio, garden, or fire pit area with our stunning outdoor corner bench plans. This unique L-shaped design features a beautiful built-in planter box at the center, allowing you to seamlessly blend comfortable seating with your favorite flowers, herbs, or ambient lighting. It is the perfect diy garden seating project to elevate your outdoor living space.  Whether you are looking for an L shaped bench for enterta...",
+    "publishedAt": "FEB 04, 2026",
+    "modifiedAt": "FEB 10, 2026"
   },
   {
     "id": "62",
@@ -2187,7 +2311,9 @@ export const products: Product[] = [
       "Workshop_Storage",
       "DIY_Storage_Rack"
     ],
-    "description": "Build the Ultimate Mobile Tool & Storage Station!  Maximize your workshop or craft room efficiency with this incredibly versatile DIY Rolling Tool Station Plan. Designed with mobility and maximum storage in mind, this tall organizer cart features multiple shallow shelves perfect for storing hand tools, hardware, sandpaper, or acting as a high-capacity hobby organizer for your craft supplies and paints.  Whether you need a functional tool storage cabinet that rolls right up to your workbench, or ..."
+    "description": "Build the Ultimate Mobile Tool & Storage Station!  Maximize your workshop or craft room efficiency with this incredibly versatile DIY Rolling Tool Station Plan. Designed with mobility and maximum storage in mind, this tall organizer cart features multiple shallow shelves perfect for storing hand tools, hardware, sandpaper, or acting as a high-capacity hobby organizer for your craft supplies and paints.  Whether you need a functional tool storage cabinet that rolls right up to your workbench, or ...",
+    "publishedAt": "JAN 23, 2026",
+    "modifiedAt": "FEB 09, 2026"
   },
   {
     "id": "63",
@@ -2224,7 +2350,9 @@ export const products: Product[] = [
       "vendor_cart",
       "bar_cart"
     ],
-    "description": "\ud83e\udd42 Build Your Own Elegant Champagne & Event Cart! Create the ultimate focal point for your next event with these comprehensive Champagne Cart Custom Build plans. Whether you are a DIY enthusiast looking to build a beautiful piece for your home, or a rental business owner wanting to add a high-ROI item to your inventory, this design is perfect for you. This isn't just a cart; it\u2019s a statement piece. Designed to be sturdy yet elegant, this Personalized Mobile Bar Cart features a timeless design wit..."
+    "description": "\ud83e\udd42 Build Your Own Elegant Champagne & Event Cart! Create the ultimate focal point for your next event with these comprehensive Champagne Cart Custom Build plans. Whether you are a DIY enthusiast looking to build a beautiful piece for your home, or a rental business owner wanting to add a high-ROI item to your inventory, this design is perfect for you. This isn't just a cart; it\u2019s a statement piece. Designed to be sturdy yet elegant, this Personalized Mobile Bar Cart features a timeless design wit...",
+    "publishedAt": "JAN 25, 2026",
+    "modifiedAt": "JAN 29, 2026"
   },
   {
     "id": "64",
@@ -2259,7 +2387,9 @@ export const products: Product[] = [
       "wood_pantry_diy",
       "freestanding_pantry"
     ],
-    "description": "Transform Your Backyard with Premium 6x8 ft DIY Outdoor Sauna Plans!  Ready to build your own relaxing retreat? Our comprehensive DIY outdoor sauna plans are designed for both beginners and experienced DIYers. This modern, wooden backyard sauna comfortably fits 4 to 6 people, making it the perfect addition to your outdoor space for a dry sauna or traditional steam experience.  These step-by-step sauna building blueprints remove the guesswork from your DIY project, saving you time and money.  \ud83d\udcd0 S..."
+    "description": "Transform Your Backyard with Premium 6x8 ft DIY Outdoor Sauna Plans!  Ready to build your own relaxing retreat? Our comprehensive DIY outdoor sauna plans are designed for both beginners and experienced DIYers. This modern, wooden backyard sauna comfortably fits 4 to 6 people, making it the perfect addition to your outdoor space for a dry sauna or traditional steam experience.  These step-by-step sauna building blueprints remove the guesswork from your DIY project, saving you time and money.  \ud83d\udcd0 S...",
+    "publishedAt": "JAN 13, 2026",
+    "modifiedAt": "JAN 23, 2026"
   },
   {
     "id": "65",
@@ -2294,7 +2424,9 @@ export const products: Product[] = [
       "winter_wood_shed",
       "wood_seasoning_rack"
     ],
-    "description": "DIY 8x20 Firewood Shed Plans PDF | 3 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a massive, heavy-duty 8x20 Firewood Shed. Designed with an ultra-deep profile to hold a full 3 cords of wood, this structure is the ultimate high-capacity storage solution for homesteaders, large cabin owners, and anyone who relies heavily on a wood stove to..."
+    "description": "DIY 8x20 Firewood Shed Plans PDF | 3 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a massive, heavy-duty 8x20 Firewood Shed. Designed with an ultra-deep profile to hold a full 3 cords of wood, this structure is the ultimate high-capacity storage solution for homesteaders, large cabin owners, and anyone who relies heavily on a wood stove to...",
+    "publishedAt": "FEB 06, 2026",
+    "modifiedAt": "FEB 18, 2026"
   },
   {
     "id": "66",
@@ -2330,7 +2462,9 @@ export const products: Product[] = [
       "Sauna_Building",
       "Modern_Sauna_PDF"
     ],
-    "description": "Build Your Own Backyard Oasis!  Transform your backyard into a luxury retreat with these comprehensive DIY Outdoor Sauna Plans. This stunning modern outdoor sauna design features a spacious hot room with a large scenic window, plus an attached covered porch perfectly designed for cooling down, storing firewood, or installing an outdoor shower\u2014making it the ultimate match for anyone looking for sauna with shower plans.  Skip the expensive pre-fab kits. Whether you are looking to build a tradition..."
+    "description": "Build Your Own Backyard Oasis!  Transform your backyard into a luxury retreat with these comprehensive DIY Outdoor Sauna Plans. This stunning modern outdoor sauna design features a spacious hot room with a large scenic window, plus an attached covered porch perfectly designed for cooling down, storing firewood, or installing an outdoor shower\u2014making it the ultimate match for anyone looking for sauna with shower plans.  Skip the expensive pre-fab kits. Whether you are looking to build a tradition...",
+    "publishedAt": "FEB 11, 2026",
+    "modifiedAt": "FEB 18, 2026"
   },
   {
     "id": "67",
@@ -2367,7 +2501,9 @@ export const products: Product[] = [
       "office_bookshelf",
       "woodworking_plans"
     ],
-    "description": "Upgrade Your Living Room with a Premium DIY Lift Top Coffee Table!  Are you looking for the perfect blend of style and functionality? Build your own stunning, multifunctional centerpiece with our comprehensive coffee table blueprint. Featuring a sleek mid-century modern design with a built-in drawer, open display shelves, and a hidden compartment, this project is the ultimate DIY coffee table with storage.  Whether you are working from the couch or enjoying a meal in front of the TV, the elevate..."
+    "description": "Upgrade Your Living Room with a Premium DIY Lift Top Coffee Table!  Are you looking for the perfect blend of style and functionality? Build your own stunning, multifunctional centerpiece with our comprehensive coffee table blueprint. Featuring a sleek mid-century modern design with a built-in drawer, open display shelves, and a hidden compartment, this project is the ultimate DIY coffee table with storage.  Whether you are working from the couch or enjoying a meal in front of the TV, the elevate...",
+    "publishedAt": "FEB 01, 2026",
+    "modifiedAt": "FEB 26, 2026"
   },
   {
     "id": "68",
@@ -2395,7 +2531,9 @@ export const products: Product[] = [
       "Backyard_Bar_DIY",
       "BBQ_Shack_Plans"
     ],
-    "description": "[The Hook & Support Promise]  Transform your backyard into the ultimate entertainment space with our comprehensive DIY Outdoor Kitchen & Backyard Bar Plans! Whether you are a weekend warrior or an experienced builder, we are here to ensure your project is a success. Need help or have questions during the build? Don't worry! We provide full, ongoing support via Etsy messages to guide you every step of the way.  [About This Build]   Get ready for summer BBQs and outdoor parties! This contemporary ..."
+    "description": "[The Hook & Support Promise]  Transform your backyard into the ultimate entertainment space with our comprehensive DIY Outdoor Kitchen & Backyard Bar Plans! Whether you are a weekend warrior or an experienced builder, we are here to ensure your project is a success. Need help or have questions during the build? Don't worry! We provide full, ongoing support via Etsy messages to guide you every step of the way.  [About This Build]   Get ready for summer BBQs and outdoor parties! This contemporary ...",
+    "publishedAt": "FEB 05, 2026",
+    "modifiedAt": "FEB 20, 2026"
   },
   {
     "id": "69",
@@ -2430,7 +2568,9 @@ export const products: Product[] = [
       "DIY_Outdoor_Fun",
       "Strategy_Game_Build"
     ],
-    "description": "Bring Giant-Sized Fun to Your Next Backyard Party with This DIY Connect 4 Game!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Buil..."
+    "description": "Bring Giant-Sized Fun to Your Next Backyard Party with This DIY Connect 4 Game!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Buil...",
+    "publishedAt": "FEB 14, 2026",
+    "modifiedAt": "MAR 08, 2026"
   },
   {
     "id": "70",
@@ -2467,7 +2607,9 @@ export const products: Product[] = [
       "Mobile_bar",
       "vendor_cart"
     ],
-    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests from a stunning, custom-built cart that perfectly complements your unique style. This isn't just a project; it's your ticket to creating the ultimate custom food cart or a show-stopping mobile bar. Our meticulously designed PDF guide gives you all the tools and knowledge to bring this elegant, mode..."
+    "description": "Build Your Dream Event: The Ultimate DIY Mobile Serving Cart Plan  Craft the centerpiece of your next event with our comprehensive, step-by-step project plan!  Imagine effortlessly serving your guests from a stunning, custom-built cart that perfectly complements your unique style. This isn't just a project; it's your ticket to creating the ultimate custom food cart or a show-stopping mobile bar. Our meticulously designed PDF guide gives you all the tools and knowledge to bring this elegant, mode...",
+    "publishedAt": "FEB 04, 2026",
+    "modifiedAt": "FEB 28, 2026"
   },
   {
     "id": "71",
@@ -2504,7 +2646,9 @@ export const products: Product[] = [
       "Shop_Furniture",
       "Garage_Workshop_Plan"
     ],
-    "description": "The Ultimate Workshop Hybrid: A Heavy-Duty Workbench That Organizes Itself!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Ongoing Support via Etsy Messages  We\u2019ve got your back! If you run into any questions during your build or need a bit of technical advice, just shoot us a mes..."
+    "description": "The Ultimate Workshop Hybrid: A Heavy-Duty Workbench That Organizes Itself!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Ongoing Support via Etsy Messages  We\u2019ve got your back! If you run into any questions during your build or need a bit of technical advice, just shoot us a mes...",
+    "publishedAt": "FEB 08, 2026",
+    "modifiedAt": "FEB 13, 2026"
   },
   {
     "id": "72",
@@ -2540,7 +2684,9 @@ export const products: Product[] = [
       "custom_closet_diy",
       "woodworking_plans"
     ],
-    "description": "Maximize Your Closet Space with Premium DIY Rotating Shoe Rack Plans!  Tired of messy closets and piles of shoes? Build the ultimate storage solution with our comprehensive rotating shoe rack plans. This impressive, multi-tier spinning shoe display allows you to easily store and access dozens of pairs of shoes with a simple spin. Perfect for walk-in closets, bedrooms, or entryways, this diy shoe carousel plans project will completely transform your organization.  Whether you are looking for a st..."
+    "description": "Maximize Your Closet Space with Premium DIY Rotating Shoe Rack Plans!  Tired of messy closets and piles of shoes? Build the ultimate storage solution with our comprehensive rotating shoe rack plans. This impressive, multi-tier spinning shoe display allows you to easily store and access dozens of pairs of shoes with a simple spin. Perfect for walk-in closets, bedrooms, or entryways, this diy shoe carousel plans project will completely transform your organization.  Whether you are looking for a st...",
+    "publishedAt": "JAN 09, 2026",
+    "modifiedAt": "JAN 22, 2026"
   },
   {
     "id": "73",
@@ -2577,7 +2723,9 @@ export const products: Product[] = [
       "kids_playset_diy",
       "woodworking_plans"
     ],
-    "description": "Build the Ultimate Backyard Adventure with DIY Swingset & Playhouse Plans!  Give your kids the outdoor space of their dreams! Our comprehensive wooden playset plan provides everything you need to build a professional-grade, sturdy, and fun-filled playground. This all-in-one design features a classic swingset with playhouse tower, a secure ladder, and a shaded platform, making it the perfect diy playhouse kids outdoor project for your family.  Whether you are looking for backyard playground plans..."
+    "description": "Build the Ultimate Backyard Adventure with DIY Swingset & Playhouse Plans!  Give your kids the outdoor space of their dreams! Our comprehensive wooden playset plan provides everything you need to build a professional-grade, sturdy, and fun-filled playground. This all-in-one design features a classic swingset with playhouse tower, a secure ladder, and a shaded platform, making it the perfect diy playhouse kids outdoor project for your family.  Whether you are looking for backyard playground plans...",
+    "publishedAt": "JAN 27, 2026",
+    "modifiedAt": "FEB 02, 2026"
   },
   {
     "id": "74",
@@ -2613,7 +2761,9 @@ export const products: Product[] = [
       "Furniture_Plans",
       "Doll_Bed_Plan"
     ],
-    "description": "Build a Cozy and Unique Dream Bed for Your Beloved Pet or Little One!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Create ..."
+    "description": "Build a Cozy and Unique Dream Bed for Your Beloved Pet or Little One!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Create ...",
+    "publishedAt": "MAR 02, 2026",
+    "modifiedAt": "MAR 06, 2026"
   },
   {
     "id": "75",
@@ -2648,7 +2798,9 @@ export const products: Product[] = [
       "Shop_Storage_Plans",
       "Wood_Shop_Furniture"
     ],
-    "description": "Build the Ultimate Modular Workbench & Storage System!  Transform your garage, workshop, or craft room with these highly versatile DIY Workbench Plans. This brilliant modular design allows you to build a single heavy-duty unit with a spacious drawer and lower shelf, or build multiple units and place them side-by-side to create a massive, custom-length woodworking table with shelves!  Whether you need a compact DIY craft workbench, a dedicated tool station, or a full-wall garage work bench, this ..."
+    "description": "Build the Ultimate Modular Workbench & Storage System!  Transform your garage, workshop, or craft room with these highly versatile DIY Workbench Plans. This brilliant modular design allows you to build a single heavy-duty unit with a spacious drawer and lower shelf, or build multiple units and place them side-by-side to create a massive, custom-length woodworking table with shelves!  Whether you need a compact DIY craft workbench, a dedicated tool station, or a full-wall garage work bench, this ...",
+    "publishedAt": "JAN 17, 2026",
+    "modifiedAt": "JAN 31, 2026"
   },
   {
     "id": "76",
@@ -2679,7 +2831,9 @@ export const products: Product[] = [
       "Garden_Wood_Projects",
       "Log_Cabin_Birdhouse"
     ],
-    "description": "Build Your Own Rustic Garden Retreat: DIY Log Cabin Birdhouse Plans!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Invite b..."
+    "description": "Build Your Own Rustic Garden Retreat: DIY Log Cabin Birdhouse Plans!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Invite b...",
+    "publishedAt": "JAN 17, 2026",
+    "modifiedAt": "JAN 30, 2026"
   },
   {
     "id": "77",
@@ -2716,7 +2870,9 @@ export const products: Product[] = [
       "Outdoor_Bin_Plans",
       "Garden_Woodworking"
     ],
-    "description": "Build the Ultimate Dual-Chamber Compost Bin for Your Garden!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take your garden..."
+    "description": "Build the Ultimate Dual-Chamber Compost Bin for Your Garden!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take your garden...",
+    "publishedAt": "FEB 22, 2026",
+    "modifiedAt": "FEB 28, 2026"
   },
   {
     "id": "78",
@@ -2752,7 +2908,9 @@ export const products: Product[] = [
       "Closet_Shoe_Storage",
       "Furniture_Build_Plan"
     ],
-    "description": "Build the Ultimate Entryway Organizer & Shoe Cabinet!  Tired of entryway clutter? Transform your home organization with these comprehensive DIY Shoe Rack Plans. This isn't just a simple rack; it is a premium piece of furniture featuring elegant curved open shelving for your everyday footwear, plus a built-in side cabinet and drawers to hide away boots, accessories, or out-of-season shoes.  Whether you are looking for highly detailed shoe rack wood working plans to upgrade your mudroom or a styli..."
+    "description": "Build the Ultimate Entryway Organizer & Shoe Cabinet!  Tired of entryway clutter? Transform your home organization with these comprehensive DIY Shoe Rack Plans. This isn't just a simple rack; it is a premium piece of furniture featuring elegant curved open shelving for your everyday footwear, plus a built-in side cabinet and drawers to hide away boots, accessories, or out-of-season shoes.  Whether you are looking for highly detailed shoe rack wood working plans to upgrade your mudroom or a styli...",
+    "publishedAt": "MAR 02, 2026",
+    "modifiedAt": "MAR 24, 2026"
   },
   {
     "id": "79",
@@ -2789,7 +2947,9 @@ export const products: Product[] = [
       "Trestle_Table_Plan",
       "DIY_Wood_Furniture"
     ],
-    "description": "Build a Stunning Large-Scale Outdoor Farmhouse Table!  Host the ultimate backyard barbecues and outdoor dinners with this massive DIY Outdoor Table Plan! Designed to impress, this sturdy, slat-top table features a classic trestle base and a slightly elevated profile, making it a perfect fit for those searching for tall table plans or bar height farmhouse designs.  At nearly 9 feet long, this blueprint rivals expensive 10ft table plans and provides plenty of seating for large families or entertai..."
+    "description": "Build a Stunning Large-Scale Outdoor Farmhouse Table!  Host the ultimate backyard barbecues and outdoor dinners with this massive DIY Outdoor Table Plan! Designed to impress, this sturdy, slat-top table features a classic trestle base and a slightly elevated profile, making it a perfect fit for those searching for tall table plans or bar height farmhouse designs.  At nearly 9 feet long, this blueprint rivals expensive 10ft table plans and provides plenty of seating for large families or entertai...",
+    "publishedAt": "FEB 02, 2026",
+    "modifiedAt": "FEB 28, 2026"
   },
   {
     "id": "80",
@@ -2826,7 +2986,9 @@ export const products: Product[] = [
       "large_playhouse",
       "woodworking_plans"
     ],
-    "description": "Build the Ultimate Backyard Adventure with DIY 2-Story Playhouse Plans!  Create a magical outdoor space where your kids' imaginations can run wild! Build your own stunning and sturdy outdoor play house with our comprehensive woodworking plans. This impressive two-story design features an enclosed upper clubhouse, a spacious viewing balcony, a fun slide exit, and a shaded lower deck. It is the perfect elevated playhouse project to transform your backyard into a private playground.  Whether you ar..."
+    "description": "Build the Ultimate Backyard Adventure with DIY 2-Story Playhouse Plans!  Create a magical outdoor space where your kids' imaginations can run wild! Build your own stunning and sturdy outdoor play house with our comprehensive woodworking plans. This impressive two-story design features an enclosed upper clubhouse, a spacious viewing balcony, a fun slide exit, and a shaded lower deck. It is the perfect elevated playhouse project to transform your backyard into a private playground.  Whether you ar...",
+    "publishedAt": "JAN 16, 2026",
+    "modifiedAt": "FEB 07, 2026"
   },
   {
     "id": "81",
@@ -2855,7 +3017,9 @@ export const products: Product[] = [
       "Bee_Traps_Outside",
       "DIY_Bee_Trap_Plan"
     ],
-    "description": "[The Hook & Support Promise]  Protect your outdoor spaces from destructive wood-boring bees with our simple and highly effective DIY Carpenter Bee Trap Plans! This compact, flat-roof design is a fantastic, beginner-friendly woodworking project. Need assistance while building? We are always here to help! We provide full, ongoing support via Etsy messages to answer any questions and guide you through the process.  [About This Build]  Say goodbye to chemical sprays and hello to a natural, long-last..."
+    "description": "[The Hook & Support Promise]  Protect your outdoor spaces from destructive wood-boring bees with our simple and highly effective DIY Carpenter Bee Trap Plans! This compact, flat-roof design is a fantastic, beginner-friendly woodworking project. Need assistance while building? We are always here to help! We provide full, ongoing support via Etsy messages to answer any questions and guide you through the process.  [About This Build]  Say goodbye to chemical sprays and hello to a natural, long-last...",
+    "publishedAt": "JAN 02, 2026",
+    "modifiedAt": "JAN 27, 2026"
   },
   {
     "id": "82",
@@ -2891,7 +3055,9 @@ export const products: Product[] = [
       "Setup_Plans",
       "Checkout_SVG"
     ],
-    "description": "\ud83d\uded2 Mobile Wooden Portable Sales Stand | Modern Plywood Design  Introduction: Engineered for the Perfect Brand Experience  Are you looking for a flexible trade show booth, a distinctive pop-up shop, or a high-impact product display area? Instantly capture your customers' attention with our impressive, functional, and modern Mobile Portable Sales Stand!  Constructed from high-quality natural-tone plywood, this stand is designed to tell your brand's story while providing you with maximum efficiency ..."
+    "description": "\ud83d\uded2 Mobile Wooden Portable Sales Stand | Modern Plywood Design  Introduction: Engineered for the Perfect Brand Experience  Are you looking for a flexible trade show booth, a distinctive pop-up shop, or a high-impact product display area? Instantly capture your customers' attention with our impressive, functional, and modern Mobile Portable Sales Stand!  Constructed from high-quality natural-tone plywood, this stand is designed to tell your brand's story while providing you with maximum efficiency ...",
+    "publishedAt": "JAN 15, 2026",
+    "modifiedAt": "JAN 16, 2026"
   },
   {
     "id": "83",
@@ -2927,7 +3093,9 @@ export const products: Product[] = [
       "chicken_run_plans",
       "woodworking_plans"
     ],
-    "description": "Build a Safe and Beautiful Home for Your Flock with DIY Chicken Coop Plans!  Ready to start your backyard homesteading journey? Build the ultimate safe haven for your flock with our comprehensive DIY chicken coop plans. This beautiful, cabin-style raised coop is designed to comfortably house 6 to 8 chickens. It features easy-access nesting boxes for gathering eggs, large double front doors for effortless cleaning, and an elevated design that provides a shaded run area underneath while keeping yo..."
+    "description": "Build a Safe and Beautiful Home for Your Flock with DIY Chicken Coop Plans!  Ready to start your backyard homesteading journey? Build the ultimate safe haven for your flock with our comprehensive DIY chicken coop plans. This beautiful, cabin-style raised coop is designed to comfortably house 6 to 8 chickens. It features easy-access nesting boxes for gathering eggs, large double front doors for effortless cleaning, and an elevated design that provides a shaded run area underneath while keeping yo...",
+    "publishedAt": "JAN 13, 2026",
+    "modifiedAt": "JAN 14, 2026"
   },
   {
     "id": "84",
@@ -2962,7 +3130,9 @@ export const products: Product[] = [
       "Custom_Sign",
       "Foodie_Gift"
     ],
-    "description": "Bring the Costco Food Court Vibe Home! Craving that classic Costco experience? Now you can bring the fun and deliciousness of the Costco Food Court right to your own space with our collection of digital download and printable signs! Perfect for parties, home decor, or just a bit of everyday fun, these items are designed to capture that iconic Costco charm.  What's Included: Costco Food Court Sign 18x24: Get the full Costco Food Court experience with this large, eye-catching sign! Perfect for set..."
+    "description": "Bring the Costco Food Court Vibe Home! Craving that classic Costco experience? Now you can bring the fun and deliciousness of the Costco Food Court right to your own space with our collection of digital download and printable signs! Perfect for parties, home decor, or just a bit of everyday fun, these items are designed to capture that iconic Costco charm.  What's Included: Costco Food Court Sign 18x24: Get the full Costco Food Court experience with this large, eye-catching sign! Perfect for set...",
+    "publishedAt": "FEB 02, 2026",
+    "modifiedAt": "FEB 14, 2026"
   },
   {
     "id": "85",
@@ -2999,7 +3169,9 @@ export const products: Product[] = [
       "retro_shelving",
       "shelf_pattern_pdf"
     ],
-    "description": "Add Mid-Century Modern Charm to Your Home with DIY Geometric Bookshelf Plans!  Looking for a unique way to display your books, plants, and decor? Build your own stunning piece of furniture with our comprehensive bookshelf plans woodworking guide. This modern, asymmetrical design features open cubical spaces and stylish angled legs, making it the perfect standing bookcase for your living room, home office, or bedroom.  Whether you are searching for a pattern for bookshelf to challenge your DIY sk..."
+    "description": "Add Mid-Century Modern Charm to Your Home with DIY Geometric Bookshelf Plans!  Looking for a unique way to display your books, plants, and decor? Build your own stunning piece of furniture with our comprehensive bookshelf plans woodworking guide. This modern, asymmetrical design features open cubical spaces and stylish angled legs, making it the perfect standing bookcase for your living room, home office, or bedroom.  Whether you are searching for a pattern for bookshelf to challenge your DIY sk...",
+    "publishedAt": "JAN 16, 2026",
+    "modifiedAt": "FEB 12, 2026"
   },
   {
     "id": "86",
@@ -3034,7 +3206,9 @@ export const products: Product[] = [
       "Sweet_cart",
       "Event_Cart"
     ],
-    "description": "Rustic Charm for Your Special Day: The Collapsible Wedding & Event Cart  Bring a touch of timeless elegance to your next celebration with our handcrafted wooden sweet cart. Perfect for weddings, parties, birthdays, and corporate events, this versatile cart isn't just a piece of decor\u2014it's a focal point that will charm your guests and create unforgettable memories.  Designed for Convenience and Style Our Collapsible Wooden Sweet Bar for Sale is the perfect blend of classic charm and modern functi..."
+    "description": "Rustic Charm for Your Special Day: The Collapsible Wedding & Event Cart  Bring a touch of timeless elegance to your next celebration with our handcrafted wooden sweet cart. Perfect for weddings, parties, birthdays, and corporate events, this versatile cart isn't just a piece of decor\u2014it's a focal point that will charm your guests and create unforgettable memories.  Designed for Convenience and Style Our Collapsible Wooden Sweet Bar for Sale is the perfect blend of classic charm and modern functi...",
+    "publishedAt": "FEB 14, 2026",
+    "modifiedAt": "FEB 18, 2026"
   },
   {
     "id": "87",
@@ -3068,7 +3242,9 @@ export const products: Product[] = [
       "vendor_cart",
       "bar_cart"
     ],
-    "description": "DIY Mobile Bar Cart Plans: The Ultimate Collapsible Vendor Cart Blueprint  Ready to create the perfect centerpiece for your next event? This is not just a plan; it's your ticket to building a beautiful, professional-grade mobile bar or vendor cart. Our meticulously designed, step-by-step PDF guide gives you everything you need to bring this elegant and modern design to life. Imagine effortlessly serving guests from a stunning, custom-built cart that perfectly fits your unique style.  Unmatched C..."
+    "description": "DIY Mobile Bar Cart Plans: The Ultimate Collapsible Vendor Cart Blueprint  Ready to create the perfect centerpiece for your next event? This is not just a plan; it's your ticket to building a beautiful, professional-grade mobile bar or vendor cart. Our meticulously designed, step-by-step PDF guide gives you everything you need to bring this elegant and modern design to life. Imagine effortlessly serving guests from a stunning, custom-built cart that perfectly fits your unique style.  Unmatched C...",
+    "publishedAt": "JAN 21, 2026",
+    "modifiedAt": "FEB 15, 2026"
   },
   {
     "id": "88",
@@ -3105,7 +3281,9 @@ export const products: Product[] = [
       "retro_tv_stand",
       "custom_tv_stand_diy"
     ],
-    "description": "Why settle for flimsy, store-bought particleboard when you can build a stunning custom centerpiece? If you love the warm, retro aesthetic, these TV console stand DIY plans are exactly what you need. This comprehensive modern TV stand PDF guides you through creating a beautiful, high-quality piece of mid century furniture that looks like it came straight out of a high-end designer showroom. Featuring iconic angled legs and gorgeous slatted sliding doors, this 70s inspired entertainment stand effo..."
+    "description": "Why settle for flimsy, store-bought particleboard when you can build a stunning custom centerpiece? If you love the warm, retro aesthetic, these TV console stand DIY plans are exactly what you need. This comprehensive modern TV stand PDF guides you through creating a beautiful, high-quality piece of mid century furniture that looks like it came straight out of a high-end designer showroom. Featuring iconic angled legs and gorgeous slatted sliding doors, this 70s inspired entertainment stand effo...",
+    "publishedAt": "JAN 05, 2026",
+    "modifiedAt": "JAN 29, 2026"
   },
   {
     "id": "89",
@@ -3141,7 +3319,9 @@ export const products: Product[] = [
       "woodworking_project",
       "corner_bookshelf"
     ],
-    "description": "Unlock your inner craftsman and build a stunning piece of furniture for your home. This comprehensive PDF plan provides everything you need to construct a beautiful, modern bookcase yourself, saving you money and giving you the satisfaction of a handmade project. Our easy-to-follow guide takes the guesswork out of building, making it a perfect project for DIYers of all skill levels.  What's Included in Your Digital Download? This detailed PDF is packed with all the information you'll need to tur..."
+    "description": "Unlock your inner craftsman and build a stunning piece of furniture for your home. This comprehensive PDF plan provides everything you need to construct a beautiful, modern bookcase yourself, saving you money and giving you the satisfaction of a handmade project. Our easy-to-follow guide takes the guesswork out of building, making it a perfect project for DIYers of all skill levels.  What's Included in Your Digital Download? This detailed PDF is packed with all the information you'll need to tur...",
+    "publishedAt": "JAN 15, 2026",
+    "modifiedAt": "FEB 09, 2026"
   },
   {
     "id": "90",
@@ -3177,7 +3357,9 @@ export const products: Product[] = [
       "Woodworking_PDF",
       "Memorial_Box_Plan"
     ],
-    "description": "Build a Respectful & Sturdy Flag Retirement Drop Box!  Looking for a meaningful woodworking project? This comprehensive DIY Flag Retirement Box Plan provides everything you need to build a dedicated, weather-resistant outdoor collection box for the respectful disposal of worn American flags. Perfect for Eagle Scout projects, local VFW posts, fire stations, or community centers.  While many search for an American Flag Storage Box or Flag Display Boxes for indoors, this large-scale structure is de..."
+    "description": "Build a Respectful & Sturdy Flag Retirement Drop Box!  Looking for a meaningful woodworking project? This comprehensive DIY Flag Retirement Box Plan provides everything you need to build a dedicated, weather-resistant outdoor collection box for the respectful disposal of worn American flags. Perfect for Eagle Scout projects, local VFW posts, fire stations, or community centers.  While many search for an American Flag Storage Box or Flag Display Boxes for indoors, this large-scale structure is de...",
+    "publishedAt": "JAN 11, 2026",
+    "modifiedAt": "JAN 23, 2026"
   },
   {
     "id": "91",
@@ -3207,7 +3389,9 @@ export const products: Product[] = [
       "Storage_Cart_Plans",
       "Mobile_Wood_Cart"
     ],
-    "description": "\u2728 The Ultimate Workshop Upgrade: Mobile Lumber Storage Cart DIY Plan  Tired of the Lumber Chaos? Reclaim your workspace and revolutionize your organization with this expertly designed DIY Mobile Lumber Cart Plan! This isn't just a blueprint; it's your ticket to a cleaner, more efficient, and professional-looking wood workshop. Stop tripping over scraps and start building!  \ud83c\udf1f Why This Plan is a Must-Have for Every Woodworker:  Massive Storage, Small Footprint: Our ingenious vertical design allows..."
+    "description": "\u2728 The Ultimate Workshop Upgrade: Mobile Lumber Storage Cart DIY Plan  Tired of the Lumber Chaos? Reclaim your workspace and revolutionize your organization with this expertly designed DIY Mobile Lumber Cart Plan! This isn't just a blueprint; it's your ticket to a cleaner, more efficient, and professional-looking wood workshop. Stop tripping over scraps and start building!  \ud83c\udf1f Why This Plan is a Must-Have for Every Woodworker:  Massive Storage, Small Footprint: Our ingenious vertical design allows...",
+    "publishedAt": "JAN 11, 2026",
+    "modifiedAt": "JAN 19, 2026"
   },
   {
     "id": "92",
@@ -3241,7 +3425,9 @@ export const products: Product[] = [
       "vendor_cart",
       "bar_cart"
     ],
-    "description": "DIY Mobile Bar Cart Plans: The Ultimate Collapsible Vendor Cart Blueprint  Ready to create the perfect centerpiece for your next event? This is not just a plan; it's your ticket to building a beautiful, professional-grade mobile bar or vendor cart. Our meticulously designed, step-by-step PDF guide gives you everything you need to bring this elegant and modern design to life. Imagine effortlessly serving guests from a stunning, custom-built cart that perfectly fits your unique style.  Unmatched C..."
+    "description": "DIY Mobile Bar Cart Plans: The Ultimate Collapsible Vendor Cart Blueprint  Ready to create the perfect centerpiece for your next event? This is not just a plan; it's your ticket to building a beautiful, professional-grade mobile bar or vendor cart. Our meticulously designed, step-by-step PDF guide gives you everything you need to bring this elegant and modern design to life. Imagine effortlessly serving guests from a stunning, custom-built cart that perfectly fits your unique style.  Unmatched C...",
+    "publishedAt": "JAN 09, 2026",
+    "modifiedAt": "FEB 07, 2026"
   },
   {
     "id": "93",
@@ -3275,7 +3461,9 @@ export const products: Product[] = [
       "Basement_Work_Bench",
       "Worktable"
     ],
-    "description": "Build Your Ultimate Workshop: Heavy-Duty Workbench DIY Plan Stop looking at messy spaces and start building! These professional, easy-to-follow plans are your blueprint to constructing the Ultimate Work Bench with Storage\u2014the centerpiece every serious workshop deserves. Say goodbye to clutter and hello to efficient, organized crafting.  Workbench Features That Set You Up For Success This isn't just a table; it's a custom stationary workstation designed for durability, storage, and comfort.  Mass..."
+    "description": "Build Your Ultimate Workshop: Heavy-Duty Workbench DIY Plan Stop looking at messy spaces and start building! These professional, easy-to-follow plans are your blueprint to constructing the Ultimate Work Bench with Storage\u2014the centerpiece every serious workshop deserves. Say goodbye to clutter and hello to efficient, organized crafting.  Workbench Features That Set You Up For Success This isn't just a table; it's a custom stationary workstation designed for durability, storage, and comfort.  Mass...",
+    "publishedAt": "JAN 18, 2026",
+    "modifiedAt": "FEB 04, 2026"
   },
   {
     "id": "94",
@@ -3312,7 +3500,9 @@ export const products: Product[] = [
       "outdoor_planter_diy",
       "woodworking_plans"
     ],
-    "description": "Upgrade Your Outdoor Space with a Modern DIY Planter Bench!  Transform your garden, patio, or front porch with our comprehensive planter bench plans. This unique, modern slatted design seamlessly combines a comfortable seating area with an integrated planter box, creating the ultimate planter bench combo diy project. It is the perfect front porch bench and planter to showcase your favorite flowers, ornamental grasses, or herbs while providing a relaxing spot to sit.  Whether you are looking for ..."
+    "description": "Upgrade Your Outdoor Space with a Modern DIY Planter Bench!  Transform your garden, patio, or front porch with our comprehensive planter bench plans. This unique, modern slatted design seamlessly combines a comfortable seating area with an integrated planter box, creating the ultimate planter bench combo diy project. It is the perfect front porch bench and planter to showcase your favorite flowers, ornamental grasses, or herbs while providing a relaxing spot to sit.  Whether you are looking for ...",
+    "publishedAt": "JAN 27, 2026",
+    "modifiedAt": "FEB 11, 2026"
   },
   {
     "id": "95",
@@ -3349,7 +3539,9 @@ export const products: Product[] = [
       "desk_blueprint",
       "woodworking_plans"
     ],
-    "description": "Maximize Your Space with Premium DIY Wall Mounted Murphy Desk Plans!  Tired of bulky desks taking up your valuable floor space? Build your own stylish and functional workspace with our comprehensive murphy desk plans. This innovative design features a spacious wall mounted fold down table that easily tucks away when not in use, revealing built-in shelving for your books, decor, or office supplies. It is the ultimate small space solutions project for home offices, bedrooms, or studio apartments. ..."
+    "description": "Maximize Your Space with Premium DIY Wall Mounted Murphy Desk Plans!  Tired of bulky desks taking up your valuable floor space? Build your own stylish and functional workspace with our comprehensive murphy desk plans. This innovative design features a spacious wall mounted fold down table that easily tucks away when not in use, revealing built-in shelving for your books, decor, or office supplies. It is the ultimate small space solutions project for home offices, bedrooms, or studio apartments. ...",
+    "publishedAt": "FEB 08, 2026",
+    "modifiedAt": "FEB 19, 2026"
   },
   {
     "id": "96",
@@ -3385,7 +3577,9 @@ export const products: Product[] = [
       "Barn_Door_Furniture",
       "Woodworking_Build"
     ],
-    "description": "100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Upgrade your patio or backyard with this stunning DIY Outdoor Hidden Storage C..."
+    "description": "100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Upgrade your patio or backyard with this stunning DIY Outdoor Hidden Storage C...",
+    "publishedAt": "FEB 15, 2026",
+    "modifiedAt": "MAR 06, 2026"
   },
   {
     "id": "97",
@@ -3422,7 +3616,9 @@ export const products: Product[] = [
       "vendor_cart",
       "bar_cart"
     ],
-    "description": "\ud83e\udd42 Build Your Own Elegant Champagne & Event Cart! Create the ultimate focal point for your next event with these comprehensive Champagne Cart Custom Build plans. Whether you are a DIY enthusiast looking to build a beautiful piece for your home, or a rental business owner wanting to add a high-ROI item to your inventory, this design is perfect for you. This isn't just a cart; it\u2019s a statement piece. Designed to be sturdy yet elegant, this Personalized Mobile Bar Cart features a timeless design wit..."
+    "description": "\ud83e\udd42 Build Your Own Elegant Champagne & Event Cart! Create the ultimate focal point for your next event with these comprehensive Champagne Cart Custom Build plans. Whether you are a DIY enthusiast looking to build a beautiful piece for your home, or a rental business owner wanting to add a high-ROI item to your inventory, this design is perfect for you. This isn't just a cart; it\u2019s a statement piece. Designed to be sturdy yet elegant, this Personalized Mobile Bar Cart features a timeless design wit...",
+    "publishedAt": "JAN 25, 2026",
+    "modifiedAt": "FEB 11, 2026"
   },
   {
     "id": "98",
@@ -3459,7 +3655,9 @@ export const products: Product[] = [
       "vendor_cart",
       "bar_cart"
     ],
-    "description": "\u2615 Start Your Mobile Coffee Business in Style!  Are you dreaming of launching your own pop-up coffee shop or upgrading your event setup? These Mobile Coffee Cart Build plans are your first step toward success. Designed with a modern, trendy slatted aesthetic, this cart isn't just a workspace; it's a customer magnet. We designed this Coffee Cart Blueprint specifically for entrepreneurs who need flexibility. Whether you are serving espresso at weddings, selling jewelry at craft fairs, or running a ..."
+    "description": "\u2615 Start Your Mobile Coffee Business in Style!  Are you dreaming of launching your own pop-up coffee shop or upgrading your event setup? These Mobile Coffee Cart Build plans are your first step toward success. Designed with a modern, trendy slatted aesthetic, this cart isn't just a workspace; it's a customer magnet. We designed this Coffee Cart Blueprint specifically for entrepreneurs who need flexibility. Whether you are serving espresso at weddings, selling jewelry at craft fairs, or running a ...",
+    "publishedAt": "JAN 01, 2026",
+    "modifiedAt": "JAN 30, 2026"
   },
   {
     "id": "99",
@@ -3496,7 +3694,9 @@ export const products: Product[] = [
       "wood_furniture_plans",
       "woodworking_plans"
     ],
-    "description": "Transform Your Backyard with Premium DIY Outdoor Dining Set Plans!  Get ready to host unforgettable summer barbecues and family dinners! Upgrade your patio, deck, or garden with our comprehensive outdoor dining set plans. This professional blueprint includes step-by-step instructions to build both a stunning, heavy-duty slatted outdoor dining table and perfectly matching, comfortable armchairs.  Whether you are looking for stylish wooden patio table and chairs to complete your outdoor oasis or a..."
+    "description": "Transform Your Backyard with Premium DIY Outdoor Dining Set Plans!  Get ready to host unforgettable summer barbecues and family dinners! Upgrade your patio, deck, or garden with our comprehensive outdoor dining set plans. This professional blueprint includes step-by-step instructions to build both a stunning, heavy-duty slatted outdoor dining table and perfectly matching, comfortable armchairs.  Whether you are looking for stylish wooden patio table and chairs to complete your outdoor oasis or a...",
+    "publishedAt": "JAN 14, 2026",
+    "modifiedAt": "JAN 22, 2026"
   },
   {
     "id": "100",
@@ -3532,7 +3732,9 @@ export const products: Product[] = [
       "digital_invite",
       "simple_birthday"
     ],
-    "description": "Honor a Milestone: Personalized 90th Birthday Invitation with Photo  Planning a 90th birthday party is a special way to celebrate a life well-lived. Our 90th birthday invitation template is the perfect start to this momentous occasion, whether you're looking for a 90th Birthday Invitation for Men or a special 90th Birthday Invitations for Women. This isn't just a simple invite; it's a keepsake that marks nine decades of life. Our template makes it easy to create a personalized 90th Birthday Invi..."
+    "description": "Honor a Milestone: Personalized 90th Birthday Invitation with Photo  Planning a 90th birthday party is a special way to celebrate a life well-lived. Our 90th birthday invitation template is the perfect start to this momentous occasion, whether you're looking for a 90th Birthday Invitation for Men or a special 90th Birthday Invitations for Women. This isn't just a simple invite; it's a keepsake that marks nine decades of life. Our template makes it easy to create a personalized 90th Birthday Invi...",
+    "publishedAt": "FEB 23, 2026",
+    "modifiedAt": "MAR 10, 2026"
   },
   {
     "id": "101",
@@ -3568,7 +3770,9 @@ export const products: Product[] = [
       "diy_greenhouse_pdf",
       "woodworking_plans"
     ],
-    "description": "Extend Your Growing Season with Premium DIY Mini Greenhouse Plans!  Ready to protect your plants and grow your own food year-round? Build your own beautiful and functional plant shelter with our comprehensive mini greenhouse build plans. Whether you are looking for a stylish wooden greenhouse for balcony spaces, an indoor greenhouse design, or practical greenhouse plans for porch and patio areas, this versatile lean-to structure is the perfect solution.  Designed to easily attach to an existing ..."
+    "description": "Extend Your Growing Season with Premium DIY Mini Greenhouse Plans!  Ready to protect your plants and grow your own food year-round? Build your own beautiful and functional plant shelter with our comprehensive mini greenhouse build plans. Whether you are looking for a stylish wooden greenhouse for balcony spaces, an indoor greenhouse design, or practical greenhouse plans for porch and patio areas, this versatile lean-to structure is the perfect solution.  Designed to easily attach to an existing ...",
+    "publishedAt": "JAN 14, 2026",
+    "modifiedAt": "FEB 03, 2026"
   },
   {
     "id": "102",
@@ -3605,7 +3809,9 @@ export const products: Product[] = [
       "Meditation_Chair",
       "Plywood_Furniture"
     ],
-    "description": "Build Your Own Tranquil Space with This Ergonomic Zen Meditation Platform!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Cr..."
+    "description": "Build Your Own Tranquil Space with This Ergonomic Zen Meditation Platform!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Cr...",
+    "publishedAt": "JAN 14, 2026",
+    "modifiedAt": "JAN 28, 2026"
   },
   {
     "id": "103",
@@ -3642,7 +3848,9 @@ export const products: Product[] = [
       "Portable_Work_Table",
       "Shop_Furniture_Plan"
     ],
-    "description": "Build the Perfect Mobile Workstation for Your Tools!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take your workshop organ..."
+    "description": "Build the Perfect Mobile Workstation for Your Tools!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take your workshop organ...",
+    "publishedAt": "JAN 28, 2026",
+    "modifiedAt": "FEB 11, 2026"
   },
   {
     "id": "104",
@@ -3678,7 +3886,9 @@ export const products: Product[] = [
       "Home_Office_DIY",
       "Writing_Desk_Plan"
     ],
-    "description": "Build Your Ultimate Focused Workspace with This Modern DIY Work Table!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Upgrad..."
+    "description": "Build Your Ultimate Focused Workspace with This Modern DIY Work Table!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Upgrad...",
+    "publishedAt": "FEB 08, 2026",
+    "modifiedAt": "MAR 01, 2026"
   },
   {
     "id": "105",
@@ -3715,7 +3925,9 @@ export const products: Product[] = [
       "woodworking_plans",
       "portable_coop"
     ],
-    "description": "Raise Healthier Flocks: The Ultimate Walk-In Mobile Chicken Tractor  Upgrade your backyard homesteading with a heavy-duty, mobile poultry house designed for fresh pasture and ultimate flock security. This comprehensive digital woodworking blueprint provides the exact instructions to build a massive, walk-in Hoop Coop Chicken Tractor. Utilizing a cost-effective and incredibly strong cattle panel arch design, this portable coop allows you to easily move your flock to fresh grass daily while keepin..."
+    "description": "Raise Healthier Flocks: The Ultimate Walk-In Mobile Chicken Tractor  Upgrade your backyard homesteading with a heavy-duty, mobile poultry house designed for fresh pasture and ultimate flock security. This comprehensive digital woodworking blueprint provides the exact instructions to build a massive, walk-in Hoop Coop Chicken Tractor. Utilizing a cost-effective and incredibly strong cattle panel arch design, this portable coop allows you to easily move your flock to fresh grass daily while keepin...",
+    "publishedAt": "JAN 07, 2026",
+    "modifiedAt": "FEB 02, 2026"
   },
   {
     "id": "106",
@@ -3750,7 +3962,9 @@ export const products: Product[] = [
       "outdoor_garden_craft",
       "fall_wood_decor"
     ],
-    "description": "Transform your home\u2019s curb appeal with a true statement piece. This comprehensive digital woodworking blueprint provides the exact instructions to build a massive, towering Welcome Sign Planter Box. Standing at an impressive 70 inches tall, this design commands attention from the street, creating a warm, highly visible, and inviting entrance to your front porch, driveway, or garden pathway.  Why settle for small, easily overlooked porch decor when you can build a heavy-duty, custom wooden landma..."
+    "description": "Transform your home\u2019s curb appeal with a true statement piece. This comprehensive digital woodworking blueprint provides the exact instructions to build a massive, towering Welcome Sign Planter Box. Standing at an impressive 70 inches tall, this design commands attention from the street, creating a warm, highly visible, and inviting entrance to your front porch, driveway, or garden pathway.  Why settle for small, easily overlooked porch decor when you can build a heavy-duty, custom wooden landma...",
+    "publishedAt": "FEB 14, 2026",
+    "modifiedAt": "FEB 24, 2026"
   },
   {
     "id": "107",
@@ -3786,7 +4000,9 @@ export const products: Product[] = [
       "pinterest_arch_diy",
       "wedding_decor"
     ],
-    "description": "Frame Your Perfect Moment: The Classic Square Wedding Arch Blueprint  Create a timeless, breathtaking focal point for your ceremony. This digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, classic Square Wooden Wedding Arch. Whether you are framing a scenic outdoor altar, creating a lush photo backdrop for a bridal shower, or building a reliable prop for your event rental business, this structure delivers a perfect blend of rustic charm and structu..."
+    "description": "Frame Your Perfect Moment: The Classic Square Wedding Arch Blueprint  Create a timeless, breathtaking focal point for your ceremony. This digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, classic Square Wooden Wedding Arch. Whether you are framing a scenic outdoor altar, creating a lush photo backdrop for a bridal shower, or building a reliable prop for your event rental business, this structure delivers a perfect blend of rustic charm and structu...",
+    "publishedAt": "JAN 18, 2026",
+    "modifiedAt": "FEB 05, 2026"
   },
   {
     "id": "108",
@@ -3821,7 +4037,9 @@ export const products: Product[] = [
       "acrylic_case_wood",
       "woodworking_plans"
     ],
-    "description": "Showcase Your Treasures with a Beautiful DIY Acrylic Cube Box!  Looking for an elegant way to protect and display your favorite collectibles, memorabilia, or small plants? Build your own stunning acrylic cube box with our comprehensive woodworking plans. This minimalist design features a sturdy wooden frame and clear acrylic (or glass) panels, creating the perfect tabletop display case that blends seamlessly with any home decor.  Whether you need a custom collectible box to keep dust away from y..."
+    "description": "Showcase Your Treasures with a Beautiful DIY Acrylic Cube Box!  Looking for an elegant way to protect and display your favorite collectibles, memorabilia, or small plants? Build your own stunning acrylic cube box with our comprehensive woodworking plans. This minimalist design features a sturdy wooden frame and clear acrylic (or glass) panels, creating the perfect tabletop display case that blends seamlessly with any home decor.  Whether you need a custom collectible box to keep dust away from y...",
+    "publishedAt": "JAN 18, 2026",
+    "modifiedAt": "JAN 27, 2026"
   },
   {
     "id": "109",
@@ -3857,7 +4075,9 @@ export const products: Product[] = [
       "Rolling_Tool_Base",
       "Saw_Stand_Blueprint"
     ],
-    "description": "Build the Ultimate Mobile Base for Your Miter Saw!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take the hassle out of hea..."
+    "description": "Build the Ultimate Mobile Base for Your Miter Saw!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Take the hassle out of hea...",
+    "publishedAt": "JAN 03, 2026",
+    "modifiedAt": "JAN 05, 2026"
   },
   {
     "id": "110",
@@ -3894,7 +4114,9 @@ export const products: Product[] = [
       "Laser_Engraving_Plan",
       "Custom_Prayer_Board"
     ],
-    "description": "Craft a Beautiful, Meaningful Wooden Prayer Board for Your Home!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Create a stu..."
+    "description": "Craft a Beautiful, Meaningful Wooden Prayer Board for Your Home!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Create a stu...",
+    "publishedAt": "JAN 06, 2026",
+    "modifiedAt": "FEB 03, 2026"
   },
   {
     "id": "111",
@@ -3930,7 +4152,9 @@ export const products: Product[] = [
       "Patio_Garden_Bed",
       "Garden_Wood_Project"
     ],
-    "description": "Build a Beautiful, Rustic Raised Planter Bed for Your Garden!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Transform your ..."
+    "description": "Build a Beautiful, Rustic Raised Planter Bed for Your Garden!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Transform your ...",
+    "publishedAt": "FEB 25, 2026",
+    "modifiedAt": "MAR 17, 2026"
   },
   {
     "id": "112",
@@ -3966,7 +4190,9 @@ export const products: Product[] = [
       "Dog_Shed_Plan",
       "Custom_Dog_House"
     ],
-    "description": "Build the Ultimate Dream Home for Your Furry Best Friend!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Treat your loyal co..."
+    "description": "Build the Ultimate Dream Home for Your Furry Best Friend!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Treat your loyal co...",
+    "publishedAt": "JAN 08, 2026",
+    "modifiedAt": "FEB 04, 2026"
   },
   {
     "id": "113",
@@ -3993,7 +4219,9 @@ export const products: Product[] = [
       "Cupcake_Display",
       "Diy_Wood"
     ],
-    "description": "Unleash Your Crafting Potential: Build Your Own Wooden Tiered Display Stand!  Looking to showcase your products or party treats in a stylish and effective way? This comprehensive DIY Wooden Display Stand PDF plan provides all the detailed blueprints and patterns you need to construct your own sturdy, portable, and aesthetically pleasing multi-level stand \u2013 perfect for any occasion!  What You Get with Your Purchase:  This listing is for INSTANT DOWNLOAD DIGITAL PLANS ONLY. You will receive a comp..."
+    "description": "Unleash Your Crafting Potential: Build Your Own Wooden Tiered Display Stand!  Looking to showcase your products or party treats in a stylish and effective way? This comprehensive DIY Wooden Display Stand PDF plan provides all the detailed blueprints and patterns you need to construct your own sturdy, portable, and aesthetically pleasing multi-level stand \u2013 perfect for any occasion!  What You Get with Your Purchase:  This listing is for INSTANT DOWNLOAD DIGITAL PLANS ONLY. You will receive a comp...",
+    "publishedAt": "FEB 10, 2026",
+    "modifiedAt": "FEB 18, 2026"
   },
   {
     "id": "114",
@@ -4027,7 +4255,9 @@ export const products: Product[] = [
       "coat_rack_built_in",
       "woodworking_plans"
     ],
-    "description": "Transform Your Entryway with Premium DIY Built-In Cabinets Plans!  Tired of entryway clutter? Upgrade your home with a stunning, high-end storage solution using our comprehensive built in cabinets plans. This massive, custom-style mudroom hall tree features a comfortable seating bench, spacious lower drawers and cubbies for shoes, an elegant beadboard coat-hanging area, and illuminated upper storage sections. It is the ultimate storage cabinet plans project to keep your family organized in style..."
+    "description": "Transform Your Entryway with Premium DIY Built-In Cabinets Plans!  Tired of entryway clutter? Upgrade your home with a stunning, high-end storage solution using our comprehensive built in cabinets plans. This massive, custom-style mudroom hall tree features a comfortable seating bench, spacious lower drawers and cubbies for shoes, an elegant beadboard coat-hanging area, and illuminated upper storage sections. It is the ultimate storage cabinet plans project to keep your family organized in style...",
+    "publishedAt": "JAN 24, 2026",
+    "modifiedAt": "JAN 31, 2026"
   },
   {
     "id": "115",
@@ -4063,7 +4293,9 @@ export const products: Product[] = [
       "DIY_Jewelry_Stand",
       "DIY_Earring_Stand"
     ],
-    "description": "ThIs Is not a physIcal product.   If you purchase It, you wIll not receIve a physIcal product.    ThIs Is just a DIY plan!  Rescue your jewelry from tangled drawers and display it like a work of art! With this elegant Jewelry Tree Stand DIY plan, you can create a solution that is both highly functional and beautifully decorative for organizing your necklaces, earrings, and bracelets.  Inspired by nature, this tree design offers numerous branches, providing a massive storage capacity for all your..."
+    "description": "ThIs Is not a physIcal product.   If you purchase It, you wIll not receIve a physIcal product.    ThIs Is just a DIY plan!  Rescue your jewelry from tangled drawers and display it like a work of art! With this elegant Jewelry Tree Stand DIY plan, you can create a solution that is both highly functional and beautifully decorative for organizing your necklaces, earrings, and bracelets.  Inspired by nature, this tree design offers numerous branches, providing a massive storage capacity for all your...",
+    "publishedAt": "FEB 27, 2026",
+    "modifiedAt": "MAR 04, 2026"
   },
   {
     "id": "116",
@@ -4099,7 +4331,9 @@ export const products: Product[] = [
       "DIY_Shed_Plans",
       "Fireplace_Wood"
     ],
-    "description": "Keep Your Firewood Dry and Perfectly Seasoned with This Heavy-Duty DIY Shed!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Ongoing Support via Etsy Messages  Building a structure can be a big task, and we are here to support you every step of the way. If you have any questions, n..."
+    "description": "Keep Your Firewood Dry and Perfectly Seasoned with This Heavy-Duty DIY Shed!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Ongoing Support via Etsy Messages  Building a structure can be a big task, and we are here to support you every step of the way. If you have any questions, n...",
+    "publishedAt": "FEB 05, 2026",
+    "modifiedAt": "MAR 05, 2026"
   },
   {
     "id": "117",
@@ -4135,7 +4369,9 @@ export const products: Product[] = [
       "Woodworking_Plans",
       "Garage_Shelving"
     ],
-    "description": "Take Control of Your Garage Chaos with the Ultimate 10-Tote Storage Rack!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Sto..."
+    "description": "Take Control of Your Garage Chaos with the Ultimate 10-Tote Storage Rack!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Sto...",
+    "publishedAt": "JAN 17, 2026",
+    "modifiedAt": "FEB 15, 2026"
   },
   {
     "id": "118",
@@ -4172,7 +4408,9 @@ export const products: Product[] = [
       "Floating_Wood_Shelf",
       "DIY_Home_Library"
     ],
-    "description": "Transform Your Space into an Enchanted Library with This DIY Tree Bookshelf!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this artistic project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Ongoing Support via Etsy Messages  We are here to help you grow your project! If you have any questions, need technical advice, or require guidance ..."
+    "description": "Transform Your Space into an Enchanted Library with This DIY Tree Bookshelf!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this artistic project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Ongoing Support via Etsy Messages  We are here to help you grow your project! If you have any questions, need technical advice, or require guidance ...",
+    "publishedAt": "FEB 28, 2026",
+    "modifiedAt": "MAR 06, 2026"
   },
   {
     "id": "119",
@@ -4206,7 +4444,9 @@ export const products: Product[] = [
       "Garage_DIY_Project",
       "Custom_Storage_Wall"
     ],
-    "description": "The Ultimate Storage Solution: Build a Mega 30-Tote Organization System!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages  We are committed to your success! If you have any questions, need technical advice, or require help during your build process..."
+    "description": "The Ultimate Storage Solution: Build a Mega 30-Tote Organization System!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages  We are committed to your success! If you have any questions, need technical advice, or require help during your build process...",
+    "publishedAt": "JAN 17, 2026",
+    "modifiedAt": "FEB 10, 2026"
   },
   {
     "id": "120",
@@ -4242,7 +4482,9 @@ export const products: Product[] = [
       "Large_Capacity_Rack",
       "Black_and_Yellow"
     ],
-    "description": "Maximize Your Storage Potential with the Ultimate 20-Tote Storage Rack!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages  We are here for you! If you have any questions, need technical advice, or require help during your build process, simply send ..."
+    "description": "Maximize Your Storage Potential with the Ultimate 20-Tote Storage Rack!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked!  Ongoing Support via Etsy Messages  We are here for you! If you have any questions, need technical advice, or require help during your build process, simply send ...",
+    "publishedAt": "FEB 20, 2026",
+    "modifiedAt": "MAR 16, 2026"
   },
   {
     "id": "121",
@@ -4273,7 +4515,9 @@ export const products: Product[] = [
       "Solid_Wood_Bed",
       "Rustic_Bed"
     ],
-    "description": "Create a Unique and Stylish Sanctuary with Our DIY Bed Frame Plans  Transform your bedroom into a comfortable and stylish retreat with our easy-to-follow woodworking plans. This DIY bed frame project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of bedroom furniture that will last for years.  Why Build Your Own Bed Frame? Building your own bed frame isn't just a creative endeavor\u2014it\u2019s a way to get the exact style and size you want. Whether you..."
+    "description": "Create a Unique and Stylish Sanctuary with Our DIY Bed Frame Plans  Transform your bedroom into a comfortable and stylish retreat with our easy-to-follow woodworking plans. This DIY bed frame project is perfect for woodworkers of all skill levels, allowing you to build a sturdy and beautiful piece of bedroom furniture that will last for years.  Why Build Your Own Bed Frame? Building your own bed frame isn't just a creative endeavor\u2014it\u2019s a way to get the exact style and size you want. Whether you...",
+    "publishedAt": "JAN 24, 2026",
+    "modifiedAt": "JAN 26, 2026"
   },
   {
     "id": "122",
@@ -4309,7 +4553,9 @@ export const products: Product[] = [
       "pinterest_arch_diy",
       "wedding_decor"
     ],
-    "description": "Create a Breathtaking Backdrop: The 3-Piece Triangle Wedding Arch Blueprint  Elevate your outdoor wedding, vow renewal, or event photography with a stunning architectural centerpiece. This digital woodworking blueprint provides the precise instructions to build a modern, nested set of three triangular wooden arches. Highly sought after on Pinterest and by wedding planners, this geometric backdrop perfectly frames the couple and provides a magnificent structure for floral arrangements and drapery..."
+    "description": "Create a Breathtaking Backdrop: The 3-Piece Triangle Wedding Arch Blueprint  Elevate your outdoor wedding, vow renewal, or event photography with a stunning architectural centerpiece. This digital woodworking blueprint provides the precise instructions to build a modern, nested set of three triangular wooden arches. Highly sought after on Pinterest and by wedding planners, this geometric backdrop perfectly frames the couple and provides a magnificent structure for floral arrangements and drapery...",
+    "publishedAt": "FEB 06, 2026",
+    "modifiedAt": "FEB 19, 2026"
   },
   {
     "id": "123",
@@ -4344,7 +4590,9 @@ export const products: Product[] = [
       "Furniture_Wood_Plans",
       "Bedroom_Clothing"
     ],
-    "description": "Build Your Dream Closet with This Elegant DIY Open Wardrobe System!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Transform..."
+    "description": "Build Your Dream Closet with This Elegant DIY Open Wardrobe System!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Transform...",
+    "publishedAt": "FEB 14, 2026",
+    "modifiedAt": "MAR 07, 2026"
   },
   {
     "id": "124",
@@ -4380,7 +4628,9 @@ export const products: Product[] = [
       "woodworking_plans",
       "corner_cabinet"
     ],
-    "description": "Transform That Empty Corner with Our DIY Corner Shelf Plans!  Don't let valuable space go to waste. Our instant-download PDF DIY Corner Bookshelf Plans are your key to transforming an awkward corner into a stunning focal point. This unique artistic triangle bookshelf design isn't just for storage; it's a statement piece that adds style and character to any room.  Why Choose Our Plans?  Smart, Space-Saving Design: This clever wood corner shelf is perfect for apartments, small homes, or any room w..."
+    "description": "Transform That Empty Corner with Our DIY Corner Shelf Plans!  Don't let valuable space go to waste. Our instant-download PDF DIY Corner Bookshelf Plans are your key to transforming an awkward corner into a stunning focal point. This unique artistic triangle bookshelf design isn't just for storage; it's a statement piece that adds style and character to any room.  Why Choose Our Plans?  Smart, Space-Saving Design: This clever wood corner shelf is perfect for apartments, small homes, or any room w...",
+    "publishedAt": "JAN 31, 2026",
+    "modifiedAt": "FEB 18, 2026"
   },
   {
     "id": "125",
@@ -4416,7 +4666,9 @@ export const products: Product[] = [
       "Clothes_Holder",
       "Laundry"
     ],
-    "description": "Transform Your Laundry Space with This Elegant DIY Laundry Basket Tower!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build Say g..."
+    "description": "Transform Your Laundry Space with This Elegant DIY Laundry Basket Tower!  100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build Say g...",
+    "publishedAt": "FEB 21, 2026",
+    "modifiedAt": "FEB 27, 2026"
   },
   {
     "id": "126",
@@ -4451,7 +4703,9 @@ export const products: Product[] = [
       "Credenza_Plans",
       "Cabinet_Plans"
     ],
-    "description": "100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Add a modern touch and fantastic storage to your home! This elegant wooden sid..."
+    "description": "100% Satisfaction & Money-Back Guarantee!  We are so confident that you will love building this project that we offer a 100% money-back guarantee. If you are not completely satisfied with these plans for any reason, we will refund your purchase\u2014no questions asked! Plus, if you need any help or have questions during the build, we are always here to provide full support and guidance via Etsy messages.  About This Build  Add a modern touch and fantastic storage to your home! This elegant wooden sid...",
+    "publishedAt": "JAN 02, 2026",
+    "modifiedAt": "JAN 03, 2026"
   },
   {
     "id": "127",
@@ -4487,7 +4741,9 @@ export const products: Product[] = [
       "Planter_Plans",
       "Outdoor_Furniture"
     ],
-    "description": "DIY Large Planter & Raised Garden Bed with Trellis Woodworking Plans  Tired of expensive, flimsy store-bought garden furniture? Dreaming of a lush, organized outdoor space that makes gardening comfortable and stylish?  Our Ultimate Tiered Planter Plans transform your patio, deck, or balcony into a stunning focal point. These plans don't just show you how to build a box\u2014they give you the blueprint for a commanding, multi-functional Patio Decor centerpiece that combines massive planting volume wit..."
+    "description": "DIY Large Planter & Raised Garden Bed with Trellis Woodworking Plans  Tired of expensive, flimsy store-bought garden furniture? Dreaming of a lush, organized outdoor space that makes gardening comfortable and stylish?  Our Ultimate Tiered Planter Plans transform your patio, deck, or balcony into a stunning focal point. These plans don't just show you how to build a box\u2014they give you the blueprint for a commanding, multi-functional Patio Decor centerpiece that combines massive planting volume wit...",
+    "publishedAt": "FEB 26, 2026",
+    "modifiedAt": "MAR 06, 2026"
   },
   {
     "id": "128",
@@ -4524,7 +4780,9 @@ export const products: Product[] = [
       "vendor_cart",
       "bar_cart"
     ],
-    "description": "Here is a compelling Etsy product description based on the details you provided, structured for clarity and to attract buyers. DIY Mobile Coffe Cart Plans: The Ultimate Collapsible Vendor Cart Blueprint  Ready to create the perfect centerpiece for your next event? This is not just a plan; it's your ticket to building a beautiful, professional-grade mobile bar or vendor cart. Our meticulously designed, step-by-step PDF guide gives you everything you need to bring this elegant and modern design to..."
+    "description": "Here is a compelling Etsy product description based on the details you provided, structured for clarity and to attract buyers. DIY Mobile Coffe Cart Plans: The Ultimate Collapsible Vendor Cart Blueprint  Ready to create the perfect centerpiece for your next event? This is not just a plan; it's your ticket to building a beautiful, professional-grade mobile bar or vendor cart. Our meticulously designed, step-by-step PDF guide gives you everything you need to bring this elegant and modern design to...",
+    "publishedAt": "FEB 21, 2026",
+    "modifiedAt": "FEB 27, 2026"
   },
   {
     "id": "129",
@@ -4558,7 +4816,9 @@ export const products: Product[] = [
       "Flower_Stand",
       "Mobile_Farm_Cart"
     ],
-    "description": "Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s time to give that story the beautiful stage it deserves.  These detailed woodworking plans were designed not j..."
+    "description": "Handcrafted by You, For Your Dream: Build the Perfect Farmstand Today!   With our digital DIY plans, you can easily create a beautiful wooden stand to showcase your fresh produce, artisan goods, or vibrant flowers. Download the Instant PDF Guide and start your building adventure now!  Every farm-fresh egg, every vibrant bouquet, and every loaf of artisan sourdough has a story. Now, it\u2019s time to give that story the beautiful stage it deserves.  These detailed woodworking plans were designed not j...",
+    "publishedAt": "JAN 06, 2026",
+    "modifiedAt": "JAN 20, 2026"
   },
   {
     "id": "130",
@@ -4593,7 +4853,9 @@ export const products: Product[] = [
       "portable_coffee_bar",
       "special_event_bar"
     ],
-    "description": "Craft Your Perfect Event with Our Portable & Collapsible Wooden Bar!  Looking for a versatile and stylish solution for your next gathering? Our Portable & Collapsible Wooden Bar is the ultimate DIY event bar! Whether you're planning a birthday bar, a sophisticated special event bar, or a charming wooden coffee bar, this design provides the flexibility and elegance you need.  Key Features:  Effortless Portability: Designed as a folding bar and collapsible bar, it's incredibly easy to transport an..."
+    "description": "Craft Your Perfect Event with Our Portable & Collapsible Wooden Bar!  Looking for a versatile and stylish solution for your next gathering? Our Portable & Collapsible Wooden Bar is the ultimate DIY event bar! Whether you're planning a birthday bar, a sophisticated special event bar, or a charming wooden coffee bar, this design provides the flexibility and elegance you need.  Key Features:  Effortless Portability: Designed as a folding bar and collapsible bar, it's incredibly easy to transport an...",
+    "publishedAt": "FEB 03, 2026",
+    "modifiedAt": "FEB 26, 2026"
   },
   {
     "id": "131",
@@ -4630,7 +4892,9 @@ export const products: Product[] = [
       "wooden_bed_build",
       "bed_diy_instructions"
     ],
-    "description": "Tired of tripping over things in a tight bedroom? Whether you are outfitting a small guest room, upgrading a kid's space, or maximizing a tiny apartment, this is the exact wood bed plan you\u2019ve been searching for.  This digital guide provides the ultimate single bed with storage underneath DIY plans. Designed with a custom narrow footprint (32\" wide), it perfectly balances a sleek sleeping area with highly functional under-bed cubbies and a smart bookcase headboard. Keep your favorite books, phon..."
+    "description": "Tired of tripping over things in a tight bedroom? Whether you are outfitting a small guest room, upgrading a kid's space, or maximizing a tiny apartment, this is the exact wood bed plan you\u2019ve been searching for.  This digital guide provides the ultimate single bed with storage underneath DIY plans. Designed with a custom narrow footprint (32\" wide), it perfectly balances a sleek sleeping area with highly functional under-bed cubbies and a smart bookcase headboard. Keep your favorite books, phon...",
+    "publishedAt": "JAN 07, 2026",
+    "modifiedAt": "JAN 29, 2026"
   },
   {
     "id": "132",
@@ -4664,7 +4928,9 @@ export const products: Product[] = [
       "Firewood_Holder",
       "8x10_Firewood_Shed"
     ],
-    "description": "\ud83d\udd25 Stop Burning Wet Wood! Build Your Dream Woodshed Today! \ud83d\udd25 Tired of struggling with soggy, smoking logs? Our 8x10 Firewood Shed Plans are the perfect solution to keep your wood dry, seasoned, and ready for the fire pit or stove. This isn't just a shed; it's the ultimate DIY project to enhance your backyard and ensure perfectly seasoned fuel all winter long!  \ud83c\udfe1 About These 8x10Wood Shed Plans \ud83c\udfe1 These are complete DIY plans to build a sturdy, attractive 8x10 Firewood Storage Shed (or Woodshed) wi..."
+    "description": "\ud83d\udd25 Stop Burning Wet Wood! Build Your Dream Woodshed Today! \ud83d\udd25 Tired of struggling with soggy, smoking logs? Our 8x10 Firewood Shed Plans are the perfect solution to keep your wood dry, seasoned, and ready for the fire pit or stove. This isn't just a shed; it's the ultimate DIY project to enhance your backyard and ensure perfectly seasoned fuel all winter long!  \ud83c\udfe1 About These 8x10Wood Shed Plans \ud83c\udfe1 These are complete DIY plans to build a sturdy, attractive 8x10 Firewood Storage Shed (or Woodshed) wi...",
+    "publishedAt": "JAN 05, 2026",
+    "modifiedAt": "JAN 08, 2026"
   },
   {
     "id": "133",
@@ -4701,7 +4967,9 @@ export const products: Product[] = [
       "Costco_Supplies",
       "Customizable_Signs"
     ],
-    "description": "Costco Party Pack | Customizable Price Signs PDF | Costco Birthday Party & Sign | Costco Themed Birthday Decorations | Printable Costco Pack  Get ready to throw the ultimate Costco party with our comprehensive Costco Party Pack! This Costco Party Pack includes everything you need for a memorable Costco themed birthday decorations celebration, from a Costco Birthday Party Invite to an awesome Costco Birthday Cake.  What's Included in Your Costco Party Pack?  This Costco Party Pack is loaded with ..."
+    "description": "Costco Party Pack | Customizable Price Signs PDF | Costco Birthday Party & Sign | Costco Themed Birthday Decorations | Printable Costco Pack  Get ready to throw the ultimate Costco party with our comprehensive Costco Party Pack! This Costco Party Pack includes everything you need for a memorable Costco themed birthday decorations celebration, from a Costco Birthday Party Invite to an awesome Costco Birthday Cake.  What's Included in Your Costco Party Pack?  This Costco Party Pack is loaded with ...",
+    "publishedAt": "FEB 14, 2026",
+    "modifiedAt": "MAR 14, 2026"
   },
   {
     "id": "134",
@@ -4737,7 +5005,9 @@ export const products: Product[] = [
       "Swing_Set_Plans",
       "DIY_Patio_Furniture"
     ],
-    "description": "Build a Stunning Circular Porch Swing & Pergola!  Create the ultimate relaxing oasis in your garden with this unique DIY Porch Swing Stand Plan. Perfect for outdoor entertainers, this eye-catching circular arbor design features a sturdy base deck and a comfortable suspended bench, making it the perfect focal point for your back yard patio or garden.  Whether you are looking to build a cozy DIY backyard corner or simply want to upgrade your outdoor space with premium patio furniture plans, this b..."
+    "description": "Build a Stunning Circular Porch Swing & Pergola!  Create the ultimate relaxing oasis in your garden with this unique DIY Porch Swing Stand Plan. Perfect for outdoor entertainers, this eye-catching circular arbor design features a sturdy base deck and a comfortable suspended bench, making it the perfect focal point for your back yard patio or garden.  Whether you are looking to build a cozy DIY backyard corner or simply want to upgrade your outdoor space with premium patio furniture plans, this b...",
+    "publishedAt": "FEB 19, 2026",
+    "modifiedAt": "MAR 07, 2026"
   },
   {
     "id": "135",
@@ -4770,7 +5040,9 @@ export const products: Product[] = [
       "Spiral_Wooden",
       "Tree_Plan"
     ],
-    "description": "Spiral Wooden Christmas Tree Plans | DIY Modern Holiday Decor | One Board Spiral Tree Build Plan | Landscape Tree Plan PDF Printable  Transform your holiday decor with our easy-to-follow plans for a stunning Spiral Wooden Christmas Tree! This unique and modern design offers a refreshing alternative to traditional trees, adding a touch of contemporary elegance to any space. Perfect for DIY enthusiasts, these plans guide you through creating a beautiful, minimalist tree that's sure to be a convers..."
+    "description": "Spiral Wooden Christmas Tree Plans | DIY Modern Holiday Decor | One Board Spiral Tree Build Plan | Landscape Tree Plan PDF Printable  Transform your holiday decor with our easy-to-follow plans for a stunning Spiral Wooden Christmas Tree! This unique and modern design offers a refreshing alternative to traditional trees, adding a touch of contemporary elegance to any space. Perfect for DIY enthusiasts, these plans guide you through creating a beautiful, minimalist tree that's sure to be a convers...",
+    "publishedAt": "FEB 01, 2026",
+    "modifiedAt": "FEB 28, 2026"
   },
   {
     "id": "136",
@@ -4804,7 +5076,9 @@ export const products: Product[] = [
       "Farmhouse_Bench",
       "12_Ft_Bench_Table"
     ],
-    "description": "Outdoor Farmhouse 12-Foot Bench Table Plans: DIY Extra-Long Dining & Entry Table Are you looking to build the perfect outdoor farm table that combines rustic charm with ample seating? Our comprehensive farmhouse table plans are exactly what you need! These wooden table plans are designed to help you create a stunning 12 ft table that doubles as a comfortable 12 foot bench, making it an ideal outdoor dining table and even a unique entry table.  Product Description: Transform your backyard or dini..."
+    "description": "Outdoor Farmhouse 12-Foot Bench Table Plans: DIY Extra-Long Dining & Entry Table Are you looking to build the perfect outdoor farm table that combines rustic charm with ample seating? Our comprehensive farmhouse table plans are exactly what you need! These wooden table plans are designed to help you create a stunning 12 ft table that doubles as a comfortable 12 foot bench, making it an ideal outdoor dining table and even a unique entry table.  Product Description: Transform your backyard or dini...",
+    "publishedAt": "JAN 06, 2026",
+    "modifiedAt": "JAN 28, 2026"
   },
   {
     "id": "137",
@@ -4841,7 +5115,9 @@ export const products: Product[] = [
       "Digital_Blueprint",
       "Comfortable_Chair"
     ],
-    "description": "Classic Adirondack Chair Plans | DIY Outdoor Garden Furniture Blueprint  There is nothing quite like sinking into a classic Adirondack chair on a sunny afternoon. With its wide armrests perfect for resting a cold drink and a contoured seat designed for comfort, this chair is the undisputed king of outdoor furniture.  Now, you can build your own high-quality garden chairs for a fraction of the cost of buying them pre-made. These DIY Adirondack Chair Plans are designed to be simple, sturdy, and st..."
+    "description": "Classic Adirondack Chair Plans | DIY Outdoor Garden Furniture Blueprint  There is nothing quite like sinking into a classic Adirondack chair on a sunny afternoon. With its wide armrests perfect for resting a cold drink and a contoured seat designed for comfort, this chair is the undisputed king of outdoor furniture.  Now, you can build your own high-quality garden chairs for a fraction of the cost of buying them pre-made. These DIY Adirondack Chair Plans are designed to be simple, sturdy, and st...",
+    "publishedAt": "JAN 24, 2026",
+    "modifiedAt": "JAN 28, 2026"
   },
   {
     "id": "138",
@@ -4877,7 +5153,9 @@ export const products: Product[] = [
       "Simple_Picnic_Table",
       "Woodworking_Template"
     ],
-    "description": "Build the Ultimate Comfortable Picnic Table!  Upgrade your backyard, patio, or garden with this DIY Sturdy Picnic Table Easy build plan! Unlike standard backless designs, this comprehensive Table DIY Plan features comfortable backrests, making it perfect for long outdoor dinners, family gatherings, or just relaxing in the sun.  Whether you are looking for simple picnic table plans for a weekend project or professional outdoor table plans to expand your woodworking portfolio, these blueprints pro..."
+    "description": "Build the Ultimate Comfortable Picnic Table!  Upgrade your backyard, patio, or garden with this DIY Sturdy Picnic Table Easy build plan! Unlike standard backless designs, this comprehensive Table DIY Plan features comfortable backrests, making it perfect for long outdoor dinners, family gatherings, or just relaxing in the sun.  Whether you are looking for simple picnic table plans for a weekend project or professional outdoor table plans to expand your woodworking portfolio, these blueprints pro...",
+    "publishedAt": "FEB 23, 2026",
+    "modifiedAt": "MAR 11, 2026"
   },
   {
     "id": "139",
@@ -4908,7 +5186,9 @@ export const products: Product[] = [
       "Christmas_Display",
       "Christmas_Village"
     ],
-    "description": "Stop searching for the perfect finishing touch. Build it.  Crown your Christmas tree with this stunning, handmade Wood Christmas Tree Topper Star. With our comprehensive DIY Wooden Tree Topper Plans, you can create a beautiful, 12-inch star that blends timeless charm with a modern farmhouse aesthetic.  This design is the very definition of a Rustic Christmas Tree Topper. The angled, faceted construction gives it a high-end, 3D look that catches the light beautifully, while the simple geometry gi..."
+    "description": "Stop searching for the perfect finishing touch. Build it.  Crown your Christmas tree with this stunning, handmade Wood Christmas Tree Topper Star. With our comprehensive DIY Wooden Tree Topper Plans, you can create a beautiful, 12-inch star that blends timeless charm with a modern farmhouse aesthetic.  This design is the very definition of a Rustic Christmas Tree Topper. The angled, faceted construction gives it a high-end, 3D look that catches the light beautifully, while the simple geometry gi...",
+    "publishedAt": "JAN 26, 2026",
+    "modifiedAt": "FEB 01, 2026"
   },
   {
     "id": "140",
@@ -4945,7 +5225,9 @@ export const products: Product[] = [
       "vendor_cart",
       "bar_cart"
     ],
-    "description": "\u2615 Build the Perfect Station for Your Coffee Business!  Turn your passion into a business with these professional Coffee Cart Blueprint plans. Designed specifically for heavy-duty use, this cart is the ideal foundation for a mobile espresso bar, a pop-up bakery, or a professional Foldable Stall for market vendors.  Unlike flimsy tables, this Mobile Coffee Cart Build is engineered to handle the weight of professional espresso machines while maintaining a sleek, modern look. The 36-inch height is e..."
+    "description": "\u2615 Build the Perfect Station for Your Coffee Business!  Turn your passion into a business with these professional Coffee Cart Blueprint plans. Designed specifically for heavy-duty use, this cart is the ideal foundation for a mobile espresso bar, a pop-up bakery, or a professional Foldable Stall for market vendors.  Unlike flimsy tables, this Mobile Coffee Cart Build is engineered to handle the weight of professional espresso machines while maintaining a sleek, modern look. The 36-inch height is e...",
+    "publishedAt": "JAN 08, 2026",
+    "modifiedAt": "JAN 25, 2026"
   },
   {
     "id": "141",
@@ -4979,7 +5261,9 @@ export const products: Product[] = [
       "miter_saw_bench",
       "flip_top_workbench"
     ],
-    "description": "Mobile Miter Saw Table Plans, Miter Saw Station, Garage Work Bench Plans, Miter Saw Bench, Woodworking Plans, Miter Saw Rack   Unlock the full potential of your workshop with our comprehensive DIY Workbench Plans! This detailed guide empowers you to build the ultimate Table Saw Workbench and Miter Saw Station Mobile Stand, designed for efficiency and versatility.  Are you tired of cluttered spaces? Our Flip Top Workbench design seamlessly integrates your Table Saw and Router Table into one space..."
+    "description": "Mobile Miter Saw Table Plans, Miter Saw Station, Garage Work Bench Plans, Miter Saw Bench, Woodworking Plans, Miter Saw Rack   Unlock the full potential of your workshop with our comprehensive DIY Workbench Plans! This detailed guide empowers you to build the ultimate Table Saw Workbench and Miter Saw Station Mobile Stand, designed for efficiency and versatility.  Are you tired of cluttered spaces? Our Flip Top Workbench design seamlessly integrates your Table Saw and Router Table into one space...",
+    "publishedAt": "JAN 11, 2026",
+    "modifiedAt": "JAN 21, 2026"
   },
   {
     "id": "142",
@@ -5014,7 +5298,9 @@ export const products: Product[] = [
       "custom_bed_build",
       "bedroom_furniture"
     ],
-    "description": "Maximize Your Space with Premium DIY Triple Tier Bunk Bed Plans!  Running out of floor space in the kids' room, guest room, or vacation cabin? Build the ultimate sleepover setup with our comprehensive triple tier bunk bed plans. This incredible, heavy-duty wooden design comfortably stacks three beds and features a super-safe, built-in staircase. Even better, each step doubles as a spacious pull-out drawer, making it the perfect bunk bed with storage stairs to keep toys, clothes, and bedding orga..."
+    "description": "Maximize Your Space with Premium DIY Triple Tier Bunk Bed Plans!  Running out of floor space in the kids' room, guest room, or vacation cabin? Build the ultimate sleepover setup with our comprehensive triple tier bunk bed plans. This incredible, heavy-duty wooden design comfortably stacks three beds and features a super-safe, built-in staircase. Even better, each step doubles as a spacious pull-out drawer, making it the perfect bunk bed with storage stairs to keep toys, clothes, and bedding orga...",
+    "publishedAt": "FEB 05, 2026",
+    "modifiedAt": "FEB 23, 2026"
   },
   {
     "id": "143",
@@ -5048,7 +5334,9 @@ export const products: Product[] = [
       "Backyard_Project",
       "Digital_Pattern"
     ],
-    "description": "\ud83d\udc26 Invite Nature into Your Garden with Style!  Transform your backyard into a birdwatcher's paradise with these premium Bird Feeder Plans. This isn't just a simple box; it is a stylish, modern piece of garden decor featuring a unique \"X-frame\" design and a protective roof structure.  Designed for both functionality and aesthetics, this Bird Feeder Blueprint guides you to build a sturdy hanging station that keeps seeds dry while offering an unobstructed view of your feathered friends.  Why You\u2019ll ..."
+    "description": "\ud83d\udc26 Invite Nature into Your Garden with Style!  Transform your backyard into a birdwatcher's paradise with these premium Bird Feeder Plans. This isn't just a simple box; it is a stylish, modern piece of garden decor featuring a unique \"X-frame\" design and a protective roof structure.  Designed for both functionality and aesthetics, this Bird Feeder Blueprint guides you to build a sturdy hanging station that keeps seeds dry while offering an unobstructed view of your feathered friends.  Why You\u2019ll ...",
+    "publishedAt": "FEB 04, 2026",
+    "modifiedAt": "MAR 05, 2026"
   },
   {
     "id": "144",
@@ -5085,7 +5373,9 @@ export const products: Product[] = [
       "diy_plans_cabinet",
       "wooden_sideboard"
     ],
-    "description": "Looking for the perfect balance of hidden storage and stylish display space? Whether you need a sleek modern sideboard for your living room, a functional entryway table plan, or a chic buffet cabinet plan for your dining area, this versatile design has you covered.  This comprehensive digital guide provides easy-to-follow woodworking plans to build your very own wooden sideboard cabinet. Featuring a beautiful slatted sliding door and mid-century modern legs, this piece instantly elevates any roo..."
+    "description": "Looking for the perfect balance of hidden storage and stylish display space? Whether you need a sleek modern sideboard for your living room, a functional entryway table plan, or a chic buffet cabinet plan for your dining area, this versatile design has you covered.  This comprehensive digital guide provides easy-to-follow woodworking plans to build your very own wooden sideboard cabinet. Featuring a beautiful slatted sliding door and mid-century modern legs, this piece instantly elevates any roo...",
+    "publishedAt": "JAN 18, 2026",
+    "modifiedAt": "JAN 22, 2026"
   },
   {
     "id": "145",
@@ -5121,7 +5411,9 @@ export const products: Product[] = [
       "winter_wood_shed",
       "wood_seasoning_rack"
     ],
-    "description": "DIY 6x12 Firewood Shed Plans PDF | 3 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a massive, heavy-duty 6x12 Firewood Shed. Designed with an extra-deep profile to hold a full 3 cords of wood, this structure is the ultimate high-capacity storage solution for homesteaders, cabin owners, and anyone who relies heavily on a wood stove to heat ..."
+    "description": "DIY 6x12 Firewood Shed Plans PDF | 3 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a massive, heavy-duty 6x12 Firewood Shed. Designed with an extra-deep profile to hold a full 3 cords of wood, this structure is the ultimate high-capacity storage solution for homesteaders, cabin owners, and anyone who relies heavily on a wood stove to heat ...",
+    "publishedAt": "JAN 07, 2026",
+    "modifiedAt": "JAN 18, 2026"
   },
   {
     "id": "146",
@@ -5157,7 +5449,9 @@ export const products: Product[] = [
       "wood_seasoning_rack",
       "outdoor_firewood"
     ],
-    "description": "DIY 3x6 Firewood Shed Plans PDF | Compact Wood Storage Rack Blueprint  Stop letting your firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 3x6 Firewood Shed. Designed with a perfectly compact capacity, this structure is the ideal storage solution for homeowners with fireplaces, fire pits, or anyone needing a smaller, organized log store.  Engineered for Perfect Seasoning & Protection:  Max..."
+    "description": "DIY 3x6 Firewood Shed Plans PDF | Compact Wood Storage Rack Blueprint  Stop letting your firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 3x6 Firewood Shed. Designed with a perfectly compact capacity, this structure is the ideal storage solution for homeowners with fireplaces, fire pits, or anyone needing a smaller, organized log store.  Engineered for Perfect Seasoning & Protection:  Max...",
+    "publishedAt": "FEB 20, 2026",
+    "modifiedAt": "MAR 04, 2026"
   },
   {
     "id": "147",
@@ -5192,7 +5486,9 @@ export const products: Product[] = [
       "woodworking_plans",
       "backyard_shed_diy"
     ],
-    "description": "DIY 4x12 Firewood Shed Plans PDF | 2 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 4x12 Firewood Shed. Designed with a generous 2-cord capacity, this structure is the perfect mid-sized solution for homesteaders, cabin owners, and anyone who relies on a wood stove to heat their home through the winter.  Engineered for Perfect ..."
+    "description": "DIY 4x12 Firewood Shed Plans PDF | 2 Cord Wood Storage Rack Blueprint  Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 4x12 Firewood Shed. Designed with a generous 2-cord capacity, this structure is the perfect mid-sized solution for homesteaders, cabin owners, and anyone who relies on a wood stove to heat their home through the winter.  Engineered for Perfect ...",
+    "publishedAt": "JAN 24, 2026",
+    "modifiedAt": "FEB 11, 2026"
   },
   {
     "id": "148",
@@ -5224,7 +5520,9 @@ export const products: Product[] = [
       "Santas_Sleigh",
       "Digital_Pattern"
     ],
-    "description": "\ud83c\udf85 Create a Magical Silhouette in Your Front Yard!  Turn your home into a holiday landmark with these Santa Sleigh Diy Plans. This design focuses on the classic 2D profile, making it the perfect project for cutting out of plywood or MDF sheets. Whether you use a simple jigsaw or a CNC machine, these Sleigh Blueprints will help you create a stunning life-size display. This set is designed to be a showstopper. It features the elegant side profile of Santa's sleigh along with the matching reindeer, ..."
+    "description": "\ud83c\udf85 Create a Magical Silhouette in Your Front Yard!  Turn your home into a holiday landmark with these Santa Sleigh Diy Plans. This design focuses on the classic 2D profile, making it the perfect project for cutting out of plywood or MDF sheets. Whether you use a simple jigsaw or a CNC machine, these Sleigh Blueprints will help you create a stunning life-size display. This set is designed to be a showstopper. It features the elegant side profile of Santa's sleigh along with the matching reindeer, ...",
+    "publishedAt": "JAN 03, 2026",
+    "modifiedAt": "JAN 20, 2026"
   },
   {
     "id": "149",
@@ -5259,7 +5557,9 @@ export const products: Product[] = [
       "wood_working_plans",
       "firewood_storage_pdf"
     ],
-    "description": "Easy 4x16 Firewood Shed DIY Plans PDF   Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 4x16 Firewood Shed. Designed with a massive 3-cord capacity, this structure is an absolute necessity for homesteaders, cabin owners, and anyone who relies on a wood stove to heat their home through the winter.  Engineered for Perfect Seasoning & Protection:  Maximum Airflow ..."
+    "description": "Easy 4x16 Firewood Shed DIY Plans PDF   Stop letting your valuable firewood rot under cheap plastic tarps! This comprehensive digital woodworking blueprint provides the exact, step-by-step instructions to build a heavy-duty, 4x16 Firewood Shed. Designed with a massive 3-cord capacity, this structure is an absolute necessity for homesteaders, cabin owners, and anyone who relies on a wood stove to heat their home through the winter.  Engineered for Perfect Seasoning & Protection:  Maximum Airflow ...",
+    "publishedAt": "FEB 09, 2026",
+    "modifiedAt": "FEB 23, 2026"
   },
   {
     "id": "150",
@@ -5296,6 +5596,8 @@ export const products: Product[] = [
       "Woodworking_Plans",
       "Digital_Blueprint"
     ],
-    "description": "Create Your Own Backyard Sanctuary \ud83c\udf3f\u2728  Imagine enjoying your morning coffee or watching the sunset while gently swaying in your own handmade garden swing. This isn't just a swing; it's a complete Covered Swing Bench with a beautiful pergola-style roof that defines your outdoor space.  With these easy-to-follow Wooden Garden Swing Plans, you can build a stunning, self-supporting structure that doesn't require a big tree or a porch ceiling. Place it anywhere on your lawn, patio, or deck!  Why You\u2019..."
+    "description": "Create Your Own Backyard Sanctuary \ud83c\udf3f\u2728  Imagine enjoying your morning coffee or watching the sunset while gently swaying in your own handmade garden swing. This isn't just a swing; it's a complete Covered Swing Bench with a beautiful pergola-style roof that defines your outdoor space.  With these easy-to-follow Wooden Garden Swing Plans, you can build a stunning, self-supporting structure that doesn't require a big tree or a porch ceiling. Place it anywhere on your lawn, patio, or deck!  Why You\u2019...",
+    "publishedAt": "JAN 28, 2026",
+    "modifiedAt": "FEB 04, 2026"
   }
 ];
