@@ -133,9 +133,14 @@ export default async function ProductPage({ params }: Props) {
           )}
 
           <div className="product-detail-actions">
-            <button className="btn btn-primary w-full">
-              ADD TO BAG
-            </button>
+            <a 
+              href={`https://www.etsy.com/search?q=${encodeURIComponent(product.name + ' Bizilla')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary w-full text-center"
+            >
+              PURCHASE ON ETSY
+            </a>
           </div>
 
           <div className="product-detail-section">
