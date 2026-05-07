@@ -23,15 +23,14 @@ export async function GET() {
   <description>Drip-fed DIY Woodworking Plans</description>`;
 
   visibleProducts.forEach(product => {
-    const searchQuery = `${product.name} Bizilla`;
-    const etsySearchUrl = `https://www.etsy.com/search?q=${encodeURIComponent(searchQuery)}`;
+    const productUrl = `https://freediyplans.com/products/${product.id}`;
     
     xml += `
   <item>
     <g:id>${product.id}</g:id>
     <g:title>${escapeXml(product.name)}</g:title>
     <g:description>${escapeXml(product.description)}</g:description>
-    <g:link>${escapeXml(etsySearchUrl)}</g:link>
+    <g:link>${escapeXml(productUrl)}</g:link>
     <g:image_link>${escapeXml(product.image)}</g:image_link>`;
 
     // Ek resimleri ekle
