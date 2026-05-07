@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface ProductGalleryProps {
   images: string[];
@@ -19,8 +19,15 @@ export default function ProductGallery({ images, name }: ProductGalleryProps) {
 
   return (
     <div className="product-detail-image-gallery">
-      <div className="main-image">
-        <img src={activeImage} alt={name} />
+      <div className="main-image relative aspect-square overflow-hidden rounded-lg">
+        <Image 
+          src={activeImage} 
+          alt={name} 
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover transition-all duration-500"
+        />
         <a 
           href={pinterestSaveUrl}
           target="_blank"
@@ -37,10 +44,16 @@ export default function ProductGallery({ images, name }: ProductGalleryProps) {
         {images.map((img, idx) => (
           <div 
             key={idx} 
-            className={`thumbnail-item ${activeImage === img ? 'active' : ''}`}
+            className={`thumbnail-item relative aspect-square overflow-hidden rounded-md cursor-pointer transition-all ${activeImage === img ? 'active ring-2 ring-black' : 'opacity-60 hover:opacity-100'}`}
             onClick={() => setActiveImage(img)}
           >
-            <img src={img} alt={`${name} - view ${idx + 1}`} />
+            <Image 
+              src={img} 
+              alt={`${name} - view ${idx + 1}`} 
+              fill
+              sizes="100px"
+              className="object-cover"
+            />
           </div>
         ))}
       </div>
