@@ -44,8 +44,9 @@ export async function GET() {
     xml += `
     <g:condition>new</g:condition>
     <g:availability>in stock</g:availability>
-    <g:price>${product.price} USD</g:price>
+    <g:price>${product.price.toFixed(2)} USD</g:price>
     <g:brand>Bizilla</g:brand>
+    <g:google_product_category>505324</g:google_product_category>
   </item>`;
   });
 
