@@ -28,9 +28,9 @@ export async function GET() {
     xml += `
   <item>
     <g:id>${product.id}</g:id>
-    <g:title>${escapeXml(product.name)}</g:title>
-    <g:description>${escapeXml(product.description)}</g:description>
-    <g:link>${escapeXml(productUrl)}</g:link>
+    <title>${escapeXml(product.name)}</title>
+    <description>${escapeXml(product.description)}</description>
+    <link>${escapeXml(productUrl)}</link>
     <g:image_link>${escapeXml(product.image)}</g:image_link>`;
 
     // Ek resimleri ekle
