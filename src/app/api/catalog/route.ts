@@ -22,20 +22,25 @@ export async function GET() {
   visibleProducts.forEach(product => {
     const productUrl = `https://freediyplans.com/products/${product.id}`;
     
+    const productTitle = product.name.length > 95 ? product.name.substring(0, 95) + '...' : product.name;
+    const productDesc = product.description.length > 450 ? product.description.substring(0, 450) + '...' : product.description;
+
     xml += `
   <item>
     <g:id>${product.id}</g:id>
     <guid isPermaLink="false">${product.id}</guid>
-    <title><![CDATA[${product.name}]]></title>
-    <description><![CDATA[${product.description}]]></description>
+    <title><![CDATA[${productTitle}]]></title>
+    <description><![CDATA[${productDesc}]]></description>
     <link>${productUrl}</link>
     <g:image_link>${product.image}</g:image_link>`;
 
     // Ek resimler
     if (product.images && product.images.length > 1) {
       product.images.slice(1).forEach(imgUrl => {
-        xml += `
+        if (imgUrl && imgUrl.trim() !== '') {
+          xml += `
     <g:additional_image_link>${imgUrl}</g:additional_image_link>`;
+        }
       });
     }
 
@@ -44,7 +49,7 @@ export async function GET() {
     <g:availability>in stock</g:availability>
     <g:price>${product.price.toFixed(2)} USD</g:price>
     <g:brand>Bizilla Creative</g:brand>
-    <g:google_product_category><![CDATA[Arts & Entertainment > Hobbies & Creative Arts > Crafts & Hobbies > Patterns & Blueprints]]></g:google_product_category>
+    <g:google_product_category><![CDATA[Arts & Crafts > Patterns]]></g:google_product_category>
     <g:product_type><![CDATA[Woodworking Plans]]></g:product_type>
   </item>`;
   });
