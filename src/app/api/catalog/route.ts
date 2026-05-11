@@ -1,20 +1,17 @@
 import { products } from '@/data/products';
-import { NextResponse } from 'next/server';
 
 export async function GET() {
-  // Başlangıç tarihi: 6 Mayıs 2026
-  const startDate = new Date('2026-05-06T00:00:00Z');
+  // Drip-feed: Başlangıç tarihi (Bugün: 11 Mayıs 2026)
+  const startDate = new Date('2026-05-11T00:00:00Z');
   const today = new Date();
   
-  // Kaç gün geçtiğini hesapla
   const diffTime = Math.max(0, today.getTime() - startDate.getTime());
-  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1; // Bugün 1. gün
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
   
-  // Her gün 5 ürün ekle
+  // Her gün 5 ürün (Yeni hesap ısınma protokolü için kritik)
   const showCount = Math.min(diffDays * 5, products.length);
   const visibleProducts = products.slice(0, showCount);
 
-  // XML oluştur
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
 <channel>
@@ -34,7 +31,7 @@ export async function GET() {
     <link>${productUrl}</link>
     <g:image_link>${product.image}</g:image_link>`;
 
-    // Ek resimleri ekle
+    // Ek resimler
     if (product.images && product.images.length > 1) {
       product.images.slice(1).forEach(imgUrl => {
         xml += `
@@ -46,7 +43,7 @@ export async function GET() {
     <g:condition>new</g:condition>
     <g:availability>in stock</g:availability>
     <g:price>${product.price.toFixed(2)} USD</g:price>
-    <g:brand>Bizilla</g:brand>
+    <g:brand>Bizilla Creative</g:brand>
     <g:google_product_category><![CDATA[Arts & Entertainment > Hobbies & Creative Arts > Crafts & Hobbies > Patterns & Blueprints]]></g:google_product_category>
     <g:product_type><![CDATA[Woodworking Plans]]></g:product_type>
   </item>`;
@@ -61,18 +58,5 @@ export async function GET() {
       'Content-Type': 'application/xml; charset=utf-8',
       'Cache-Control': 'no-store, max-age=0',
     },
-  });
-}
-
-function escapeXml(unsafe: string) {
-  return unsafe.replace(/[<>&"']/g, (c) => {
-    switch (c) {
-      case '<': return '&lt;';
-      case '>': return '&gt;';
-      case '&': return '&amp;';
-      case '"': return '&quot;';
-      case "'": return '&apos;';
-      default: return c;
-    }
   });
 }

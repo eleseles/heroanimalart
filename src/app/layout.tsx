@@ -6,10 +6,10 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   metadataBase: new URL('https://freediyplans.com'),
   title: {
-    default: "Bizilla | Premium Minimal Objects",
-    template: "%s | Bizilla"
+    default: "Bizilla Creative | Premium DIY Woodworking Plans",
+    template: "%s | Bizilla Creative"
   },
-  description: "Discover the future with Bizilla's premium selection of tech gadgets, wearables, and minimal objects.",
+  description: "Download premium DIY woodworking plans and blueprints. Build your own furniture, outdoor projects, and more with our detailed guides.",
   alternates: {
     canonical: '/',
   },
@@ -28,9 +28,9 @@ export default function RootLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Bizilla',
+    name: 'Bizilla Creative',
     url: 'https://freediyplans.com',
-    description: 'Premium selection of tech gadgets and minimal objects.',
+    description: 'Premium DIY woodworking plans. Build your dream projects at home. Shop our plans directly on Etsy.',
   };
 
   return (

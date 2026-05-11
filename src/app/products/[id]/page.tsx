@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!product) return { title: 'Product Not Found' };
 
   return {
-    title: `${product.name} | Bizilla Studio`,
+    title: `${product.name} | Bizilla Creative`,
     description: product.description,
     alternates: {
       canonical: `/products/${id}`,
@@ -78,7 +78,7 @@ export default async function ProductPage({ params }: Props) {
     description: product.description,
     brand: {
       '@type': 'Brand',
-      name: 'Bizilla',
+      name: 'Bizilla Creative',
     },
     offers: {
       '@type': 'Offer',
