@@ -29,16 +29,16 @@ export async function GET() {
   <item>
     <g:id>${product.id}</g:id>
     <guid isPermaLink="false">${product.id}</guid>
-    <title>${escapeXml(product.name)}</title>
-    <description>${escapeXml(product.description)}</description>
-    <link>${escapeXml(productUrl)}</link>
-    <g:image_link>${escapeXml(product.image)}</g:image_link>`;
+    <title><![CDATA[${product.name}]]></title>
+    <description><![CDATA[${product.description}]]></description>
+    <link>${productUrl}</link>
+    <g:image_link>${product.image}</g:image_link>`;
 
     // Ek resimleri ekle
     if (product.images && product.images.length > 1) {
       product.images.slice(1).forEach(imgUrl => {
         xml += `
-    <g:additional_image_link>${escapeXml(imgUrl)}</g:additional_image_link>`;
+    <g:additional_image_link>${imgUrl}</g:additional_image_link>`;
       });
     }
 
@@ -47,8 +47,8 @@ export async function GET() {
     <g:availability>in stock</g:availability>
     <g:price>${product.price.toFixed(2)} USD</g:price>
     <g:brand>Bizilla</g:brand>
-    <g:google_product_category>Arts &amp; Entertainment &gt; Hobbies &amp; Creative Arts &gt; Crafts &amp; Hobbies &gt; Patterns &amp; Blueprints</g:google_product_category>
-    <g:product_type>Woodworking Plans</g:product_type>
+    <g:google_product_category><![CDATA[Arts & Entertainment > Hobbies & Creative Arts > Crafts & Hobbies > Patterns & Blueprints]]></g:google_product_category>
+    <g:product_type><![CDATA[Woodworking Plans]]></g:product_type>
   </item>`;
   });
 
