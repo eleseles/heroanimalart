@@ -28,6 +28,7 @@ export async function GET() {
     xml += `
   <item>
     <g:id>${product.id}</g:id>
+    <guid isPermaLink="false">${product.id}</guid>
     <title>${escapeXml(product.name)}</title>
     <description>${escapeXml(product.description)}</description>
     <link>${escapeXml(productUrl)}</link>
@@ -46,7 +47,8 @@ export async function GET() {
     <g:availability>in stock</g:availability>
     <g:price>${product.price.toFixed(2)} USD</g:price>
     <g:brand>Bizilla</g:brand>
-    <g:google_product_category>505324</g:google_product_category>
+    <g:google_product_category>Arts &amp; Entertainment &gt; Hobbies &amp; Creative Arts &gt; Crafts &amp; Hobbies &gt; Patterns &amp; Blueprints</g:google_product_category>
+    <g:product_type>Woodworking Plans</g:product_type>
   </item>`;
   });
 
@@ -54,10 +56,10 @@ export async function GET() {
 </channel>
 </rss>`;
 
-  return new NextResponse(xml, {
+  return new Response(xml, {
     headers: {
-      'Content-Type': 'application/xml',
-      'Cache-Control': 'no-store, max-age=0', // Her seferinde taze veri çekilsin
+      'Content-Type': 'application/xml; charset=utf-8',
+      'Cache-Control': 'no-store, max-age=0',
     },
   });
 }
