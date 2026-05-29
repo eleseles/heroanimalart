@@ -31,7 +31,7 @@ const collections = [
 
 export default function CollectionsPage() {
   return (
-    <div className="container" style={{ paddingTop: '160px', paddingBottom: '8rem' }}>
+    <div className="container" style={{ paddingTop: '100px', paddingBottom: '8rem' }}>
       <div className="section-header">
         <h1 className="section-title">Curated Build Series</h1>
       </div>

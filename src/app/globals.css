@@ -336,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Product Detail Page */
 .product-detail-page {
-  padding-top: 60px;
+  padding-top: 95px;
   min-height: 100vh;
   padding-bottom: 4rem;
 }
@@ -674,7 +674,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Legal Pages */
 .legal-page {
-  padding-top: 120px;
+  padding-top: 100px;
   max-width: 800px;
   margin: 0 auto;
   padding-bottom: 4rem;
