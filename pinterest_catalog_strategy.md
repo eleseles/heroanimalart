@@ -1,6 +1,6 @@
 # 🔴 Pinterest Katalog Feed & Büyüme Stratejisi — Tam Rehber
 
-> Bu doküman, **freediyplans.com** üzerinde @bizillacreative hesabı için uygulanan Pinterest Catalog entegrasyonunun tüm teknik detaylarını, karşılaşılan hataları, çözümleri ve büyüme stratejisini içermektedir. Yeni bir site/hesap üzerinde aynı sistemi kurarken bu rehberi adım adım takip edin.
+> Bu doküman, **greatwooden.com** üzerinde @GreatWooden hesabı için uygulanan Pinterest Catalog entegrasyonunun tüm teknik detaylarını, karşılaşılan hataları, çözümleri ve büyüme stratejisini içermektedir. Yeni bir site/hesap üzerinde aynı sistemi kurarken bu rehberi adım adım takip edin.
 
 ---
 
@@ -284,7 +284,7 @@ Etsy'den dışa aktarılan CSV'de kullanılan sütunlar:
 ## 9. Hesap Isınma Protokolü (Shadowban Önleme)
 
 > [!CAUTION]
-> **Önceki @cartforbusiness hesabı bu kurallar ihlal edildiği için shadowban yedi.** Toplu CSV yükleme, Pinterest'in resmi özelliği olsa bile, yeni hesapta ani hacim artışı spam olarak algılanır.
+> **Önceki @GreatWooden hesabı bu kurallar ihlal edildiği için shadowban yedi.** Toplu CSV yükleme, Pinterest'in resmi özelliği olsa bile, yeni hesapta ani hacim artışı spam olarak algılanır.
 
 ### İlk 14 Gün — Isınma Dönemi
 
@@ -486,4 +486,4 @@ export async function GET() {
 ---
 
 > [!NOTE]
-> Bu doküman, **freediyplans.com** projesinde yaşanan tüm deneyimlerden derlenmiştir. Yeni projede aynı hataları tekrarlamamak için bu rehberi adım adım takip edin ve özellikle **Bölüm 6 (Hatalar)** ve **Bölüm 9 (Isınma Protokolü)** bölümlerine özel dikkat gösterin.
+> Bu doküman, **greatwooden.com** projesinde yaşanan tüm deneyimlerden derlenmiştir. Yeni projede aynı hataları tekrarlamamak için bu rehberi adım adım takip edin ve özellikle **Bölüm 6 (Hatalar)** ve **Bölüm 9 (Isınma Protokolü)** bölümlerine özel dikkat gösterin.
