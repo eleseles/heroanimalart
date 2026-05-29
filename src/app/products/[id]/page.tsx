@@ -6,6 +6,7 @@ import { ShieldCheck, Truck, RefreshCw, Info, FileText, Tag as TagIcon, ArrowRig
 import { Metadata } from 'next';
 import ProductGallery from '@/components/ProductGallery';
 import ProductCard from '@/components/ProductCard';
+import ProductActions from '@/components/ProductActions';
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -114,17 +115,7 @@ export default async function ProductPage({ params }: Props) {
           <h1 className="product-detail-title">{product.name}</h1>
           <div className="product-detail-price">{product.currency === 'USD' ? '$' : product.currency}{product.price.toFixed(2)}</div>
           
-          <div className="product-detail-actions" style={{ marginBottom: '2.5rem' }}>
-            <a 
-              href={`https://www.etsy.com/search?q=${encodeURIComponent(product.name + ' Great Wooden')}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary w-full text-center"
-              style={{ padding: '1rem 2rem', fontSize: '1rem', letterSpacing: '0.05em' }}
-            >
-              PURCHASE ON ETSY
-            </a>
-          </div>
+          <ProductActions product={product} />
 
           <div className="product-detail-section">
             <h2 className="section-small-title"><FileText size={14} /> SPECIFICATIONS</h2>

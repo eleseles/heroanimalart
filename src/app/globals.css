@@ -1789,4 +1789,116 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ────────────────────────────────────────────────────────
+   DIRECT DIGITAL CHECKOUT MODAL STYLES
+   ──────────────────────────────────────────────────────── */
+.checkout-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.checkout-modal {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  border: 1px solid var(--border-color);
+  position: relative;
+  animation: scaleUp 0.3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.checkout-close {
+  position: absolute;
+  top: 1.5rem; right: 1.5rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+}
+
+.checkout-close:hover {
+  color: var(--text-primary);
+}
+
+.checkout-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.checkout-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkout-input-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.checkout-input {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #ffffff;
+  color: #000000;
+}
+
+.checkout-input:focus {
+  border-color: var(--text-primary);
+}
+
+.checkout-success-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.success-circle {
+  width: 64px;
+  height: 64px;
+  background: #f0fdf4;
+  color: #16a34a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  border: 1px solid #bbf7d0;
+}
+
+
 
