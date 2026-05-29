@@ -60,15 +60,22 @@ export default function ProductActions({ product }: ProductActionsProps) {
           padding: '1.1rem 2rem', 
           fontSize: '1rem', 
           letterSpacing: '0.05em',
-          fontWeight: 600,
-          background: '#000000',
+          fontWeight: 700,
+          background: isRedirecting ? '#555' : 'linear-gradient(135deg, #16a34a 0%, #15803d 100%)',
           color: '#ffffff',
-          border: '1px solid #000000',
+          border: 'none',
+          borderRadius: '10px',
           opacity: isRedirecting ? 0.7 : 1,
-          cursor: isRedirecting ? 'not-allowed' : 'pointer'
+          cursor: isRedirecting ? 'not-allowed' : 'pointer',
+          boxShadow: isRedirecting ? 'none' : '0 4px 14px rgba(22,163,74,0.35)',
+          transition: 'all 0.2s ease'
         }}
       >
-        {isRedirecting ? 'SECURE REDIRECTING...' : `BUY NOW — $${product.price.toFixed(2)}`}
+        {isRedirecting ? 'SECURE REDIRECTING...' : (
+          product.originalPrice 
+            ? <>BUY NOW — ${product.price.toFixed(2)} <span style={{ textDecoration: 'line-through', opacity: 0.6, marginLeft: '0.4rem', fontWeight: 400, fontSize: '0.85rem' }}>${product.originalPrice.toFixed(2)}</span></>
+            : `BUY NOW — $${product.price.toFixed(2)}`
+        )}
       </button>
 
       {/* Purchase on Etsy Button */}

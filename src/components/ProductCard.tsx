@@ -18,18 +18,36 @@ export default function ProductCard({ product }: ProductCardProps) {
           className="product-image object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {product.originalPrice && (
-          <span className="absolute top-3 left-3 bg-rose-600 text-white font-bold text-[10px] uppercase tracking-widest px-2.5 py-1 rounded shadow-sm z-10">
-            20% OFF
+          <span style={{
+            position: 'absolute',
+            top: '10px',
+            left: '10px',
+            background: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+            color: '#fff',
+            fontWeight: 800,
+            fontSize: '0.65rem',
+            letterSpacing: '0.08em',
+            padding: '0.3rem 0.6rem',
+            borderRadius: '6px',
+            zIndex: 10,
+            boxShadow: '0 2px 8px rgba(239,68,68,0.35)',
+            textTransform: 'uppercase' as const
+          }}>
+            −20%
           </span>
         )}
       </div>
       <div className="product-category mt-3 text-xs uppercase tracking-wider text-gray-500">{product.category}</div>
       <h3 className="product-title mt-1 text-sm font-medium line-clamp-2" title={product.name}>{product.name}</h3>
       <div className="product-price mt-2 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <span className="font-semibold text-gray-900">${product.price.toFixed(2)}</span>
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.4rem' }}>
+          <span style={{ fontWeight: 700, color: product.originalPrice ? '#16a34a' : '#111', fontSize: '0.95rem' }}>
+            ${product.price.toFixed(2)}
+          </span>
           {product.originalPrice && (
-            <span className="text-xs text-gray-400 line-through font-light">${product.originalPrice.toFixed(2)}</span>
+            <span style={{ fontSize: '0.75rem', color: '#9ca3af', textDecoration: 'line-through', fontWeight: 400 }}>
+              ${product.originalPrice.toFixed(2)}
+            </span>
           )}
         </div>
         <div className="add-to-cart-dummy text-xs font-medium text-black underline underline-offset-4 opacity-0 transition-opacity group-hover:opacity-100">

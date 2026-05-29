@@ -113,19 +113,70 @@ export default async function ProductPage({ params }: Props) {
         <div className="product-detail-info">
           <div className="product-detail-category">{product.category}</div>
           <h1 className="product-detail-title">{product.name}</h1>
-          <div className="product-detail-price" style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', flexWrap: 'wrap' }}>
-            <span className="font-semibold text-gray-900">
-              {product.currency === 'USD' ? '$' : product.currency}{product.price.toFixed(2)}
-            </span>
-            {product.originalPrice && (
-              <>
-                <span className="text-base text-gray-400 line-through font-light">
-                  {product.currency === 'USD' ? '$' : product.currency}{product.originalPrice.toFixed(2)}
-                </span>
-                <span className="inline-flex items-center bg-rose-50 text-rose-700 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-rose-100" style={{ transform: 'translateY(-2px)' }}>
-                  Save 20% Today
-                </span>
-              </>
+
+          {/* Premium Price Block */}
+          <div style={{ marginBottom: '2rem' }}>
+            {product.originalPrice ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <span style={{ 
+                    fontSize: '2.2rem', 
+                    fontWeight: 700, 
+                    color: '#16a34a',
+                    letterSpacing: '-0.03em',
+                    lineHeight: 1
+                  }}>
+                    ${product.price.toFixed(2)}
+                  </span>
+                  <span style={{
+                    fontSize: '1.2rem',
+                    fontWeight: 400,
+                    color: '#9ca3af',
+                    textDecoration: 'line-through',
+                    textDecorationColor: '#ef4444',
+                    textDecorationThickness: '2px',
+                    lineHeight: 1
+                  }}>
+                    ${product.originalPrice.toFixed(2)}
+                  </span>
+                </div>
+                <div style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  background: 'linear-gradient(135deg, #fef2f2 0%, #fff1f2 100%)',
+                  border: '1px solid #fecdd3',
+                  borderRadius: '8px',
+                  padding: '0.5rem 0.85rem',
+                  width: 'fit-content'
+                }}>
+                  <span style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    background: '#ef4444',
+                    color: '#fff',
+                    fontSize: '0.65rem',
+                    fontWeight: 800,
+                    padding: '0.2rem 0.5rem',
+                    borderRadius: '4px',
+                    letterSpacing: '0.06em',
+                    textTransform: 'uppercase' as const
+                  }}>
+                    −20%
+                  </span>
+                  <span style={{
+                    fontSize: '0.8rem',
+                    fontWeight: 600,
+                    color: '#be123c',
+                    letterSpacing: '0.01em'
+                  }}>
+                    You save ${(product.originalPrice - product.price).toFixed(2)} on this blueprint
+                  </span>
+                </div>
+              </div>
+            ) : (
+              <span className="product-detail-price">${product.price.toFixed(2)}</span>
             )}
           </div>
           
