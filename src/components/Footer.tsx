@@ -11,27 +11,27 @@ export default function Footer() {
               GREAT WOODEN
             </div>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '0.875rem', lineHeight: '1.6' }}>
-              Design without compromise. Essential pieces for the modern individual.
+              Empowering homesteaders, event managers, and DIY workshop enthusiasts with highly detailed, double-checked metric &amp; imperial woodworking plans that minimize material waste and guarantee structural perfection.
             </p>
           </div>
           
           <div className="footer-col">
-            <h3>Shop</h3>
+            <h3>Shop Blueprints</h3>
             <ul className="footer-links">
-              <li><Link href="#">New Arrivals</Link></li>
-              <li><Link href="#">Essentials</Link></li>
-              <li><Link href="#">Objects</Link></li>
-              <li><Link href="#">Archive</Link></li>
+              <li><Link href="/products">All Build Plans</Link></li>
+              <li><Link href="/products?category=food-cart">Coffee Carts &amp; Bars</Link></li>
+              <li><Link href="/products?category=farmstand">Roadside Farmstands</Link></li>
+              <li><Link href="/collections">Curated Collections</Link></li>
             </ul>
           </div>
           
           <div className="footer-col">
             <h3>Assistance</h3>
             <ul className="footer-links">
-              <li><Link href="/contact">Contact</Link></li>
-              <li><Link href="/shipping">Shipping</Link></li>
-              <li><Link href="/returns">Returns</Link></li>
-              <li><Link href="/faq">FAQ</Link></li>
+              <li><Link href="/contact">Contact Support</Link></li>
+              <li><Link href="/shipping">Digital Delivery</Link></li>
+              <li><Link href="/returns">Refund Policy</Link></li>
+              <li><Link href="/faq">Help &amp; FAQ</Link></li>
             </ul>
           </div>
           
@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} GREAT WOODEN STUDIO.</p>
+          <p>&copy; {new Date().getFullYear()} GREAT WOODEN. ALL RIGHTS RESERVED.</p>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
             <a href="#" style={{ transition: 'opacity 0.2s', textDecoration: 'none' }}>INSTAGRAM</a>
             <a href="#" style={{ transition: 'opacity 0.2s', textDecoration: 'none' }}>TWITTER</a>
@@ -57,3 +57,4 @@ export default function Footer() {
     </footer>
   );
 }
+
