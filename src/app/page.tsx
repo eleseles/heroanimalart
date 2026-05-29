@@ -51,25 +51,43 @@ export default function Home() {
 
       {/* Editorial Section */}
       <section style={{ borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)', padding: '0' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', minHeight: '600px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', minHeight: '650px' }}>
           <div style={{ padding: '6rem 4rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem' }}>Design Principles</h2>
-            <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', fontSize: '1.125rem' }}>
-              We believe in removing the unnecessary so the essential may speak. Every product is a result of rigorous reduction.
-            </p>
-            <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.125rem' }}>
-              Form follows function, but elegance is never compromised.
-            </p>
+            <h2 style={{ fontSize: '2.5rem', marginBottom: '2.5rem', fontWeight: 500 }}>Why Builders Choose Us</h2>
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', marginBottom: '3rem' }}>
+              <div>
+                <h3 style={{ fontSize: '1.125rem', fontWeight: 500, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>📏 Imperial &amp; Metric Formats</h3>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9375rem', lineHeight: '1.6' }}>
+                  No more conversion headaches. Every project guide includes complete dimensions in both inches and millimeters.
+                </p>
+              </div>
+              
+              <div>
+                <h3 style={{ fontSize: '1.125rem', fontWeight: 500, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>🪵 Material &amp; Cut Optimization</h3>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9375rem', lineHeight: '1.6' }}>
+                  Save money at the lumber yard. Our detailed blueprints provide exact shopping lists and optimized cut plans to prevent wood waste.
+                </p>
+              </div>
+
+              <div>
+                <h3 style={{ fontSize: '1.125rem', fontWeight: 500, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>📐 Clear 3D Visual Assembly</h3>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9375rem', lineHeight: '1.6' }}>
+                  Highly detailed CAD drawings and exploded views guide you step-by-step from base construction to final finishing details.
+                </p>
+              </div>
+            </div>
+            
             <div>
-              <button className="btn btn-secondary">
-                READ THE MANIFESTO
-              </button>
+              <a href="/products" className="btn btn-primary">
+                START BUILDING NOW
+              </a>
             </div>
           </div>
           <div style={{ borderLeft: '1px solid var(--border-color)', position: 'relative' }}>
             <img 
-              src="https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&q=80&w=1000" 
-              alt="Editorial" 
+              src="https://images.unsplash.com/photo-1455729552865-3ef58a362917?auto=format&fit=crop&q=80&w=1000" 
+              alt="Hand-crafted wood sanding details" 
               style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
