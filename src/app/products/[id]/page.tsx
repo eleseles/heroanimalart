@@ -114,30 +114,13 @@ export default async function ProductPage({ params }: Props) {
           <h1 className="product-detail-title">{product.name}</h1>
           <div className="product-detail-price">{product.currency === 'USD' ? '$' : product.currency}{product.price.toFixed(2)}</div>
           
-          <div className="product-detail-section">
-            <h2 className="section-small-title"><Info size={14} /> DESCRIPTION</h2>
-            <p className="product-detail-description">
-              {product.description}
-            </p>
-          </div>
-
-          {product.tags && product.tags.length > 0 && (
-            <div className="product-detail-section">
-              <h2 className="section-small-title"><TagIcon size={14} /> TAGS</h2>
-              <div className="product-tags">
-                {product.tags.map((tag, idx) => (
-                  <span key={idx} className="tag-badge">{tag}</span>
-                ))}
-              </div>
-            </div>
-          )}
-
-          <div className="product-detail-actions">
+          <div className="product-detail-actions" style={{ marginBottom: '2.5rem' }}>
             <a 
               href={`https://www.etsy.com/search?q=${encodeURIComponent(product.name + ' Great Wooden')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary w-full text-center"
+              style={{ padding: '1rem 2rem', fontSize: '1rem', letterSpacing: '0.05em' }}
             >
               PURCHASE ON ETSY
             </a>
@@ -152,7 +135,7 @@ export default async function ProductPage({ params }: Props) {
             </ul>
           </div>
 
-          <div className="product-detail-meta">
+          <div className="product-detail-meta" style={{ marginTop: '2.5rem' }}>
             <div className="meta-item">
               <Truck size={18} strokeWidth={1} />
               <span>Instant Digital Delivery</span>
@@ -168,6 +151,31 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </div>
       </div>
+
+      {/* Full-width Product Description Section below the grid */}
+      <section className="product-story-section" style={{ marginTop: '5rem', paddingTop: '4rem', borderTop: '1px solid var(--border-color)' }}>
+        <div className="story-content" style={{ maxWidth: '900px' }}>
+          <h2 className="story-title" style={{ fontSize: '1.75rem', fontWeight: 500, marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.6rem', letterSpacing: '-0.02em' }}>
+            <Info size={20} /> Project Description &amp; Build Specifications
+          </h2>
+          <div style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.8', whiteSpace: 'pre-line' }}>
+            {product.description}
+          </div>
+        </div>
+
+        {product.tags && product.tags.length > 0 && (
+          <div style={{ marginTop: '4rem', paddingTop: '2.5rem', borderTop: '1px dashed var(--border-color)' }}>
+            <span style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-primary)', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '1rem' }}>
+              Project Tags
+            </span>
+            <div className="product-tags">
+              {product.tags.map((tag, idx) => (
+                <span key={idx} className="tag-badge">{tag}</span>
+              ))}
+            </div>
+          </div>
+        )}
+      </section>
 
       {/* Reviews Section */}
       <section className="product-reviews-section">
