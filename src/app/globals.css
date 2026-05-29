@@ -1755,4 +1755,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Responsive overrides for optimal mobile header & navigation spacing */
+@media (max-width: 768px) {
+  .breadcrumbs {
+    display: none !important;
+  }
+  .announcement-bar {
+    font-size: 0.6rem !important;
+    letter-spacing: 0.04em !important;
+    padding: 0.5rem 0.75rem !important;
+    height: 30px !important;
+  }
+  .product-detail-page {
+    padding-top: 90px !important;
+  }
+  .legal-page {
+    padding-top: 95px !important;
+  }
+}
+
 

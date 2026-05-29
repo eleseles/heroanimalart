@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { ShoppingBag, Search, User, Menu, X } from 'lucide-react';
 
 const announcements = [
-  "📏 All blueprints include BOTH Imperial & Metric measurements",
-  "📩 100% Instant high-quality PDF downloads right after checkout",
-  "⚡ Optimized lumber cut lists save up to 30% on materials"
+  "📏 Dual Imperial & Metric Measurements Included",
+  "📩 Instant PDF Downloads Right After Checkout",
+  "⚡ Optimized Cut Lists Save 30% on Wood Costs"
 ];
 
 export default function Navbar() {
