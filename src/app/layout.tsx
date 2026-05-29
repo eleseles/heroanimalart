@@ -4,10 +4,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://freediyplans.com'),
+  metadataBase: new URL('https://greatwooden.com'),
   title: {
-    default: "Bizilla Creative | Premium DIY Woodworking Plans",
-    template: "%s | Bizilla Creative"
+    default: "Great Wooden | Premium DIY Woodworking Plans",
+    template: "%s | Great Wooden"
   },
   description: "Download premium DIY woodworking plans and blueprints. Build your own furniture, outdoor projects, and more with our detailed guides.",
   alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   verification: {
     other: {
-      'p:domain_verify': '6c8d3c84aaedf525f44f8032be6db0cb',
+      'p:domain_verify': 'e392326cbbe308428d300aed5349f90e',
     },
   },
 };
@@ -28,8 +28,8 @@ export default function RootLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Bizilla Creative',
-    url: 'https://freediyplans.com',
+    name: 'Great Wooden',
+    url: 'https://greatwooden.com',
     description: 'Premium DIY woodworking plans. Build your dream projects at home. Shop our plans directly on Etsy.',
   };
 

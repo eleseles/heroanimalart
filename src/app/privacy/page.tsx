@@ -2,8 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Bizilla Studio',
-  description: 'How we collect, use, and protect your personal data at Bizilla Studio.',
+  title: 'Privacy Policy | Great Wooden',
+  description: 'How we collect, use, and protect your personal data at Great Wooden.',
 };
 
 export default function PrivacyPage() {

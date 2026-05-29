@@ -2,8 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Imprint | Bizilla Studio',
-  description: 'Legal information about Bizilla Studio.',
+  title: 'Imprint | Great Wooden',
+  description: 'Legal information about Great Wooden.',
 };
 
 export default function ImprintPage() {
@@ -13,7 +13,7 @@ export default function ImprintPage() {
       
       <h2>Contact Information</h2>
       <p>
-        Bizilla Studio GmbH<br />
+        Great Wooden GmbH<br />
         Minimalstrasse 12<br />
         10115 Berlin, Germany
       </p>

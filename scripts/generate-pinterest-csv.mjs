@@ -18,9 +18,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // ─── Config ───
-const DOMAIN = 'https://freediyplans.com';
+const DOMAIN = 'https://greatwooden.com';
 const PINS_PER_DAY = 5;
 const START_DATE = '2026-05-11'; // Isınma başlangıç tarihi
+
+// Pinterest'in beklediği kesin başlık isimleri
+const CSV_HEADERS = ['Title', 'Description', 'Link', 'Media URL', 'Pinterest board'];
 
 // Board mapping - ürün kategorisine göre board atama
 const BOARD_MAP = {
@@ -55,6 +58,8 @@ const BOARD_MAP = {
   'Playhouse Plans': 'Kids & Family Builds',
   'Shed Plans': 'Workshop & Garage',
   'Workbench Plans': 'Workshop & Garage',
+  'Carpenter Bee Trap': 'Outdoor Projects & Garden',
+  'Christmas': 'DIY Woodworking Plans',
 };
 
 const DEFAULT_BOARD = 'DIY Woodworking Plans';
@@ -151,16 +156,26 @@ function main() {
   const batch = products.slice(startIdx, endIdx);
   
   // Generate CSV
-  let csv = 'title,media_url,destination_url,board,description\n';
+  let csv = CSV_HEADERS.join(',') + '\n';
   
   batch.forEach(product => {
     const board = getBoard(product);
-    const title = product.name.substring(0, 100); // Max 100 chars
-    const mediaUrl = product.image;
+    const title = product.name.substring(0, 100);
     const destUrl = `${DOMAIN}/products/${product.id}`;
-    const description = generateDescription(product, board);
     
-    csv += `${csvEscape(title)},${mediaUrl},${destUrl},${csvEscape(board)},${csvEscape(description)}\n`;
+    // Her resim için ayrı bir pin oluştur (max 5 resim)
+    const imagesToPin = product.images.slice(0, 5);
+    
+    imagesToPin.forEach((mediaUrl, index) => {
+      // Her pin için Başlık ve Açıklamayı benzersiz yapalım
+      const variation = index === 0 ? '' : ` - View ${index + 1}`;
+      
+      // Başlığı 100 karakter sınırına göre kesip son eki ekle
+      const uniqueTitle = (product.name.substring(0, 90) + variation).trim();
+      const description = generateDescription(product, board) + variation;
+      
+      csv += `${csvEscape(uniqueTitle)},${csvEscape(description)},${csvEscape(destUrl)},${csvEscape(mediaUrl)},${csvEscape(board)}\n`;
+    });
   });
   
   // Save to output directory

@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!product) return { title: 'Product Not Found' };
 
   return {
-    title: `${product.name} | Bizilla Creative`,
+    title: `${product.name} | Great Wooden`,
     description: product.description,
     alternates: {
       canonical: `/products/${id}`,
@@ -78,7 +78,7 @@ export default async function ProductPage({ params }: Props) {
     description: product.description,
     brand: {
       '@type': 'Brand',
-      name: 'Bizilla Creative',
+      name: 'Great Wooden',
     },
     offers: {
       '@type': 'Offer',
@@ -134,7 +134,7 @@ export default async function ProductPage({ params }: Props) {
 
           <div className="product-detail-actions">
             <a 
-              href={`https://www.etsy.com/search?q=${encodeURIComponent(product.name + ' Bizilla')}`}
+              href={`https://www.etsy.com/search?q=${encodeURIComponent(product.name + ' Great Wooden')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary w-full text-center"

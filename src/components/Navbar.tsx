@@ -20,7 +20,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'glass' : ''}`}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Link href="/" className="logo">
-          BIZILLA
+          GREAT WOODEN
         </Link>
 
         <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>

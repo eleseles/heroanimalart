@@ -4,8 +4,8 @@ import ProductCard from '@/components/ProductCard';
 import { products } from '@/data/products';
 
 export const metadata: Metadata = {
-  title: 'Shop All | Bizilla Studio',
-  description: 'Browse our complete collection of minimal tech and essential objects.',
+  title: 'Shop All | Great Wooden',
+  description: 'Browse our complete collection of premium DIY woodworking plans.',
 };
 
 export default function ShopPage() {

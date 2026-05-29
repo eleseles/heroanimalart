@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Returns | Bizilla Studio',
+  title: 'Returns | Great Wooden',
   description: 'Our returns policy and instructions for returning or exchanging items.',
 };
 

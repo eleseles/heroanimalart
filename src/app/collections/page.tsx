@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Collections | Bizilla Studio',
-  description: 'Explore our curated series of design-focused objects and technology.',
+  title: 'Collections | Great Wooden',
+  description: 'Explore our curated series of design-focused objects and woodworking plans.',
 };
 
 const collections = [
@@ -24,7 +24,7 @@ const collections = [
   {
     id: 'archive',
     name: 'The Archive',
-    description: 'Limited releases and historical pieces from the Bizilla design vault.',
+    description: 'Limited releases and historical pieces from the Great Wooden design vault.',
     image: 'https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&q=80&w=1000'
   }
 ];

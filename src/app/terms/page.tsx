@@ -2,8 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Bizilla Studio',
-  description: 'Our terms and conditions for using the Bizilla Studio website and services.',
+  title: 'Terms of Service | Great Wooden',
+  description: 'Our terms and conditions for using the Great Wooden website and services.',
 };
 
 export default function TermsPage() {
@@ -15,7 +15,7 @@ export default function TermsPage() {
 
       <h2>1. Introduction</h2>
       <p>
-        Welcome to Bizilla Studio. By accessing our website, you agree to be bound by these Terms of Service. 
+        Welcome to Great Wooden. By accessing our website, you agree to be bound by these Terms of Service. 
         If you disagree with any part of the terms, you may not access our services.
       </p>
 
@@ -36,7 +36,7 @@ export default function TermsPage() {
 
       <h2>4. Limitation of Liability</h2>
       <p>
-        Bizilla Studio shall not be liable for any indirect, incidental, or consequential damages resulting 
+        Great Wooden shall not be liable for any indirect, incidental, or consequential damages resulting 
         from the use or inability to use our services.
       </p>
 

@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-col" style={{ paddingRight: '2rem' }}>
             <div className="logo" style={{ marginBottom: '2rem' }}>
-              BIZILLA
+              GREAT WOODEN
             </div>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '0.875rem', lineHeight: '1.6' }}>
               Design without compromise. Essential pieces for the modern individual.
@@ -46,11 +46,11 @@ export default function Footer() {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} BIZILLA STUDIO.</p>
+          <p>&copy; {new Date().getFullYear()} GREAT WOODEN STUDIO.</p>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
             <a href="#" style={{ transition: 'opacity 0.2s', textDecoration: 'none' }}>INSTAGRAM</a>
             <a href="#" style={{ transition: 'opacity 0.2s', textDecoration: 'none' }}>TWITTER</a>
-            <a href="#" style={{ transition: 'opacity 0.2s', textDecoration: 'none' }}>PINTEREST</a>
+            <a href="https://www.pinterest.com/GreatWooden/" target="_blank" rel="noopener noreferrer" style={{ transition: 'opacity 0.2s', textDecoration: 'none' }}>PINTEREST</a>
           </div>
         </div>
       </div>
