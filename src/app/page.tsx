@@ -28,8 +28,8 @@ export default function Home() {
         </div>
         <div className="hero-image-wrapper">
           <img 
-            src="https://images.unsplash.com/photo-1581456495147-41799d4a04d0?auto=format&fit=crop&q=80&w=1000" 
-            alt="Handcrafting woodworking detail" 
+            src="/hero.png" 
+            alt="Great Wooden DIY Plans" 
             className="hero-image"
           />
         </div>
