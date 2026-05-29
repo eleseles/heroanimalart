@@ -17,11 +17,21 @@ export default function ProductCard({ product }: ProductCardProps) {
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           className="product-image object-cover transition-transform duration-500 group-hover:scale-105"
         />
+        {product.originalPrice && (
+          <span className="absolute top-3 left-3 bg-rose-600 text-white font-bold text-[10px] uppercase tracking-widest px-2.5 py-1 rounded shadow-sm z-10">
+            20% OFF
+          </span>
+        )}
       </div>
       <div className="product-category mt-3 text-xs uppercase tracking-wider text-gray-500">{product.category}</div>
       <h3 className="product-title mt-1 text-sm font-medium line-clamp-2" title={product.name}>{product.name}</h3>
       <div className="product-price mt-2 flex items-center justify-between">
-        <span className="font-semibold text-gray-900">${product.price.toFixed(2)}</span>
+        <div className="flex items-center gap-2">
+          <span className="font-semibold text-gray-900">${product.price.toFixed(2)}</span>
+          {product.originalPrice && (
+            <span className="text-xs text-gray-400 line-through font-light">${product.originalPrice.toFixed(2)}</span>
+          )}
+        </div>
         <div className="add-to-cart-dummy text-xs font-medium text-black underline underline-offset-4 opacity-0 transition-opacity group-hover:opacity-100">
           View Details
         </div>

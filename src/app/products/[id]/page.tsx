@@ -113,7 +113,21 @@ export default async function ProductPage({ params }: Props) {
         <div className="product-detail-info">
           <div className="product-detail-category">{product.category}</div>
           <h1 className="product-detail-title">{product.name}</h1>
-          <div className="product-detail-price">{product.currency === 'USD' ? '$' : product.currency}{product.price.toFixed(2)}</div>
+          <div className="product-detail-price" style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <span className="font-semibold text-gray-900">
+              {product.currency === 'USD' ? '$' : product.currency}{product.price.toFixed(2)}
+            </span>
+            {product.originalPrice && (
+              <>
+                <span className="text-base text-gray-400 line-through font-light">
+                  {product.currency === 'USD' ? '$' : product.currency}{product.originalPrice.toFixed(2)}
+                </span>
+                <span className="inline-flex items-center bg-rose-50 text-rose-700 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-rose-100" style={{ transform: 'translateY(-2px)' }}>
+                  Save 20% Today
+                </span>
+              </>
+            )}
+          </div>
           
           <ProductActions product={product} />
 

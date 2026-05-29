@@ -47,7 +47,10 @@ export async function GET() {
     xml += `
     <g:condition>new</g:condition>
     <g:availability>in stock</g:availability>
-    <g:price>${product.price.toFixed(2)} USD</g:price>
+    ${product.originalPrice ? `
+    <g:price>${product.originalPrice.toFixed(2)} USD</g:price>
+    <g:sale_price>${product.price.toFixed(2)} USD</g:sale_price>` : `
+    <g:price>${product.price.toFixed(2)} USD</g:price>`}
     <g:brand>Great Wooden</g:brand>
     <g:google_product_category><![CDATA[Arts & Crafts > Patterns]]></g:google_product_category>
     <g:product_type><![CDATA[Woodworking Plans]]></g:product_type>
