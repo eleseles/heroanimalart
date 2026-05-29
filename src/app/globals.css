@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  padding-top: 160px;
+  padding-top: 200px;
   position: relative;
 }
 
@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-image-wrapper {
   position: absolute;
   right: 5%;
-  top: 55%;
+  top: 60%;
   transform: translateY(-50%);
   width: 500px;
   height: 600px;
