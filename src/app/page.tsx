@@ -12,24 +12,24 @@ export default function Home() {
         <div className="hero-content animate-fade-in">
           <div className="hero-badge">ESSENTIALS — COLLECTION 01</div>
           <h1 className="hero-title">
-            Redefining<br />Everyday Objects
+            Build Your Own<br />Masterpieces
           </h1>
           <p className="hero-desc">
-            A curated selection of minimalist tools for the modern individual. Designed with purpose, crafted to last.
+            Download highly detailed blueprints and step-by-step guides. Build custom furniture, outdoor structures, and beautiful home decor with ease.
           </p>
           <div className="hero-actions">
             <button className="btn btn-primary">
-              EXPLORE COLLECTION
+              BROWSE PLANS
             </button>
             <button className="btn btn-secondary">
-              ABOUT US
+              READ REVIEWS
             </button>
           </div>
         </div>
         <div className="hero-image-wrapper">
           <img 
-            src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&q=80&w=1000" 
-            alt="Minimal object" 
+            src="https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?auto=format&fit=crop&q=80&w=1000" 
+            alt="Woodworking workshop tools" 
             className="hero-image"
           />
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
             <img 
               src="https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&q=80&w=1000" 
               alt="Editorial" 
-              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(100%)' }}
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
         </div>
