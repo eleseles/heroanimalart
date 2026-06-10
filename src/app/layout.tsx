@@ -6,16 +6,16 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   metadataBase: new URL('https://heroanimalart.com'),
   title: {
-    default: "HeroAnimalArt | Premium DIY Woodworking Plans",
+    default: "HeroAnimalArt | Premium Digital Art Prints & Posters",
     template: "%s | HeroAnimalArt"
   },
-  description: "Download premium DIY woodworking plans and blueprints. Build your own furniture, outdoor projects, and more with our detailed guides.",
+  description: "Download high-quality digital poster designs and art prints instantly. Elevate your home decor with our unique, print-ready digital artwork in multiple sizes.",
   alternates: {
     canonical: '/',
   },
   verification: {
     other: {
-      'p:domain_verify': 'e392326cbbe308428d300aed5349f90e',
+      'p:domain_verify': '03477f5f861ec3ac9f934bd8d4dca27f',
     },
   },
 };
@@ -30,7 +30,7 @@ export default function RootLayout({
     '@type': 'WebSite',
     name: 'HeroAnimalArt',
     url: 'https://heroanimalart.com',
-    description: 'Premium DIY woodworking plans. Build your dream projects at home. Shop our plans directly on Etsy.',
+    description: 'Premium digital art prints and posters. Instantly download high-quality digital artwork for your home decor. Shop unique designs.',
   };
 
   return (
