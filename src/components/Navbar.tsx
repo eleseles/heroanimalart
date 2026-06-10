@@ -48,7 +48,6 @@ export default function Navbar() {
             <Link href="/products" className="nav-link">ALL POSTERS</Link>
             <Link href="/products?category=new" className="nav-link">NEW ARRIVALS</Link>
             <Link href="/products?category=best-sellers" className="nav-link">BEST SELLERS</Link>
-            <Link href="/collections" className="nav-link">CURATED SERIES</Link>
           </div>
 
           <div className="nav-actions">

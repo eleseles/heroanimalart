@@ -21,7 +21,6 @@ export default function Footer() {
               <li><Link href="/products">All Art Prints</Link></li>
               <li><Link href="/products?category=new">New Arrivals</Link></li>
               <li><Link href="/products?category=best-sellers">Best Sellers</Link></li>
-              <li><Link href="/collections">Curated Collections</Link></li>
             </ul>
           </div>
           
