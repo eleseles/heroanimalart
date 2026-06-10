@@ -42,11 +42,11 @@ export default function ProductCard({ product }: ProductCardProps) {
       <div className="product-price mt-2 flex items-center justify-between">
         <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.4rem' }}>
           <span style={{ fontWeight: 700, color: product.originalPrice ? '#16a34a' : '#111', fontSize: '0.95rem' }}>
-            ${product.price.toFixed(2)}
+            ₺{product.price.toFixed(2)}
           </span>
           {product.originalPrice && (
             <span style={{ fontSize: '0.75rem', color: '#9ca3af', textDecoration: 'line-through', fontWeight: 400 }}>
-              ${product.originalPrice.toFixed(2)}
+              ₺{product.originalPrice.toFixed(2)}
             </span>
           )}
         </div>
