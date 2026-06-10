@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         products: [polarProductId],
         // You can redirect them to a success page on your domain after payment
-        success_url: `https://greatwooden.com/products?success=true&product=${encodeURIComponent(productName || 'plans')}`
+        success_url: `https://heroanimalart.com/products?success=true&product=${encodeURIComponent(productName || 'plans')}`
       })
     });
 

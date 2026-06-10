@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact | Great Wooden',
-  description: 'Get in touch with the Great Wooden team for support and inquiries.',
+  title: 'Contact | HeroAnimalArt',
+  description: 'Get in touch with the HeroAnimalArt team for support and inquiries.',
 };
 
 export default function ContactPage() {

@@ -2,8 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Great Wooden',
-  description: 'How we collect, use, and protect your personal data at Great Wooden.',
+  title: 'Privacy Policy | HeroAnimalArt',
+  description: 'How we collect, use, and protect your personal data at HeroAnimalArt.',
 };
 
 export default function PrivacyPage() {

@@ -15,12 +15,12 @@ export async function GET() {
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
 <channel>
-  <title>Great Wooden - Dynamic Catalog</title>
-  <link>https://greatwooden.com</link>
+  <title>HeroAnimalArt - Dynamic Catalog</title>
+  <link>https://heroanimalart.com</link>
   <description>Drip-fed DIY Woodworking Plans</description>`;
 
   visibleProducts.forEach(product => {
-    const productUrl = `https://greatwooden.com/products/${product.id}`;
+    const productUrl = `https://heroanimalart.com/products/${product.id}`;
     
     const productTitle = product.name.length > 95 ? product.name.substring(0, 95) + '...' : product.name;
     const productDesc = product.description.length > 450 ? product.description.substring(0, 450) + '...' : product.description;
@@ -51,7 +51,7 @@ export async function GET() {
     <g:price>${product.originalPrice.toFixed(2)} USD</g:price>
     <g:sale_price>${product.price.toFixed(2)} USD</g:sale_price>` : `
     <g:price>${product.price.toFixed(2)} USD</g:price>`}
-    <g:brand>Great Wooden</g:brand>
+    <g:brand>HeroAnimalArt</g:brand>
     <g:google_product_category><![CDATA[Arts & Crafts > Patterns]]></g:google_product_category>
     <g:product_type><![CDATA[Woodworking Plans]]></g:product_type>
   </item>`;

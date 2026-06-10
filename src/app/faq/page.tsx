@@ -2,8 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'FAQ | Great Wooden',
-  description: 'Frequently asked questions about Great Wooden products, orders, and services.',
+  title: 'FAQ | HeroAnimalArt',
+  description: 'Frequently asked questions about HeroAnimalArt products, orders, and services.',
 };
 
 export default function FAQPage() {
@@ -23,10 +23,10 @@ export default function FAQPage() {
       <h2>Products</h2>
       <div style={{ marginBottom: '3rem' }}>
         <h3 style={{ fontSize: '1rem', fontWeight: 500, marginBottom: '0.5rem' }}>Where are your products made?</h3>
-        <p>All Great Wooden products are designed in our workshop and manufactured by artisan partners who share our commitment to quality and sustainability.</p>
+        <p>All HeroAnimalArt products are designed in our workshop and manufactured by artisan partners who share our commitment to quality and sustainability.</p>
         
         <h3 style={{ fontSize: '1rem', fontWeight: 500, marginBottom: '0.5rem', marginTop: '1.5rem' }}>Do you offer a warranty?</h3>
-        <p>Yes, all Great Wooden products come with a 2-year extended warranty covering manufacturing defects.</p>
+        <p>Yes, all HeroAnimalArt products come with a 2-year extended warranty covering manufacturing defects.</p>
       </div>
 
       <h2>Shipping & Returns</h2>

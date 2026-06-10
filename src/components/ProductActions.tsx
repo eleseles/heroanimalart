@@ -80,7 +80,7 @@ export default function ProductActions({ product }: ProductActionsProps) {
 
       {/* Purchase on Etsy Button */}
       <a 
-        href={`https://www.etsy.com/search?q=${encodeURIComponent(product.name + ' Great Wooden')}`}
+        href={`https://www.etsy.com/search?q=${encodeURIComponent(product.name + ' HeroAnimalArt')}`}
         target="_blank"
         rel="noopener noreferrer"
         className="btn btn-secondary w-full text-center"

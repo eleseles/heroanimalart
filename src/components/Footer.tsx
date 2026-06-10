@@ -8,19 +8,19 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-col" style={{ paddingRight: '2rem' }}>
             <div className="logo" style={{ marginBottom: '2rem' }}>
-              GREAT WOODEN
+              HEROANIMALART
             </div>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '0.875rem', lineHeight: '1.6' }}>
-              Empowering homesteaders, event managers, and DIY workshop enthusiasts with highly detailed, double-checked metric &amp; imperial woodworking plans that minimize material waste and guarantee structural perfection.
+              Discover unique, high-quality digital poster designs and art prints to elevate your home decor. Instant downloads in multiple sizes for easy, affordable styling.
             </p>
           </div>
           
           <div className="footer-col">
-            <h3>Shop Blueprints</h3>
+            <h3>Shop Posters</h3>
             <ul className="footer-links">
-              <li><Link href="/products">All Build Plans</Link></li>
-              <li><Link href="/products?category=food-cart">Coffee Carts &amp; Bars</Link></li>
-              <li><Link href="/products?category=farmstand">Roadside Farmstands</Link></li>
+              <li><Link href="/products">All Art Prints</Link></li>
+              <li><Link href="/products?category=new">New Arrivals</Link></li>
+              <li><Link href="/products?category=best-sellers">Best Sellers</Link></li>
               <li><Link href="/collections">Curated Collections</Link></li>
             </ul>
           </div>
@@ -46,11 +46,11 @@ export default function Footer() {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} GREAT WOODEN. ALL RIGHTS RESERVED.</p>
+          <p>&copy; {new Date().getFullYear()} HEROANIMALART. ALL RIGHTS RESERVED.</p>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
             <a href="#" style={{ transition: 'opacity 0.2s', textDecoration: 'none' }}>INSTAGRAM</a>
             <a href="#" style={{ transition: 'opacity 0.2s', textDecoration: 'none' }}>TWITTER</a>
-            <a href="https://www.pinterest.com/GreatWooden/" target="_blank" rel="noopener noreferrer" style={{ transition: 'opacity 0.2s', textDecoration: 'none' }}>PINTEREST</a>
+            <a href="https://www.pinterest.com/HeroAnimalArt/" target="_blank" rel="noopener noreferrer" style={{ transition: 'opacity 0.2s', textDecoration: 'none' }}>PINTEREST</a>
           </div>
         </div>
       </div>

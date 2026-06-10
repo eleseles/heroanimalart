@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!product) return { title: 'Product Not Found' };
 
   return {
-    title: `${product.name} | Great Wooden`,
+    title: `${product.name} | HeroAnimalArt`,
     description: product.description,
     alternates: {
       canonical: `/products/${id}`,
@@ -79,7 +79,7 @@ export default async function ProductPage({ params }: Props) {
     description: product.description,
     brand: {
       '@type': 'Brand',
-      name: 'Great Wooden',
+      name: 'HeroAnimalArt',
     },
     offers: {
       '@type': 'Offer',

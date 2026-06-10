@@ -2,8 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Imprint | Great Wooden',
-  description: 'Legal information about Great Wooden.',
+  title: 'Imprint | HeroAnimalArt',
+  description: 'Legal information about HeroAnimalArt.',
 };
 
 export default function ImprintPage() {
@@ -13,7 +13,7 @@ export default function ImprintPage() {
       
       <h2>Contact Information</h2>
       <p>
-        Great Wooden GmbH<br />
+        HeroAnimalArt GmbH<br />
         Minimalstrasse 12<br />
         10115 Berlin, Germany
       </p>

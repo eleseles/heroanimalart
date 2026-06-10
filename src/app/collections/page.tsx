@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Curated Collections | Great Wooden',
+  title: 'Curated Collections | HeroAnimalArt',
   description: 'Explore our curated series of premium woodworking plans and detailed digital blueprints.',
 };
 

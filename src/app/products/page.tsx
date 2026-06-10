@@ -4,7 +4,7 @@ import ProductCard from '@/components/ProductCard';
 import { products } from '@/data/products';
 
 export const metadata: Metadata = {
-  title: 'Shop All | Great Wooden',
+  title: 'Shop All | HeroAnimalArt',
   description: 'Browse our complete collection of premium DIY woodworking plans.',
 };
 

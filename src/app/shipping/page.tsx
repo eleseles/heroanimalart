@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Shipping | Great Wooden',
+  title: 'Shipping | HeroAnimalArt',
   description: 'Shipping rates, delivery times, and international shipping information.',
 };
 
@@ -28,7 +28,7 @@ export default function ShippingPage() {
 
       <h2>International Orders</h2>
       <p>
-        Great Wooden ships worldwide. Please note that international orders may be subject to 
+        HeroAnimalArt ships worldwide. Please note that international orders may be subject to 
         import duties and taxes, which are the responsibility of the customer.
       </p>
 

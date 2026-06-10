@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { ShoppingBag, Search, User, Menu, X } from 'lucide-react';
 
 const announcements = [
-  "📏 Dual Imperial & Metric Measurements Included",
-  "📩 Instant PDF Downloads Right After Checkout",
-  "⚡ Optimized Cut Lists Save 30% on Wood Costs"
+  "🎨 High-Quality Digital Poster Downloads",
+  "📩 Instant Access Right After Checkout",
+  "🖼️ Multiple Sizes Available for Easy Printing"
 ];
 
 export default function Navbar() {
@@ -41,13 +41,13 @@ export default function Navbar() {
       <nav className={`navbar ${scrolled ? 'glass' : ''}`}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <Link href="/" className="logo">
-            GREAT WOODEN
+            HEROANIMALART
           </Link>
 
           <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-            <Link href="/products" className="nav-link">ALL PLANS</Link>
-            <Link href="/products?category=food-cart" className="nav-link">COFFEE CARTS &amp; BARS</Link>
-            <Link href="/products?category=farmstand" className="nav-link">FARMSTANDS</Link>
+            <Link href="/products" className="nav-link">ALL POSTERS</Link>
+            <Link href="/products?category=new" className="nav-link">NEW ARRIVALS</Link>
+            <Link href="/products?category=best-sellers" className="nav-link">BEST SELLERS</Link>
             <Link href="/collections" className="nav-link">CURATED SERIES</Link>
           </div>
 

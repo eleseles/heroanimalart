@@ -1,11 +1,11 @@
 /**
- * Pinterest 2. Görsel CSV Üretici
- * 
- * Tüm ürünler için 2. görselleri kullanarak (images[1])
+ * Pinterest 3. Görsel CSV Üretici
+ *
+ * Tüm ürünler için 3. görselleri kullanarak (images[2])
  * özgün başlık, açıklama ve hashtag'ler içeren tek bir büyük CSV dosyası üretir.
- * 
+ *
  * Kullanım:
- *   node scripts/generate-pinterest-csv.mjs
+ *   node scripts/generate-pinterest-csv-3rd.mjs
  */
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
@@ -18,10 +18,8 @@ const __dirname = dirname(__filename);
 // ─── Config ───
 const DOMAIN = 'https://heroanimalart.com';
 
-// Pinterest'in beklediği kesin başlık isimleri
 const CSV_HEADERS = ['Title', 'Description', 'Link', 'Media URL', 'Pinterest board'];
 
-// Board mapping - ürün kategorisine göre board atama
 const BOARD_MAP = {
   'Santa Sleigh Plan': 'DIY Woodworking Plans',
   'welcome planter diy': 'Outdoor Projects & Garden',
@@ -60,7 +58,6 @@ const BOARD_MAP = {
 
 const DEFAULT_BOARD = 'DIY Woodworking Plans';
 
-// Hashtag pools per board
 const HASHTAGS = {
   'DIY Woodworking Plans': ['#DIY', '#Woodworking', '#WoodworkingPlans', '#BuildItYourself', '#DIYProjects', '#WoodCraft'],
   'Outdoor Projects & Garden': ['#OutdoorDIY', '#GardenDesign', '#BackyardProject', '#OutdoorLiving', '#Landscaping', '#GardenDecor'],
@@ -75,13 +72,12 @@ const HASHTAGS = {
 function loadProducts() {
   const productsPath = join(__dirname, '..', 'src', 'data', 'products.ts');
   const content = readFileSync(productsPath, 'utf-8');
-  
-  // Extract the array from TypeScript
+
   const arrayMatch = content.match(/export const products:\s*Product\[\]\s*=\s*(\[[\s\S]*\]);?\s*$/m);
   if (!arrayMatch) {
     throw new Error('Could not parse products.ts');
   }
-  
+
   return JSON.parse(arrayMatch[1]);
 }
 
@@ -98,37 +94,62 @@ function cleanTitlePart(str) {
     .trim();
 }
 
-// ─── Generate unique title for 2nd Pin ───
-function generateSecondPinTitle(product) {
+// ─── Title prefixes pool for 3rd pins ───
+const TITLE_PREFIXES = [
+  'Weekend Project:',
+  'Inside the Plans:',
+  'Complete Build Guide —',
+  'DIY Blueprint:',
+  'Craftsman\'s Choice:',
+  'Step-by-Step:',
+  'Build From Scratch:',
+  'Downloadable Plans:',
+];
+
+// ─── Generate unique title for 3rd Pin ───
+function generateThirdPinTitle(product, index) {
   const parts = product.name.split('|').map(p => p.trim());
   let coreName = '';
-  
+
   if (parts.length > 1) {
     coreName = cleanTitlePart(parts[1]);
   } else {
     coreName = cleanTitlePart(parts[0]);
   }
-  
-  // Ensure we capitalised first letter of key words nicely
-  return `How to Build: ${coreName} (Woodworking Plans & Cut List)`.substring(0, 100);
+
+  const prefix = TITLE_PREFIXES[index % TITLE_PREFIXES.length];
+  return `${prefix} ${coreName}`.substring(0, 100);
 }
 
-// ─── Generate unique description for 2nd Pin ───
-function generateSecondPinDescription(product, board) {
+// ─── Description intro pool for 3rd pins ───
+const DESCRIPTION_INTROS = [
+  (name) => `Take a closer look inside these detailed ${name} woodworking plans — everything you need for a clean, professional build.`,
+  (name) => `Here's what makes these ${name} plans stand out: clear 3D diagrams, a full cut list, and pro-level detail from start to finish.`,
+  (name) => `Ready to start building your ${name}? These instant-download plans walk you through every step with precision measurements.`,
+  (name) => `Save time and avoid costly mistakes — our ${name} PDF plans include optimized cutting diagrams and a complete material list.`,
+  (name) => `See the difference a well-designed plan makes. Our ${name} blueprints are built for real DIYers who want results.`,
+  (name) => `From lumber to final finish — our ${name} woodworking plans cover every detail so you can build with confidence.`,
+  (name) => `No guesswork, no wasted wood. These ${name} plans come with step-by-step 3D assembly guides and a hardware checklist.`,
+  (name) => `Whether you're a beginner or seasoned woodworker, our ${name} plans give you a clear roadmap to a beautiful finished piece.`,
+];
+
+// ─── Generate unique description for 3rd Pin ───
+function generateThirdPinDescription(product, board, index) {
   const coreName = product.name.split('|')[0]
     .replace(/\b(plans|plan|pdf|blueprint|build guide|diy|guide)\b/gi, '')
     .replace(/\s+/g, ' ')
-    .trim();
-  
-  const intro = `Learn how to build your own ${coreName.toLowerCase()} with these step-by-step woodworking plans. Perfect for DIY enthusiasts and makers!`;
-  
-  const packageDetails = `\n\nWhat you get in this PDF download:\n- Step-by-step 3D assembly instructions\n- Complete material & hardware shopping list\n- Optimized cutting diagrams to save on lumber\n- Full dimensions (Imperial & Metric)`;
-  
-  // Pick random hashtags
+    .trim()
+    .toLowerCase();
+
+  const introFn = DESCRIPTION_INTROS[index % DESCRIPTION_INTROS.length];
+  const intro = introFn(coreName);
+
+  const packageDetails = `\n\nIncludes:\n- Detailed 3D assembly views\n- Cut list with board footage\n- Hardware & materials checklist\n- Imperial & Metric dimensions`;
+
   const pool = HASHTAGS[board] || HASHTAGS['DIY Woodworking Plans'];
   const shuffled = [...pool].sort(() => 0.5 - Math.random());
-  const tags = "\n\n" + shuffled.slice(0, 4).join(' ');
-  
+  const tags = '\n\n' + shuffled.slice(0, 4).join(' ');
+
   const full = `${intro}${packageDetails}${tags}`;
   return full.substring(0, 500);
 }
@@ -144,53 +165,62 @@ function csvEscape(str) {
 // ─── Main ───
 function main() {
   const products = loadProducts();
-  console.log(`📦 Toplam ${products.length} ürün yüklendi. 2. görseller için CSV üretiliyor...`);
-  
-  // Generate CSV
+  console.log(`📦 Toplam ${products.length} ürün yüklendi. 3. görseller için CSV üretiliyor...`);
+
   let csv = CSV_HEADERS.join(',') + '\n';
   let successCount = 0;
-  
-  products.forEach(product => {
-    // 2. görseli seç (images[1] varsa al, yoksa fallback olarak image veya images[0])
-    const mediaUrl = product.images && product.images[1] ? product.images[1] : (product.image || product.images[0]);
-    
+  let skippedCount = 0;
+
+  products.forEach((product, index) => {
+    // 3. görseli seç (images[2] varsa al, yoksa images[1] → images[0] → image)
+    const mediaUrl =
+      (product.images && product.images[2]) ||
+      (product.images && product.images[1]) ||
+      (product.images && product.images[0]) ||
+      product.image;
+
     if (!mediaUrl) {
-      console.warn(`⚠️ Warning: No image found for product ID ${product.id}`);
+      console.warn(`⚠️  No image found for product ID ${product.id}`);
+      skippedCount++;
       return;
     }
-    
+
+    if (!product.images || !product.images[2]) {
+      console.warn(`ℹ️  Product "${product.name}" has no images[2], using fallback`);
+    }
+
     const board = getBoard(product);
-    const uniqueTitle = generateSecondPinTitle(product);
-    const description = generateSecondPinDescription(product, board);
-    const destUrl = `${DOMAIN}/products/${product.slug}`; // slug tabanlı yönlendirme daha SEO dostu
-    
+    const uniqueTitle = generateThirdPinTitle(product, index);
+    const description = generateThirdPinDescription(product, board, index);
+    const destUrl = `${DOMAIN}/products/${product.slug}`;
+
     csv += `${csvEscape(uniqueTitle)},${csvEscape(description)},${csvEscape(destUrl)},${csvEscape(mediaUrl)},${csvEscape(board)}\n`;
     successCount++;
   });
-  
-  // Save to output directory
+
   const outputDir = join(__dirname, '..', 'pinterest_csv');
   if (!existsSync(outputDir)) {
     mkdirSync(outputDir, { recursive: true });
   }
-  
-  const filename = `pinterest_2nd_images_all.csv`;
+
+  const filename = `pinterest_3rd_images_all.csv`;
   const outputPath = join(outputDir, filename);
-  
+
   writeFileSync(outputPath, csv, 'utf-8');
-  
+
   console.log(`\n📌 Pinterest CSV Üretildi!`);
   console.log(`──────────────────────────`);
   console.log(`📁 Dosya: pinterest_csv/${filename}`);
-  console.log(`📦 İşlenen Ürün: ${successCount} adet (2. görselleriyle)`);
-  console.log(`🚀 Link yapısı: SEO dostu slug kullanıldı (https://heroanimalart.com/products/[slug])`);
+  console.log(`📦 İşlenen Ürün: ${successCount} adet (3. görselleriyle)`);
+  console.log(`⏭️  Atlanan: ${skippedCount} adet`);
+  console.log(`🚀 Link yapısı: SEO dostu slug (https://heroanimalart.com/products/[slug])`);
   console.log(`\n📋 Örnek Satırlar:`);
-  
+
   const lines = csv.split('\n');
-  console.log(lines[0]); // Header
-  if (lines[1]) console.log(lines[1]); // Row 1
-  if (lines[2]) console.log(lines[2]); // Row 2
-  
+  console.log(lines[0]);
+  if (lines[1]) console.log(lines[1]);
+  if (lines[2]) console.log(lines[2]);
+
   console.log(`\n🚀 Sonraki adım:`);
   console.log(`   1. Pinterest → Create → Create Pins → Upload CSV`);
   console.log(`   2. "pinterest_csv/${filename}" dosyasını yükle`);

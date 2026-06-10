@@ -4,10 +4,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://greatwooden.com'),
+  metadataBase: new URL('https://heroanimalart.com'),
   title: {
-    default: "Great Wooden | Premium DIY Woodworking Plans",
-    template: "%s | Great Wooden"
+    default: "HeroAnimalArt | Premium DIY Woodworking Plans",
+    template: "%s | HeroAnimalArt"
   },
   description: "Download premium DIY woodworking plans and blueprints. Build your own furniture, outdoor projects, and more with our detailed guides.",
   alternates: {
@@ -28,8 +28,8 @@ export default function RootLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Great Wooden',
-    url: 'https://greatwooden.com',
+    name: 'HeroAnimalArt',
+    url: 'https://heroanimalart.com',
     description: 'Premium DIY woodworking plans. Build your dream projects at home. Shop our plans directly on Etsy.',
   };
 
