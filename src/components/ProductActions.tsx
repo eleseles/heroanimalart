@@ -73,8 +73,8 @@ export default function ProductActions({ product }: ProductActionsProps) {
       >
         {isRedirecting ? 'SECURE REDIRECTING...' : (
           product.originalPrice 
-            ? <>BUY NOW — ₺{product.price.toFixed(2)} <span style={{ textDecoration: 'line-through', opacity: 0.6, marginLeft: '0.4rem', fontWeight: 400, fontSize: '0.85rem' }}>₺{product.originalPrice.toFixed(2)}</span></>
-            : `BUY NOW — ₺${product.price.toFixed(2)}`
+            ? <>BUY NOW — ${product.price.toFixed(2)} <span style={{ textDecoration: 'line-through', opacity: 0.6, marginLeft: '0.4rem', fontWeight: 400, fontSize: '0.85rem' }}>${product.originalPrice.toFixed(2)}</span></>
+            : `BUY NOW — $${product.price.toFixed(2)}`
         )}
       </button>
 

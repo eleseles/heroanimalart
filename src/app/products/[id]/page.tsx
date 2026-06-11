@@ -126,7 +126,7 @@ export default async function ProductPage({ params }: Props) {
                     letterSpacing: '-0.03em',
                     lineHeight: 1
                   }}>
-                    ₺{product.price.toFixed(2)}
+                    ${product.price.toFixed(2)}
                   </span>
                   <span style={{
                     fontSize: '1.2rem',
@@ -137,7 +137,7 @@ export default async function ProductPage({ params }: Props) {
                     textDecorationThickness: '2px',
                     lineHeight: 1
                   }}>
-                    ₺{product.originalPrice.toFixed(2)}
+                    ${product.originalPrice.toFixed(2)}
                   </span>
                 </div>
                 <div style={{
@@ -171,12 +171,12 @@ export default async function ProductPage({ params }: Props) {
                     color: '#be123c',
                     letterSpacing: '0.01em'
                   }}>
-                    You save ₺{(product.originalPrice - product.price).toFixed(2)} on this poster
+                    You save ${(product.originalPrice - product.price).toFixed(2)} on this poster
                   </span>
                 </div>
               </div>
             ) : (
-              <span className="product-detail-price">₺{product.price.toFixed(2)}</span>
+              <span className="product-detail-price">${product.price.toFixed(2)}</span>
             )}
           </div>
           

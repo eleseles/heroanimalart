@@ -19,7 +19,7 @@ export async function GET() {
         <description><![CDATA[
           ${imagesHtml}
           <p>${product.description}</p>
-          <p>Price: ₺${product.price.toFixed(2)}</p>
+          <p>Price: $${product.price.toFixed(2)}</p>
         ]]></description>
         <pubDate>${new Date(product.publishedAt || new Date()).toUTCString()}</pubDate>
       </item>
