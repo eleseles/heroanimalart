@@ -14,7 +14,7 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
-  const product = products.find((p: Product) => p.id === id);
+  const product = products.find((p: Product) => p.slug === id);
 
   if (!product) return { title: 'Product Not Found' };
 
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ProductPage({ params }: Props) {
   const { id } = await params;
-  const product = products.find((p: Product) => p.id === id);
+  const product = products.find((p: Product) => p.slug === id);
 
   if (!product) {
     notFound();

@@ -6,7 +6,7 @@ export async function GET() {
   const siteDescription = 'High-quality digital poster designs and art prints.';
 
   const rssItems = products.map((product) => {
-    const productUrl = `${siteUrl}/products/${product.id}`;
+    const productUrl = `${siteUrl}/products/${product.slug}`;
     // Include the main image in the description so Pinterest can scrape it
     // Or you can include all images. Pinterest will often pick the first image in the description or enclosure.
     const imagesHtml = product.images.map(img => `<img src="${img}" alt="${product.name}" />`).join('');

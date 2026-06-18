@@ -20,7 +20,7 @@ export async function GET() {
   <description>Drip-fed DIY Woodworking Plans</description>`;
 
   visibleProducts.forEach(product => {
-    const productUrl = `https://heroanimalart.com/products/${product.id}`;
+    const productUrl = `https://heroanimalart.com/products/${product.slug}`;
     
     const productTitle = product.name.length > 95 ? product.name.substring(0, 95) + '...' : product.name;
     const productDesc = product.description.length > 450 ? product.description.substring(0, 450) + '...' : product.description;
