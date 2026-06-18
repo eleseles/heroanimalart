@@ -17,7 +17,7 @@ export async function GET() {
 <channel>
   <title>HeroAnimalArt - Dynamic Catalog</title>
   <link>https://heroanimalart.com</link>
-  <description>Drip-fed DIY Woodworking Plans</description>`;
+  <description>Digital art prints and posters by HeroAnimalArt</description>`;
 
   visibleProducts.forEach(product => {
     const productUrl = `https://heroanimalart.com/products/${product.slug}`;
@@ -28,7 +28,6 @@ export async function GET() {
     xml += `
   <item>
     <g:id>${product.id}</g:id>
-    <guid isPermaLink="false">${product.id}</guid>
     <title><![CDATA[${productTitle}]]></title>
     <description><![CDATA[${productDesc}]]></description>
     <link>${productUrl}</link>
@@ -52,8 +51,9 @@ export async function GET() {
     <g:sale_price>${product.price.toFixed(2)} USD</g:sale_price>` : `
     <g:price>${product.price.toFixed(2)} USD</g:price>`}
     <g:brand>HeroAnimalArt</g:brand>
-    <g:google_product_category><![CDATA[Arts & Crafts > Patterns]]></g:google_product_category>
-    <g:product_type><![CDATA[Woodworking Plans]]></g:product_type>
+    <g:identifier_exists>no</g:identifier_exists>
+    <g:google_product_category>500044</g:google_product_category>
+    <g:product_type><![CDATA[Digital Art Prints > Posters & Prints]]></g:product_type>
   </item>`;
   });
 
