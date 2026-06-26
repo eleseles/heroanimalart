@@ -11,11 +11,6 @@ export default function ProductActions({ product }: ProductActionsProps) {
   const [isRedirecting, setIsRedirecting] = useState(false);
 
   const handleBuyNow = async () => {
-    if (!product.polarProductId) {
-      alert("This product checkout is currently in sandbox mode. Direct payments will be active once live.");
-      return;
-    }
-
     setIsRedirecting(true);
 
     try {
@@ -25,7 +20,6 @@ export default function ProductActions({ product }: ProductActionsProps) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          polarProductId: product.polarProductId,
           productName: product.name,
         }),
       });
