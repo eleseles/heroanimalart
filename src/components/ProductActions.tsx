@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { Product } from '@/data/products';
 
+const POLAR_CHECKOUT_URL = 'https://buy.polar.sh/polar_cl_McF3ssXEvy0Fc2XvufxDCCwWJl174WjLaTKxW4fEE1r';
+
 interface ProductActionsProps {
   product: Product;
 }
@@ -10,37 +12,9 @@ interface ProductActionsProps {
 export default function ProductActions({ product }: ProductActionsProps) {
   const [isRedirecting, setIsRedirecting] = useState(false);
 
-  const handleBuyNow = async () => {
+  const handleBuyNow = () => {
     setIsRedirecting(true);
-
-    try {
-      const res = await fetch('/api/checkout', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          productName: product.name,
-        }),
-      });
-
-      if (!res.ok) {
-        throw new Error('Checkout session generation failed');
-      }
-
-      const data = await res.json();
-      
-      if (data.url) {
-        // Redirect customer to the secure checkout page
-        window.location.href = data.url;
-      } else {
-        throw new Error('No redirection URL returned from server');
-      }
-    } catch (error) {
-      console.error('❌ Direct checkout error:', error);
-      alert('Secure payment server is currently busy. Please try again or purchase via Etsy.');
-      setIsRedirecting(false);
-    }
+    window.location.href = POLAR_CHECKOUT_URL;
   };
 
   return (
