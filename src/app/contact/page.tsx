@@ -1,35 +1,35 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Contact | HeroAnimalArt',
-  description: 'Get in touch with the HeroAnimalArt team for support and inquiries.',
+  description: 'Get in touch with HeroAnimalArt for support, licensing questions, or any inquiries.',
 };
 
 export default function ContactPage() {
   return (
     <div className="container legal-page">
       <h1>Contact</h1>
-      
+
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', marginTop: '4rem' }}>
         <div>
-          <p>We are here to help. Whether you have a question about our collection or need assistance with an order, our team is at your disposal.</p>
-          
+          <p>
+            We are here to help. Whether you have a question about a download, need a custom size,
+            or have a licensing inquiry — reach out and we will get back to you within 2 business days.
+          </p>
+
           <div style={{ marginTop: '3rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
               <Mail size={18} strokeWidth={1} />
-              <span style={{ fontSize: '0.875rem' }}>support@luminastudio.com</span>
-            </div>
-            <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-              <Phone size={18} strokeWidth={1} />
-              <span style={{ fontSize: '0.875rem' }}>+49 (0) 30 123 456 78</span>
-            </div>
-            <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-              <MapPin size={18} strokeWidth={1} />
-              <span style={{ fontSize: '0.875rem' }}>Minimalstrasse 12, 10115 Berlin</span>
+              <span style={{ fontSize: '0.875rem' }}>emrecansari@hotmail.com</span>
             </div>
           </div>
+
+          <p style={{ marginTop: '2rem', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+            <strong>Download issues?</strong> Check your spam folder first — delivery emails
+            sometimes land there. If the problem persists, email us with your order number.
+          </p>
         </div>
 
         <div>
@@ -41,6 +41,10 @@ export default function ContactPage() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <label style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Email</label>
               <input type="email" style={{ padding: '0.75rem 0', border: 'none', borderBottom: '1px solid var(--border-color)', outline: 'none', background: 'transparent' }} />
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <label style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Order Number (optional)</label>
+              <input type="text" style={{ padding: '0.75rem 0', border: 'none', borderBottom: '1px solid var(--border-color)', outline: 'none', background: 'transparent' }} />
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <label style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Message</label>

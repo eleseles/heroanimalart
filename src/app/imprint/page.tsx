@@ -3,44 +3,40 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Imprint | HeroAnimalArt',
-  description: 'Legal information about HeroAnimalArt.',
+  description: 'Legal information and contact details for HeroAnimalArt.',
 };
 
 export default function ImprintPage() {
   return (
     <div className="container legal-page">
       <h1>Imprint</h1>
-      
-      <h2>Contact Information</h2>
+
+      <h2>Responsible for Content</h2>
       <p>
-        HeroAnimalArt GmbH<br />
-        Minimalstrasse 12<br />
-        10115 Berlin, Germany
-      </p>
-      
-      <p>
-        Email: hello@luminastudio.com<br />
-        Phone: +49 (0) 30 123 456 78
+        Emrecan Sarı<br />
+        HeroAnimalArt<br />
+        Istanbul, Turkey
       </p>
 
-      <h2>Authorized Representatives</h2>
-      <p>Max Mustermann, CEO</p>
-
-      <h2>Registry Information</h2>
+      <h2>Contact</h2>
       <p>
-        Commercial Register: Amtsgericht Charlottenburg<br />
-        Registration Number: HRB 123456 B
+        Email: emrecansari@hotmail.com<br />
+        Phone: +90 554 861 83 53
       </p>
-
-      <h2>VAT Identification Number</h2>
-      <p>DE 123 456 789</p>
 
       <h2>Dispute Resolution</h2>
       <p>
-        The European Commission provides a platform for online dispute resolution (OS), 
-        available at: https://ec.europa.eu/consumers/odr. We are neither obligated 
-        nor willing to participate in a dispute resolution procedure before a consumer 
-        arbitration board.
+        The European Commission provides a platform for online dispute resolution (ODR) at{' '}
+        <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">
+          https://ec.europa.eu/consumers/odr
+        </a>. We are not obligated or willing to participate in dispute resolution proceedings
+        before a consumer arbitration board.
+      </p>
+
+      <h2>Disclaimer</h2>
+      <p>
+        All digital products are provided for personal use only. Redistribution, resale, or
+        commercial use of downloaded files is not permitted without prior written consent.
       </p>
     </div>
   );

@@ -37,6 +37,7 @@ export default function Footer() {
           <div className="footer-col">
             <h3>Legal</h3>
             <ul className="footer-links">
+              <li><Link href="/about">About</Link></li>
               <li><Link href="/terms">Terms of Service</Link></li>
               <li><Link href="/privacy">Privacy Policy</Link></li>
               <li><Link href="/imprint">Imprint</Link></li>
